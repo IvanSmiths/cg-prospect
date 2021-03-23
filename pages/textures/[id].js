@@ -11,7 +11,6 @@ export default function SingleTexture({ texture }) {
         as={`/categories/${texture.category.id.toString()}`}
       >
         <h1>{texture.category.title}</h1>
-        <h2>test</h2>
       </Link>
       <img src={texture.mainImage} alt="" />
     </div>
