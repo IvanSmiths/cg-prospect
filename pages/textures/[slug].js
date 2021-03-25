@@ -58,7 +58,10 @@ export default function SingleTexture({ texture }) {
                     width="23"
                   />
                   <span className="small-font-sub"> Categories: </span>
-                  <Link href={`/categories/${texture.category.id}`}>
+                  <Link
+                    href={`/categories/[texture.category.slug]`}
+                    as={`/categories/${texture.category.slug}`}
+                  >
                     <a>{texture.category.title}</a>
                   </Link>
                   {/* {texture.category.map((category) => (
@@ -316,7 +319,7 @@ export async function getStaticProps({ params }) {
   const texture = await prisma.texture.findFirst({
     include: { category: true },
     where: {
-      id: Number(params.id),
+      slug: String(params.slug),
     },
   });
 
@@ -333,7 +336,7 @@ export async function getStaticPaths() {
   return {
     paths: textures.map((texture) => ({
       params: {
-        id: texture.id.toString(),
+        slug: texture.slug.toString(),
       },
     })),
     fallback: false,

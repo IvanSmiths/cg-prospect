@@ -10,7 +10,7 @@ export default function Single({ category }) {
         <Link
           key={texture.id}
           href={`/textures/[id]`}
-          as={`/textures/${texture.id.toString()}`}
+          as={`/textures/${texture.slug}`}
         >
           <a>
             <h2>{texture.title}</h2>
@@ -25,7 +25,7 @@ export async function getStaticProps({ params }) {
   const category = await prisma.category.findFirst({
     include: { textures: true },
     where: {
-      id: Number(params.id),
+      slug: String(params.slug),
     },
   });
 
@@ -42,7 +42,7 @@ export async function getStaticPaths() {
   return {
     paths: categories.map((category) => ({
       params: {
-        id: category.id.toString(),
+        slug: category.slug.toString(),
       },
     })),
     fallback: false,

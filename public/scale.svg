@@ -1,0 +1,19 @@
+<svg id="scale" xmlns="http://www.w3.org/2000/svg" width="27.038" height="27.038" viewBox="0 0 27.038 27.038">
+  <path id="Tracciato_16" data-name="Tracciato 16" d="M1.584,1.584H2.916V0H0V2.916H1.584Z" fill="#fff"/>
+  <path id="Tracciato_17" data-name="Tracciato 17" d="M0,91.357H1.584v2.916H0Z" transform="translate(0 -86.533)" fill="#fff"/>
+  <path id="Tracciato_18" data-name="Tracciato 18" d="M0,182.716H1.584v2.916H0Z" transform="translate(0 -173.067)" fill="#fff"/>
+  <path id="Tracciato_19" data-name="Tracciato 19" d="M365.432,0h2.915V1.584h-2.915Z" transform="translate(-346.134)" fill="#fff"/>
+  <path id="Tracciato_20" data-name="Tracciato 20" d="M274.074,0h2.915V1.584h-2.915Z" transform="translate(-259.601)" fill="#fff"/>
+  <path id="Tracciato_21" data-name="Tracciato 21" d="M182.716,0h2.916V1.584h-2.916Z" transform="translate(-173.067)" fill="#fff"/>
+  <path id="Tracciato_22" data-name="Tracciato 22" d="M91.358,0h2.916V1.584H91.358Z" transform="translate(-86.534)" fill="#fff"/>
+  <path id="Tracciato_23" data-name="Tracciato 23" d="M456.79,0V1.584h1.331V2.916h1.584V0Z" transform="translate(-432.668)" fill="#fff"/>
+  <path id="Tracciato_24" data-name="Tracciato 24" d="M482,91.357h1.584v2.916H482Z" transform="translate(-456.547 -86.533)" fill="#fff"/>
+  <path id="Tracciato_25" data-name="Tracciato 25" d="M482,182.716h1.584v2.916H482Z" transform="translate(-456.547 -173.067)" fill="#fff"/>
+  <path id="Tracciato_26" data-name="Tracciato 26" d="M482,274.073h1.584v2.916H482Z" transform="translate(-456.547 -259.6)" fill="#fff"/>
+  <path id="Tracciato_27" data-name="Tracciato 27" d="M482,365.432h1.584v2.916H482Z" transform="translate(-456.547 -346.134)" fill="#fff"/>
+  <path id="Tracciato_28" data-name="Tracciato 28" d="M458.121,458.12H456.79V459.7h2.915v-2.916h-1.584Z" transform="translate(-432.668 -432.667)" fill="#fff"/>
+  <path id="Tracciato_29" data-name="Tracciato 29" d="M365.432,482h2.915v1.584h-2.915Z" transform="translate(-346.134 -456.547)" fill="#fff"/>
+  <path id="Tracciato_30" data-name="Tracciato 30" d="M274.074,482h2.915v1.584h-2.915Z" transform="translate(-259.601 -456.547)" fill="#fff"/>
+  <path id="Tracciato_31" data-name="Tracciato 31" d="M0,286.638H12.564V274.074H0Zm1.584-10.98h9.4v9.4h-9.4Z" transform="translate(0 -259.601)" fill="#fff"/>
+  <path id="Tracciato_32" data-name="Tracciato 32" d="M269.375,87.518h.786l-4.252,4.253v-.786h-1.584v3.491h3.491V92.891h-.786l4.252-4.253v.786h1.584V85.934h-3.491Z" transform="translate(-250.367 -81.396)" fill="#fff"/>
+</svg>

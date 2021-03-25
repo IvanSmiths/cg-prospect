@@ -15,8 +15,8 @@ export default function Categories({ categories }) {
         {categories.map((category) => (
           <Link
             key={category.id}
-            href={`/categories/[id]`}
-            as={`/categories/${category.id}`}
+            href={`/categories/[slug]`}
+            as={`/categories/${category.slug}`}
           >
             <li key={category.id}>{category.title}</li>
           </Link>

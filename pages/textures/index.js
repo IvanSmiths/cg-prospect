@@ -1,4 +1,4 @@
-import prisma from '../lib/prisma';
+import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -20,7 +20,7 @@ export default function Home({ textures, categories }) {
         </div> */}
           <ul>
             {categories.map((category) => (
-              <li key={category._id} className="small-font categories-list">
+              <li key={category.id} className="small-font categories-list">
                 <Link href={`/categories/${category.slug}`}>
                   <a>{category.title}</a>
                 </Link>
@@ -30,7 +30,7 @@ export default function Home({ textures, categories }) {
         </aside>
         <section className="texture-list">
           {textures.map((texture) => (
-            <Link key={texture._id} href={`/textures/${texture.id}`}>
+            <Link key={texture.id} href={`/textures/${texture.slug}`}>
               <a className="small-font">
                 <img
                   loading="lazy"
