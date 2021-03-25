@@ -2,7 +2,6 @@ import prisma from '../../lib/prisma';
 import Link from 'next/link';
 
 export default function Single({ category }) {
-  console.log(category);
   return (
     <div>
       <h1>{category.title}</h1>
