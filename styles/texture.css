@@ -1,0 +1,152 @@
+.container-single-texture {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+  grid-template-rows: 6rem min-content min-content;
+}
+
+.container-single-texture > *:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.container-single-texture > *:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* .container-background {
+  width: fit-content;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  background-color: rgb(34, 34, 34);
+} */
+
+.container-texture-image:nth-child(1) {
+  display: block;
+  text-align: center;
+  gap: 3rem;
+}
+
+.ad {
+  margin-top: 13rem;
+}
+
+.first-details {
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.container-texture-details h2 {
+  margin: 3rem 0rem -1rem 0rem;
+}
+
+.title-texture {
+  margin: 1rem 0rem;
+}
+
+.italic {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.first-details h3 {
+  margin-left: 0.6rem;
+}
+
+.first-details > *:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-details > *:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-detail li {
+  margin: 0.6rem 0rem;
+}
+
+.container-links li {
+  margin: 0.4rem 0rem;
+  cursor: pointer;
+}
+
+.container-links {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin-top: 3rem;
+}
+
+.container-links ul:nth-child(2) {
+  margin-left: 2rem;
+}
+
+.gear-list {
+  padding: 0rem 1rem;
+}
+
+.gear-list li {
+  margin: 0.6rem 0rem;
+}
+
+.gear-list:nth-child(1) {
+  padding-left: 0;
+}
+
+.highlight-bck {
+  margin: 0rem 0.2rem;
+  background-color: rgb(39, 39, 39);
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.3rem;
+}
+
+.donate-btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.donate-btn h2 {
+  margin-bottom: 0.5rem;
+}
+
+.sponsor-texture {
+  line-height: 2.5rem;
+  margin-top: 3rem;
+}
+
+.h2-suggest {
+  text-align: center;
+  margin: 13rem 0rem 4rem 0rem;
+}
+
+.texture-suggest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.tags {
+  margin-top: 2rem;
+}
+
+.ad {
+  justify-content: center;
+  align-items: center;
+}
+
+.social-share-cnt {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

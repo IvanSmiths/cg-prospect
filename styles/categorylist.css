@@ -1,0 +1,20 @@
+.category-page-single {
+  padding-top: 9rem;
+}
+
+.category-page-single p {
+  text-align: center;
+  padding: 3rem 10rem;
+}
+
+.category-page-single h1 {
+  text-align: center;
+}
+
+.container-single-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}

@@ -1,16 +1,196 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--mainBackground);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  color: var(--mainFontColor);
+}
+
+.large-font {
+  font-size: var(--largeFont);
+}
+
+.big-font {
+  font-size: var(--bigFont);
+}
+
+.medium-font {
+  font-size: var(--mediumFont);
+}
+
+.small-font {
+  font-size: var(--smallFont);
+  font-weight: 400;
+}
+
+.tiny-font {
+  font-size: var(--smallFont);
+  font-weight: 400;
+}
+
+.btn-font {
+  font-size: var(--btnFont);
+  font-weight: 400;
+}
+
+.small-font-sub {
+  font-size: var(--smallFont);
+  font-weight: 400;
+  color: var(--subFontColor);
+}
+
+.font-color-inverse {
+  color: var(--mainInverseFontColor);
+}
+
+.underline {
+  border-bottom: 3px solid;
+}
+
+.highlight-patreon {
+  color: var(--patreonColor);
+  font-weight: 700;
+}
+
+.highlight-patreon-white {
+  color: var(--patreonColorWhite);
+  font-weight: 700;
+}
+
+.highlight-2 {
+  font-weight: 600;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.highlight-main {
+  color: var(--mainColor);
+  font-weight: 700;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1.3rem 1.5rem;
+  background-color: var(--mainColor);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: var(--smallFont);
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.patreon-clr {
+  background-color: var(--patreonColor);
+}
+
+.btn:hover {
+  border-radius: 1rem;
+  transform: scale(1.03);
+}
+
+.btn:focus {
+  transform: scale(1.05);
+}
+
+.btn-line {
+  cursor: pointer;
+  width: fit-content;
+  padding: 1.3rem 1.5rem;
+  background-color: transparent;
+  color: var(--mainFontColor);
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  font-size: var(--smallFont);
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.btn-line:hover {
+  border-radius: 1rem;
+  transform: scale(1.03);
+  background-color: white;
+  color: black;
+}
+
+.btn-line:focus {
+  transform: scale(1.05);
+}
+
+button:focus {
+  border: 0;
+  outline: none;
+}
+
+button:active {
+  border: 0;
+  outline: none;
+}
+
+nav li > a {
+  display: block;
+  cursor: pointer;
+}
+
+#nprogress .bar {
+  background: #fee648;
+
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+#nprogress .spinner {
+  display: none;
+}
+
+@import './variables.css';
+@import './nav.css';
+@import './homepage.css';
+@import './texturelist.css';
+@import './texture.css';
+@import './categorylist.css';
+@import './category.css';
+@import './footer.css';
+@import './methodlist.css';
+@import './method.css';
+@import './terms.css';
+@import './progressbar.css';
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
+li {
+  list-style: none;
 }
+
+.cnt {
+  display: flex;
+  flex-direction: column;
+}
+
+@import './query.css';

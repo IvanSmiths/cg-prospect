@@ -1,0 +1,39 @@
+.container-list-texture {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) 3fr;
+  grid-template-rows: 7rem min-content;
+}
+
+.category-list {
+  margin-top: 7rem;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  position: fixed;
+}
+
+.categories-list {
+  margin: 1rem 0rem 0rem 2rem;
+}
+
+.texture-list {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.texture-list p {
+  padding: 0rem 5rem 2rem 0rem;
+}
+
+.page-btn {
+  margin-top: 4rem;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}

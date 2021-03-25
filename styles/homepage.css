@@ -1,0 +1,304 @@
+.under-development {
+  z-index: 8888888888;
+  position: absolute;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background-color: black;
+  color: white;
+}
+
+.container-mainpage {
+  display: grid;
+  grid-template-columns: 6rem minmax(min-content, 1fr) minmax(min-content, 1fr);
+  grid-template-rows: minmax(min-content, 60vh) minmax(min-content, 60vh);
+}
+
+.container-mainpage > *:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  margin-left: 4vw;
+  margin-top: 14rem;
+}
+
+.container-mainpage > *:nth-child(3) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  text-align: center;
+  /* background: url(/blob.svg) no-repeat; */
+  background-position: center 0rem;
+  background-size: clamp(5rem, 40vw, 35rem);
+  margin-top: 9rem;
+}
+
+.container-mainpage p {
+  margin-top: 0.5rem;
+}
+
+.main-btn {
+  margin-top: 2rem;
+}
+
+.container-ico {
+  grid-column: 1 / 2;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.container-ico > a {
+  transition: 0.2s ease-in;
+}
+
+.container-ico > a:hover {
+  transform: rotateZ(360deg) scale(1.5);
+}
+
+.stats {
+  padding-bottom: 0.2rem;
+  background-color: var(--mainInverseBackground);
+}
+
+.stats-title {
+  text-align: center;
+}
+
+.container-cards {
+  transform: translateY(-10rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin: 8rem 0rem 0rem 0rem;
+}
+
+.card {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--subBackground);
+}
+
+.card-patreon {
+  background-color: var(--mainColor);
+  padding: 5rem 2rem;
+}
+
+.card-patreon > * {
+  color: black;
+}
+
+.card h2 {
+  margin: 2rem 0rem;
+}
+
+.container-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 9rem;
+  margin: 5rem 0rem 3rem 0rem;
+}
+
+.numbers {
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+/* ----------- PATREON BEGIN ---------- */
+
+.patreon {
+  padding: 9rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mainBackground);
+}
+
+.patreon > *:nth-child(1) {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.patreon-h2 {
+  margin-bottom: 3rem;
+}
+
+.patreon p {
+  padding: 2rem 14rem;
+}
+
+.patreon button {
+  margin-top: 5rem;
+  padding: 1.6rem 2rem;
+}
+
+.patreon > *:nth-child(2) {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------- VIDEO BEGIN ---------- */
+
+.cnt-video {
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.text-video {
+  position: absolute;
+  text-align: center;
+  margin: 0 27vw;
+  top: 25%;
+}
+
+.cnt-video p {
+  margin: 3rem 0rem;
+}
+
+/* ----------- SHOWCASE BEGIN ---------- */
+
+.showcase h3 {
+  margin-bottom: 1.5rem;
+}
+
+.showcase-1 {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+  grid-template-rows: minmax(min-content, 40vh) minmax(min-content, 40vh);
+}
+
+.showcase-1 > *:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  /* background: url(../public/showcase.jpg) no-repeat center; */
+  object-fit: cover;
+}
+
+.showcase-1 > *:nth-child(2) {
+  padding: 8rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.showcase-2 {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+  grid-template-rows: minmax(min-content, 40vh) minmax(min-content, 40vh);
+}
+
+.showcase-2 > *:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8rem;
+}
+
+.showcase-2 > *:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  /* background: url(../public/showcase-2.jpg) no-repeat center; */
+  object-fit: cover;
+}
+.showcase-3 {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+  grid-template-rows: minmax(min-content, 40vh) minmax(min-content, 40vh);
+}
+
+.showcase-3 > *:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  /* background: url(../public/showcase-3.jpg) no-repeat center; */
+  object-fit: cover;
+}
+
+.showcase-3 > *:nth-child(2) {
+  padding: 8rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-showcase {
+  margin-top: 3rem;
+}
+
+.advertising {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 12rem 3rem;
+}
+
+.advertising h2 {
+  margin-top: 5rem;
+}
+
+.advertising p {
+  margin-top: 3rem;
+}
+
+.advertising button {
+  margin: 3rem 0rem 5rem 0rem;
+}
+
+.line {
+  height: 1px;
+  width: 50vw;
+  border-radius: 3rem;
+  background-color: aliceblue;
+}
+
+/*   MYSELF BEGIN */
+
+.myself {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5rem;
+}
+
+.myself > *:nth-child(1) {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.myself > *:nth-child(2) {
+  flex: 1 1 50%;
+}
+
+.myself-text p {
+  margin: 3rem 0rem 2rem 0rem;
+  padding: 0rem 23rem 0rem 0rem;
+}

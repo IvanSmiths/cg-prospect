@@ -1,0 +1,16 @@
+.method-page-single {
+  padding-top: 9rem;
+}
+
+.method-page-single h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.container-single-method {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}

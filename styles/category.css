@@ -1,0 +1,21 @@
+.categories-page {
+  padding-top: 9rem;
+}
+
+.categories-page p {
+  text-align: center;
+  padding: 3rem 10rem;
+}
+
+.categories-page h1 {
+  text-align: center;
+}
+
+.container-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 3rem;
+}
