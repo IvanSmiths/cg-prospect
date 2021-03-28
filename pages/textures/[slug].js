@@ -1,9 +1,24 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import {
+  FacebookIcon,
+  PinterestIcon,
+  RedditIcon,
+  TelegramIcon,
+  TwitterIcon,
+  WhatsappIcon,
+} from 'react-share';
+import {
+  FacebookShareButton,
+  RedditShareButton,
+  TelegramShareButton,
+  PinterestShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+} from 'react-share';
 
 export default function SingleTexture({ texture }) {
-  console.log(texture);
   return (
     <>
       <Head>
@@ -24,9 +39,6 @@ export default function SingleTexture({ texture }) {
             src={texture.mainImage}
             alt={`The main preview of the Texture ${texture.title}`}
           />
-          {/* <div className="ad">
-          <img src="/ads3.jpg" alt="" />
-        </div> */}
         </div>
         <div className="container-texture-details" key={texture.id}>
           <h1 className="big-font title-texture">{texture.title}</h1>
@@ -58,20 +70,14 @@ export default function SingleTexture({ texture }) {
                     width="23"
                   />
                   <span className="small-font-sub"> Categories: </span>
-                  <Link
-                    href={`/categories/[texture.category.slug]`}
-                    as={`/categories/${texture.category.slug}`}
-                  >
-                    <a>{texture.category.title}</a>
-                  </Link>
-                  {/* {texture.category.map((category) => (
+                  {texture.category.map((category) => (
                     <Link
                       key={category.id}
                       href={`/categories/${category.slug}`}
                     >
                       <a className="highlight-bck">{category.title} </a>
                     </Link>
-                  ))} */}
+                  ))}
                 </li>
                 <li className="small-font">
                   <img
@@ -83,11 +89,6 @@ export default function SingleTexture({ texture }) {
                     width="23"
                   />
                   <span className="small-font-sub"> Method:</span>{' '}
-                  {/* {methods.map((method) => (
-                    <Link key={method._id} href={`/methods/${method.slug}`}>
-                      <a className="highlight-bck">{method.title}</a>
-                    </Link>
-                  ))} */}
                 </li>
                 <li className="small-font">
                   <img
@@ -258,40 +259,39 @@ export default function SingleTexture({ texture }) {
               </Link>
             </h3>
           </div>
-          {/* <div className="social-share-cnt">
-          <FacebookShareButton
-            url={`https://www.textures.vercel.app/textures/${slug}`}
-          >
-            <FacebookIcon size={42} round="true" />
-          </FacebookShareButton>
-          <TwitterShareButton
-            url={`https://www.textures.vercel.app/textures/${slug}`}
-          >
-            <TwitterIcon size={42} round="true" />
-          </TwitterShareButton>
-          <PinterestShareButton
-            media={mainImage.asset.url}
-            url={`https://www.textures.vercel.app/textures/${slug}`}
-          >
-            <PinterestIcon size={42} round="true" />
-          </PinterestShareButton>
-          <WhatsappShareButton
-            url={`https://www.textures.vercel.app/textures/${slug}`}
-          >
-            <WhatsappIcon size={42} round="true" />
-          </WhatsappShareButton>
-          <TelegramShareButton
-            url={`https://www.textures.vercel.app/textures/${slug}`}
-          >
-            <TelegramIcon size={42} round="true" />
-          </TelegramShareButton>
-          <RedditShareButton
-            url={`https://www.textures.vercel.app/textures/${slug}`}
-          >
-            <RedditIcon size={42} round="true" />
-          </RedditShareButton>
-        </div> */}
-          {/* <h3 className="small-font tags">Tags: {tags}</h3> */}
+          <div className="social-share-cnt">
+            <FacebookShareButton
+              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+            >
+              <FacebookIcon size={42} round="true" />
+            </FacebookShareButton>
+            <TwitterShareButton
+              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+            >
+              <TwitterIcon size={42} round="true" />
+            </TwitterShareButton>
+            <PinterestShareButton
+              media={texture.mainImage}
+              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+            >
+              <PinterestIcon size={42} round="true" />
+            </PinterestShareButton>
+            <WhatsappShareButton
+              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+            >
+              <WhatsappIcon size={42} round="true" />
+            </WhatsappShareButton>
+            <TelegramShareButton
+              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+            >
+              <TelegramIcon size={42} round="true" />
+            </TelegramShareButton>
+            <RedditShareButton
+              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+            >
+              <RedditIcon size={42} round="true" />
+            </RedditShareButton>
+          </div>
         </div>
       </main>
       <h2 className="medium-font h2-suggest">See also:</h2>

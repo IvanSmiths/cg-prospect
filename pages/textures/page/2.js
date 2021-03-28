@@ -1,9 +1,9 @@
-import prisma from '../../lib/prisma';
+import prisma from '../../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-export default function Home({ textures, categories }) {
+export default function SecondPage({ textures, categories }) {
   const router = useRouter();
   return (
     <>
@@ -44,11 +44,8 @@ export default function Home({ textures, categories }) {
           ))}
         </section>
         <div className="page-btn">
-          <button
-            className="btn-line"
-            onClick={() => router.push(`/textures/page/2`)}
-          >
-            Next
+          <button className="btn-line" onClick={() => router.push(`/textures`)}>
+            Previous
           </button>
         </div>
       </main>
@@ -62,7 +59,7 @@ export async function getStaticProps() {
     orderBy: {
       id: 'desc',
     },
-    take: 2,
+    skip: 2,
   });
   const categories = await prisma.category.findMany({
     include: { textures: true },

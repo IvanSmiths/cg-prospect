@@ -15,22 +15,30 @@ model Texture {
   title String
   slug String
   mainImage String
-  scale String?
-  location String?
-  png2k String?
-  png4k String?
-  png8k String?
-  jpg2k String?
-  jpg4k String?
-  jpg8k String?
-  sponsorImage String?
-  sponsorName String?
-  sponsorLink String?
-  category Category? @relation(fields: [categoryId], references: [id])
-  categoryId Int?
+  scale String
+  location String
+  png2k String
+  png4k String
+  png8k String
+  jpg2k String
+  jpg4k String
+  jpg8k String
+  sponsorImage String
+  sponsorName String
+  sponsorLink String
+  category Category[]
+  method Method[]
 }
 
 model Category {
+  id  Int  @default(autoincrement()) @id
+  slug String
+  mainImage String
+  title String @unique
+  textures Texture[]
+}
+
+model Method {
   id  Int  @default(autoincrement()) @id
   slug String
   mainImage String
