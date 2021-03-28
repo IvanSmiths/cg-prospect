@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
   grid-template-rows: 6rem min-content min-content;
+  gap: 1rem;
 }
 
 .container-single-texture > *:nth-child(1) {
@@ -30,6 +31,7 @@
 .cnt-first-col {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
