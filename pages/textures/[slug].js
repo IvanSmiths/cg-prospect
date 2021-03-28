@@ -18,7 +18,7 @@ import {
   WhatsappShareButton,
 } from 'react-share';
 
-export default function SingleTexture({ texture }) {
+export default function SingleTexture({ texture, textures }) {
   return (
     <>
       <Head>
@@ -30,15 +30,52 @@ export default function SingleTexture({ texture }) {
         />
       </Head>
       <main className="container-single-texture">
-        <div className="container-texture-image">
-          <img
-            loading="lazy"
-            height="500"
-            width="500"
-            className="single-main-image"
-            src={texture.mainImage}
-            alt={`The main preview of the Texture ${texture.title}`}
-          />
+        <div className="cnt-first-col">
+          <div className="container-texture-image">
+            <img
+              loading="lazy"
+              height="500"
+              width="500"
+              className="single-main-image"
+              src={texture.mainImage}
+              alt={`The main preview of the Texture ${texture.title}`}
+            />
+          </div>
+          <div>
+            <h3 className="small-font sponsor-texture">
+              <strong className="small-font highlight">
+                Sponsored By: <br />
+              </strong>
+              <a
+                href={texture.sponsorLink}
+                className="medium-font underline highlight-main"
+                target="_blank"
+                rel="noopener"
+              >
+                {' '}
+                {texture.sponsorName}{' '}
+              </a>{' '}
+            </h3>
+            <br />
+            <a href={texture.sponsorLink} target="_blank" rel="noopener">
+              <img
+                className="sponsor-img"
+                loading="lazy"
+                width="550"
+                height="250"
+                src={texture.sponsorImage}
+                alt={`A sponsor image of ${texture.sponsorName}`}
+              />
+            </a>
+            <h3 className="small-font sponsor-texture">
+              Want your name, logo, and link here? {''}
+              <Link href="/sponsor-texture">
+                <a>
+                  <span className="highlight italic">See how you can.</span>
+                </a>
+              </Link>
+            </h3>
+          </div>
         </div>
         <div className="container-texture-details" key={texture.id}>
           <h1 className="big-font title-texture">{texture.title}</h1>
@@ -225,40 +262,6 @@ export default function SingleTexture({ texture }) {
               </li>
             </ul>
           </div>
-          <div>
-            <h3 className="small-font sponsor-texture">
-              <strong className="small-font highlight">
-                Sponsored By: <br />
-              </strong>
-              <a
-                href={texture.sponsorLink}
-                className="medium-font underline highlight-main"
-                target="_blank"
-                rel="noopener"
-              >
-                {' '}
-                {texture.sponsorName}{' '}
-              </a>{' '}
-            </h3>
-            <br />
-            <a href={texture.sponsorLink} target="_blank" rel="noopener">
-              <img
-                loading="lazy"
-                width="550"
-                height="250"
-                src={texture.sponsorImage}
-                alt={`A sponsor image of ${texture.sponsorName}`}
-              />
-            </a>
-            <h3 className="small-font sponsor-texture">
-              Want your name, logo, and link here? {''}
-              <Link href="/sponsor-texture">
-                <a>
-                  <span className="highlight italic">See how you can.</span>
-                </a>
-              </Link>
-            </h3>
-          </div>
           <div className="social-share-cnt">
             <FacebookShareButton
               url={`https://www.textures.vercel.app/textures/${texture.slug}`}
@@ -295,22 +298,22 @@ export default function SingleTexture({ texture }) {
         </div>
       </main>
       <h2 className="medium-font h2-suggest">See also:</h2>
-      {/* <section className="texture-suggest">
+      <section className="texture-suggest">
         {textures.map((texture) => (
-          <Link key={texture._id} href={`/textures/${texture.slug}`}>
+          <Link key={texture.id} href={`/textures/${texture.slug}`}>
             <a>
               <img
                 loading="lazy"
                 width="230"
                 height="230"
                 className="textures-list"
-                src={texture.mainImage.asset.url}
+                src={texture.mainImage}
                 alt={`A preview of the texture ${texture.title}`}
               />
             </a>
           </Link>
         ))}
-      </section> */}
+      </section>
     </>
   );
 }
@@ -322,10 +325,18 @@ export async function getStaticProps({ params }) {
       slug: String(params.slug),
     },
   });
+  const textures = await prisma.texture.findMany({
+    include: { category: true },
+    orderBy: {
+      id: 'desc',
+    },
+    take: 4,
+  });
 
   return {
     props: {
       texture,
+      textures,
     },
   };
 }

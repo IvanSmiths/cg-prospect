@@ -27,8 +27,10 @@
   gap: 3rem;
 }
 
-.ad {
-  margin-top: 13rem;
+.cnt-first-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .first-details {
@@ -43,7 +45,7 @@
 }
 
 .title-texture {
-  margin: 1rem 0rem;
+  margin-bottom: 1rem;
 }
 
 .italic {
@@ -123,7 +125,7 @@
 
 .h2-suggest {
   text-align: center;
-  margin: 13rem 0rem 4rem 0rem;
+  margin: 4rem 0rem 4rem 0rem;
 }
 
 .texture-suggest {
