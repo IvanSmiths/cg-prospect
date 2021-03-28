@@ -4,24 +4,34 @@ import Head from 'next/head';
 
 export default function Categories({ categories }) {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Categories, of free 8K pbr textures.</title>
+        <meta
+          name="description"
+          content=" is one of multiple categories of free to download, up to native 8K Pbr
+          Texture. Consider joining the Cahoot for exclusive content!"
+        />
       </Head>
-
-      <main className={styles.main}>
-        {categories.map((category) => (
-          <Link
-            key={category.id}
-            href={`/categories/[slug]`}
-            as={`/categories/${category.slug}`}
-          >
-            <li key={category.id}>{category.title}</li>
-          </Link>
-        ))}
+      <main className="categories-page">
+        <h1 className="big-font">Browse: All categories</h1>
+        <section className="container-category">
+          {categories.map((category) => (
+            <Link href={`/categories/${category.slug}`} key={category.id}>
+              <a>
+                <img
+                  height="250"
+                  width="250"
+                  src={category.mainImage}
+                  alt={`An image of the category ${category.title}`}
+                />
+                <h2 className="small-font highlight">{category.title}</h2>
+              </a>
+            </Link>
+          ))}
+        </section>
       </main>
-    </div>
+    </>
   );
 }
 

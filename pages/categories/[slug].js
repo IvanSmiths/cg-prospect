@@ -1,22 +1,36 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Single({ category }) {
   return (
-    <div>
-      <h1>{category.title}</h1>
-      {category.textures.map((texture) => (
-        <Link
-          key={texture.id}
-          href={`/textures/[id]`}
-          as={`/textures/${texture.slug}`}
-        >
-          <a>
-            <h2>{texture.title}</h2>
-          </a>
-        </Link>
-      ))}
-    </div>
+    <>
+      <Head>
+        <title>{category.title}, free 8K pbr textures.</title>
+        <meta
+          name="description"
+          content={`${category.title} is one of multiple categories of free to download, 8K seamless Pbr
+          Textures!`}
+        />
+      </Head>
+      <main className="category-page-single">
+        <h1 className="big-font">Browse: {category.title} textures</h1>
+        <section className="container-category" key={category.id}>
+          {category.textures.map((texture) => (
+            <Link key={texture.id} href={`/textures/${texture.slug}`}>
+              <a>
+                <img
+                  height="350"
+                  width="350"
+                  src={texture.mainImage}
+                  alt={`A preview of the texture ${texture.title}`}
+                />
+              </a>
+            </Link>
+          ))}
+        </section>
+      </main>
+    </>
   );
 }
 
