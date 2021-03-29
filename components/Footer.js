@@ -65,14 +65,19 @@ const Footer = () => {
               Cahoot
             </a>
           </li>
+          <li className="tiny-font">
+            <a href="https://www.patreon.com/" target="_blank" rel="noopener">
+              Donation
+            </a>
+          </li>
           <li>
             <Link href="/sponsor-home">
-              <a className="tiny-font">Sponsor on homepage</a>
+              <a className="tiny-font">Become a sponsor</a>
             </Link>
           </li>
           <li>
             <Link href="/sponsor-texture">
-              <a className="tiny-font">Sponsor on texture page</a>
+              <a className="tiny-font">Sponsor on textures</a>
             </Link>
           </li>
         </ul>
@@ -95,8 +100,8 @@ const Footer = () => {
           <img
             loading="lazy"
             src="/ico_youtube.svg"
-            width="22"
-            height="22"
+            width="26"
+            height="26"
             alt="An icon of YouTube"
           />
         </a>
@@ -104,8 +109,8 @@ const Footer = () => {
           <img
             loading="lazy"
             src="/ico_instagram.svg"
-            width="22"
-            height="22"
+            width="26"
+            height="26"
             alt="An icon of Instagram"
           />
         </a>
@@ -113,8 +118,8 @@ const Footer = () => {
           <img
             loading="lazy"
             src="/ico_artstation.svg"
-            width="22"
-            height="22"
+            width="26"
+            height="26"
             alt="An icon of ArtStation"
           />
         </a>
@@ -122,8 +127,8 @@ const Footer = () => {
           <img
             loading="lazy"
             src="/ico_pinterest.svg"
-            width="22"
-            height="22"
+            width="26"
+            height="26"
             alt="An icon of Pinterest"
           />
         </a>
@@ -131,8 +136,8 @@ const Footer = () => {
           <img
             loading="lazy"
             src="/ico_patreon.svg"
-            width="22"
-            height="22"
+            width="26"
+            height="26"
             alt="An icon of Patreon"
           />
         </a>

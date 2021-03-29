@@ -19,6 +19,7 @@ import {
 } from 'react-share';
 
 export default function SingleTexture({ texture, textures }) {
+  console.log(texture);
   return (
     <>
       <Head>

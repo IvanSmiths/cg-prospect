@@ -205,7 +205,7 @@ export default function Home() {
         </div>
         <Link prefetch={false} href="https://www.patreon.com/">
           <a target="_blank" rel="noopener">
-            <button className="btn patreon-clr">See more now</button>
+            <button className="btn patreon-clr">Get unique content</button>
           </a>
         </Link>
       </section>
@@ -319,11 +319,10 @@ export default function Home() {
           <h2 className="big-font">Ivan Smiths here.</h2>
           <p className="small-font">
             I've built Egida on my own, from the br creation of the Textures, to
-            the coding of the Web Site. 3D artist specialized in Photogrammetry,
+            the coding of the Web Site. 3D artist specialized in Photogrammetry
             and Web Developer, i've built this project for putting myself in
             game, and for sharing my things with other passionated people.
           </p>
-          <h3 className="italic small-font highlight-main">Hello World!</h3>
         </div>
       </section>
     </>
