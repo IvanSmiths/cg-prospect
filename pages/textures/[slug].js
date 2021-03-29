@@ -166,7 +166,7 @@ export default function SingleTexture({ texture, textures }) {
               </ul>
             </div>
           </div>
-          <h2 className="btn-font highlight">Gear used for this texture:</h2>
+          <h2 className="btn-font highlight">Gear that i currently use:</h2>
           <div className="first-details">
             <div className="container-gear">
               <ul className="gear-list">
@@ -184,11 +184,18 @@ export default function SingleTexture({ texture, textures }) {
                   <span className="small-font-sub">Polarizer: </span> Honda
                   6PLS.
                 </li>
+                <li className="small-font">
+                  <span className="small-font-sub">Lights: </span> Pro Studio
+                </li>
               </ul>
               <ul className="gear-list">
                 <li className="small-font">
                   <span className="small-font-sub"> White Balance:</span> Pro
                   Col 30.
+                </li>
+                <li className="small-font">
+                  <span className="small-font-sub">Green Screen: </span> Green
+                  PRO
                 </li>
                 <li className="small-font">
                   <span className="small-font-sub">GPU: </span> Nvidia GTX 1080.
@@ -204,7 +211,9 @@ export default function SingleTexture({ texture, textures }) {
             </div>
           </div>
           <div className="donate-btn">
-            <h2 className="small-font">Donate if you want, or grab it free.</h2>
+            <h2 className="btn-font highlight">
+              Donate if you want, or grab it free.
+            </h2>
             <form
               action="https://www.paypal.com/donate"
               method="post"
@@ -313,6 +322,21 @@ export default function SingleTexture({ texture, textures }) {
             </a>
           </Link>
         ))}
+      </section>
+      <section className="advertising">
+        <hr className="line" />
+        <h2 className=" big-font">Want Your Logo on Egida?</h2>
+        <p className="small-font">
+          Egida is opened to direct advertising. For more informations about the{' '}
+          <br />
+          traffic of the website and other, feel free to get in touch!
+        </p>
+        <Link href="/sponsor-home">
+          <a>
+            <button className="btn">Boost your website</button>
+          </a>
+        </Link>
+        <hr className="line" />
       </section>
     </>
   );
