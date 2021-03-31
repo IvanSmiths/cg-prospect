@@ -27,10 +27,11 @@ model Texture {
   sponsorName String
   sponsorLink String
   category Category[]
-  method Method[]
+  method Method  @relation(fields: [methodId], references: [id])
+  methodId Int
 }
 
-model Category {
+model Method {
   id  Int  @default(autoincrement()) @id
   slug String
   mainImage String
@@ -38,7 +39,7 @@ model Category {
   textures Texture[]
 }
 
-model Method {
+model Category {
   id  Int  @default(autoincrement()) @id
   slug String
   mainImage String
