@@ -127,6 +127,12 @@ export default function SingleTexture({ texture, textures }) {
                     width="23"
                   />
                   <span className="small-font-sub"> Method:</span>{' '}
+                  <Link
+                    key={texture.method.id}
+                    href={`/methods/${texture.method.slug}`}
+                  >
+                    <a className="highlight-bck">{texture.method.title} </a>
+                  </Link>
                 </li>
                 <li className="small-font">
                   <img
@@ -345,7 +351,7 @@ export default function SingleTexture({ texture, textures }) {
 
 export async function getStaticProps({ params }) {
   const texture = await prisma.texture.findFirst({
-    include: { category: true },
+    include: { category: true, method: true },
     where: {
       slug: String(params.slug),
     },

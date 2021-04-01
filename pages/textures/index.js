@@ -4,6 +4,8 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 export default function Home({ textures, categories }) {
+  console.log(textures);
+  console.log(categories);
   const router = useRouter();
   return (
     <>
@@ -58,7 +60,6 @@ export default function Home({ textures, categories }) {
 
 export async function getStaticProps() {
   const textures = await prisma.texture.findMany({
-    include: { category: true },
     orderBy: {
       id: 'desc',
     },
