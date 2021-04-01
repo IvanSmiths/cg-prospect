@@ -21,16 +21,26 @@ export default function Home() {
           Texture. Consider joining the Cahoot for exclusive content!"
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="Gotextures" key="twhandle" />
+        <meta property="og:title" content="Egida" />
+        <meta property="og:description" content="Free 8K Textures" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://postgres.pages.dev/" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/deino2cjx/image/upload/v1617272982/nextjs_media/untitled_xq9mjb.jpg"
+        />
       </Head>
 
-      <div className="under-development">
+      {/* <div className="under-development">
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
           <span className="small-font">
             is about 3D, textures and cool stuff.
           </span>
         </p>
-      </div>
+      </div> */}
 
       <main className="container-mainpage">
         <div className="container-ico">
