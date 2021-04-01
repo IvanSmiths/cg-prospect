@@ -27,8 +27,8 @@ model Texture {
   sponsorName String
   sponsorLink String
   category Category[]
-  method     Method?   @relation(fields: [methodId], references: [id])
-  methodId   Int?
+  method     Method   @relation(fields: [methodId], references: [id])
+  methodId   Int
 }
 
 model Method {
