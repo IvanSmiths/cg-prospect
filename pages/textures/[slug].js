@@ -29,6 +29,22 @@ export default function SingleTexture({ texture, textures }) {
           content={`${texture.title} is a seamless, free to download, up to native 8K Pbr
         Texture. Consider joining the Cahoot for exclusive content!`}
         />
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="Egida" key="twhandle" />
+        <meta
+          property="og:title"
+          content={`Egida | ${texture.title}, 8K Free Texture`}
+        />
+        <meta
+          property="og:description"
+          content={`${texture.title} is one of the multiple free textures of Egida.`}
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://postgres.pages.dev/textures/${texture.slug}`}
+        />
+        <meta property="og:image" content={texture.mainImage} />
       </Head>
       <main className="container-single-texture">
         <div className="cnt-first-col">

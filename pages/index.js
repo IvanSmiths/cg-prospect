@@ -22,9 +22,12 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
         <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="Gotextures" key="twhandle" />
-        <meta property="og:title" content="Egida" />
-        <meta property="og:description" content="Free 8K Textures" />
+        <meta name="twitter:creator" content="Egida" key="twhandle" />
+        <meta property="og:title" content="Egida, Free PBR Textures" />
+        <meta
+          property="og:description"
+          content="Free 8K Textures, to put in your projects."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://postgres.pages.dev/" />
         <meta
