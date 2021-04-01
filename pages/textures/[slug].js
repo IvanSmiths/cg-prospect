@@ -128,10 +128,10 @@ export default function SingleTexture({ texture, textures }) {
                   />
                   <span className="small-font-sub"> Method:</span>{' '}
                   <Link
-                    key={texture.method.id}
-                    href={`/methods/${texture.method.slug}`}
+                    key={texture.method[0].id}
+                    href={`/methods/${texture.method[0].slug}`}
                   >
-                    <a className="highlight-bck">{texture.method.title} </a>
+                    <a className="highlight-bck">{texture.method[0].title} </a>
                   </Link>
                 </li>
                 <li className="small-font">
