@@ -64,6 +64,9 @@
     grid-column: 1 / 3;
     grid-row: 1 / 2;
   }
+  .cc0-texture {
+    padding: 9rem 18rem 6rem 5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -137,6 +140,11 @@
     margin: 2rem 0 3rem 0;
     padding: 0rem 3rem;
     text-align: center;
+  }
+
+  .cc0-texture {
+    text-align: center;
+    padding: 6rem 2rem;
   }
 
   /*------- CATEGORIES BEGIN  ------- */

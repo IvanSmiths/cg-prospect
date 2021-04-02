@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import ProgressBar from '../components/ProgressBar';
+import CC0 from '../components/Homepage-cc0';
 
 export default function Home() {
   const videoRef = useRef();
@@ -36,14 +37,14 @@ export default function Home() {
         />
       </Head>
 
-      <div className="under-development">
+      {/* <div className="under-development">
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
           <span className="small-font">
             is about 3D, textures and cool stuff.
           </span>
         </p>
-      </div>
+      </div> */}
 
       <main className="container-mainpage">
         <div className="container-ico">
@@ -97,7 +98,7 @@ export default function Home() {
           <h1 className="large-font">
             Free 8K Textures <br /> Grab them free.
           </h1>
-          <p className="small-font">
+          <h2 className="small-font">
             Up to 8K Native PBR Textures, to put in your 3D projects. <br /> No
             limits, no paywall,{' '}
             <a href="https://www.patreon.com/" target="_blank" rel="noopener">
@@ -105,7 +106,7 @@ export default function Home() {
                 donate if you like to.
               </strong>
             </a>
-          </p>
+          </h2>
           <Link href="/textures">
             <a>
               <button className="btn main-btn">Browse Textures</button>
@@ -302,6 +303,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <CC0 />
       <section className="advertising">
         <hr className="line" />
         <h2 className=" big-font">Want Your Logo on Egida?</h2>

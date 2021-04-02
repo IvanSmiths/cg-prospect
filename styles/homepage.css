@@ -34,7 +34,7 @@
   margin-top: 9rem;
 }
 
-.container-mainpage p {
+.container-mainpage h2 {
   margin-top: 0.5rem;
 }
 
@@ -279,6 +279,19 @@
   width: 50vw;
   border-radius: 3rem;
   background-color: aliceblue;
+}
+
+/*   CC0 BEGIN */
+
+.cnt-cc0 {
+  background: url(../public/texture-cc0.jpg) no-repeat center;
+  background-color: rgba(0, 0, 0, 0.466);
+  width: 100%;
+  min-height: min-content;
+}
+
+.cc0-texture {
+  padding: 9rem 38rem 8rem 5rem;
 }
 
 /*   MYSELF BEGIN */

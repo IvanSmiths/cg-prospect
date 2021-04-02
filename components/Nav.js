@@ -16,7 +16,7 @@ export class Nav extends Component {
       <nav className="nav">
         <div className="logo-cnt">
           <Link href="/">
-            <a className="small-font">Home</a>
+            <a className="small-font">Logo</a>
           </Link>
         </div>
         <div className="cnt-link">
@@ -64,7 +64,7 @@ export class Nav extends Component {
             </li>
           </ul>
           <div onClick={this.menuToggle} className="menu small-text">
-            Menu
+            |||
           </div>
         </div>
       </nav>
