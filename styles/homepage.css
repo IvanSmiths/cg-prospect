@@ -45,7 +45,7 @@
 .container-ico {
   grid-column: 1 / 2;
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   flex-direction: column;
   align-items: center;
   margin-top: 7rem;
@@ -62,6 +62,10 @@
 .stats {
   padding-bottom: 0.2rem;
   background-color: var(--mainInverseBackground);
+}
+
+.stats h3 {
+  margin-top: -3rem;
 }
 
 .stats-title {
@@ -86,7 +90,7 @@
 
 .card-patreon {
   background-color: var(--mainColor);
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .card-patreon > * {
@@ -259,7 +263,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 12rem 3rem;
+  padding: 5rem 3rem;
 }
 
 .advertising h2 {
@@ -291,7 +295,7 @@
 }
 
 .cc0-texture {
-  padding: 9rem 38rem 8rem 5rem;
+  padding: 11rem 38rem 9rem 5rem;
 }
 
 /*   MYSELF BEGIN */

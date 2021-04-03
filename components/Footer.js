@@ -85,7 +85,7 @@ const Footer = () => {
           <li className="small-font highlight-2 footer-label">Info</li>
           <li>
             <Link href="/contact">
-              <a className="tiny-font">About/Contact</a>
+              <a className="tiny-font">Contact</a>
             </Link>
           </li>
           <li>

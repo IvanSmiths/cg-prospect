@@ -1,0 +1,69 @@
+.contact-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  color: aliceblue;
+}
+
+.form-cnt {
+  margin-top: 10rem;
+  width: 40vw;
+}
+
+.form-cnt-2 {
+  text-align: center;
+  margin-top: 10rem;
+  width: 60vw;
+}
+
+.form-cnt-2 h2 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.form-cnt h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.form-cnt p {
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-cnt input {
+  padding: 0rem 0.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-cnt label {
+  margin-bottom: 0.3rem;
+}
+
+.form-cnt textarea {
+  padding: 0.3rem 0.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  resize: vertical;
+}
+
+.form-cnt button {
+  margin-top: 1rem;
+}
+
+.messageaaaa-cnt h2 {
+  margin-top: 13rem;
+}

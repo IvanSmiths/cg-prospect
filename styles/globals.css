@@ -177,6 +177,7 @@ nav li > a {
 @import './method.css';
 @import './terms.css';
 @import './progressbar.css';
+@import './contact.css';
 
 a {
   color: inherit;
@@ -191,6 +192,11 @@ li {
 .cnt {
   display: flex;
   flex-direction: column;
+}
+
+.crypto {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
 @import './query.css';

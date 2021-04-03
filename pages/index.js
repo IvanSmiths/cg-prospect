@@ -37,14 +37,14 @@ export default function Home() {
         />
       </Head>
 
-      {/* <div className="under-development">
+      <div className="under-development">
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
           <span className="small-font">
             is about 3D, textures and cool stuff.
           </span>
         </p>
-      </div> */}
+      </div>
 
       <main className="container-mainpage">
         <div className="container-ico">
@@ -185,7 +185,7 @@ export default function Home() {
           <div className="numbers">
             <h4 className="medium-font font-color-inverse">
               46 <br />
-              Maps
+              Total maps
             </h4>
           </div>
           <div className="numbers">
@@ -209,7 +209,7 @@ export default function Home() {
             Joining the Patreon community, you'll get the textures before they
             are uploaded on Egida. Altrough, the quality and the resolution is
             exactly the same. There are{' '}
-            <strong className="highlight-patreon">unique contents</strong> ,
+            <strong className="highlight-patreon">exclusive contents</strong> ,
             like textures, tutorials, alpha channels, behind the scene, and a
             beautiful community to talk with or ask for help, and more.
           </p>
