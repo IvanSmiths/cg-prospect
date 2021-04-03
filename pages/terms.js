@@ -7,7 +7,7 @@ const Terms = () => {
         <ul className="list-term">
           <li className="small-font">ss</li>
           <li className="small-font">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
+            Lorem ipsumd dolor sit amet consectetur adipisicing.
           </li>
           <li className="small-font">
             Lorem ipsum dolor sit amet consectetur adipisicing.
