@@ -12,6 +12,22 @@ export default function Single({ category }) {
           content={`${category.title} is one of multiple categories of free to download, 8K seamless Pbr
           Textures!`}
         />
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="CgProspect" key="twhandle" />
+        <meta
+          property="og:title"
+          content={`CgProspect | ${category.title}, 8K Free Texture`}
+        />
+        <meta
+          property="og:description"
+          content={`${category.title} is one of the multiple categories of CgProspect.`}
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://postgres.pages.dev/categories/${category.slug}`}
+        />
+        <meta property="og:image" content={category.mainImage} />
       </Head>
       <main className="category-page-single">
         <h1 className="big-font">Browse: {category.title} textures</h1>

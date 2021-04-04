@@ -4,8 +4,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 export default function Home({ textures, categories }) {
-  console.log(textures);
-  console.log(categories);
   const router = useRouter();
   return (
     <>
@@ -16,6 +14,19 @@ export default function Home({ textures, categories }) {
           content=" is one of multiple categories of free to download, up to native 8K Pbr
         Texture. Consider joining the Cahoot for exclusive content!"
         />
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="CgProspect" key="twhandle" />
+        <meta property="og:title" content={`CgProspect | 8K Free Texture`} />
+        <meta
+          property="og:description"
+          content="On CgProspect you can find countess of free to download textures."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://postgres.pages.dev/textures/`}
+        />
+        <meta property="og:image" content={textures[0].mainImage} />
       </Head>
       <main className="container-list-texture">
         <aside className="category-list">

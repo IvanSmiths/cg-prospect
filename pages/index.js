@@ -207,8 +207,8 @@ export default function Home() {
           <h2 className="big-font patreon-h2">Join The Cahoot</h2>
           <p className="small-font">
             Joining the Patreon community, you'll get the textures before they
-            are uploaded on Egida. Altrough, the quality and the resolution is
-            exactly the same. There are{' '}
+            are uploaded on CgProspect. Altrough, the quality and the resolution
+            is exactly the same. There are{' '}
             <strong className="highlight-patreon">exclusive contents</strong> ,
             like textures, tutorials, alpha channels, behind the scene, and a
             beautiful community to talk with or ask for help, and more.
@@ -232,8 +232,8 @@ export default function Home() {
             8K Resolution of <strong className="highlight-main"> POWER </strong>
           </h2>
           <p className="btn-font highlight">
-            Egida's textures are made with extreme cure. Free textures never
-            looked so professional.
+            CgProspect's textures are made with extreme cure. Free textures
+            never looked so professional.
           </p>
           <Link href="/textures">
             <a>
@@ -251,7 +251,7 @@ export default function Home() {
               <strong className="highlight">Photogrammetry</strong> is one of
               the best techniques in order to create high quality textures. It
               can ensure sharp textures, especially with rocks, terrains, wood
-              and other complex shapes. Egida's textures are baked with an
+              and other complex shapes. CgProspect's textures are baked with an
               extremely high poly mesh, granting professional usable textures.
             </p>
             <Link href="/methods/photogrammetry">
@@ -269,8 +269,8 @@ export default function Home() {
             <p className="small-font">
               <strong className="highlight">Ai to Material</strong> is a new
               technique that can mimik the photogrammetry texture creation
-              results. Thanks to this Artificial Intelligence, Egida is able to
-              produce much more textures than it normally could, without
+              results. Thanks to this Artificial Intelligence, CgProspect is
+              able to produce much more textures than it normally could, without
               compromising quality and professional standards.
             </p>
             <Link href="/methods/ai-to-material">
@@ -304,21 +304,6 @@ export default function Home() {
         </div>
       </section>
       <CC0 />
-      <section className="advertising">
-        <hr className="line" />
-        <h2 className=" big-font">Want Your Logo on Egida?</h2>
-        <p className="small-font">
-          Egida is opened to direct advertising. For more informations about the{' '}
-          <br />
-          traffic of the website and other, feel free to get in touch!
-        </p>
-        <Link href="/sponsor-home">
-          <a>
-            <button className="btn">Boost your website</button>
-          </a>
-        </Link>
-        <hr className="line" />
-      </section>
       <section className="myself">
         <div>
           <img
@@ -333,10 +318,11 @@ export default function Home() {
         <div className="myself-text">
           <h2 className="big-font">Ivan Smiths here.</h2>
           <p className="small-font">
-            I've built Egida on my own, from the br creation of the Textures, to
-            the coding of the Web Site. 3D artist specialized in Photogrammetry
-            and Web Developer, i've built this project for putting myself in
-            game, and for sharing my things with other passionated people.
+            I've built CgProspect on my own, from the br creation of the
+            Textures, to the coding of the Web Site. 3D artist specialized in
+            Photogrammetry and Web Developer, i've built this project for
+            putting myself in game, and for sharing my things with other
+            passionated people.
           </p>
         </div>
       </section>

@@ -5,6 +5,7 @@ import 'nprogress/nprogress.css';
 import '../styles/globals.css';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Advertising from '../components/Advertising';
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Nav />
       <Component {...pageProps} />
+      <Advertising />
       <Footer />
     </>
   );

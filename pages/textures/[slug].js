@@ -30,14 +30,14 @@ export default function SingleTexture({ texture, textures }) {
         Texture. Consider joining the Cahoot for exclusive content!`}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="Egida" key="twhandle" />
+        <meta name="twitter:creator" content="CgProspect" key="twhandle" />
         <meta
           property="og:title"
-          content={`Egida | ${texture.title}, 8K Free Texture`}
+          content={`CgProspect | ${texture.title}, 8K Free Texture`}
         />
         <meta
           property="og:description"
-          content={`${texture.title} is one of the multiple free textures of Egida.`}
+          content={`${texture.title} is one of the multiple free textures of CgProspect.`}
         />
         <meta property="og:type" content="website" />
         <meta
@@ -356,21 +356,6 @@ export default function SingleTexture({ texture, textures }) {
             </a>
           </Link>
         ))}
-      </section>
-      <section className="advertising">
-        <hr className="line" />
-        <h2 className=" big-font">Want Your Logo on Egida?</h2>
-        <p className="small-font">
-          Egida is opened to direct advertising. For more informations about the{' '}
-          <br />
-          traffic of the website and other, feel free to get in touch!
-        </p>
-        <Link href="/sponsor-home">
-          <a>
-            <button className="btn">Boost your website</button>
-          </a>
-        </Link>
-        <hr className="line" />
       </section>
     </>
   );

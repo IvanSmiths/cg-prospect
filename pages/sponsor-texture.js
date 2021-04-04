@@ -17,7 +17,7 @@ const SponsorTexture = () => {
         <ul className="list-term">
           <li className="small-font">
             Enter the{' '}
-            <a href="https://www.patreon.com/" className="italic">
+            <a href="https://www.patreon.com/" className="italic highlight">
               Cahoot
             </a>{' '}
             (Patreon) at least at 10$ tear. Your name and link will be there{' '}
@@ -29,7 +29,9 @@ const SponsorTexture = () => {
             sponsor) that you want your name, logo and link in (can be a link to
             your Instagram, ArtStation, website or others) and contact me.
             Alternatively, the sponsor will be put in the texture wich have more
-            traffic at the moment of donation.
+            traffic at the moment of donation. If you desire to be in more than
+            one texture, just wait for the nxt month (if you are still a
+            Patreon)!
           </li>
           <li className="small-font">
             The image should be 550px width and 250px height, and be as
@@ -40,7 +42,7 @@ const SponsorTexture = () => {
             If you want more info about the traffic of the website or per single
             texture, just{' '}
             <Link href="/contact">
-              <a className="italic"> get in contact.</a>
+              <a className="italic highlight"> get in contact.</a>
             </Link>
           </li>
         </ul>
@@ -52,13 +54,14 @@ const SponsorTexture = () => {
             any sort of way: violence, racism or hate speech.
           </li>
         </ul>
-        <h2 className="medium-font">Want your logo on the homepage?</h2>
+        <h2 className="medium-font highlight-main">
+          Want your logo on the homepage & footer?
+        </h2>
         <ul className="list-term">
           <li className="small-font">
-            <Link href="/contact">
-              <a className="italic">Get in touch</a>
-            </Link>{' '}
-            for having more info about it.
+            <Link href="/sponsor-home">
+              <a className="italic highlight">See how.</a>
+            </Link>
           </li>
         </ul>
       </section>
