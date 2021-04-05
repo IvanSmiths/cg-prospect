@@ -97,6 +97,22 @@ p {
   font-weight: 600;
 }
 
+.btn-cookie {
+  cursor: pointer;
+  padding: 0.6rem 1rem !important;
+  background-color: var(--mainColor) !important;
+  border: none;
+  border-radius: 0.3rem !important;
+  font-size: var(--smallFont) !important;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.content-cookie {
+  background-color: black;
+  color: #0655ab;
+}
+
 .patreon-clr {
   background-color: var(--patreonColor);
 }

@@ -99,8 +99,8 @@ export default function Home() {
             Free 8K Textures <br /> Grab them free.
           </h1>
           <h2 className="small-font">
-            Up to 8K Native PBR Textures, to put in your 3D projects. <br /> No
-            limits, no paywall,{' '}
+            Up to 8K free to download PBR Textures, to put in your 3D renders or
+            games. <br /> No limits, no paywall,{' '}
             <a href="https://www.patreon.com/" target="_blank" rel="noopener">
               <strong className="highlight-patreon">
                 donate if you like to.
@@ -134,11 +134,13 @@ export default function Home() {
               width="60"
               alt="An icon showing maps"
             />
-            <h2 className="btn-font highlight">All the maps that you need!</h2>
+            <h2 className="btn-font highlight">
+              All the textures that you need!
+            </h2>
             <p className="small-font">
-              Up to 8K, the maps from Egida are <br /> achieved wth AI seam
-              removal, AI <br />
-              delighter, and much more advanced <br /> technics of baking.
+              Up to 8K, the maps from CG Prospect <br /> can be used in every
+              software, <br />
+              from Blender, Maya <br /> to Unreal Engine.
             </p>
           </div>
           <div className="card card-patreon">
@@ -151,10 +153,13 @@ export default function Home() {
             />
             <h2 className="btn-font highlight">Supported by you.</h2>
             <p className="small-font">
-              Egida runs thanks to the Patreons,
+              CG Prospect runs thanks to the Patreons,
               <br /> by donations on the <br />
               download, and by advertising on the <br /> Website.
             </p>
+            <a href="www.patreon.com">
+              <button className="btn patreon-clr">Support free content</button>
+            </a>
           </div>
           <div className="card">
             <img
@@ -232,8 +237,8 @@ export default function Home() {
             8K Resolution of <strong className="highlight-main"> POWER </strong>
           </h2>
           <p className="btn-font highlight">
-            CgProspect's textures are made with extreme cure. Free textures
-            never looked so professional.
+            Browse between the most realistic wood, rock, and metal textures
+            that you can find. Free textures never looked so professional.
           </p>
           <Link href="/textures">
             <a>
