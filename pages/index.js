@@ -96,11 +96,11 @@ export default function Home() {
         </div>
         <div>
           <h1 className="large-font">
-            Free 8K Textures <br /> Grab them free.
+            8K PBR Textures, <br /> Grab them free.
           </h1>
           <h2 className="small-font">
-            Up to 8K free to download PBR Textures, to put in your 3D renders or
-            games. <br /> No limits, no paywall,{' '}
+            Up to 8K, seamless textures totally free to download, to put in your
+            3d models, renders, movies or games. <br /> No limits, no paywall,{' '}
             <a href="https://www.patreon.com/" target="_blank" rel="noopener">
               <strong className="highlight-patreon">
                 donate if you like to.
@@ -139,8 +139,8 @@ export default function Home() {
             </h2>
             <p className="small-font">
               The textures from CG Prospect can be used with every 3d model and
-              in every 3d software like Blender, Maya, 3Ds Max, or game engines
-              like Unity or Unreal Engine.
+              in every 3d software like Blender, Autodesk Maya, Maxon Cinema 4D,
+              or with game engines like Unity or Unreal Engine.
             </p>
           </div>
           <div className="card card-patreon">
@@ -153,8 +153,8 @@ export default function Home() {
             />
             <h2 className="btn-font highlight">Supported by you.</h2>
             <p className="small-font">
-              CG Prospect runs thanks to the Patreons Cahoot, by donations on
-              the download, and by advertising on the website.
+              CG Prospect provides free textures thanks to the Patreons Cahoot,
+              by donations on the download, and by advertising on the website.
             </p>
             <a href="www.patreon.com">
               <button className="btn patreon-clr">Support free content</button>
@@ -210,12 +210,12 @@ export default function Home() {
         <div className="patreon-text">
           <h2 className="big-font patreon-h2">Join The Cahoot</h2>
           <p className="small-font">
-            Joining the Patreon community, you'll get the textures before they
+            Joining the Patreon community, you wll get the textures before they
             are uploaded on CG Prospect. Altrough, the quality and the
             resolution is exactly the same. There are{' '}
             <strong className="highlight-patreon">exclusive contents</strong> ,
-            like textures, tutorials, and a beautiful community to talk with or
-            ask for help, and more.
+            like unique textures, 3d objects, tutorials, and a beautiful
+            community to talk with or ask for help.
           </p>
         </div>
         <div>
@@ -253,10 +253,10 @@ export default function Home() {
             <h3 className="big-font">+70 Millions of polygons</h3>
             <p className="small-font">
               <strong className="highlight">Photogrammetry</strong> is one of
-              the best techniques in order to create high quality textures. It
-              can ensure sharp displacement and normal maps, especially with
-              rocks, terrains, wood and other complex shapes. CG Prospect's
-              textures are baked with an extremely high poly 3d model, granting
+              the best workflow in order to create high quality textures. It can
+              ensure sharp displacement and normal maps, especially with rocks,
+              terrains, wood and other complex shapes. CG Prospect's textures
+              are baked with an extremely high poly 3d model, granting
               professional usable textures, that can fits any kind of shaders.
             </p>
             <Link href="/methods/photogrammetry">
@@ -272,11 +272,12 @@ export default function Home() {
           <div>
             <h3 className="big-font">Raw photos with low ISO</h3>
             <p className="small-font">
-              <strong className="highlight">Ai to Material</strong> is a new
-              technique that can mimik the photogrammetry texture creation
-              results. Thanks to this Artificial Intelligence, CG Prospect is
-              able to produce much more textures than it normally could, without
-              compromising quality and professional standards.
+              <strong className="highlight">Ai to Material</strong> is a
+              technique that can mimik the photogrammetry results. Using
+              professional gear on the capturing process, like a full frame
+              camera, polirizers, color checker and so on, CG Prospect is able
+              to use a single photograph in order to provide extremely
+              photorealistic textures.
             </p>
             <Link href="/methods/ai-to-material">
               <a>
@@ -293,10 +294,11 @@ export default function Home() {
           <div>
             <h3 className="big-font">Extreme cure</h3>
             <p className="small-font">
-              <strong className="highlight">Procedural</strong> texture cration
-              is still one of the most creative and professional way to create
-              seamless PBR textures. They are natively exported in 8K, granting
-              awesome detailed maps to put in your 3d models and renders!
+              <strong className="highlight">Procedural</strong> texturing
+              creation is still one of the most creative and professional way to
+              create seamless PBR textures. They are natively exported in 8K,
+              granting awesome detailed maps to put in your 3d models and
+              renders!
             </p>
             <Link href="/methods/procedural">
               <a>
