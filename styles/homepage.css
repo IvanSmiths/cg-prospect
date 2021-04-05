@@ -86,6 +86,7 @@
   text-align: center;
   padding: 2rem;
   background-color: var(--subBackground);
+  width: 25rem;
 }
 
 .card-patreon {

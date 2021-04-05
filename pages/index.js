@@ -37,14 +37,14 @@ export default function Home() {
         />
       </Head>
 
-      <div className="under-development">
+      {/* <div className="under-development">
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
           <span className="small-font">
             is about 3D, textures and cool stuff.
           </span>
         </p>
-      </div>
+      </div> */}
 
       <main className="container-mainpage">
         <div className="container-ico">
@@ -138,9 +138,9 @@ export default function Home() {
               All the textures that you need!
             </h2>
             <p className="small-font">
-              Up to 8K, the maps from CG Prospect <br /> can be used in every
-              software, <br />
-              from Blender, Maya <br /> to Unreal Engine.
+              The textures from CG Prospect can be used with every 3d model and
+              in every 3d software like Blender, Maya, 3Ds Max, or game engines
+              like Unity or Unreal Engine.
             </p>
           </div>
           <div className="card card-patreon">
@@ -153,9 +153,8 @@ export default function Home() {
             />
             <h2 className="btn-font highlight">Supported by you.</h2>
             <p className="small-font">
-              CG Prospect runs thanks to the Patreons,
-              <br /> by donations on the <br />
-              download, and by advertising on the <br /> Website.
+              CG Prospect runs thanks to the Patreons Cahoot, by donations on
+              the download, and by advertising on the website.
             </p>
             <a href="www.patreon.com">
               <button className="btn patreon-clr">Support free content</button>
@@ -171,9 +170,9 @@ export default function Home() {
             />
             <h2 className="btn-font highlight">CCO License</h2>
             <p className="small-font">
-              This means that you can also put these <br /> textures on your
-              commercial <br /> projects, without paying or with any kind <br />
-              of obbligation. See more about.
+              You can put CG Prospect's textures even in your commercial
+              projects like renders or even movies/games totally for free. An
+              attribution will be appreciated, but is not required.
             </p>
           </div>
         </div>
@@ -212,11 +211,11 @@ export default function Home() {
           <h2 className="big-font patreon-h2">Join The Cahoot</h2>
           <p className="small-font">
             Joining the Patreon community, you'll get the textures before they
-            are uploaded on CgProspect. Altrough, the quality and the resolution
-            is exactly the same. There are{' '}
+            are uploaded on CG Prospect. Altrough, the quality and the
+            resolution is exactly the same. There are{' '}
             <strong className="highlight-patreon">exclusive contents</strong> ,
-            like textures, tutorials, alpha channels, behind the scene, and a
-            beautiful community to talk with or ask for help, and more.
+            like textures, tutorials, and a beautiful community to talk with or
+            ask for help, and more.
           </p>
         </div>
         <div>
@@ -237,12 +236,12 @@ export default function Home() {
             8K Resolution of <strong className="highlight-main"> POWER </strong>
           </h2>
           <p className="btn-font highlight">
-            Browse between the most realistic wood, rock, and metal textures
+            Browse between the most photorealistic wood, rock, or metal textures
             that you can find. Free textures never looked so professional.
           </p>
           <Link href="/textures">
             <a>
-              <button className="btn-line">Enhance your projects</button>
+              <button className="btn-line">Enhance your renders</button>
             </a>
           </Link>
         </div>
@@ -251,13 +250,14 @@ export default function Home() {
         <div className="showcase-1 showcase-all">
           <div></div>
           <div>
-            <h3 className="big-font">+70 Millions of poligons</h3>
+            <h3 className="big-font">+70 Millions of polygons</h3>
             <p className="small-font">
               <strong className="highlight">Photogrammetry</strong> is one of
               the best techniques in order to create high quality textures. It
-              can ensure sharp textures, especially with rocks, terrains, wood
-              and other complex shapes. CgProspect's textures are baked with an
-              extremely high poly mesh, granting professional usable textures.
+              can ensure sharp displacement and normal maps, especially with
+              rocks, terrains, wood and other complex shapes. CG Prospect's
+              textures are baked with an extremely high poly 3d model, granting
+              professional usable textures, that can fits any kind of shaders.
             </p>
             <Link href="/methods/photogrammetry">
               <a>
@@ -274,7 +274,7 @@ export default function Home() {
             <p className="small-font">
               <strong className="highlight">Ai to Material</strong> is a new
               technique that can mimik the photogrammetry texture creation
-              results. Thanks to this Artificial Intelligence, CgProspect is
+              results. Thanks to this Artificial Intelligence, CG Prospect is
               able to produce much more textures than it normally could, without
               compromising quality and professional standards.
             </p>
@@ -294,9 +294,9 @@ export default function Home() {
             <h3 className="big-font">Extreme cure</h3>
             <p className="small-font">
               <strong className="highlight">Procedural</strong> texture cration
-              is still one of the most creative and professional way to craete
-              seamless PBR textures. Are natively exported in 8K, granting
-              awesome textures to put in your projects!
+              is still one of the most creative and professional way to create
+              seamless PBR textures. They are natively exported in 8K, granting
+              awesome detailed maps to put in your 3d models and renders!
             </p>
             <Link href="/methods/procedural">
               <a>
@@ -323,11 +323,11 @@ export default function Home() {
         <div className="myself-text">
           <h2 className="big-font">Ivan Smiths here.</h2>
           <p className="small-font">
-            I've built CgProspect on my own, from the br creation of the
-            Textures, to the coding of the Web Site. 3D artist specialized in
-            Photogrammetry and Web Developer, i've built this project for
-            putting myself in game, and for sharing my things with other
-            passionated people.
+            I've built CG Prospect on my own, from the creation of the Textures,
+            to the coding of the web site. 3D artist specialized in
+            Photogrammetry and web developer, i've built this project for
+            putting myself in game, and for sharing my stuff and knowledge with
+            other passionated people.
           </p>
         </div>
       </section>
