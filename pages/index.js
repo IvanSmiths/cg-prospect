@@ -37,14 +37,14 @@ export default function Home() {
         />
       </Head>
 
-      {/* <div className="under-development">
+      <div className="under-development">
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
           <span className="small-font">
             is about 3D, textures and cool stuff.
           </span>
         </p>
-      </div> */}
+      </div>
 
       <main className="container-mainpage">
         <div className="container-ico">
