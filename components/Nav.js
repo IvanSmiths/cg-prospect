@@ -22,7 +22,7 @@ export class Nav extends Component {
         <div className="cnt-link">
           <ul className={toggle ? 'toggle' : ''}>
             <li>
-              <Link href="/textures">
+              <Link href="/free-textures">
                 <a onClick={this.menuToggle} className="small-font">
                   Textures
                 </a>

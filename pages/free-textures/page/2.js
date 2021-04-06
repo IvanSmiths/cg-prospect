@@ -24,7 +24,7 @@ export default function SecondPage({ textures, categories }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://postgres.pages.dev/free-textures/`}
+          content={`https://postgres.pages.dev/free-textures/page/2`}
         />
         <meta property="og:image" content={textures[0].mainImage} />
       </Head>
@@ -75,7 +75,6 @@ export async function getStaticProps() {
     orderBy: {
       id: 'desc',
     },
-    skip: 2,
   });
   const categories = await prisma.category.findMany({
     include: { textures: true },
