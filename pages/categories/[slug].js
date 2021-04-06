@@ -33,7 +33,7 @@ export default function Single({ category }) {
         <h1 className="big-font">Browse: {category.title} textures</h1>
         <section className="container-category" key={category.id}>
           {category.textures.map((texture) => (
-            <Link key={texture.id} href={`/textures/${texture.slug}`}>
+            <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
               <a>
                 <img
                   height="350"

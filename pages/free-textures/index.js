@@ -15,16 +15,16 @@ export default function Home({ textures, categories }) {
         Texture. Consider joining the Cahoot for exclusive content!"
         />
         <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="CgProspect" key="twhandle" />
-        <meta property="og:title" content={`CgProspect | 8K Free Texture`} />
+        <meta name="twitter:creator" content="CG Prospect" key="twhandle" />
+        <meta property="og:title" content={`CG Prospect | 8K Free Texture`} />
         <meta
           property="og:description"
-          content="On CgProspect you can find countess of free to download textures."
+          content="On CG Prospect you can find countess of free to download textures."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://postgres.pages.dev/textures/`}
+          content={`https://postgres.pages.dev/free-textures/`}
         />
         <meta property="og:image" content={textures[0].mainImage} />
       </Head>
@@ -42,7 +42,7 @@ export default function Home({ textures, categories }) {
         </aside>
         <section className="texture-list">
           {textures.map((texture) => (
-            <Link key={texture.id} href={`/textures/${texture.slug}`}>
+            <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
               <a className="small-font">
                 <img
                   loading="lazy"
@@ -59,7 +59,7 @@ export default function Home({ textures, categories }) {
         <div className="page-btn">
           <button
             className="btn-line"
-            onClick={() => router.push(`/textures/page/2`)}
+            onClick={() => router.push(`/free-textures/page/2`)}
           >
             Next
           </button>

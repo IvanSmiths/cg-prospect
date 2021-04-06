@@ -37,14 +37,14 @@ export default function Home() {
         />
       </Head>
 
-      <div className="under-development">
+      {/* <div className="under-development">
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
           <span className="small-font">
             is about 3D, textures and cool stuff.
           </span>
         </p>
-      </div>
+      </div> */}
 
       <main className="container-mainpage">
         <div className="container-ico">
@@ -99,15 +99,16 @@ export default function Home() {
             8K PBR Textures, <br /> Grab them free.
           </h1>
           <h2 className="small-font">
-            Up to 8K, seamless textures totally free to download, to put in your
-            3d models, renders, movies or games. <br /> No limits, no paywall,{' '}
+            Up to 8K, seamless textures totally free to download. Put them in
+            your 3d models, renders, movies or games without any worries. <br />{' '}
+            No limits, no paywall,{' '}
             <a href="https://www.patreon.com/" target="_blank" rel="noopener">
               <strong className="highlight-patreon">
                 donate if you like to.
               </strong>
             </a>
           </h2>
-          <Link href="/textures">
+          <Link href="/free-textures">
             <a>
               <button className="btn main-btn">Browse Textures</button>
             </a>
@@ -138,9 +139,9 @@ export default function Home() {
               All the textures that you need!
             </h2>
             <p className="small-font">
-              The textures from CG Prospect can be used with every 3d model and
-              in every 3d software like Blender, Autodesk Maya, Maxon Cinema 4D,
-              or with game engines like Unity or Unreal Engine.
+              The textures from CG Prospect can be used in every 3d software
+              like Blender, Autodesk Maya, Maxon Cinema 4D, Houdini or with game
+              engines like Unity or Unreal Engine.
             </p>
           </div>
           <div className="card card-patreon">
@@ -189,7 +190,7 @@ export default function Home() {
           <div className="numbers">
             <h4 className="medium-font font-color-inverse">
               46 <br />
-              Total maps
+              Maps in total
             </h4>
           </div>
           <div className="numbers">
@@ -256,8 +257,8 @@ export default function Home() {
               the best workflow in order to create high quality textures. It can
               ensure sharp displacement and normal maps, especially with rocks,
               terrains, wood and other complex shapes. CG Prospect's textures
-              are baked with an extremely high poly 3d model, granting
-              professional usable textures, that can fits any kind of shaders.
+              are baked with extremely high poly 3d models, granting production
+              ready textures, that can fits any kind of shaders.
             </p>
             <Link href="/methods/photogrammetry">
               <a>
@@ -273,10 +274,9 @@ export default function Home() {
             <h3 className="big-font">Raw photos with low ISO</h3>
             <p className="small-font">
               <strong className="highlight">Ai to Material</strong> is a
-              technique that can mimik the photogrammetry results. Using
-              professional gear on the capturing process, like a full frame
-              camera, polirizers, color checker and so on, CG Prospect is able
-              to use a single photograph in order to provide extremely
+              technique that can mimik the photogrammetry results. Using a full
+              frame camera, during the capturing process, CG Prospect is able to
+              use a single photograph in order to provide extremely
               photorealistic textures.
             </p>
             <Link href="/methods/ai-to-material">

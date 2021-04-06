@@ -14,6 +14,19 @@ export default function SecondPage({ textures, categories }) {
           content=" is one of multiple categories of free to download, up to native 8K Pbr
         Texture. Consider joining the Cahoot for exclusive content!"
         />
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="CG Prospect" key="twhandle" />
+        <meta property="og:title" content={`CG Prospect | 8K Free Texture`} />
+        <meta
+          property="og:description"
+          content="On CG Prospect you can find countess of free to download textures."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://postgres.pages.dev/free-textures/`}
+        />
+        <meta property="og:image" content={textures[0].mainImage} />
       </Head>
       <main className="container-list-texture">
         <aside className="category-list">
@@ -29,7 +42,7 @@ export default function SecondPage({ textures, categories }) {
         </aside>
         <section className="texture-list">
           {textures.map((texture) => (
-            <Link key={texture.id} href={`/textures/${texture.slug}`}>
+            <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
               <a className="small-font">
                 <img
                   loading="lazy"
@@ -44,7 +57,10 @@ export default function SecondPage({ textures, categories }) {
           ))}
         </section>
         <div className="page-btn">
-          <button className="btn-line" onClick={() => router.push(`/textures`)}>
+          <button
+            className="btn-line"
+            onClick={() => router.push(`/free-textures`)}
+          >
             Previous
           </button>
         </div>

@@ -34,7 +34,7 @@ const SingleMethod = ({ method }) => {
 
         <section className="container-single-method" key={method.id}>
           {method.textures.map((texture) => (
-            <Link key={texture.id} href={`/textures/${texture.slug}`}>
+            <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
               <a>
                 <img
                   src={texture.mainImage}
