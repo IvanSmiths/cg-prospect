@@ -37,14 +37,14 @@ export default function Home() {
         />
       </Head>
 
-      {/* <div className="under-development">
+      <div className="under-development">
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
           <span className="small-font">
             is about 3D, textures and cool stuff.
           </span>
         </p>
-      </div> */}
+      </div>
 
       <main className="container-mainpage">
         <div className="container-ico">
@@ -152,13 +152,18 @@ export default function Home() {
               width="60"
               alt="An icon showing a hand"
             />
-            <h2 className="btn-font highlight">Supported by you.</h2>
+            <h2 className="btn-font highlight">Sustained by you.</h2>
             <p className="small-font">
               CG Prospect provides free textures thanks to the Patreons Cahoot,
               by donations on the download, and by advertising on the website.
             </p>
             <a href="www.patreon.com">
-              <button className="btn patreon-clr">Support free content</button>
+              <button
+                className="btn-line"
+                style={{ color: 'black', border: 'black 2px solid' }}
+              >
+                Support free content
+              </button>
             </a>
           </div>
           <div className="card">
