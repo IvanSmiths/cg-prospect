@@ -103,7 +103,7 @@
 
 .highlight-bck {
   margin: 0rem 0.2rem;
-  background-color: rgb(39, 39, 39);
+  background-color: var(--subBackground);
   border-radius: 0.4rem;
   padding: 0.2rem 0.3rem;
 }

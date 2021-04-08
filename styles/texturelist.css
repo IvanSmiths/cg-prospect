@@ -1,3 +1,10 @@
+.cnt-texture-list {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
 .container-list-texture {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) 3fr;

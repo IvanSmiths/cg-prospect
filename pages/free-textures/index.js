@@ -40,21 +40,31 @@ export default function Home({ textures, categories }) {
             ))}
           </ul>
         </aside>
-        <section className="texture-list">
-          {textures.map((texture) => (
-            <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
-              <a className="small-font">
-                <img
-                  loading="lazy"
-                  width="330"
-                  height="330"
-                  className="textures-list"
-                  src={texture.mainImage}
-                  alt={`A preview of the texture ${texture.title}`}
-                />
-              </a>
-            </Link>
-          ))}
+        <section className="cnt-texture-list">
+          <p className="small-font">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eum
+            eaque quidem quos similique. Alias non ut est hic? Dolores provident
+            amet similique commodi pariatur quasi sit dicta perspiciatis quia
+            accusantium dolor odit voluptates, ad, exercitationem repudiandae
+            sed, deserunt reprehenderit blanditiis. Labore delectus deserunt
+            quisquam id amet reprehenderit debitis adipisci!
+          </p>
+          <div className="texture-list">
+            {textures.map((texture) => (
+              <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
+                <a className="small-font">
+                  <img
+                    loading="lazy"
+                    width="330"
+                    height="330"
+                    className="textures-list"
+                    src={texture.mainImage}
+                    alt={`A preview of the texture ${texture.title}`}
+                  />
+                </a>
+              </Link>
+            ))}
+          </div>
         </section>
         <div className="page-btn">
           <button

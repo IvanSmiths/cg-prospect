@@ -1,8 +1,8 @@
 :root {
-  --mainBackground: #08070c;
-  --mainBackgroundNav: #08070cbc;
+  --mainBackground: #131313;
+  --subBackground: #272727;
+  --mainBackgroundNav: #131313f3;
   --mainInverseBackground: #e9e9e9;
-  --subBackground: #1f1f22;
   --mainColor: #fee648;
   --mainFontColor: #e4e4e4;
   --mainInverseFontColor: #1f1f1f;
