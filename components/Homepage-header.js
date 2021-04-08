@@ -1,23 +1,6 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 function Header() {
-  let router = useRouter();
-
-  let hero1 =
-    router.locale === 'en'
-      ? '8K PBR Textures,'
-      : router.locale === 'it'
-      ? '8K PBR Textures,'
-      : '';
-
-  let hero2 =
-    router.locale === 'en'
-      ? 'Grab them free.'
-      : router.locale === 'it'
-      ? 'Scaricabili gratis.'
-      : '';
-
   return (
     <header className="container-mainpage">
       <div className="container-ico">
@@ -69,7 +52,7 @@ function Header() {
       </div>
       <div>
         <h1 className="large-font">
-          {hero1} <br /> {hero2}
+          8K PBR Textures, <br /> Grab them free.
         </h1>
         <h2 className="small-font">
           Up to 8K, seamless textures totally free to download. Put them in your
