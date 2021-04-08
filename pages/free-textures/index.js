@@ -36,6 +36,9 @@ export default function Home({ textures, categories }) {
                 <Link href={`/categories/${category.slug}`}>
                   <a>{category.title}</a>
                 </Link>
+                <span className="highlight-bck">
+                  {category._count.textures}
+                </span>
               </li>
             ))}
           </ul>
@@ -87,7 +90,14 @@ export async function getStaticProps() {
     take: 2,
   });
   const categories = await prisma.category.findMany({
-    include: { textures: true },
+    include: {
+      textures: true,
+      _count: {
+        select: {
+          textures: true,
+        },
+      },
+    },
   });
   return {
     props: {
