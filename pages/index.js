@@ -31,6 +31,7 @@ export default function Home() {
           property="og:image"
           content="https://res.cloudinary.com/deino2cjx/image/upload/v1617272982/nextjs_media/untitled_xq9mjb.jpg"
         />
+        <meta property="og:image:type" content="image/jpeg" />
       </Head>
 
       {/* <div className="under-development">

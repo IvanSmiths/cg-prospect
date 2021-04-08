@@ -28,6 +28,13 @@ export default function Categories({ categories }) {
       </Head>
       <main className="categories-page">
         <h1 className="big-font">Browse: All categories</h1>
+        <p className="small-font">
+          You're currently browsing all the categories. If you would like to
+          filter the textures by the creation method, go to the {''}
+          <Link href="/methods">
+            <a className="italic">methods page.</a>
+          </Link>
+        </p>
         <section className="container-category">
           {categories.map((category) => (
             <Link href={`/categories/${category.slug}`} key={category.id}>

@@ -4,7 +4,8 @@ function Contact() {
       <div className="form-cnt">
         <h1 className="big-font">Don't worry, send a message!</h1>
         <p className="small-font">
-          Get in touch, send a mail to{' '}
+          No messages are useless messages. Feel free to get in touch for
+          whatever reason! Grab the e-mail{' '}
           <a href="mailto:smithsmusic93@gmail.com" className="highlight-main">
             smithsmusic93@gmail.com
           </a>{' '}
@@ -20,23 +21,28 @@ function Contact() {
             name="_next"
             value="http://localhost:3000/message"
           />
-          <input type="hidden" name="_subject" value="EGIDA | Info" />
+          <input type="hidden" name="_subject" value="CG Prospect | Info" />
           <label htmlFor="name" className="small-font">
             Name
           </label>
-          <input type="text" name="name" required />
+          <input type="text" name="name" minLength="3" required />
           <label htmlFor="object" className="small-font">
             Object
           </label>
-          <input type="text" name="object" required />
+          <input type="text" name="object" minLength="4" required />
           <label htmlFor="email" className="small-font">
             Email
           </label>
-          <input type="email" name="email" required />
+          <input type="email" name="email" minLength="6" required />
           <label className="small-font" htmlFor="message">
             Message
           </label>
-          <textarea name="message" cols="30" rows="10"></textarea>
+          <textarea
+            name="message"
+            minLength="10"
+            cols="30"
+            rows="10"
+          ></textarea>
           <button className="btn" type="submit">
             Send Email
           </button>

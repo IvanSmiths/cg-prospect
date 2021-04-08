@@ -21,6 +21,10 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta content="IE=edge" http-equiv="X-UA-Compatible" />
         <meta content="#fee648" name="theme-color" />
+        <meta name="apple-mobile-web-app-title" content="CG Prospect" />
+        <meta name="application-name" content="CG Prospect" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-navbutton-color" content="#fee648" />
       </Head>
       <Nav />
       <Component {...pageProps} />

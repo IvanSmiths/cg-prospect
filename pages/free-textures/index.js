@@ -45,12 +45,11 @@ export default function Home({ textures, categories }) {
         </aside>
         <section className="cnt-texture-list">
           <p className="small-font">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eum
-            eaque quidem quos similique. Alias non ut est hic? Dolores provident
-            amet similique commodi pariatur quasi sit dicta perspiciatis quia
-            accusantium dolor odit voluptates, ad, exercitationem repudiandae
-            sed, deserunt reprehenderit blanditiis. Labore delectus deserunt
-            quisquam id amet reprehenderit debitis adipisci!
+            You're currently browsing all the textures. If you would like to
+            filter the textures by the creation method, go to the {''}
+            <Link href="/methods">
+              <a className="italic">methods page.</a>
+            </Link>
           </p>
           <div className="texture-list">
             {textures.map((texture) => (

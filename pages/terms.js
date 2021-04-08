@@ -6,8 +6,8 @@ const Terms = () => {
         <h2 className="medium-font">Privacy - Summary</h2>
         <ul className="list-term">
           <li className="small-font">
-            CG Proespect uses third party services that sets cookies in order to
-            better analize the traffic in the website.
+            CG Prospect uses third party services that sets cookies in order to
+            analize the traffic of the website.
           </li>
         </ul>
         <h3 className="btn-font highlight">Cookie Policy</h3>

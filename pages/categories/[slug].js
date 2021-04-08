@@ -31,6 +31,13 @@ export default function Single({ category }) {
       </Head>
       <main className="category-page-single">
         <h1 className="big-font">Browse: {category.title} textures</h1>
+        <p className="small-font">
+          You're currently browsing {category.title} textures. If you would like
+          to filter the textures by the creation method, go to the {''}
+          <Link href="/methods">
+            <a className="italic">methods page.</a>
+          </Link>
+        </p>
         <section className="container-category" key={category.id}>
           {category.textures.map((texture) => (
             <Link key={texture.id} href={`/free-textures/${texture.slug}`}>

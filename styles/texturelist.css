@@ -11,6 +11,10 @@
   grid-template-rows: 7rem min-content;
 }
 
+.cnt-texture-list p {
+  margin-bottom: 1rem;
+}
+
 .category-list {
   margin-top: 7rem;
   grid-row: 2 / 3;

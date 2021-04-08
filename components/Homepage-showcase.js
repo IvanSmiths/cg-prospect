@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 function Showcase() {
   return (
-    <main className="showcase">
-      <div className="showcase-1 showcase-all">
+    <main className="texture-example">
+      <div className="texture-example-1 texture-example-all">
         <div></div>
         <div>
           <h3 className="big-font">+70 Millions of polygons</h3>
@@ -17,14 +17,14 @@ function Showcase() {
           </p>
           <Link href="/methods/photogrammetry">
             <a>
-              <button className="btn-line btn-showcase">
+              <button className="btn-line btn-texture-example">
                 Photogrammetry Textures
               </button>
             </a>
           </Link>
         </div>
       </div>
-      <div className="showcase-2 showcase-all">
+      <div className="texture-example-2 texture-example-all">
         <div>
           <h3 className="big-font">Raw photos with low ISO</h3>
           <p className="small-font">
@@ -36,7 +36,7 @@ function Showcase() {
           </p>
           <Link href="/methods/ai-to-material">
             <a>
-              <button className="btn-line btn-showcase">
+              <button className="btn-line btn-texture-example">
                 Ai to Material Textures
               </button>
             </a>
@@ -44,7 +44,7 @@ function Showcase() {
         </div>
         <div></div>
       </div>
-      <div className="showcase-3 showcase-all">
+      <div className="texture-example-3 texture-example-all">
         <div></div>
         <div>
           <h3 className="big-font">Extreme cure</h3>
@@ -56,7 +56,7 @@ function Showcase() {
           </p>
           <Link href="/methods/procedural">
             <a>
-              <button className="btn-line btn-showcase">
+              <button className="btn-line btn-texture-example">
                 Procedural Textures
               </button>
             </a>
