@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="application-name" content="CG Prospect" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="msapplication-navbutton-color" content="#fee648" />
+        <meta property="og:image:type" content="image/jpeg" />
       </Head>
       <Nav />
       <Component {...pageProps} />

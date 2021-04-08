@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 
 function Header() {
   let router = useRouter();
-  const { locales, locale } = useRouter();
 
   let hero1 =
     router.locale === 'en'
