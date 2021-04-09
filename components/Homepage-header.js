@@ -1,6 +1,8 @@
+import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
 
 function Header() {
+  let { t } = useTranslation();
   return (
     <header className="container-mainpage">
       <div className="container-ico">
@@ -52,7 +54,7 @@ function Header() {
       </div>
       <div>
         <h1 className="large-font">
-          8K PBR Textures, <br /> Grab them free.
+          {t('home:title')} <br /> Grab them free.
         </h1>
         <h2 className="small-font">
           Up to 8K, seamless textures totally free to download. Put them in your
