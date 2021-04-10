@@ -1,75 +1,80 @@
 import Link from 'next/link';
-import { Component } from 'react';
+import React, { useState } from 'react';
 
-export class Nav extends Component {
-  state = {
-    toggle: false,
-  };
-
-  menuToggle = () => {
-    this.setState({ toggle: !this.state.toggle });
-  };
-
-  render() {
-    const { toggle } = this.state;
-    return (
-      <nav className="nav">
-        <div className="logo-cnt">
-          <Link href="/">
-            <a className="small-font">Logo</a>
-          </Link>
-        </div>
-        <div className="cnt-link">
-          <ul className={toggle ? 'toggle' : ''}>
-            <li>
-              <Link href="/free-textures">
-                <a onClick={this.menuToggle} className="small-font">
-                  Textures
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/categories">
-                <a onClick={this.menuToggle} className="small-font">
-                  Categories
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/methods">
-                <a onClick={this.menuToggle} className="small-font">
-                  Methods
-                </a>
-              </Link>
-            </li>
-            <li className="small-font">
+function Nav() {
+  const [isToggled, setIsToggled] = useState(false);
+  return (
+    <nav className="nav">
+      <div className="logo-cnt">
+        <Link href="/">
+          <a className="small-font">Logo</a>
+        </Link>
+      </div>
+      <div className="cnt-link">
+        <ul className={isToggled ? 'toggle' : ''}>
+          <li>
+            <Link href="/free-textures">
               <a
-                onClick={this.menuToggle}
-                href="https://www.patreon.com/"
-                target="_blank"
-                rel="noopener"
+                onClick={() => setIsToggled(!isToggled)}
+                className="small-font"
               >
-                Cahoot
+                Textures
               </a>
-            </li>
-            <li>
-              <Link href="/contact">
-                <a onClick={this.menuToggle} className="small-font">
-                  Contact
-                </a>
-              </Link>
-            </li>
-            <li onClick={this.menuToggle} className="close">
-              X
-            </li>
-          </ul>
-          <div onClick={this.menuToggle} className="menu small-text">
-            |||
-          </div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/categories">
+              <a
+                onClick={() => setIsToggled(!isToggled)}
+                className="small-font"
+              >
+                Categories
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/methods">
+              <a
+                onClick={() => setIsToggled(!isToggled)}
+                className="small-font"
+              >
+                Methods
+              </a>
+            </Link>
+          </li>
+          <li className="small-font">
+            <a
+              onClick={() => setIsToggled(!isToggled)}
+              href="https://www.patreon.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              Cahoot
+            </a>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a
+                onClick={() => setIsToggled(!isToggled)}
+                className="small-font"
+              >
+                Contact
+              </a>
+            </Link>
+          </li>
+          <li onClick={() => setIsToggled(!isToggled)} className="close">
+            X
+          </li>
+        </ul>
+        <div
+          onClick={() => setIsToggled(!isToggled)}
+          className="menu small-text"
+        >
+          |||
         </div>
-      </nav>
-    );
-  }
+      </div>
+    </nav>
+  );
 }
 
 export default Nav;
