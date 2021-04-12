@@ -6,6 +6,7 @@ import Myself from '../components/Homepage-myself';
 import Patreon from '../components/Homepage-patreon';
 import Head from 'next/head';
 import Video from '../components/Homepage-video';
+import Carousel from '../components/Homepage-carousel';
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
       <Video />
       <Showcase />
       <CC0 />
+      <Carousel />
       <Myself />
     </>
   );

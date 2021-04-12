@@ -194,6 +194,7 @@ nav li > a {
 @import './terms.css';
 @import './progressbar.css';
 @import './contact.css';
+@import './carousel.css';
 
 a {
   color: inherit;
