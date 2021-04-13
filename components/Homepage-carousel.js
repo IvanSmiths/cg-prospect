@@ -67,6 +67,7 @@ const ImageSlider = () => {
               <div className={index === current ? 'slide active' : 'slide'}>
                 {index === current && (
                   <img
+                    loading="lazy"
                     height="auto"
                     width="800"
                     src={slide.image}
