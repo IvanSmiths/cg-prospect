@@ -15,13 +15,6 @@
   grid-row: 2 / 3;
 }
 
-/* .container-background {
-  width: fit-content;
-  padding: 1.2rem;
-  border-radius: 1rem;
-  background-color: rgb(34, 34, 34);
-} */
-
 .container-texture-image:nth-child(1) {
   display: block;
   text-align: center;
@@ -74,7 +67,7 @@
 }
 
 .container-links li {
-  margin: 0.4rem 0rem;
+  margin: 0.5rem 0rem;
   cursor: pointer;
 }
 
@@ -128,7 +121,7 @@
 
 .sponsor-texture {
   line-height: 2.5rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .h2-suggest {
@@ -143,15 +136,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   gap: 3rem;
-}
-
-.tags {
-  margin-top: 2rem;
-}
-
-.ad {
-  justify-content: center;
-  align-items: center;
 }
 
 .social-share-cnt {

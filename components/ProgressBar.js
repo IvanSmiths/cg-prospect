@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaArrowAltCircleDown } from 'react-icons/fa';
 
 const Progress = ({ done }) => {
   const [style, setStyle] = useState({});
 
-  setTimeout(() => {
+  useEffect(() => {
     const newStyle = {
       width: `${done}%`,
     };
 
     setStyle(newStyle);
-  }, 700);
+  }, []);
 
   return (
     <div className="cnt-progress">
@@ -27,10 +27,4 @@ const Progress = ({ done }) => {
   );
 };
 
-const ProgressBar = () => (
-  <>
-    <Progress done="16" />
-  </>
-);
-
-export default ProgressBar;
+export default Progress;

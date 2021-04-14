@@ -7,26 +7,15 @@ const ImageSlider = () => {
       link: 'https://www.google.com',
       image:
         'https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      alt: 'A render with Cg Prospect textures',
+      author: 'Ivan Smiths',
     },
     {
       link: 'https://www.amazon.com',
       image:
         'https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80',
-    },
-    {
-      link: 'https://www.google.com',
-      image:
-        'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-    },
-    {
-      link: 'https://www.google.com',
-      image:
-        'https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80',
-    },
-    {
-      link: 'https://www.google.com',
-      image:
-        'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+      alt: 'A render with Cg Prospect textures',
+      author: ' Cg Prospect',
     },
   ];
   const [current, setCurrent] = useState(0);
@@ -49,8 +38,7 @@ const ImageSlider = () => {
       <h3 className="big-font italic highlight-main">#CGPROSPECT</h3>
       <p className="small-font">
         If you are using CG Prospect's textures, use the hashtag #cgprospect on
-        Instagram! You'll receive a message, asking if you want your render to
-        be here.
+        Instagram! Get the chance of having your render here for a month.
       </p>
       <div className="slider">
         <FaArrowAltCircleLeft
@@ -64,18 +52,21 @@ const ImageSlider = () => {
         {SliderData.map((slide, index) => {
           return (
             <a key={index} href={slide.link} target="_blank" rel="noopener">
-              <div className={index === current ? 'slide active' : 'slide'}>
-                {index === current && (
+              {index === current && (
+                <div className={index === current ? 'slide active' : 'slide'}>
+                  <h3 className="small-font highlight render-instagram">
+                    Render by: {slide.author}
+                  </h3>
                   <img
                     loading="lazy"
-                    height="auto"
+                    height="400"
                     width="800"
                     src={slide.image}
-                    alt="travel image"
+                    alt={slide.alt}
                     className="image"
                   />
-                )}
-              </div>
+                </div>
+              )}
             </a>
           );
         })}

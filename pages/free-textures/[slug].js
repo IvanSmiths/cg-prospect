@@ -19,7 +19,6 @@ import {
 } from 'react-share';
 
 export default function SingleTexture({ texture, textures }) {
-  console.log(texture);
   return (
     <>
       <Head>
@@ -76,6 +75,7 @@ export default function SingleTexture({ texture, textures }) {
             <br />
             <a href={texture.sponsorLink} target="_blank" rel="noopener">
               <img
+                loading="lazy"
                 className="sponsor-img"
                 loading="lazy"
                 width="550"
@@ -119,7 +119,7 @@ export default function SingleTexture({ texture, textures }) {
                     loading="lazy"
                     className="ico-list"
                     src="/category.svg"
-                    alt="Icon of a the category list"
+                    alt="Icon of the category"
                     height="23"
                     width="23"
                   />
@@ -138,7 +138,7 @@ export default function SingleTexture({ texture, textures }) {
                     loading="lazy"
                     className="ico-list"
                     src="/method.svg"
-                    alt="Icon of a the method list"
+                    alt="Icon of the method"
                     height="23"
                     width="23"
                   />
@@ -155,7 +155,7 @@ export default function SingleTexture({ texture, textures }) {
                     loading="lazy"
                     className="ico-list"
                     src="/scale.svg"
-                    alt="Icon of a the scale list"
+                    alt="Icon of the scale"
                     height="23"
                     width="23"
                   />
@@ -167,7 +167,7 @@ export default function SingleTexture({ texture, textures }) {
                     loading="lazy"
                     className="ico-list"
                     src="/location.svg"
-                    alt="Icon of a the location list"
+                    alt="Icon of the location"
                     height="23"
                     width="23"
                   />
@@ -179,7 +179,7 @@ export default function SingleTexture({ texture, textures }) {
                     loading="lazy"
                     className="ico-list"
                     src="/published.svg"
-                    alt="Icon of a the date of publish list"
+                    alt="Icon of the date"
                     height="23"
                     width="23"
                   />
@@ -368,6 +368,7 @@ export async function getStaticProps({ params }) {
       slug: String(params.slug),
     },
   });
+
   const textures = await prisma.texture.findMany({
     include: { category: true },
     orderBy: {

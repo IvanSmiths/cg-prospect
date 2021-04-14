@@ -109,6 +109,16 @@
     transform: translateY(-3rem);
   }
 
+  .container-links li {
+    margin: 1.2rem 0rem;
+    cursor: pointer;
+  }
+
+  .social-share-cnt {
+    display: flex;
+    justify-content: center;
+  }
+
   /*------- MYSELF BEGIN  ------- */
 
   .myself {
