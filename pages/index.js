@@ -35,14 +35,14 @@ export default function Home() {
         <meta property="og:image:type" content="image/jpeg" />
       </Head>
 
-      <div className="under-development">
+      {/* <div className="under-development">
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
           <span className="small-font">
             is about 3D, textures and cool stuff.
           </span>
         </p>
-      </div>
+      </div> */}
 
       <Header />
       <Stats />

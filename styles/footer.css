@@ -1,21 +1,29 @@
 .footer {
   padding: 4rem 0rem;
+  background-color: var(--mainInverseBackground);
 }
 
 .footer-links {
+  padding: 0rem 0rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 4.5rem;
 }
 .footer-links li {
   margin-top: 0.8rem;
+  color: black;
 }
 
 .footer-label {
   margin-bottom: 1rem;
+  color: black;
+}
+
+.footer label {
+  color: black;
 }
 
 .footer-ico {
@@ -29,5 +37,32 @@
 }
 
 .footer p {
+  color: black;
   text-align: center;
+}
+
+.footer-first-cnt {
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer-first-cnt > *:nth-child(1) {
+  flex: 1 1 60%;
+}
+
+.footer-first-cnt > *:nth-child(2) {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.form-newsletter {
+  width: 60vh;
+}
+
+.form-news-cnt p {
+  text-align: left;
 }
