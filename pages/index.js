@@ -39,7 +39,7 @@ export default function Home() {
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
           <span className="small-font">
-            is about 3D, textures and cool stuff.
+            is about 3D, textures and cool stuff!
           </span>
         </p>
       </div>
