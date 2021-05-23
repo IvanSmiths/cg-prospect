@@ -1,3 +1,4 @@
+import data from '../lib/data.json';
 import CC0 from '../components/Homepage-cc0';
 import Header from '../components/Homepage-header';
 import Stats from '../components/Homepage-stats';
@@ -6,7 +7,7 @@ import Myself from '../components/Homepage-myself';
 import Patreon from '../components/Homepage-patreon';
 import Head from 'next/head';
 import Video from '../components/Homepage-video';
-import Carousel from '../components/Homepage-carousel';
+import VerticalCarousel from '../components/Homepage-verticalCarousel';
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
         />
         <meta property="og:image:type" content="image/jpeg" />
       </Head>
-
+      {/* 
       <div className="under-development">
         <p className="big-font">
           THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
@@ -42,15 +43,15 @@ export default function Home() {
             is about 3D, textures and cool stuff!
           </span>
         </p>
-      </div>
+      </div> */}
 
       <Header />
       <Stats />
       <Patreon />
       <Video />
       <Showcase />
+      <VerticalCarousel data={data.slides} leadingText={data.leadingText} />
       <CC0 />
-      <Carousel />
       <Myself />
     </>
   );

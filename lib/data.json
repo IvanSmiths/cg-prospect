@@ -1,0 +1,45 @@
+{
+  "leadingText": "Render by: ",
+  "slides": [
+    {
+      "introline": "dogs",
+      "icon": "https://i.ibb.co/b5t6pn5/icon.jpg",
+      "link": "https://www.google.com",
+      "id": "dogs",
+      "content": {
+        "image": "https://via.placeholder.com/400x200?text=Dogs",
+        "copy": "Dog ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
+      }
+    },
+    {
+      "introline": "elephants",
+      "icon": "https://i.ibb.co/b5t6pn5/icon.jpg",
+      "link": "https://www.google.com",
+      "id": "elephants",
+      "content": {
+        "image": "https://via.placeholder.com/400x200?text=Elephants",
+        "copy": "Elephant ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
+      }
+    },
+    {
+      "introline": "bears",
+      "icon": "https://i.ibb.co/b5t6pn5/icon.jpg",
+      "link": "https://www.google.com",
+      "id": "bears",
+      "content": {
+        "image": "https://via.placeholder.com/400x200?text=Bears",
+        "copy": "Bears ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
+      }
+    },
+    {
+      "introline": "lizards",
+      "icon": "https://i.ibb.co/b5t6pn5/icon.jpg",
+      "link": "https://www.google.com",
+      "id": "lizards",
+      "content": {
+        "image": "https://via.placeholder.com/400x200?text=Lizards",
+        "copy": "Lizards ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
+      }
+    }
+  ]
+}
