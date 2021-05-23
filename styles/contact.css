@@ -1,7 +1,9 @@
 .contact-cnt {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  min-height: 55rem;
+  height: 130vh;
 }
 
 label {

@@ -66,6 +66,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
             onClick={() => handleClick('prev')}
           >
             <img
+              loading="lazy"
               src="/chevronUp.svg"
               alt="arrow up"
               height="20px"
@@ -95,6 +96,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
                     >
                       {item.introline}
                       <img
+                        loading="lazy"
                         className="artist-image"
                         height="40px"
                         width="40px"
@@ -114,6 +116,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
             onClick={() => handleClick('next')}
           >
             <img
+              loading="lazy"
               src="/chevronDown.svg"
               alt="arrow down"
               height="20px"
@@ -123,6 +126,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
         </div>
         <div className="content">
           <img
+            loading="lazy"
             width="200px"
             height="200px"
             className="carousel-img"
