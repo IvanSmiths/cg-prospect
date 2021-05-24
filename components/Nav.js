@@ -7,7 +7,15 @@ function Nav() {
     <nav className="nav">
       <div className="logo-cnt">
         <Link href="/">
-          <a className="small-font">Logo</a>
+          <a>
+            <img
+              className="logo"
+              src="/logo-main.png"
+              height="26"
+              width="105"
+              alt="the main logo of cg prospect"
+            />
+          </a>
         </Link>
       </div>
       <div className="cnt-link">
