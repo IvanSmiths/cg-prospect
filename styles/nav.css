@@ -1,6 +1,6 @@
 .navbar {
   position: fixed;
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: var(--mainBackgroundNav);
   height: fit-content;
   width: 100%;
   display: flex;
@@ -9,6 +9,15 @@
   font-size: 1.2rem;
   color: #fff;
   z-index: 9;
+}
+
+.arrow-navbar {
+  margin-top: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+nav li {
+  margin-right: 1rem;
 }
 
 .navbar-logo {
@@ -49,7 +58,7 @@
 }
 
 .nav-links:hover {
-  background-color: #1888ff;
+  background-color: var(--patreonColor);
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
@@ -75,13 +84,15 @@
 }
 
 .dropdown-menu li {
-  background: #1888ff;
+  background: var(--subBackground);
   padding: 0.5rem;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .dropdown-menu li:hover {
-  background: #5cabff;
+  background: var(--mainColor);
+  color: black;
 }
 
 .dropdown-menu.clicked {
@@ -108,6 +119,10 @@
     position: relative;
   }
 
+  .arrow-navbar {
+    display: none;
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -126,7 +141,7 @@
 
   .test {
     z-index: 88;
-    color: aqua;
+    color: white;
   }
 
   .nav-menu.active {

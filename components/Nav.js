@@ -48,7 +48,7 @@ function Navbar() {
       <nav className="navbar">
         <Link href="/">
           <a>
-            <img src="/logo.svg" height="30px" width="auto" alt="main logo" />
+            <img src="/logo.svg" height="30px" width="160px" alt="main logo" />
           </a>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
@@ -58,15 +58,16 @@ function Navbar() {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li
-            className="nav-item"
+            className="nav-item small-font"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
             <img
+              className="arrow-navbar"
               loading="lazy"
               src="/down-arrow-white.svg"
               height="13px"
-              width="auto"
+              width="13px"
               alt="arrow down"
             />
             <Link
@@ -78,7 +79,7 @@ function Navbar() {
             </Link>
             {dropdown && <Dropdown />}
           </li>
-          <li className="nav-item">
+          <li className="nav-item small-font">
             <Link
               href="/products"
               className="nav-links"
@@ -88,15 +89,16 @@ function Navbar() {
             </Link>
           </li>
           <li
-            className="nav-item"
+            className="nav-item small-font"
             onMouseEnter={onMouseEnter2}
             onMouseLeave={onMouseLeave2}
           >
             <img
+              className="arrow-navbar"
               loading="lazy"
               src="/down-arrow-white.svg"
               height="13px"
-              width="auto"
+              width="13px"
               alt="arrow down"
             />
             <Link
@@ -108,12 +110,12 @@ function Navbar() {
             </Link>
             {dropdown2 && <Dropdown2 />}
           </li>
-          <li onClick={closeMobileMenu} className="nav-item">
+          <li onClick={closeMobileMenu} className="nav-item small-font">
             <a href="https://www.patreon.com" className="nav-links">
               Cahoot
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item small-font">
             <Link
               href="/contact-us"
               className="nav-links"
