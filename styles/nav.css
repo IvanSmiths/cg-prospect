@@ -1,82 +1,205 @@
-.nav {
-  z-index: 3;
+.navbar {
   position: fixed;
-  width: 100%;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   height: fit-content;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: var(--mainBackgroundNav);
-  backdrop-filter: blur(4px);
+  font-size: 1.2rem;
+  color: #fff;
+  z-index: 9;
 }
 
-.cnt-link ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.logo-cnt {
-  margin: 1rem 6rem;
-}
-
-.cnt-link li {
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
   cursor: pointer;
-  margin: 0rem 2rem;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
-nav .menu,
-nav .close {
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background-color: #1888ff;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: rgb(223, 26, 26);
+}
+
+.nav-links-mobile {
   display: none;
 }
 
-nav .close {
-  position: absolute;
-  top: 3px;
-  right: -30px;
+.menu-icon {
+  display: none;
 }
 
-@media (max-width: 750px) {
-  .logo-cnt a {
-    color: rgb(253, 253, 253);
-    margin: 0rem 1rem;
+.dropdown-menu {
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  text-align: start;
+}
+
+.dropdown-menu li {
+  background: #1888ff;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #5cabff;
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  .fa-caret-down {
+    display: none;
   }
 }
 
-@media (max-width: 700px) {
-  nav ul {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    background-color: rgba(0, 0, 0, 0.767);
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    z-index: 999;
-    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #24222298;
+    z-index: 5;
   }
 
-  nav ul.toggle {
+  .test {
+    z-index: 88;
+    color: aqua;
+  }
+
+  .nav-menu.active {
+    left: -40%;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item {
+    margin-left: 50%;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #1888ff;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
     left: 0;
+    transform: translate(25%, 50%);
   }
 
-  .cnt-link ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  nav .menu,
-  nav .close {
-    letter-spacing: 0.3rem;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    display: inline;
-    padding: 1rem 1.5rem;
+  .menu-icon {
     display: block;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #1888ff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #1888ff;
+    transition: 250ms;
+  }
+
+  button {
+    display: none;
+  }
+  span {
+    color: aliceblue;
+    z-index: 19;
+    display: block;
+    opacity: 1;
   }
 }

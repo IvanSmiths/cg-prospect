@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { FaArrowAltCircleDown } from 'react-icons/fa';
 
 const Progress = ({ done }) => {
   const [style, setStyle] = useState({});
@@ -16,7 +15,13 @@ const Progress = ({ done }) => {
     <div className="cnt-progress">
       <h3 className="small-font highlight">
         Next Goal: 20$ (5 weekly textures){' '}
-        <FaArrowAltCircleDown className="arrow-progress" />
+        <img
+          loading="lazy"
+          src="/down-arrow.svg"
+          height="32px"
+          width="32px"
+          alt="arrow down"
+        />
       </h3>
       <div className="progress">
         <div className="progress-done" style={style}>

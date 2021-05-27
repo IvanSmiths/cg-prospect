@@ -169,7 +169,7 @@ nav li > a {
   background: #fee648;
 
   position: fixed;
-  z-index: 5;
+  z-index: 15;
   top: 0;
   left: 0;
 

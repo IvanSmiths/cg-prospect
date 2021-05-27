@@ -67,10 +67,10 @@ const VerticalCarousel = ({ data, leadingText }) => {
           >
             <img
               loading="lazy"
-              src="/chevronUp.svg"
+              src="/up-arrow.svg"
+              height="32px"
+              width="32px"
               alt="arrow up"
-              height="20px"
-              width="20px"
             />
           </button>
 
@@ -117,10 +117,10 @@ const VerticalCarousel = ({ data, leadingText }) => {
           >
             <img
               loading="lazy"
-              src="/chevronDown.svg"
+              src="/down-arrow.svg"
+              height="32px"
+              width="32px"
               alt="arrow down"
-              height="20px"
-              width="20px"
             />
           </button>
         </div>
