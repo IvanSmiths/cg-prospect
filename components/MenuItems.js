@@ -13,23 +13,18 @@ export const MenuItems = [
 
 export const MenuItems2 = [
   {
-    title: 'Sponsor page',
-    path: '/wj',
+    title: 'Sponsor on page',
+    path: '/sponsor-texture',
     cName: 'dropdown-link',
   },
   {
-    title: 'Bla',
-    path: '/consulting',
+    title: 'Logo sponsor',
+    path: '/sponsor-home',
     cName: 'dropdown-link',
   },
   {
-    title: 'Bla',
-    path: '/design',
-    cName: 'dropdown-link',
-  },
-  {
-    title: 'Blat',
-    path: '/development',
+    title: 'Merchandise',
+    path: '/merchandise',
     cName: 'dropdown-link',
   },
 ];

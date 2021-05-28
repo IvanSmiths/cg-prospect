@@ -117,7 +117,7 @@ function Navbar() {
           </li>
           <li className="nav-item small-font">
             <Link
-              href="/contact-us"
+              href="/contact"
               className="nav-links"
               onClick={closeMobileMenu}
             >

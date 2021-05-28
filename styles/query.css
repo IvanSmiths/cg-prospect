@@ -1,4 +1,8 @@
 @media screen and (max-width: 1200px) {
+  p {
+    line-height: 1.5rem;
+  }
+
   .main-image {
     width: 40vw;
     height: 40vw;
@@ -20,6 +24,10 @@
 }
 
 @media screen and (max-width: 950px) {
+  p {
+    line-height: 1.3rem;
+  }
+
   .myself-text p {
     margin: 2rem 0 1rem 0;
     padding: 0rem 1rem 0rem 0rem;
@@ -83,6 +91,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  p {
+    line-height: 1.5rem;
+  }
+
   .container-ico {
     display: none;
   }

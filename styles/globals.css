@@ -6,8 +6,8 @@
 
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Geneva, Verdana,
+    sans-serif, 'Segoe UI';
   background-color: var(--mainBackground);
 }
 
@@ -35,6 +35,7 @@ p {
 }
 
 .small-font {
+  line-height: 1.5rem;
   font-size: var(--smallFont);
   font-weight: 400;
 }
@@ -140,8 +141,6 @@ p {
 }
 
 .btn-line:hover {
-  border-radius: 1rem;
-  transform: scale(1.03);
   background-color: white;
   color: black;
 }

@@ -148,7 +148,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <p className="tiny-font">Copyright &copy; 2021 Egida</p>
+      <p className="tiny-font">Copyright &copy; 2021 CG Prospect</p>
     </footer>
   );
 };

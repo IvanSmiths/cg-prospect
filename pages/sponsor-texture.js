@@ -46,7 +46,7 @@ const SponsorTexture = () => {
             </Link>
           </li>
         </ul>
-        <h2 className="medium-font">Egida reserves the right to:</h2>
+        <h2 className="medium-font">CG Prospect reserves the right to:</h2>
         <ul className="list-term">
           <li className="small-font">
             Refuse to put the sponsor, or completely remove it once putted (if
