@@ -16,10 +16,8 @@ function Showcase() {
             textures, that can fits any kind of shaders.
           </p>
           <Link href="/methods/photogrammetry">
-            <a>
-              <button className="btn-line btn-texture-example">
-                Photogrammetry Textures
-              </button>
+            <a className="btn-line btn-texture-example">
+              Photogrammetry Textures
             </a>
           </Link>
         </div>
@@ -35,10 +33,8 @@ function Showcase() {
             textures.
           </p>
           <Link href="/methods/ai-to-material">
-            <a>
-              <button className="btn-line btn-texture-example">
-                Ai to Material Textures
-              </button>
+            <a className="btn-line btn-texture-example">
+              Ai to Material Textures
             </a>
           </Link>
         </div>
@@ -55,11 +51,7 @@ function Showcase() {
             awesome detailed maps to put in your 3d models and renders!
           </p>
           <Link href="/methods/procedural">
-            <a>
-              <button className="btn-line btn-texture-example">
-                Procedural Textures
-              </button>
-            </a>
+            <a className="btn-line btn-texture-example">Procedural Textures</a>
           </Link>
         </div>
       </div>

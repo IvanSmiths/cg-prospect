@@ -88,6 +88,8 @@ p {
 }
 
 .btn {
+  display: block;
+  width: fit-content;
   cursor: pointer;
   padding: 1.1rem 1.4rem;
   background-color: var(--mainColor);
@@ -128,6 +130,8 @@ p {
 }
 
 .btn-line {
+  display: block;
+  width: fit-content;
   cursor: pointer;
   width: fit-content;
   padding: 1.1rem 1.4rem;
@@ -162,6 +166,10 @@ button:active {
 nav li > a {
   display: block;
   cursor: pointer;
+}
+
+.advertising a {
+  margin: 2rem;
 }
 
 #nprogress .bar {

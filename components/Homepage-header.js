@@ -65,9 +65,7 @@ function Header() {
           </a>
         </h2>
         <Link href="/free-textures">
-          <a>
-            <button className="btn main-btn">Browse Textures</button>
-          </a>
+          <a className="btn main-btn">Browse Textures</a>
         </Link>
       </div>
       <div>

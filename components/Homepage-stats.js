@@ -32,13 +32,14 @@ function Stats() {
             CG Prospect provides free textures thanks to the Patreons Cahoot, by
             donations on the download, and by advertising on the website.
           </p>
-          <a href="www.patreon.com">
-            <button
-              className="btn-line"
-              style={{ color: 'black', border: 'black 2px solid' }}
-            >
-              Support free content
-            </button>
+          <a
+            target="_blank"
+            rel="noopener"
+            className="btn-line"
+            style={{ color: 'black', border: 'black 2px solid' }}
+            href="https://www.patreon.com"
+          >
+            Support free content
           </a>
         </div>
         <div className="card">

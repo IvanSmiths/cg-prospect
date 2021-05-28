@@ -17,8 +17,13 @@ function Patreon() {
       <div>
         <ProgressBar done="16" />
       </div>
-      <a href="https://www.patreon.com/" target="_blank" rel="noopener">
-        <button className="btn patreon-clr">Get unique content</button>
+      <a
+        className="btn patreon-clr"
+        href="https://www.patreon.com/"
+        target="_blank"
+        rel="noopener"
+      >
+        Get unique content
       </a>
     </section>
   );

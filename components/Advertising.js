@@ -11,9 +11,7 @@ const Advertising = () => {
         traffic of the website and other, feel free to get in touch!
       </p>
       <Link href="/sponsor-home">
-        <a>
-          <button className="btn">Boost your website</button>
-        </a>
+        <a className="btn">Boost your website</a>
       </Link>
       <hr className="line" />
     </section>

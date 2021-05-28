@@ -23,9 +23,7 @@ function Video() {
           that you can find. Free textures never looked so professional.
         </p>
         <Link href="/free-textures">
-          <a>
-            <button className="btn-line">Enhance your renders</button>
-          </a>
+          <a className="btn-line">Enhance your renders</a>
         </Link>
       </div>
     </section>
