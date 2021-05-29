@@ -1,12 +1,14 @@
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 function Header() {
+  let { t } = useTranslation();
   return (
     <>
       <header className="container-mainpage flex-50">
         <div>
           <h1 className="large-font">
-            8K PBR Textures, <br /> Grab them free.
+            {t('home:test')} , <br /> Grab them free.
           </h1>
           <p className="small-font">
             Up to 8K, seamless textures totally free to download. Put them in
