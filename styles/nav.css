@@ -1,23 +1,20 @@
 .navbar {
-  position: fixed;
   background: var(--mainBackgroundNav);
-  height: fit-content;
   width: 100%;
+  position: fixed;
+  height: fit-content;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
   color: #fff;
+  padding: 0 8rem;
   z-index: 9;
 }
 
 .arrow-navbar {
   margin-top: 0.3rem;
   margin-right: 0.5rem;
-}
-
-nav li {
-  margin-right: 1rem;
 }
 
 .navbar-logo {
@@ -35,13 +32,12 @@ nav li {
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  display: flex;
+  flex-direction: row;
   list-style: none;
   text-align: center;
-  width: 70vw;
-  justify-content: end;
+  gap: 1.5rem;
+  justify-content: flex-end;
   margin-right: 2rem;
 }
 
@@ -109,8 +105,15 @@ nav li {
 }
 
 @media screen and (max-width: 960px) {
-  .fa-caret-down {
-    display: none;
+  .navbar {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-logo-cnt {
+    padding: 1rem 0;
   }
 }
 
@@ -154,23 +157,9 @@ nav li {
     margin-left: 50%;
   }
 
-  .nav-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-
   .nav-links:hover {
     background-color: #1888ff;
     border-radius: 0;
-  }
-
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
   }
 
   .menu-icon {
@@ -189,28 +178,12 @@ nav li {
     font-size: 2rem;
   }
 
-  .nav-links-mobile {
-    display: block;
-    text-align: center;
-    padding: 1.5rem;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    background: #1888ff;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-  }
-
   .nav-links-mobile:hover {
     background: #fff;
     color: #1888ff;
     transition: 250ms;
   }
 
-  button {
-    display: none;
-  }
   span {
     color: aliceblue;
     z-index: 19;

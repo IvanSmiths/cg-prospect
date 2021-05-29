@@ -44,18 +44,15 @@ function Navbar() {
   };
 
   return (
-    <>
-      <nav className="navbar">
+    <nav className="navbar">
+      <div className="navbar-logo-cnt">
         <Link href="/">
           <a>
             <img src="/logo.svg" height="30px" width="160px" alt="main logo" />
           </a>
         </Link>
-        <div className="menu-icon" onClick={handleClick}>
-          <i className="test" onClick={closeMobileMenu}>
-            X
-          </i>
-        </div>
+      </div>
+      <div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li
             className="nav-item small-font"
@@ -71,7 +68,7 @@ function Navbar() {
               alt="arrow down"
             />
             <Link
-              href="/services"
+              href="/free-textures"
               className="nav-links"
               onClick={closeMobileMenu}
             >
@@ -81,11 +78,20 @@ function Navbar() {
           </li>
           <li className="nav-item small-font">
             <Link
-              href="/products"
+              href="/categories"
               className="nav-links"
               onClick={closeMobileMenu}
             >
               <a>Categories</a>
+            </Link>
+          </li>
+          <li className="nav-item small-font">
+            <Link
+              href="/methods"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              <a>Methods</a>
             </Link>
           </li>
           <li
@@ -102,7 +108,7 @@ function Navbar() {
               alt="arrow down"
             />
             <Link
-              href="/contact-us"
+              href="/sponsor-home"
               className="nav-links"
               onClick={closeMobileMenu}
             >
@@ -125,8 +131,13 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-      </nav>
-    </>
+      </div>
+      <div className="menu-icon" onClick={handleClick}>
+        <span className="test" onClick={closeMobileMenu}>
+          X
+        </span>
+      </div>
+    </nav>
   );
 }
 
