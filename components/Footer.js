@@ -13,7 +13,7 @@ const Footer = () => {
               {t('common:nav-assets')}
             </li>
             <li className="tiny-font">
-              <Link href="/textures">
+              <Link locale="en" href="/free-textures">
                 <a>Textures</a>
               </Link>
             </li>
@@ -23,7 +23,7 @@ const Footer = () => {
               {t('common:nav-categories')}
             </li>
             <li className="tiny-font">
-              <Link href="/categories">
+              <Link locale="en" href="/categories">
                 <a>All categories</a>
               </Link>
             </li>
@@ -48,7 +48,7 @@ const Footer = () => {
               {t('common:nav-methods')}
             </li>
             <li className="tiny-font">
-              <Link href="/methods">
+              <Link locale="en" href="/methods">
                 <a>All methods</a>
               </Link>
             </li>

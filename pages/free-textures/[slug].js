@@ -126,6 +126,7 @@ export default function SingleTexture({ texture, textures }) {
                   <span className="small-font-sub"> Categories: </span>
                   {texture.category.map((category) => (
                     <Link
+                      locale="en"
                       key={category.id}
                       href={`/categories/${category.slug}`}
                     >
@@ -144,6 +145,7 @@ export default function SingleTexture({ texture, textures }) {
                   />
                   <span className="small-font-sub"> Method:</span>{' '}
                   <Link
+                    locale="en"
                     key={texture.method[0].id}
                     href={`/methods/${texture.method[0].slug}`}
                   >
@@ -343,7 +345,7 @@ export default function SingleTexture({ texture, textures }) {
       <h2 className="medium-font h2-suggest">See also:</h2>
       <section className="texture-suggest">
         {textures.map((texture) => (
-          <Link key={texture.id} href={`/textures/${texture.slug}`}>
+          <Link locale="en" key={texture.id} href={`/textures/${texture.slug}`}>
             <a>
               <img
                 loading="lazy"

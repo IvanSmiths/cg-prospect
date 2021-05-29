@@ -31,7 +31,7 @@ export default function Categories({ categories }) {
         <p className="small-font">
           You're currently browsing all the categories. If you would like to
           filter the textures by the creation method, go to the {''}
-          <Link href="/methods">
+          <Link locale="en" href="/methods">
             <a className="italic">methods page.</a>
           </Link>
         </p>

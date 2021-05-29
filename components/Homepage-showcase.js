@@ -21,7 +21,7 @@ function Showcase() {
             <strong className="highlight">{t('home:showcase-desc1')}</strong>{' '}
             {t('home:showcase-desc1-2')}
           </p>
-          <Link href="/methods/photogrammetry">
+          <Link locale="en" href="/methods/photogrammetry">
             <a className="btn-line btn-texture-example">
               {t('home:showcase-btn1')}
             </a>
@@ -36,7 +36,7 @@ function Showcase() {
             {t('home:showcase-desc2-2')}
             textures.
           </p>
-          <Link href="/methods/ai-to-material">
+          <Link locale="en" href="/methods/ai-to-material">
             <a className="btn-line btn-texture-example">
               {t('home:showcase-btn2')}
             </a>
@@ -68,7 +68,7 @@ function Showcase() {
             <strong className="highlight">{t('home:showcase-desc3')}</strong>{' '}
             {t('home:showcase-desc3-2')}
           </p>
-          <Link href="/methods/procedural">
+          <Link locale="en" href="/methods/procedural">
             <a className="btn-line btn-texture-example">
               {t('home:showcase-btn3')}
             </a>

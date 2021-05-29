@@ -22,7 +22,7 @@ function Video() {
           <strong className="highlight-main">{t('home:video-title2')}</strong>
         </h2>
         <p className="btn-font highlight">{t('home:video-desc')}</p>
-        <Link href="/free-textures">
+        <Link locale="en" href="/free-textures">
           <a className="btn-line">{t('home:video-btn')}</a>
         </Link>
       </div>

@@ -27,7 +27,7 @@ function Header() {
             </a>
           </p>
           <div className="header-bnt-cnt">
-            <Link href="/free-textures">
+            <Link locale="en" href="/free-textures">
               <a className="btn main-btn">{t('home:titlebtn')}</a>
             </Link>
             <div className="lang-cnt-2">

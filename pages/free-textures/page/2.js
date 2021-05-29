@@ -33,7 +33,7 @@ export default function SecondPage({ textures, categories }) {
           <ul>
             {categories.map((category) => (
               <li key={category.id} className="small-font categories-list">
-                <Link href={`/categories/${category.slug}`}>
+                <Link locale="en" href={`/categories/${category.slug}`}>
                   <a>{category.title}</a>
                 </Link>
               </li>
@@ -42,7 +42,11 @@ export default function SecondPage({ textures, categories }) {
         </aside>
         <section className="texture-list">
           {textures.map((texture) => (
-            <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
+            <Link
+              locale="en"
+              key={texture.id}
+              href={`/free-textures/${texture.slug}`}
+            >
               <a className="small-font">
                 <img
                   loading="lazy"
