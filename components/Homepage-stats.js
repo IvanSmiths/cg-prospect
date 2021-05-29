@@ -1,4 +1,7 @@
+import useTranslation from 'next-translate/useTranslation';
+
 function Stats() {
+  let { t } = useTranslation();
   return (
     <section className="stats">
       <div className="container-cards">
@@ -10,14 +13,8 @@ function Stats() {
             width="60"
             alt="An icon showing maps"
           />
-          <h2 className="btn-font highlight">
-            All the textures that you need!
-          </h2>
-          <p className="small-font">
-            The textures from CG Prospect can be used in every 3d software like
-            Blender, Autodesk Maya, Maxon Cinema 4D, Houdini or with game
-            engines like Unity or Unreal Engine.
-          </p>
+          <h2 className="btn-font highlight">{t('home:stats-card-title1')}</h2>
+          <p className="small-font">{t('home:stats-card-desc1')}</p>
         </div>
         <div className="card card-patreon">
           <img
@@ -27,11 +24,8 @@ function Stats() {
             width="60"
             alt="An icon showing a hand"
           />
-          <h2 className="btn-font highlight">Sustained by you.</h2>
-          <p className="small-font">
-            CG Prospect provides free textures thanks to the Patreons Cahoot, by
-            donations on the download, and by advertising on the website.
-          </p>
+          <h2 className="btn-font highlight">{t('home:stats-card-title2')}</h2>
+          <p className="small-font">{t('home:stats-card-desc2')}</p>
           <a
             target="_blank"
             rel="noopener"
@@ -39,7 +33,7 @@ function Stats() {
             style={{ color: 'black', border: 'black 2px solid' }}
             href="https://www.patreon.com"
           >
-            Support free content
+            {t('home:stats-card-btn')}
           </a>
         </div>
         <div className="card">
@@ -50,40 +44,37 @@ function Stats() {
             width="60"
             alt="An icon showing a cube"
           />
-          <h2 className="btn-font highlight">CCO License</h2>
-          <p className="small-font">
-            You can put CG Prospect's textures even in your commercial projects
-            like renders or even movies/games totally for free. An attribution
-            will be appreciated, but is not required.
-          </p>
+          <h2 className="btn-font highlight">{t('home:stats-card-title3')}</h2>
+          <p className="small-font">{t('home:stats-card-desc3')}</p>
         </div>
       </div>
       <h3 className="font-color-inverse stats-title big-font">
-        New Textures Every Friday!
+        {t('home:stats-title')}
       </h3>
       <div className="container-numbers">
         <div className="numbers">
           <h4 className="medium-font font-color-inverse">
-            15 <br />
-            Textures
+            {t('home:stats-num1')}
+            <br />
+            {t('home:stats-num1-desc')}
           </h4>
         </div>
         <div className="numbers">
           <h4 className="medium-font font-color-inverse">
-            46 <br />
-            Maps in total
+            {t('home:stats-num2')} <br />
+            {t('home:stats-num2-desc')}
           </h4>
         </div>
         <div className="numbers">
           <h4 className="medium-font font-color-inverse">
-            6 <br />
-            Beautiful Patreons
+            {t('home:stats-num3')} <br />
+            {t('home:stats-num3-desc')}
           </h4>
         </div>
         <div className="numbers">
           <h4 className="medium-font font-color-inverse">
-            23 <br />
-            Gb of Passion
+            {t('home:stats-num4')} <br />
+            {t('home:stats-num4-desc')}
           </h4>
         </div>
       </div>

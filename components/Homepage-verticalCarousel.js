@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
+import useTranslation from 'next-translate/useTranslation';
 
 const VerticalCarousel = ({ data, leadingText }) => {
+  let { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const halfwayIndex = Math.ceil(data.length / 2);
   const itemHeight = 62;
@@ -53,10 +55,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
     <section className="carousel-cnt">
       <div className="carousel-heading-cnt">
         <h3 className="big-font italic highlight-main">#CGPROSPECT</h3>
-        <p className="small-font">
-          If you are using CG Prospect's textures, use the hashtag #cgprospect
-          on Instagram! Get the chance of having your render here for a month.
-        </p>
+        <p className="small-font">{t('home:carousel-desc')}</p>
       </div>
       <div className="outer-container">
         <div className="carousel-wrapper">

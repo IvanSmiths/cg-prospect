@@ -8,20 +8,20 @@ function Header() {
       <header className="container-mainpage flex-50">
         <div>
           <h1 className="large-font">
-            {t('home:test')} , <br /> Grab them free.
+            {t('home:title1')}
+            <br />
+            {t('home:title2')}
           </h1>
           <p className="small-font">
-            Up to 8K, seamless textures totally free to download. Put them in
-            your 3d models, renders, movies or games without any worries. <br />{' '}
-            No limits, no paywall,{' '}
+            {t('home:titledesc')}
             <a href="https://www.patreon.com/" target="_blank" rel="noopener">
               <strong className="highlight-patreon">
-                donate if you like to.
+                {t('home:titledesc2')}
               </strong>
             </a>
           </p>
           <Link href="/free-textures">
-            <a className="btn main-btn">Browse Textures</a>
+            <a className="btn main-btn">{t('home:titlebtn')}</a>
           </Link>
         </div>
         <div>

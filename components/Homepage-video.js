@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 function Video() {
+  let { t } = useTranslation();
   const videoRef = useRef();
 
   useEffect(() => {
@@ -16,14 +18,12 @@ function Video() {
       </video>
       <div className="text-video">
         <h2 className="big-font">
-          8K Resolution of <strong className="highlight-main"> POWER </strong>
+          {t('home:video-title')}{' '}
+          <strong className="highlight-main">{t('home:video-title2')}</strong>
         </h2>
-        <p className="btn-font highlight">
-          Browse between the most photorealistic wood, rock, or metal textures
-          that you can find. Free textures never looked so professional.
-        </p>
+        <p className="btn-font highlight">{t('home:video-desc')}</p>
         <Link href="/free-textures">
-          <a className="btn-line">Enhance your renders</a>
+          <a className="btn-line">{t('home:video-btn')}</a>
         </Link>
       </div>
     </section>

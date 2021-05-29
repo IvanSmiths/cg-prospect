@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 
 const Progress = ({ done }) => {
+  let { t } = useTranslation();
   const [style, setStyle] = useState({});
 
   useEffect(() => {
@@ -14,7 +16,7 @@ const Progress = ({ done }) => {
   return (
     <div className="cnt-progress">
       <h3 className="small-font highlight">
-        Next Goal: 20$ (5 weekly textures){' '}
+        {t('home:patreon-progress')}{' '}
         <img
           loading="lazy"
           src="/down-arrow.svg"

@@ -1,17 +1,19 @@
 import ProgressBar from './ProgressBar';
+import useTranslation from 'next-translate/useTranslation';
 
 function Patreon() {
+  let { t } = useTranslation();
   return (
     <section className="patreon">
       <div className="patreon-text">
-        <h2 className="big-font patreon-h2">Join The Cahoot</h2>
+        <h2 className="big-font patreon-h2">{t('home:patreon-title')}</h2>
         <p className="small-font">
-          Joining the Patreon community, you wll get the textures before they
-          are uploaded on CG Prospect. Altrough, the quality and the resolution
-          is exactly the same. There are{' '}
-          <strong className="highlight-patreon">exclusive contents</strong> ,
-          like unique textures, 3d objects, tutorials, and a beautiful community
-          to talk with or ask for help.
+          {t('home:patreon-desc1')}
+          <strong className="highlight-patreon">
+            {' '}
+            {t('home:patreon-desc2')}
+          </strong>{' '}
+          ,{t('home:patreon-desc3')}
         </p>
       </div>
       <div>
@@ -23,7 +25,7 @@ function Patreon() {
         target="_blank"
         rel="noopener"
       >
-        Get unique content
+        {t('home:patreon-btn')}
       </a>
     </section>
   );

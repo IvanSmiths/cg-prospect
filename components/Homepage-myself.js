@@ -1,4 +1,7 @@
+import useTranslation from 'next-translate/useTranslation';
+
 function Myself() {
+  let { t } = useTranslation();
   return (
     <section className="myself flex-50">
       <div>
@@ -12,13 +15,8 @@ function Myself() {
         />
       </div>
       <div className="myself-text">
-        <h2 className="big-font">Ivan Smiths here.</h2>
-        <p className="small-font">
-          I've built CG Prospect on my own, from the creation of the Textures,
-          to the coding of the web site. 3D artist specialized in Photogrammetry
-          and web developer, i've built this project for putting myself in game,
-          and for sharing my stuff and knowledge with other passionated people.
-        </p>
+        <h2 className="big-font">{t('home:myself-title')}</h2>
+        <p className="small-font">{t('home:myself-desc')}</p>
       </div>
     </section>
   );

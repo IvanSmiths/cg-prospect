@@ -3,8 +3,10 @@ import Link from 'next/link';
 import Dropdown from './Dropdown';
 import Dropdown2 from './Dropdown2';
 import { useRouter } from 'next/router';
+import useTranslation from 'next-translate/useTranslation';
 
 function Navbar() {
+  let { t } = useTranslation();
   let router = useRouter();
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -57,8 +59,12 @@ function Navbar() {
         </Link>
       </div>
       <div className="lang-cnt-2">
-        <button className="btn-lang" onClick={() => setIsOpened(!isOpened)}>
-          Languages
+        <button
+          className="btn-lang"
+          onMouseEnter={() => setIsOpened(!isOpened)}
+          onClick={() => setIsOpened(!isOpened)}
+        >
+          {t('common:nav-lang')}
         </button>
         {isOpened && (
           <div onMouseLeave={() => setIsOpened(false)}>
@@ -96,7 +102,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Assets</a>
+              <a>{t('common:nav-assets')}</a>
             </Link>
             {dropdown && <Dropdown />}
           </li>
@@ -106,7 +112,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Categories</a>
+              <a>{t('common:nav-categories')}</a>
             </Link>
           </li>
           <li className="nav-item small-font">
@@ -115,7 +121,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Methods</a>
+              <a>{t('common:nav-methods')}</a>
             </Link>
           </li>
           <li
@@ -136,7 +142,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Support</a>
+              <a>{t('common:nav-support')}</a>
             </Link>
             {dropdown2 && <Dropdown2 />}
           </li>
@@ -156,7 +162,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Contact</a>
+              <a>{t('common:nav-contact')}</a>
             </Link>
           </li>
         </ul>
