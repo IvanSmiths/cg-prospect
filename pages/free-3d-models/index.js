@@ -2,7 +2,7 @@ import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
 
-export default function Home({ models, categoriesmodel }) {
+export default function Home({ models }) {
   return (
     <>
       <Head>
@@ -27,27 +27,13 @@ export default function Home({ models, categoriesmodel }) {
         <meta property="og:image" content={models[0].mainImage} />
       </Head>
       <main className="container-list-texture">
-        <aside className="category-list">
-          <ul>
-            {categoriesmodel.map((categorymodel) => (
-              <li key={categorymodel.id} className="small-font categories-list">
-                <Link locale="en" href={`/categories/${categorymodel.slug}`}>
-                  <a>{categorymodel.title}</a>
-                </Link>
-                <span className="highlight-bck">
-                  {categorymodel._count.models}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </aside>
         <section className="cnt-texture-list">
           <div className="texture-list">
             {models.map((model) => (
               <Link
                 key={model.id}
                 locale="en"
-                href={`/free-models/${model.slug}`}
+                href={`/free-3d-models/${model.slug}`}
               >
                 <a className="small-font">
                   <img
@@ -83,20 +69,9 @@ export async function getStaticProps() {
     },
     take: 2,
   });
-  const categoriesmodel = await prisma.categorymodel.findMany({
-    include: {
-      model3d: true,
-      _count: {
-        select: {
-          model3d: true,
-        },
-      },
-    },
-  });
   return {
     props: {
       models,
-      categoriesmodel,
     },
   };
 }
