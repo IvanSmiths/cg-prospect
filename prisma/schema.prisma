@@ -29,6 +29,27 @@ model Texture {
   sponsorLink String
   category Category[]
   method     Method[]
+  author    User?    @relation(fields: [authorId], references: [id])
+  authorId  Int?
+}
+
+model Model3d {
+  id Int @default(autoincrement()) @id
+  title String @unique
+  slug String
+  mainImage String
+  scale String
+  location String
+  lowpoly String
+  midpoly String
+  highpoly String
+  sponsorImage String
+  sponsorName String
+  sponsorLink String
+  categorymodel CategoryModel[]
+  methodmodel     MethodModel[]
+  author    User?    @relation(fields: [authorId], references: [id])
+  authorId  Int?
 }
 
 model Method {
@@ -39,10 +60,33 @@ model Method {
   textures Texture[]
 }
 
+model MethodModel {
+  id  Int  @default(autoincrement()) @id
+  slug String
+  mainImage String
+  title String @unique
+  model3d Model3d[]
+}
+
 model Category {
   id  Int  @default(autoincrement()) @id
   slug String
   mainImage String
   title String @unique
   textures Texture[]
+}
+
+model CategoryModel {
+  id  Int  @default(autoincrement()) @id
+  slug String
+  mainImage String
+  title String @unique
+  model3d Model3d[]
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String?  
+  textures Texture[]
+  model3d Model3d[]
 }

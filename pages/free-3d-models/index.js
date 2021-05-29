@@ -2,11 +2,11 @@ import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
 
-export default function Home({ textures, categories }) {
+export default function Home({ models, categoriesmodel }) {
   return (
     <>
       <Head>
-        <title>CG Prospect | All free 8k textures.</title>
+        <title>CG Prospect | All free 8k models.</title>
         <meta
           name="description"
           content=" is one of multiple categories of free to download, up to native 8K Pbr
@@ -17,25 +17,25 @@ export default function Home({ textures, categories }) {
         <meta property="og:title" content={`CG Prospect | 8K Free Texture`} />
         <meta
           property="og:description"
-          content="On CG Prospect you can find countess of free to download textures."
+          content="On CG Prospect you can find countess of free to download models."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://postgres.pages.dev/free-textures/`}
+          content={`https://postgres.pages.dev/free-models/`}
         />
-        <meta property="og:image" content={textures[0].mainImage} />
+        <meta property="og:image" content={models[0].mainImage} />
       </Head>
       <main className="container-list-texture">
         <aside className="category-list">
           <ul>
-            {categories.map((category) => (
-              <li key={category.id} className="small-font categories-list">
-                <Link locale="en" href={`/categories/${category.slug}`}>
-                  <a>{category.title}</a>
+            {categoriesmodel.map((categorymodel) => (
+              <li key={categorymodel.id} className="small-font categories-list">
+                <Link locale="en" href={`/categories/${categorymodel.slug}`}>
+                  <a>{categorymodel.title}</a>
                 </Link>
                 <span className="highlight-bck">
-                  {category._count.textures}
+                  {categorymodel._count.models}
                 </span>
               </li>
             ))}
@@ -43,20 +43,20 @@ export default function Home({ textures, categories }) {
         </aside>
         <section className="cnt-texture-list">
           <div className="texture-list">
-            {textures.map((texture) => (
+            {models.map((model) => (
               <Link
-                key={texture.id}
+                key={model.id}
                 locale="en"
-                href={`/free-textures/${texture.slug}`}
+                href={`/free-models/${model.slug}`}
               >
                 <a className="small-font">
                   <img
                     loading="lazy"
                     width="330"
                     height="330"
-                    className="textures-list"
-                    src={texture.mainImage}
-                    alt={`A preview of the texture ${texture.title}`}
+                    className="models-list"
+                    src={model.mainImage}
+                    alt={`A preview of the model ${model.title}`}
                   />
                 </a>
               </Link>
@@ -66,7 +66,7 @@ export default function Home({ textures, categories }) {
         <div className="page-btn">
           <button
             className="btn-line"
-            onClick={() => router.push(`/free-textures/page/2`)}
+            onClick={() => router.push(`/free-models/page/2`)}
           >
             Next
           </button>
@@ -77,26 +77,26 @@ export default function Home({ textures, categories }) {
 }
 
 export async function getStaticProps() {
-  const textures = await prisma.texture.findMany({
+  const models = await prisma.model3d.findMany({
     orderBy: {
       id: 'desc',
     },
     take: 2,
   });
-  const categories = await prisma.category.findMany({
+  const categoriesmodel = await prisma.categorymodel.findMany({
     include: {
-      textures: true,
+      model3d: true,
       _count: {
         select: {
-          textures: true,
+          model3d: true,
         },
       },
     },
   });
   return {
     props: {
-      textures,
-      categories,
+      models,
+      categoriesmodel,
     },
   };
 }

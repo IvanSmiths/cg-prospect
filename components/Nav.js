@@ -114,6 +114,7 @@ function Navbar() {
               alt="arrow down"
             />
             <Link
+              locale="en"
               href="/sponsor-home"
               className="nav-links"
               onClick={closeMobileMenu}
@@ -134,6 +135,7 @@ function Navbar() {
           </li>
           <li className="nav-item small-font">
             <Link
+              locale="en"
               href="/contact"
               className="nav-links"
               onClick={closeMobileMenu}

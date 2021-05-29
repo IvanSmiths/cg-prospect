@@ -6,19 +6,19 @@ export const MenuItems = [
   },
   {
     title: '3D Models',
-    path: '/free-3dmodel',
+    path: '/free-3d-models',
     cName: 'dropdown-link',
   },
 ];
 
 export const MenuItems2 = [
   {
-    title: 'Sponsor on page',
+    title: 'Sponsor on assets pages',
     path: '/sponsor-texture',
     cName: 'dropdown-link',
   },
   {
-    title: 'Logo sponsor',
+    title: 'Sponsor on every pages',
     path: '/sponsor-home',
     cName: 'dropdown-link',
   },

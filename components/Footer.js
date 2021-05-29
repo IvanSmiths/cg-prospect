@@ -78,12 +78,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <Link href="/sponsor-home">
+              <Link locale="en" href="/sponsor-home">
                 <a className="tiny-font">{t('common:nav-support-page')}</a>
               </Link>
             </li>
             <li>
-              <Link href="/sponsor-texture">
+              <Link locale="en" href="/sponsor-texture">
                 <a className="tiny-font">{t('common:nav-support-assets')}</a>
               </Link>
             </li>
@@ -91,12 +91,12 @@ const Footer = () => {
           <ul>
             <li className="small-font highlight-2 footer-label">Info</li>
             <li>
-              <Link href="/contact">
+              <Link locale="en" href="/contact">
                 <a className="tiny-font">{t('common:nav-contact')}</a>
               </Link>
             </li>
             <li>
-              <Link href="/terms">
+              <Link locale="en" href="/terms">
                 <a className="tiny-font">Terms & Privacy</a>
               </Link>
             </li>
