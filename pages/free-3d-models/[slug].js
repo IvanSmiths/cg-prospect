@@ -124,11 +124,11 @@ export default function SingleTexture({ model, models }) {
                     width="23"
                   />
                   <span className="small-font-sub"> Categories: </span>
-                  {model.categorymodel.map((category) => (
+                  {model.modelCategory.map((category) => (
                     <Link
                       locale="en"
                       key={category.id}
-                      href={`/categories/${category.slug}`}
+                      href={`/categories-3d-model/${category.slug}`}
                     >
                       <a className="highlight-bck">{category.title} </a>
                     </Link>
@@ -146,11 +146,11 @@ export default function SingleTexture({ model, models }) {
                   <span className="small-font-sub"> Method:</span>{' '}
                   <Link
                     locale="en"
-                    key={model.methodmodel[0].id}
-                    href={`/methods/${model.methodmodel[0].slug}`}
+                    key={model.modelMethod[0].id}
+                    href={`/methods-3d-model/${model.modelMethod[0].slug}`}
                   >
                     <a className="highlight-bck">
-                      {model.methodmodel[0].title}{' '}
+                      {model.modelMethod[0].title}{' '}
                     </a>
                   </Link>
                 </li>
@@ -356,14 +356,14 @@ export default function SingleTexture({ model, models }) {
 
 export async function getStaticProps({ params }) {
   const model = await prisma.model3d.findFirst({
-    include: { categorymodel: true, methodmodel: true },
+    include: { modelCategory: true, modelMethod: true },
     where: {
       slug: String(params.slug),
     },
   });
 
   const models = await prisma.model3d.findMany({
-    include: { categorymodel: true },
+    include: { modelCategory: true },
     orderBy: {
       id: 'desc',
     },

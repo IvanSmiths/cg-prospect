@@ -28,3 +28,29 @@ export const MenuItems2 = [
     cName: 'dropdown-link',
   },
 ];
+
+export const MenuItems3 = [
+  {
+    title: 'Texture categories',
+    path: '/categories',
+    cName: 'dropdown-link',
+  },
+  {
+    title: '3D model categories',
+    path: '/categories-3d-model',
+    cName: 'dropdown-link',
+  },
+];
+
+export const MenuItems4 = [
+  {
+    title: 'Texture methods',
+    path: '/methods',
+    cName: 'dropdown-link',
+  },
+  {
+    title: '3D model methods',
+    path: '/methods-3d-model',
+    cName: 'dropdown-link',
+  },
+];

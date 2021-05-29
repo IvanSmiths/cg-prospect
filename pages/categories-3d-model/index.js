@@ -2,11 +2,11 @@ import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
 
-export default function Categories({ categories }) {
+export default function CategoriesModel({ categories }) {
   return (
     <>
       <Head>
-        <title>Categories, of free 8K pbr textures.</title>
+        <title>CG Prospect | Categories, of free 3d models.</title>
         <meta
           name="description"
           content=" is one of multiple categories of free to download, up to native 8K Pbr
@@ -27,7 +27,7 @@ export default function Categories({ categories }) {
         <meta property="og:image" content={categories[0].mainImage} />
       </Head>
       <main className="categories-page">
-        <h1 className="big-font">Browse: All categories</h1>
+        <h1 className="big-font">Browse: All 3d model categories</h1>
         <p className="small-font">
           You're currently browsing all the categories. If you would like to
           filter the textures by the creation method, go to the {''}
@@ -39,7 +39,7 @@ export default function Categories({ categories }) {
           {categories.map((category) => (
             <Link
               locale="en"
-              href={`/categories/${category.slug}`}
+              href={`/categories-3d-model/${category.slug}`}
               key={category.id}
             >
               <a>
@@ -60,11 +60,9 @@ export default function Categories({ categories }) {
 }
 
 export async function getStaticProps() {
-  const categories = await prisma.category.findMany({
-    include: { textures: true },
+  const categories = await prisma.modelCategory.findMany({
+    include: { model3d: true },
   });
-  const user = await prisma.user.findMany({});
-  console.log(user);
   return {
     props: {
       categories,

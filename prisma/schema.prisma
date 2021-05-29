@@ -46,8 +46,8 @@ model Model3d {
   sponsorImage String
   sponsorName String
   sponsorLink String
-  categorymodel CategoryModel[]
-  methodmodel     MethodModel[]
+  modelCategory ModelCategory[]
+  modelMethod     ModelMethod[]
   author    User?    @relation(fields: [authorId], references: [id])
   authorId  Int?
 }
@@ -60,7 +60,7 @@ model Method {
   textures Texture[]
 }
 
-model MethodModel {
+model ModelMethod {
   id  Int  @default(autoincrement()) @id
   slug String
   mainImage String
@@ -76,7 +76,7 @@ model Category {
   textures Texture[]
 }
 
-model CategoryModel {
+model ModelCategory {
   id  Int  @default(autoincrement()) @id
   slug String
   mainImage String

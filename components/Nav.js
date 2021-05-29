@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Dropdown from './Dropdown';
 import Dropdown2 from './Dropdown2';
+import Dropdown3 from './Dropdown3';
+import Dropdown4 from './Dropdown4';
 import useTranslation from 'next-translate/useTranslation';
 
 function Navbar() {
@@ -9,6 +11,8 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
+  const [dropdown3, setDropdown3] = useState(false);
+  const [dropdown4, setDropdown4] = useState(false);
   const [isToggled, setIsToggled] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -46,6 +50,37 @@ function Navbar() {
     }
   };
 
+  const onMouseEnter3 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown3(false);
+    } else {
+      setDropdown3(true);
+    }
+  };
+
+  const onMouseLeave3 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown3(false);
+    } else {
+      setDropdown3(false);
+    }
+  };
+  const onMouseEnter4 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown4(false);
+    } else {
+      setDropdown4(true);
+    }
+  };
+
+  const onMouseLeave4 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown4(false);
+    } else {
+      setDropdown4(false);
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo-cnt">
@@ -80,7 +115,19 @@ function Navbar() {
             </Link>
             {dropdown && <Dropdown />}
           </li>
-          <li className="nav-item small-font">
+          <li
+            onMouseEnter={onMouseEnter3}
+            onMouseLeave={onMouseLeave3}
+            className="nav-item small-font"
+          >
+            <img
+              className="arrow-navbar"
+              loading="lazy"
+              src="/down-arrow-white.svg"
+              height="13px"
+              width="13px"
+              alt="arrow down"
+            />
             <Link
               locale="en"
               href="/categories"
@@ -89,8 +136,21 @@ function Navbar() {
             >
               <a>{t('common:nav-categories')}</a>
             </Link>
+            {dropdown3 && <Dropdown3 />}
           </li>
-          <li className="nav-item small-font">
+          <li
+            onMouseEnter={onMouseEnter4}
+            onMouseLeave={onMouseLeave4}
+            className="nav-item small-font"
+          >
+            <img
+              className="arrow-navbar"
+              loading="lazy"
+              src="/down-arrow-white.svg"
+              height="13px"
+              width="13px"
+              alt="arrow down"
+            />
             <Link
               locale="en"
               href="/methods"
@@ -99,6 +159,7 @@ function Navbar() {
             >
               <a>{t('common:nav-methods')}</a>
             </Link>
+            {dropdown4 && <Dropdown4 />}
           </li>
           <li
             className="nav-item small-font"
