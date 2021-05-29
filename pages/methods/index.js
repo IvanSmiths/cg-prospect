@@ -30,7 +30,7 @@ const Methods = ({ methods }) => {
         <h1 className="big-font">Browse: All Methods</h1>
         <section className="container-methods">
           {methods.map((method) => (
-            <Link href={`/methods/${method.slug}`} key={method.id}>
+            <Link locale="en" href={`/methods/${method.slug}`} key={method.id}>
               <a>
                 <img
                   height="250"

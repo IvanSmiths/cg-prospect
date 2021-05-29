@@ -37,7 +37,11 @@ export default function Categories({ categories }) {
         </p>
         <section className="container-category">
           {categories.map((category) => (
-            <Link href={`/categories/${category.slug}`} key={category.id}>
+            <Link
+              locale="en"
+              href={`/categories/${category.slug}`}
+              key={category.id}
+            >
               <a>
                 <img
                   height="250"

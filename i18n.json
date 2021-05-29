@@ -3,6 +3,8 @@
   "defaultLocale": "en",
   "pages": {
     "*": ["common"],
-    "/": ["home"]
+    "/": ["home"],
+    "/free-textures": ["free-textures"],
+    "/free-textures/[slug]": ["texture"]
   }
 }

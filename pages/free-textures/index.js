@@ -2,13 +2,15 @@ import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Home({ textures, categories }) {
+  let { t } = useTranslation();
   const router = useRouter();
   return (
     <>
       <Head>
-        <title>free 8K pbr textures.</title>
+        <title>CG Prospect | All free 8k textures.</title>
         <meta
           name="description"
           content=" is one of multiple categories of free to download, up to native 8K Pbr
@@ -33,7 +35,7 @@ export default function Home({ textures, categories }) {
           <ul>
             {categories.map((category) => (
               <li key={category.id} className="small-font categories-list">
-                <Link href={`/categories/${category.slug}`}>
+                <Link locale="en" href={`/categories/${category.slug}`}>
                   <a>{category.title}</a>
                 </Link>
                 <span className="highlight-bck">
@@ -45,15 +47,18 @@ export default function Home({ textures, categories }) {
         </aside>
         <section className="cnt-texture-list">
           <p className="small-font">
-            You're currently browsing all the textures. If you would like to
-            filter the textures by the creation method, go to the {''}
-            <Link href="/methods">
-              <a className="italic">methods page.</a>
+            {t('free-textures:desc')}
+            <Link locale="en" href="/methods">
+              <a className="italic">{t('free-textures:desc2')}</a>
             </Link>
           </p>
           <div className="texture-list">
             {textures.map((texture) => (
-              <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
+              <Link
+                key={texture.id}
+                locale="en"
+                href={`/free-textures/${texture.slug}`}
+              >
                 <a className="small-font">
                   <img
                     loading="lazy"
@@ -73,7 +78,7 @@ export default function Home({ textures, categories }) {
             className="btn-line"
             onClick={() => router.push(`/free-textures/page/2`)}
           >
-            Next
+            {t('free-textures:next')}
           </button>
         </div>
       </main>

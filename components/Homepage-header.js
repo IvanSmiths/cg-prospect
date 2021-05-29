@@ -1,8 +1,14 @@
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 
 function Header() {
+  let router = useRouter();
+  const [isOpened, setIsOpened] = useState(false);
+
   let { t } = useTranslation();
+
   return (
     <>
       <header className="container-mainpage flex-50">
@@ -20,9 +26,35 @@ function Header() {
               </strong>
             </a>
           </p>
-          <Link href="/free-textures">
-            <a className="btn main-btn">{t('home:titlebtn')}</a>
-          </Link>
+          <div className="header-bnt-cnt">
+            <Link href="/free-textures">
+              <a className="btn main-btn">{t('home:titlebtn')}</a>
+            </Link>
+            <div className="lang-cnt-2">
+              <button
+                className="btn-line"
+                onMouseEnter={() => setIsOpened(true)}
+                onClick={() => setIsOpened(!isOpened)}
+              >
+                {t('common:nav-lang')}
+              </button>
+              {isOpened && (
+                <div onMouseLeave={() => setIsOpened(false)}>
+                  <ol className="lang-cnt">
+                    {router.locales.map((locale) => (
+                      <Link key={locale} locale={locale} href={router.asPath}>
+                        <a>
+                          <li className="language small-font" key={locale}>
+                            {locale}
+                          </li>
+                        </a>
+                      </Link>
+                    ))}
+                  </ol>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
         <div>
           <img

@@ -26,12 +26,12 @@
 
 .container-mainpage {
   position: relative;
-  padding-bottom: 8rem;
+  padding-bottom: 10rem;
 }
 
 .container-mainpage > *:nth-child(1) {
   margin-left: 8rem;
-  margin-top: 13rem;
+  margin-top: 9rem;
 }
 
 .container-mainpage p {
@@ -40,11 +40,40 @@
 
 .container-mainpage > *:nth-child(2) {
   text-align: center;
-  margin-top: 9rem;
+  margin-top: 6rem;
 }
 
 .container-mainpage p {
   margin: 1.5em 0rem;
+}
+
+.header-bnt-cnt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.lang-cnt {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--subBackground);
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.3rem;
+}
+
+.lang-cnt-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.language {
+  background-color: var(--mainColor);
+  border-radius: 0.3rem;
+  color: black;
+  font-weight: 600;
+  padding: 0.2rem;
+  margin-left: 1rem;
 }
 
 .container-ico {

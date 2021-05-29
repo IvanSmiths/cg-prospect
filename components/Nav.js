@@ -2,16 +2,13 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Dropdown from './Dropdown';
 import Dropdown2 from './Dropdown2';
-import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 
 function Navbar() {
   let { t } = useTranslation();
-  let router = useRouter();
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
-  const [isOpened, setIsOpened] = useState(false);
   const [isToggled, setIsToggled] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -57,30 +54,6 @@ function Navbar() {
             <img src="/logo.svg" height="30px" width="160px" alt="main logo" />
           </a>
         </Link>
-      </div>
-      <div className="lang-cnt-2">
-        <button
-          className="btn-lang"
-          onMouseEnter={() => setIsOpened(!isOpened)}
-          onClick={() => setIsOpened(!isOpened)}
-        >
-          {t('common:nav-lang')}
-        </button>
-        {isOpened && (
-          <div onMouseLeave={() => setIsOpened(false)}>
-            <ol className="lang-cnt">
-              {router.locales.map((locale) => (
-                <Link key={locale} locale={locale} href={router.asPath}>
-                  <a>
-                    <li className="language small-font" key={locale}>
-                      {locale}
-                    </li>
-                  </a>
-                </Link>
-              ))}
-            </ol>
-          </div>
-        )}
       </div>
       <div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>

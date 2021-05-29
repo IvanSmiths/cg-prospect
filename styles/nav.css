@@ -95,42 +95,6 @@
   display: none;
 }
 
-.lang-cnt {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--subBackground);
-  padding: 0.41rem 0.6rem;
-  border: none;
-  border-radius: var(--radius);
-}
-
-.lang-cnt-2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.btn-lang {
-  cursor: pointer;
-  padding: 0.4rem 0.7rem;
-  background-color: var(--mainColor);
-  border: none;
-  border-radius: 0.1rem;
-  font-size: var(--smallFont);
-  transition: 0.2s ease-in-out;
-  font-weight: 600;
-  border: 2px solid var(--mainColor);
-  color: rgb(10, 10, 10);
-}
-
-.language {
-  background-color: var(--mainColor);
-  border-radius: 0.1rem;
-  color: black;
-  font-weight: 600;
-  padding: 0.2rem;
-  margin-left: 1rem;
-}
-
 .dropdown-link {
   display: block;
   height: 100%;

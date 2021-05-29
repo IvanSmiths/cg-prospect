@@ -28,17 +28,17 @@ const Footer = () => {
               </Link>
             </li>
             <li className="tiny-font">
-              <Link href="/categories/wood">
+              <Link locale="en" href="/categories/wood">
                 <a>Wood</a>
               </Link>
             </li>
             <li className="tiny-font">
-              <Link href="/categories/rock">
+              <Link locale="en" href="/categories/rock">
                 <a>Rock</a>
               </Link>
             </li>
             <li className="tiny-font">
-              <Link href="/categories/metal">
+              <Link locale="en" href="/categories/metal">
                 <a>Metal</a>
               </Link>
             </li>
@@ -53,43 +53,38 @@ const Footer = () => {
               </Link>
             </li>
             <li className="tiny-font">
-              <Link href="/methods/photogrammetry">
+              <Link locale="en" href="/methods/photogrammetry">
                 <a>Photogrammetry</a>
               </Link>
             </li>
             <li className="tiny-font">
-              <Link href="/methods/ai-to-material">
+              <Link locale="en" href="/methods/ai-to-material">
                 <a>Ai to Material</a>
               </Link>
             </li>
             <li className="tiny-font">
-              <Link href="/methods/procedural">
+              <Link locale="en" href="/methods/procedural">
                 <a>Procedural</a>
               </Link>
             </li>
           </ul>
           <ul>
             <li className="small-font highlight-2 footer-label">
-              {t('common:nav-supporto')}
+              {t('common:nav-support')}
             </li>
             <li className="tiny-font">
               <a href="https://www.patreon.com/" target="_blank" rel="noopener">
                 Cahoot
               </a>
             </li>
-            <li className="tiny-font">
-              <a href="https://www.patreon.com/" target="_blank" rel="noopener">
-                Donation
-              </a>
-            </li>
             <li>
               <Link href="/sponsor-home">
-                <a className="tiny-font">Become a sponsor</a>
+                <a className="tiny-font">{t('common:nav-support-page')}</a>
               </Link>
             </li>
             <li>
               <Link href="/sponsor-texture">
-                <a className="tiny-font">Sponsor on textures</a>
+                <a className="tiny-font">{t('common:nav-support-assets')}</a>
               </Link>
             </li>
           </ul>
