@@ -26,12 +26,12 @@
 
 .container-mainpage {
   position: relative;
-  padding-bottom: 10rem;
+  padding-bottom: 12rem;
 }
 
 .container-mainpage > *:nth-child(1) {
   margin-left: 8rem;
-  margin-top: 9rem;
+  margin-top: 12rem;
 }
 
 .container-mainpage p {
@@ -40,7 +40,7 @@
 
 .container-mainpage > *:nth-child(2) {
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 
 .container-mainpage p {

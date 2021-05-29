@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   p {
     line-height: 1.5rem;
   }
@@ -103,6 +103,10 @@
     align-items: center;
   }
 
+  .container-mainpage {
+    padding-bottom: 2rem;
+  }
+
   .container-mainpage > *:nth-child(1) {
     margin: 10rem 2rem 0rem 2rem;
   }
@@ -115,6 +119,15 @@
     display: none;
   }
 
+  .container-numbers {
+    gap: 4rem;
+  }
+
+  .patreon-text h2 {
+    margin: 0;
+    padding: 0;
+  }
+
   .cnt-video {
     height: 100vh;
   }
@@ -122,6 +135,10 @@
   .text-video {
     padding: 0rem 1rem;
     margin: 0 0rem;
+  }
+
+  .patreon {
+    padding: 3rem 0;
   }
 
   .carousel-inner::before,
@@ -140,6 +157,10 @@
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     margin-bottom: 6rem;
+  }
+
+  .carousel-cnt {
+    margin: 0;
   }
 
   .carousel-heading-cnt {
@@ -184,12 +205,25 @@
     flex: 1 1 100%;
     width: 60vw;
     padding: 0 3rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .form-newsletter p {
+    text-align: center;
+    width: 80vw;
+  }
+
+  .texture-example-1 {
+    flex-direction: column-reverse;
+  }
+
+  .texture-example-3 {
+    flex-direction: column-reverse;
   }
 
   /*-------------------- MYSELF BEGIN  ------- */
@@ -256,6 +290,16 @@
     grid-row: 2 / 3;
     display: flex;
     justify-content: center;
+  }
+
+  .list-detail {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
   .texture-list p {

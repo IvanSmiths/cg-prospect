@@ -46,12 +46,6 @@ export default function Home({ textures, categories }) {
           </ul>
         </aside>
         <section className="cnt-texture-list">
-          <p className="small-font">
-            {t('free-textures:desc')}
-            <Link locale="en" href="/methods">
-              <a className="italic">{t('free-textures:desc2')}</a>
-            </Link>
-          </p>
           <div className="texture-list">
             {textures.map((texture) => (
               <Link
@@ -78,7 +72,7 @@ export default function Home({ textures, categories }) {
             className="btn-line"
             onClick={() => router.push(`/free-textures/page/2`)}
           >
-            {t('free-textures:next')}
+            Next
           </button>
         </div>
       </main>
