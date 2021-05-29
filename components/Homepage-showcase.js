@@ -3,8 +3,16 @@ import Link from 'next/link';
 function Showcase() {
   return (
     <main className="texture-example">
-      <div className="texture-example-1 texture-example-all">
-        <div></div>
+      <div className="texture-example-1 flex-50">
+        <div>
+          <img
+            loading="lazy"
+            src="/texture-example.jpg"
+            height="200"
+            width="200"
+            alt="example of a render"
+          />
+        </div>
         <div>
           <h3 className="big-font">+70 Millions of polygons</h3>
           <p className="small-font">
@@ -22,7 +30,7 @@ function Showcase() {
           </Link>
         </div>
       </div>
-      <div className="texture-example-2 texture-example-all">
+      <div className="texture-example-2 flex-50">
         <div>
           <h3 className="big-font">Raw photos with low ISO</h3>
           <p className="small-font">
@@ -38,10 +46,26 @@ function Showcase() {
             </a>
           </Link>
         </div>
-        <div></div>
+        <div>
+          <img
+            loading="lazy"
+            src="/texture-example-2.jpg"
+            height="200"
+            width="200"
+            alt="example of a render"
+          />
+        </div>
       </div>
-      <div className="texture-example-3 texture-example-all">
-        <div></div>
+      <div className="texture-example-3 flex-50">
+        <div>
+          <img
+            loading="lazy"
+            src="/texture-example-3.jpg"
+            height="200"
+            width="200"
+            alt="example of a render"
+          />
+        </div>
         <div>
           <h3 className="big-font">Extreme cure</h3>
           <p className="small-font">

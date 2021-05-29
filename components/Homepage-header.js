@@ -2,7 +2,37 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <header className="container-mainpage">
+    <>
+      <header className="container-mainpage flex-50">
+        <div>
+          <h1 className="large-font">
+            8K PBR Textures, <br /> Grab them free.
+          </h1>
+          <p className="small-font">
+            Up to 8K, seamless textures totally free to download. Put them in
+            your 3d models, renders, movies or games without any worries. <br />{' '}
+            No limits, no paywall,{' '}
+            <a href="https://www.patreon.com/" target="_blank" rel="noopener">
+              <strong className="highlight-patreon">
+                donate if you like to.
+              </strong>
+            </a>
+          </p>
+          <Link href="/free-textures">
+            <a className="btn main-btn">Browse Textures</a>
+          </Link>
+        </div>
+        <div>
+          <img
+            loading="lazy"
+            className="main-image"
+            src="/main-image.png"
+            height="512"
+            width="512"
+            alt="An image of a texture"
+          />
+        </div>
+      </header>
       <div className="container-ico">
         <a href="https://www.youtube.com/" target="_blank" rel="noopener">
           <img
@@ -50,35 +80,7 @@ function Header() {
           />
         </a>
       </div>
-      <div>
-        <h1 className="large-font">
-          8K PBR Textures, <br /> Grab them free.
-        </h1>
-        <h2 className="small-font">
-          Up to 8K, seamless textures totally free to download. Put them in your
-          3d models, renders, movies or games without any worries. <br /> No
-          limits, no paywall,{' '}
-          <a href="https://www.patreon.com/" target="_blank" rel="noopener">
-            <strong className="highlight-patreon">
-              donate if you like to.
-            </strong>
-          </a>
-        </h2>
-        <Link href="/free-textures">
-          <a className="btn main-btn">Browse Textures</a>
-        </Link>
-      </div>
-      <div>
-        <img
-          loading="lazy"
-          className="main-image"
-          src="/main-image.png"
-          height="512"
-          width="512"
-          alt="An image of a texture"
-        />
-      </div>
-    </header>
+    </>
   );
 }
 

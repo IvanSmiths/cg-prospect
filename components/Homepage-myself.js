@@ -1,6 +1,6 @@
 function Myself() {
   return (
-    <section className="myself">
+    <section className="myself flex-50">
       <div>
         <img
           className="image-myself"
