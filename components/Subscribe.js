@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 
 function Subscribe() {
+  let { t } = useTranslation();
   // 1. Create a reference to the input so we can fetch/clear it's value.
   const inputEl = useRef(null);
   // 2. Hold a message in state to handle the response from our API.
@@ -31,7 +33,7 @@ function Subscribe() {
 
     // 5. Clear the input value and show a success message.
     inputEl.current.value = '';
-    setMessage('Success! 🎉 You are now subscribed to the newsletter.');
+    setMessage(`${t('common:mail-desc-success')}`);
   };
 
   return (
@@ -47,13 +49,11 @@ function Subscribe() {
       />
       <div>
         <p className="small-font highlight">
-          {message
-            ? message
-            : `One email every friday, with the latest textures and news about the 3D world. No spam, no bulls**t.`}
+          {message ? message : `${t('common:mail-desc')}`}
         </p>
       </div>
       <button className="btn" type="submit">
-        {'Subscribe 💌'}
+        {t('common:mail-btn')}
       </button>
     </form>
   );

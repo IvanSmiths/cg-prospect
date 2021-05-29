@@ -1,13 +1,17 @@
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 import Subscribe from './Subscribe';
 
 const Footer = () => {
+  let { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-first-cnt">
         <div className="footer-links">
           <ul>
-            <li className="small-font highlight-2 footer-label">Assets</li>
+            <li className="small-font highlight-2 footer-label">
+              {t('common:nav-assets')}
+            </li>
             <li className="tiny-font">
               <Link href="/textures">
                 <a>Textures</a>
@@ -15,7 +19,9 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">Categories</li>
+            <li className="small-font highlight-2 footer-label">
+              {t('common:nav-categories')}
+            </li>
             <li className="tiny-font">
               <Link href="/categories">
                 <a>All categories</a>
@@ -38,7 +44,9 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">Methods</li>
+            <li className="small-font highlight-2 footer-label">
+              {t('common:nav-methods')}
+            </li>
             <li className="tiny-font">
               <Link href="/methods">
                 <a>All methods</a>
@@ -61,7 +69,9 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">Support</li>
+            <li className="small-font highlight-2 footer-label">
+              {t('common:nav-supporto')}
+            </li>
             <li className="tiny-font">
               <a href="https://www.patreon.com/" target="_blank" rel="noopener">
                 Cahoot
@@ -87,7 +97,7 @@ const Footer = () => {
             <li className="small-font highlight-2 footer-label">Info</li>
             <li>
               <Link href="/contact">
-                <a className="tiny-font">Contact</a>
+                <a className="tiny-font">{t('common:nav-contact')}</a>
               </Link>
             </li>
             <li>
