@@ -117,7 +117,12 @@ function Navbar() {
             {dropdown2 && <Dropdown2 />}
           </li>
           <li onClick={closeMobileMenu} className="nav-item small-font">
-            <a href="https://www.patreon.com" className="nav-links">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.patreon.com"
+              className="nav-links"
+            >
               Cahoot
             </a>
           </li>
