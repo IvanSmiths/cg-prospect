@@ -6,7 +6,7 @@ export default function Home({ models, categoriesmodel }) {
   return (
     <>
       <Head>
-        <title>CG Prospect | All free 8k models.</title>
+        <title>CG Prospect | All free 3d models.</title>
         <meta
           name="description"
           content=" is one of multiple categories of free to download, up to native 8K Pbr
