@@ -54,7 +54,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
   return (
     <section className="carousel-cnt">
       <div className="carousel-heading-cnt">
-        <h3 className="big-font italic highlight-main">#CGPROSPECT</h3>
+        <h3 className="big-font underline highlight-main">#CGPROSPECT</h3>
         <p className="small-font">{t('home:carousel-desc')}</p>
       </div>
       <div className="outer-container">

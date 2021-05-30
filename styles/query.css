@@ -30,6 +30,10 @@
     line-height: 1.3rem;
   }
 
+  .p-slug {
+    padding-right: 6rem;
+  }
+
   .myself-text p {
     margin: 2rem 0 1rem 0;
     padding: 0rem 1rem 0rem 0rem;
@@ -83,6 +87,10 @@
 
   .flex-50 {
     flex-direction: column;
+  }
+
+  .p-slug {
+    padding: 0rem 7vw;
   }
 
   .flex-50 > *:nth-child(1) {

@@ -21,7 +21,7 @@ function Header() {
           <p className="small-font">
             {t('home:titledesc')}
             <a href="https://www.patreon.com/" target="_blank" rel="noopener">
-              <strong className="highlight-patreon">
+              <strong className="highlight-patreon underline">
                 {t('home:titledesc2')}
               </strong>
             </a>

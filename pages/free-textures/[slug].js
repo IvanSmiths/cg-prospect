@@ -88,7 +88,7 @@ export default function SingleTexture({ texture, textures }) {
               Want your name, logo, and link here? {''}
               <Link href="/sponsor-texture">
                 <a>
-                  <span className="highlight italic">See how you can.</span>
+                  <span className="highlight underline">See how you can.</span>
                 </a>
               </Link>
             </h3>
@@ -96,19 +96,18 @@ export default function SingleTexture({ texture, textures }) {
         </div>
         <div className="container-texture-details" key={texture.id}>
           <h1 className="big-font title-texture">{texture.title}</h1>
-          <p className="small-font">
-            {texture.title} is a seamless, free to download, up to <br /> native
-            8K Pbr Texture.{' '}
-            <strong className="highlight-patreon">
-              Consider joining the Cahoot <br /> for exclusive content!{' '}
-            </strong>
+          <p className="small-font p-slug">
+            {texture.title} is a seamless, free to download, up to native 8K Pbr
+            Texture.{' '}
             <a
               href="https://www.patreon.com"
               className="italic"
               rel="noopener"
               target="_blank"
             >
-              See more.
+              <strong className="highlight-patreon underline">
+                Consider joining the Cahoot for exclusive content!{' '}
+              </strong>
             </a>
           </p>
           <div className="first-details container-background">

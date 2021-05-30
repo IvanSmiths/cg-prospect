@@ -193,3 +193,7 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+.p-slug {
+  padding-right: 12rem;
+}

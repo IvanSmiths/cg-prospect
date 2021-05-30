@@ -61,7 +61,7 @@ p {
 }
 
 .underline {
-  border-bottom: 3px solid;
+  text-decoration: underline;
 }
 
 .highlight-patreon {
@@ -186,11 +186,6 @@ nav li > a {
 
 #nprogress .spinner {
   display: none;
-}
-
-.italic {
-  font-style: italic;
-  text-decoration: underline;
 }
 
 @import './variables.css';

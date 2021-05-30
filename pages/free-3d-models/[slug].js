@@ -88,7 +88,7 @@ export default function SingleTexture({ model, models }) {
               Want your name, logo, and link here? {''}
               <Link href="/sponsor-texture">
                 <a>
-                  <span className="highlight italic">See how you can.</span>
+                  <span className="highlight underline">See how you can.</span>
                 </a>
               </Link>
             </h3>
@@ -96,19 +96,13 @@ export default function SingleTexture({ model, models }) {
         </div>
         <div className="container-texture-details" key={model.id}>
           <h1 className="big-font title-texture">{model.title}</h1>
-          <p className="small-font">
-            {model.title} is a seamless, free to download, up to <br /> native
-            8K Pbr model.{' '}
-            <strong className="highlight-patreon">
-              Consider joining the Cahoot <br /> for exclusive content!{' '}
-            </strong>
-            <a
-              href="https://www.patreon.com"
-              className="italic"
-              rel="noopener"
-              target="_blank"
-            >
-              See more.
+          <p className="small-font p-slug">
+            {model.title} is a free to download 3d model, available at lowpoly,
+            midpoly and highpoly resolutions.{' '}
+            <a href="https://www.patreon.com" rel="noopener" target="_blank">
+              <strong className="highlight-patreon underline">
+                Consider joining the Cahoot for exclusive content!{' '}
+              </strong>
             </a>
           </p>
           <div className="first-details container-background">
@@ -187,8 +181,6 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  {/* <span className="small-font-sub"> Published: </span>{' '}
-                  {publishedAt} */}
                 </li>
               </ul>
             </div>
