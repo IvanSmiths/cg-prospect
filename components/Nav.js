@@ -184,16 +184,6 @@ function Navbar() {
             </Link>
             {dropdown2 && <Dropdown2 />}
           </li>
-          <li onClick={closeMobileMenu} className="nav-item small-font">
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.patreon.com"
-              className="nav-links"
-            >
-              Cahoot
-            </a>
-          </li>
           <li className="nav-item small-font">
             <Link
               locale="en"
@@ -203,6 +193,16 @@ function Navbar() {
             >
               <a>{t('common:nav-contact')}</a>
             </Link>
+          </li>
+          <li onClick={closeMobileMenu} className="nav-item small-font">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.patreon.com"
+              className="nav-links patreon-clr btn btn2"
+            >
+              Cahoot
+            </a>
           </li>
         </ul>
       </div>

@@ -17,6 +17,11 @@ const Footer = () => {
                 <a>Textures</a>
               </Link>
             </li>
+            <li className="tiny-font">
+              <Link locale="en" href="/free-3d-models">
+                <a>3D Models</a>
+              </Link>
+            </li>
           </ul>
           <ul>
             <li className="small-font highlight-2 footer-label">
@@ -24,22 +29,12 @@ const Footer = () => {
             </li>
             <li className="tiny-font">
               <Link locale="en" href="/categories">
-                <a>All categories</a>
+                <a>All textures categories</a>
               </Link>
             </li>
-            <li className="tiny-font">
-              <Link locale="en" href="/categories/wood">
-                <a>Wood</a>
-              </Link>
-            </li>
-            <li className="tiny-font">
-              <Link locale="en" href="/categories/rock">
-                <a>Rock</a>
-              </Link>
-            </li>
-            <li className="tiny-font">
-              <Link locale="en" href="/categories/metal">
-                <a>Metal</a>
+            <li>
+              <Link locale="en" href="/categories-3d-model">
+                <a>All 3d model categories</a>
               </Link>
             </li>
           </ul>
@@ -49,22 +44,12 @@ const Footer = () => {
             </li>
             <li className="tiny-font">
               <Link locale="en" href="/methods">
-                <a>All methods</a>
+                <a>All texture methods</a>
               </Link>
             </li>
             <li className="tiny-font">
-              <Link locale="en" href="/methods/photogrammetry">
-                <a>Photogrammetry</a>
-              </Link>
-            </li>
-            <li className="tiny-font">
-              <Link locale="en" href="/methods/ai-to-material">
-                <a>Ai to Material</a>
-              </Link>
-            </li>
-            <li className="tiny-font">
-              <Link locale="en" href="/methods/procedural">
-                <a>Procedural</a>
+              <Link locale="en" href="/methods-3d-model">
+                <a>All 3d model methods</a>
               </Link>
             </li>
           </ul>

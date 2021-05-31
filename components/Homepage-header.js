@@ -27,17 +27,22 @@ function Header() {
             </a>
           </p>
           <div className="header-bnt-cnt">
+            <Link locale="en" href="/free-3d-models">
+              <a className="btn-line main-btn">{t('home:titlebtn2')}</a>
+            </Link>
             <Link locale="en" href="/free-textures">
               <a className="btn main-btn">{t('home:titlebtn')}</a>
             </Link>
             <div className="lang-cnt-2">
-              <button
-                className="btn-line"
+              <img
                 onMouseEnter={() => setIsOpened(true)}
                 onClick={() => setIsOpened(!isOpened)}
-              >
-                {t('common:nav-lang')}
-              </button>
+                src="/translate.svg"
+                height="30px"
+                width="30px"
+                alt="change languagge"
+              />
+
               {isOpened && (
                 <div onMouseLeave={() => setIsOpened(false)}>
                   <ol className="lang-cnt">

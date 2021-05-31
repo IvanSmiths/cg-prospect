@@ -3,7 +3,7 @@ import Link from 'next/link';
 const SponsorTexture = () => {
   return (
     <main className="terms-privacy">
-      <h1 className="big-font">Sponsor on page texture</h1>
+      <h1 className="big-font">Sponsor on the assets's pages</h1>
       <section className="cnt-terms cnt-t-p">
         <img
           loading="lazy"
@@ -42,7 +42,7 @@ const SponsorTexture = () => {
             If you want more info about the traffic of the website or per single
             texture, just{' '}
             <Link href="/contact">
-              <a className="italic highlight"> get in contact.</a>
+              <a className="underline highlight"> get in contact.</a>
             </Link>
           </li>
         </ul>
@@ -60,7 +60,7 @@ const SponsorTexture = () => {
         <ul className="list-term">
           <li className="small-font">
             <Link href="/sponsor-home">
-              <a className="italic highlight">See how.</a>
+              <a className="underline highlight">See how.</a>
             </Link>
           </li>
         </ul>

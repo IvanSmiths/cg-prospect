@@ -54,7 +54,9 @@ const VerticalCarousel = ({ data, leadingText }) => {
   return (
     <section className="carousel-cnt">
       <div className="carousel-heading-cnt">
-        <h3 className="big-font underline highlight-main">#CGPROSPECT</h3>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+          <h3 className="big-font underline highlight-main">#CGPROSPECT</h3>
+        </a>
         <p className="small-font">{t('home:carousel-desc')}</p>
       </div>
       <div className="outer-container">

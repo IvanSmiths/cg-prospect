@@ -100,6 +100,10 @@ p {
   font-weight: 600;
 }
 
+.btn2 {
+  padding: 0.6rem 1.4rem;
+}
+
 .btn-cookie {
   cursor: pointer;
   padding: 0.6rem 1rem !important;
@@ -118,11 +122,11 @@ p {
 
 .patreon-clr {
   background-color: var(--patreonColor);
+  color: white;
 }
 
 .btn:hover {
-  border-radius: 1rem;
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .btn:focus {

@@ -1,4 +1,5 @@
 import useTranslation from 'next-translate/useTranslation';
+import Link from 'next/link';
 
 function Stats() {
   let { t } = useTranslation();
@@ -45,7 +46,16 @@ function Stats() {
             alt="An icon showing a cube"
           />
           <h2 className="btn-font highlight">{t('home:stats-card-title3')}</h2>
-          <p className="small-font">{t('home:stats-card-desc3')}</p>
+          <p className="small-font">
+            {t('home:stats-card-desc3')}
+            <Link href="/branding">
+              <a>
+                <span className="highlight underline">
+                  {t('home:stats-card-desc3-2')}
+                </span>
+              </a>
+            </Link>
+          </p>
         </div>
       </div>
       <h3 className="font-color-inverse stats-title big-font">
