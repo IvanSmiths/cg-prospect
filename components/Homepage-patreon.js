@@ -13,7 +13,7 @@ function Patreon() {
             {' '}
             {t('home:patreon-desc2')}
           </strong>{' '}
-          ,{t('home:patreon-desc3')}
+          {t('home:patreon-desc3')}
         </p>
       </div>
       <div>

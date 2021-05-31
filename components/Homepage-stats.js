@@ -9,7 +9,7 @@ function Stats() {
         <div className="card">
           <img
             loading="lazy"
-            src="/maps.svg"
+            src="/texture-icon.svg"
             height="60"
             width="60"
             alt="An icon showing maps"
@@ -20,7 +20,7 @@ function Stats() {
         <div className="card card-patreon">
           <img
             loading="lazy"
-            src="/hand.svg"
+            src="/hand-patreon.svg"
             height="60"
             width="60"
             alt="An icon showing a hand"
@@ -40,7 +40,7 @@ function Stats() {
         <div className="card">
           <img
             loading="lazy"
-            src="/cube.svg"
+            src="/3d-model-icon.svg"
             height="60"
             width="60"
             alt="An icon showing a cube"

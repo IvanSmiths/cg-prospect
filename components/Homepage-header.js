@@ -38,8 +38,8 @@ function Header() {
                 onMouseEnter={() => setIsOpened(true)}
                 onClick={() => setIsOpened(!isOpened)}
                 src="/translate.svg"
-                height="30px"
-                width="30px"
+                height="39px"
+                width="39px"
                 alt="change languagge"
               />
 

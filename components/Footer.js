@@ -57,8 +57,13 @@ const Footer = () => {
             <li className="small-font highlight-2 footer-label">
               {t('common:nav-support')}
             </li>
-            <li className="tiny-font">
-              <a href="https://www.patreon.com/" target="_blank" rel="noopener">
+            <li className="tiny-font ">
+              <a
+                className="patreon-clr btn btn2"
+                href="https://www.patreon.com/"
+                target="_blank"
+                rel="noopener"
+              >
                 Cahoot
               </a>
             </li>

@@ -8,7 +8,8 @@ function CC0() {
         <h3 className="big-font">{t('home:cc0-title')}</h3>
         <p className="small-font">
           {t('home:cc0-desc')}
-          <strong className="highlight">{t('home:cc0-desc2')}</strong>
+          {t('home:cc0-desc2')}
+          <strong className="highlight underline">{t('home:cc0-desc3')}</strong>
         </p>
       </div>
     </section>

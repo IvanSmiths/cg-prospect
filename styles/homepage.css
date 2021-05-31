@@ -35,12 +35,12 @@
 
 .container-mainpage > *:nth-child(1) {
   margin-left: 8rem;
-  margin-top: 12rem;
+  margin-top: 10rem;
 }
 
 .container-mainpage > *:nth-child(2) {
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 8rem;
 }
 
 .container-mainpage p {
@@ -57,11 +57,9 @@
 
 .lang-cnt-2 {
   position: fixed;
-  top: 90%;
+  top: 85vh;
   left: 2rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   z-index: 99;
 }
@@ -153,7 +151,7 @@
 }
 
 .card h2 {
-  margin: 2rem 0rem;
+  margin: 1.5rem 0rem;
 }
 
 .container-numbers {
