@@ -4,6 +4,7 @@ import Dropdown from './Dropdown';
 import Dropdown2 from './Dropdown2';
 import Dropdown3 from './Dropdown3';
 import Dropdown4 from './Dropdown4';
+import Dropdown5 from './Dropdown5';
 import useTranslation from 'next-translate/useTranslation';
 
 function Navbar() {
@@ -13,6 +14,7 @@ function Navbar() {
   const [dropdown2, setDropdown2] = useState(false);
   const [dropdown3, setDropdown3] = useState(false);
   const [dropdown4, setDropdown4] = useState(false);
+  const [dropdown5, setDropdown5] = useState(false);
   const [isToggled, setIsToggled] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -80,13 +82,33 @@ function Navbar() {
       setDropdown4(false);
     }
   };
+  const onMouseEnter5 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown5(false);
+    } else {
+      setDropdown5(true);
+    }
+  };
+
+  const onMouseLeave5 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown5(false);
+    } else {
+      setDropdown5(false);
+    }
+  };
 
   return (
     <nav className="navbar">
       <div className="navbar-logo-cnt">
         <Link href="/">
           <a>
-            <img src="/logo.svg" height="30px" width="160px" alt="main logo" />
+            <img
+              src="/logo-white.svg"
+              height="30px"
+              width="160px"
+              alt="main logo"
+            />
           </a>
         </Link>
       </div>
@@ -184,7 +206,19 @@ function Navbar() {
             </Link>
             {dropdown2 && <Dropdown2 />}
           </li>
-          <li className="nav-item small-font">
+          <li
+            onMouseEnter={onMouseEnter5}
+            onMouseLeave={onMouseLeave5}
+            className="nav-item small-font"
+          >
+            <img
+              className="arrow-navbar"
+              loading="lazy"
+              src="/down-arrow-white.svg"
+              height="13px"
+              width="13px"
+              alt="arrow down"
+            />
             <Link
               locale="en"
               href="/contact"
@@ -193,6 +227,7 @@ function Navbar() {
             >
               <a>{t('common:nav-contact')}</a>
             </Link>
+            {dropdown5 && <Dropdown5 />}
           </li>
           <li onClick={closeMobileMenu} className="nav-item small-font">
             <a

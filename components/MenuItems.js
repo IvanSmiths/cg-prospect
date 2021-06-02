@@ -54,3 +54,21 @@ export const MenuItems4 = [
     cName: 'dropdown-link',
   },
 ];
+
+export const MenuItems5 = [
+  {
+    title: 'Contacts',
+    path: '/contact',
+    cName: 'dropdown-link',
+  },
+  {
+    title: 'Terms & Privacy',
+    path: '/terms',
+    cName: 'dropdown-link',
+  },
+  {
+    title: 'Feedback',
+    path: '/feedback',
+    cName: 'dropdown-link',
+  },
+];
