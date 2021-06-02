@@ -26,7 +26,7 @@ function Stats() {
             alt="An icon showing a hand"
           />
           <h2 className="btn-font highlight">{t('home:stats-card-title2')}</h2>
-          <p className="small-font">{t('home:stats-card-desc2')}</p>
+          <p className="small-font patreon-p">{t('home:stats-card-desc2')}</p>
           <a
             target="_blank"
             rel="noopener"
