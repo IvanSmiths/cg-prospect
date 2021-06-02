@@ -204,6 +204,7 @@ nav li > a {
 @import './terms.css';
 @import './progressbar.css';
 @import './contact.css';
+@import './merchandise.css';
 @import './carousel.css';
 
 a {
@@ -288,6 +289,10 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.white {
+  color: white !important;
 }
 
 .feedback {

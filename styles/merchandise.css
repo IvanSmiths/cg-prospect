@@ -1,0 +1,85 @@
+.merch-head-cnt {
+  position: relative;
+  height: 100vh;
+}
+
+.merch-head-cnt-1 {
+  padding-left: 4rem;
+  padding-right: 20rem;
+  padding-top: 11rem;
+}
+
+.merch-head-cnt-1 p {
+  margin: 1rem 0rem;
+}
+
+.merch-head-cnt-2 {
+  position: relative;
+  padding-top: 11rem;
+  background-color: var(--mainColor);
+}
+
+.merch-head-cnt-2 h2 {
+  color: black;
+}
+
+.merch-link-home p,
+h3 {
+  color: black !important;
+}
+
+.merch-link-home p {
+  margin: 1rem 0;
+}
+
+.h3-merch {
+  margin: 6rem 0rem;
+  text-align: center;
+}
+
+.merch-link-home a {
+  color: black !important;
+  border: black solid 2px !important;
+}
+
+.merch-img {
+  z-index: 5;
+  position: absolute;
+  top: 8rem;
+  left: 32%;
+}
+
+.merch-link-home {
+  bottom: 30px;
+  right: 0;
+  padding-right: 4rem;
+  padding-left: 18rem;
+  position: absolute;
+}
+
+.merch-main-cnt-1 {
+  padding: 0 10rem 0 4rem;
+}
+
+.merch-main-cnt-1 p {
+  margin: 2rem 0;
+}
+
+.merch-main-cnt-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch-ico-cnt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.merch-ico-list {
+  gap: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
