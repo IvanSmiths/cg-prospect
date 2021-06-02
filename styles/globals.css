@@ -35,6 +35,7 @@ p {
 }
 
 .small-font {
+  color: white;
   line-height: 1.5rem;
   font-size: var(--smallFont);
   font-weight: 400;
@@ -266,6 +267,31 @@ li {
   width: 50vw;
   border-radius: 3rem;
   background-color: aliceblue;
+}
+
+.notfound-cnt {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.notfound-cnt h1 {
+  padding: 2rem 5vw;
+}
+
+.feedback-cnt {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback {
+  width: 90vw;
 }
 
 @import './query.css';

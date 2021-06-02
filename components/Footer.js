@@ -86,6 +86,11 @@ const Footer = () => {
               </Link>
             </li>
             <li>
+              <Link locale="en" href="/feedback">
+                <a className="tiny-font">Feedback</a>
+              </Link>
+            </li>
+            <li>
               <Link locale="en" href="/terms">
                 <a className="tiny-font">Terms & Privacy</a>
               </Link>

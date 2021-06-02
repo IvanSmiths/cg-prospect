@@ -111,9 +111,9 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font">
                   <img
                     loading="lazy"
-                    className="ico-list"
-                    src="/category.svg"
-                    alt="Icon of the category"
+                    className="ico-list-single"
+                    src="/category-texture.svg"
+                    alt="categories of the 3d model"
                     height="23"
                     width="23"
                   />
@@ -131,9 +131,9 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font">
                   <img
                     loading="lazy"
-                    className="ico-list"
-                    src="/method.svg"
-                    alt="Icon of the method"
+                    className="ico-list-single"
+                    src="/method-texture.svg"
+                    alt="methods of the 3d model"
                     height="23"
                     width="23"
                   />
@@ -151,9 +151,9 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font">
                   <img
                     loading="lazy"
-                    className="ico-list"
-                    src="/scale.svg"
-                    alt="Icon of the scale"
+                    className="ico-list-single"
+                    src="/resolution-texture.svg"
+                    alt="scale of the 3d model"
                     height="23"
                     width="23"
                   />
@@ -163,9 +163,9 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font">
                   <img
                     loading="lazy"
-                    className="ico-list"
-                    src="/location.svg"
-                    alt="Icon of the location"
+                    className="ico-list-single"
+                    src="/location-texture.svg"
+                    alt="location of the 3d model"
                     height="23"
                     width="23"
                   />
@@ -175,12 +175,13 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font">
                   <img
                     loading="lazy"
-                    className="ico-list"
-                    src="/published.svg"
+                    className="ico-list-single"
+                    src="/date-texture.svg"
                     alt="Icon of the date"
                     height="23"
                     width="23"
                   />
+                  <span className="small-font-sub"> Published: </span>
                 </li>
               </ul>
             </div>
@@ -189,42 +190,37 @@ export default function SingleTexture({ model, models }) {
           <div className="first-details">
             <div className="container-gear">
               <ul className="gear-list">
-                <li className="small-font">
-                  <span className="small-font-sub"> Camera:</span> Canon 60D.
+                <li className="small-font-sub">
+                  Camera <a className="underline small-font">Canon 60D.</a>
                 </li>
-                <li className="small-font">
-                  <span className="small-font-sub">Lens: </span> Canon 55mm.
+                <li className="small-font-sub">
+                  Lens: <a className="underline small-font">Canon 55mm.</a>
                 </li>
-                <li className="small-font">
-                  <span className="small-font-sub">Tripod: </span> Manfrotto
-                  Canon 5mm.
+                <li className="small-font-sub">
+                  Tripod: <a className="underline small-font">Manfrotto</a>
                 </li>
-                <li className="small-font">
-                  <span className="small-font-sub">Polarizer: </span> Honda
-                  6PLS.
+                <li className="small-font-sub">
+                  Polarizer: <a className="underline small-font">Honda</a>
                 </li>
-                <li className="small-font">
-                  <span className="small-font-sub">Lights: </span> Pro Studio
+                <li className="small-font-sub">
+                  Lights: <a className="underline small-font">Pro Studio</a>
                 </li>
               </ul>
               <ul className="gear-list">
-                <li className="small-font">
-                  <span className="small-font-sub"> White Balance:</span> Pro
-                  Col 30.
+                <li className="small-font-sub">
+                  White Balance <a className="underline small-font">Pro</a>
                 </li>
-                <li className="small-font">
-                  <span className="small-font-sub">Green Screen: </span> Green
-                  PRO
+                <li className="small-font-sub">
+                  Green Screen: <a className="underline small-font">Green</a>
                 </li>
-                <li className="small-font">
-                  <span className="small-font-sub">GPU: </span> Nvidia GTX 1080.
+                <li className="small-font-sub">
+                  GPU: <a className="underline small-font">Nvidia GTX 1080.</a>
                 </li>
-                <li className="small-font">
-                  <span className="small-font-sub">CPU: </span> AMD Ryzen 3030.
+                <li className="small-font-sub">
+                  CPU: <a className="underline small-font">AMD Ryzen 3030.</a>
                 </li>
-                <li className="small-font">
-                  <span className="small-font-sub">Motherboard: </span> AMD
-                  3000D.
+                <li className="small-font-sub">
+                  Motherboard: <a className="underline small-font">AMD</a>
                 </li>
               </ul>
             </div>
