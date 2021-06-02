@@ -31,8 +31,10 @@ function Merchandise() {
           <h2 className="large-font">OFFICIAL MERCH</h2>
           <h2 className="large-font">CG PROSPECT</h2>
           <div className="merch-link-home">
-            <h3 className="small-font highlight">Free textures & 3d models</h3>
-            <p className="small-font">
+            <h3 className="small-font highlight black">
+              Free textures & 3d models
+            </h3>
+            <p className="small-font black">
               CG Prospect provides free textures and 3d models to put in even
               your commercial projects. If you want to see the assets, click the
               button below!

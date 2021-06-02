@@ -295,6 +295,10 @@ li {
   color: white !important;
 }
 
+.black {
+  color: rgb(0, 0, 0) !important;
+}
+
 .feedback {
   width: 90vw;
 }
