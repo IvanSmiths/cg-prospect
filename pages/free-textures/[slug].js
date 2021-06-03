@@ -1,6 +1,7 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
 import {
   FacebookIcon,
   PinterestIcon,
@@ -17,8 +18,11 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from 'react-share';
+import { useRouter } from 'next/router';
 
 export default function SingleTexture({ texture, textures }) {
+  let router = useRouter();
+  let { t } = useTranslation();
   return (
     <>
       <Head>
@@ -97,8 +101,8 @@ export default function SingleTexture({ texture, textures }) {
         <div className="container-texture-details" key={texture.id}>
           <h1 className="big-font title-texture">{texture.title}</h1>
           <p className="small-font p-slug">
-            {texture.title} is a seamless, free to download, up to native 8K Pbr
-            Texture.{' '}
+            {texture.title} {t('single-texture:title')}, free to download, up to
+            native 8K Pbr Texture.{' '}
             <a
               href="https://www.patreon.com"
               className="italic"
@@ -380,15 +384,17 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
   const textures = await prisma.texture.findMany();
+  const paths = [];
 
+  locales.forEach((locale, i) => {
+    textures.forEach((texture, i) => {
+      paths.push({ params: { slug: texture.slug }, locale });
+    });
+  });
   return {
-    paths: textures.map((texture) => ({
-      params: {
-        slug: texture.slug.toString(),
-      },
-    })),
+    paths,
     fallback: false,
   };
 }
