@@ -1,17 +1,13 @@
 import Link from 'next/link';
-import useTranslation from 'next-translate/useTranslation';
 import Subscribe from './Subscribe';
 
 const Footer = () => {
-  let { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-first-cnt">
         <div className="footer-links">
           <ul>
-            <li className="small-font highlight-2 footer-label">
-              {t('common:nav-assets')}
-            </li>
+            <li className="small-font highlight-2 footer-label">Assets</li>
             <li className="tiny-font">
               <Link locale="en" href="/free-textures">
                 <a>Textures</a>
@@ -24,9 +20,7 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">
-              {t('common:nav-categories')}
-            </li>
+            <li className="small-font highlight-2 footer-label">Categories</li>
             <li className="tiny-font">
               <Link locale="en" href="/categories">
                 <a>All textures categories</a>
@@ -39,9 +33,7 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">
-              {t('common:nav-methods')}
-            </li>
+            <li className="small-font highlight-2 footer-label">Methods</li>
             <li className="tiny-font">
               <Link locale="en" href="/methods">
                 <a>All texture methods</a>
@@ -54,9 +46,7 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">
-              {t('common:nav-support')}
-            </li>
+            <li className="small-font highlight-2 footer-label">Info</li>
             <li className="tiny-font ">
               <a
                 className="patreon-clr btn btn2"
@@ -69,12 +59,12 @@ const Footer = () => {
             </li>
             <li>
               <Link locale="en" href="/sponsor-home">
-                <a className="tiny-font">{t('common:nav-support-page')}</a>
+                <a className="tiny-font">Sponsor on every pages</a>
               </Link>
             </li>
             <li>
               <Link locale="en" href="/sponsor-texture">
-                <a className="tiny-font">{t('common:nav-support-assets')}</a>
+                <a className="tiny-font">Sponsor on assets pages</a>
               </Link>
             </li>
           </ul>
@@ -82,7 +72,7 @@ const Footer = () => {
             <li className="small-font highlight-2 footer-label">Info</li>
             <li>
               <Link locale="en" href="/contact">
-                <a className="tiny-font">{t('common:nav-contact')}</a>
+                <a className="tiny-font">Contact</a>
               </Link>
             </li>
             <li>

@@ -33,7 +33,7 @@ function Subscribe() {
 
     // 5. Clear the input value and show a success message.
     inputEl.current.value = '';
-    setMessage(`${t('common:mail-desc-success')}`);
+    setMessage(`Success! 🎉 You are now subscribed to the newsletter.`);
   };
 
   return (
@@ -49,11 +49,13 @@ function Subscribe() {
       />
       <div>
         <p className="small-font highlight">
-          {message ? message : `${t('common:mail-desc')}`}
+          {message
+            ? message
+            : `One email every friday, with the latest textures and news about the 3D world. No spam, no bulls**t.`}
         </p>
       </div>
       <button className="btn" type="submit">
-        {t('common:mail-btn')}
+        Subscribe 💌
       </button>
     </form>
   );
