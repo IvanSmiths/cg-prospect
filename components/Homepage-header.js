@@ -35,14 +35,12 @@ function Header() {
             </Link>
             <div className="lang-cnt-2">
               <img
-                onMouseEnter={() => setIsOpened(true)}
                 onClick={() => setIsOpened(!isOpened)}
                 src="/translate.svg"
                 height="39px"
                 width="39px"
                 alt="change languagge"
               />
-
               {isOpened && (
                 <div onMouseLeave={() => setIsOpened(false)}>
                   <ol className="lang-cnt">

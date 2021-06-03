@@ -299,6 +299,60 @@
   margin-top: 3rem;
 }
 
+/* -------------------- 3D MODELS BEGIN ---------- */
+/* -------------------- 3D MODELS BEGIN ---------- */
+/* -------------------- 3D MODELS BEGIN ---------- */
+
+.hp-3d-model-cnt {
+  background: url(../public/3d-model-showcase.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../public/3d-model-showcase.jpeg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 3rem;
+  min-height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.hp-3d-model-cnt p {
+  margin: 1.5rem 0;
+  padding: 0 25rem;
+}
+
+.model-3d-example img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.model-3d-example-cnt > *:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8rem;
+}
+
+.model-3d-example-cnt-2 > *:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8rem;
+}
+
+.model-3d-example-cnt p {
+  margin: 1.5rem 0;
+}
+
+.model-3d-example-cnt-2 p {
+  margin: 1.5rem 0;
+}
+
 /* -------------------- CC0 BEGIN ---------- */
 /* -------------------- CC0 BEGIN ---------- */
 /* -------------------- CC0 BEGIN ---------- */

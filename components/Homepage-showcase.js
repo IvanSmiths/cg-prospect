@@ -34,7 +34,6 @@ function Showcase() {
           <p className="small-font">
             <strong className="highlight">{t('home:showcase-desc2')}</strong>{' '}
             {t('home:showcase-desc2-2')}
-            textures.
           </p>
           <Link locale="en" href="/methods/ai-to-material">
             <a className="btn-line btn-texture-example">
