@@ -14,7 +14,13 @@ function Dropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
-        <li>
+        <li className="nav-icon-cnt">
+          <img
+            src="/sponsor-assets-icon.svg"
+            height="30"
+            width="30"
+            alt="icon sponsor assets"
+          />
           <Link
             className="dropdown-link"
             href="/sponsor-texture"
@@ -23,7 +29,13 @@ function Dropdown() {
             {t('common:nav-support-assets')}
           </Link>
         </li>
-        <li>
+        <li className="nav-icon-cnt">
+          <img
+            src="/sponsor-logo-icon.svg"
+            height="30"
+            width="30"
+            alt="icon sponsor logo"
+          />
           <Link
             className="dropdown-link"
             href="/sponsor-home"
@@ -32,13 +44,19 @@ function Dropdown() {
             {t('common:nav-support-page')}
           </Link>
         </li>
-        <li>
+        <li className="nav-icon-cnt">
+          <img
+            src="/merchandise-3d.svg"
+            height="30"
+            width="30"
+            alt="icon merchandise"
+          />
           <Link
             className="dropdown-link"
             href="/merchandise"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-support-merch')}
+            {t('common:nav-merch')}
           </Link>
         </li>
       </ul>

@@ -14,7 +14,13 @@ function Dropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
-        <li>
+        <li className="nav-icon-cnt">
+          <img
+            src="contact-icon.svg"
+            height="30"
+            width="30"
+            alt="icon contact"
+          />
           <Link
             className="dropdown-link"
             href="/contact"
@@ -23,7 +29,8 @@ function Dropdown() {
             {t('common:nav-contact')}
           </Link>
         </li>
-        <li>
+        <li className="nav-icon-cnt">
+          <img src="terms-icon.svg" height="30" width="30" alt="icon terms" />
           <Link
             className="dropdown-link"
             href="/terms"
@@ -32,7 +39,13 @@ function Dropdown() {
             {t('common:nav-terms')}
           </Link>
         </li>
-        <li>
+        <li className="nav-icon-cnt">
+          <img
+            src="feedback-icon.svg"
+            height="30"
+            width="30"
+            alt="icon feedback"
+          />
           <Link
             className="dropdown-link"
             href="/feedback"
