@@ -16,7 +16,7 @@ function Dropdown() {
       >
         <li className="nav-icon-cnt">
           <img
-            src="textures-icon.svg"
+            src="textures-icon-nav.svg"
             height="30"
             width="30"
             alt="icon texture"
@@ -29,7 +29,13 @@ function Dropdown() {
             {t('common:nav-assets-textures')}
           </Link>
         </li>
-        <li>
+        <li className="nav-icon-cnt">
+          <img
+            src="3d-models-icon.svg"
+            height="30"
+            width="30"
+            alt="icon texture"
+          />
           <Link
             className="dropdown-link"
             href="/free-3d-models"

@@ -14,7 +14,13 @@ function Dropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
-        <li>
+        <li className="nav-icon-cnt">
+          <img
+            src="methods-nav.svg"
+            height="30"
+            width="30"
+            alt="icon methods textures"
+          />
           <Link
             className="dropdown-link"
             href="/methods"
@@ -23,7 +29,13 @@ function Dropdown() {
             {t('common:nav-methods-tex')}
           </Link>
         </li>
-        <li>
+        <li className="nav-icon-cnt">
+          <img
+            src="methods-nav.svg"
+            height="30"
+            width="30"
+            alt="icon methods 3d model"
+          />
           <Link
             className="dropdown-link"
             href="/methods-3d-model"
