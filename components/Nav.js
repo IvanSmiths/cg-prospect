@@ -128,7 +128,6 @@ function Navbar() {
               alt="arrow down"
             />
             <Link
-              locale="en"
               href="/free-textures"
               className="nav-links"
               onClick={closeMobileMenu}
@@ -151,7 +150,6 @@ function Navbar() {
               alt="arrow down"
             />
             <Link
-              locale="en"
               href="/categories"
               className="nav-links"
               onClick={closeMobileMenu}
@@ -174,7 +172,6 @@ function Navbar() {
               alt="arrow down"
             />
             <Link
-              locale="en"
               href="/methods"
               className="nav-links"
               onClick={closeMobileMenu}
@@ -197,7 +194,6 @@ function Navbar() {
               alt="arrow down"
             />
             <Link
-              locale="en"
               href="/sponsor-home"
               className="nav-links"
               onClick={closeMobileMenu}
@@ -220,7 +216,6 @@ function Navbar() {
               alt="arrow down"
             />
             <Link
-              locale="en"
               href="/contact"
               className="nav-links"
               onClick={closeMobileMenu}

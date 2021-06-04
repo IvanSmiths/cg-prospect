@@ -8,7 +8,7 @@ function Message() {
         <h2 className="small-font">
           You'll receive an answer as soon as possible.
         </h2>
-        <Link locale="en" href="/free-textures">
+        <Link href="/free-textures">
           <a>
             <button className="btn">Browse textures</button>
           </a>

@@ -31,7 +31,7 @@ export default function Home({ textures, categories }) {
           <ul>
             {categories.map((category) => (
               <li key={category.id} className="small-font categories-list">
-                <Link locale="en" href={`/categories/${category.slug}`}>
+                <Link href={`/categories/${category.slug}`}>
                   <a>{category.title}</a>
                 </Link>
                 <span className="highlight-bck">

@@ -31,10 +31,7 @@ export default function Home({ models, categories }) {
           <ul>
             {categories.map((category) => (
               <li key={category.id} className="small-font categories-list">
-                <Link
-                  locale="en"
-                  href={`/categories-3d-model/${category.slug}`}
-                >
+                <Link href={`/categories-3d-model/${category.slug}`}>
                   <a>{category.title}</a>
                 </Link>
                 <span className="highlight-bck">{category._count.model3d}</span>
@@ -45,11 +42,7 @@ export default function Home({ models, categories }) {
         <section className="cnt-texture-list">
           <div className="texture-list">
             {models.map((model) => (
-              <Link
-                key={model.id}
-                locale="en"
-                href={`/free-3d-models/${model.slug}`}
-              >
+              <Link key={model.id} href={`/free-3d-models/${model.slug}`}>
                 <a className="small-font">
                   <img
                     loading="lazy"

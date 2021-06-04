@@ -135,7 +135,6 @@ export default function SingleTexture({ texture, textures }) {
                   </span>
                   {texture.category.map((category) => (
                     <Link
-                      locale="en"
                       key={category.id}
                       href={`/categories/${category.slug}`}
                     >
@@ -157,7 +156,6 @@ export default function SingleTexture({ texture, textures }) {
                     {t('single-texture:method')}
                   </span>{' '}
                   <Link
-                    locale="en"
                     key={texture.method[0].id}
                     href={`/methods/${texture.method[0].slug}`}
                   >
@@ -376,7 +374,7 @@ export default function SingleTexture({ texture, textures }) {
       </h2>
       <section className="texture-suggest">
         {textures.map((texture) => (
-          <Link locale="en" key={texture.id} href={`/textures/${texture.slug}`}>
+          <Link key={texture.id} href={`/textures/${texture.slug}`}>
             <a>
               <img
                 loading="lazy"

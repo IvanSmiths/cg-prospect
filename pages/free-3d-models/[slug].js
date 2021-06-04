@@ -120,7 +120,6 @@ export default function SingleTexture({ model, models }) {
                   <span className="small-font-sub"> Categories: </span>
                   {model.modelCategory.map((category) => (
                     <Link
-                      locale="en"
                       key={category.id}
                       href={`/categories-3d-model/${category.slug}`}
                     >
@@ -139,7 +138,6 @@ export default function SingleTexture({ model, models }) {
                   />
                   <span className="small-font-sub"> Method:</span>{' '}
                   <Link
-                    locale="en"
                     key={model.modelMethod[0].id}
                     href={`/methods-3d-model/${model.modelMethod[0].slug}`}
                   >
@@ -320,11 +318,7 @@ export default function SingleTexture({ model, models }) {
       <h2 className="medium-font h2-suggest">See also:</h2>
       <section className="texture-suggest">
         {models.map((model) => (
-          <Link
-            locale="en"
-            key={model.id}
-            href={`/free-3d-models/${model.slug}`}
-          >
+          <Link key={model.id} href={`/free-3d-models/${model.slug}`}>
             <a>
               <img
                 loading="lazy"

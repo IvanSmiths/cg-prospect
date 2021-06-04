@@ -34,17 +34,13 @@ export default function Single({ category }) {
         <p className="small-font">
           You're currently browsing {category.title} 3d models. If you would
           like to filter the 3d models by the creation method, go to the {''}
-          <Link locale="en" href="/methods">
+          <Link href="/methods">
             <a className="italic">methods page.</a>
           </Link>
         </p>
         <section className="container-category" key={category.id}>
           {category.model3d.map((model) => (
-            <Link
-              locale="en"
-              key={model.id}
-              href={`/free-3d-models/${model.slug}`}
-            >
+            <Link key={model.id} href={`/free-3d-models/${model.slug}`}>
               <a>
                 <img
                   height="350"

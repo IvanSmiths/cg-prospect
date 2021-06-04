@@ -34,11 +34,7 @@ const SingleMethod = ({ method }) => {
 
         <section className="container-single-method" key={method.id}>
           {method.model3d.map((model) => (
-            <Link
-              locale="en"
-              key={model.id}
-              href={`/free-3d-models/${model.slug}`}
-            >
+            <Link key={model.id} href={`/free-3d-models/${model.slug}`}>
               <a>
                 <img
                   src={model.mainImage}

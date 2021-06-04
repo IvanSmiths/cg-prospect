@@ -31,14 +31,13 @@ export default function CategoriesModel({ categories }) {
         <p className="small-font">
           You're currently browsing all the categories. If you would like to
           filter the textures by the creation method, go to the {''}
-          <Link locale="en" href="/methods">
+          <Link href="/methods">
             <a className="italic">methods page.</a>
           </Link>
         </p>
         <section className="container-category">
           {categories.map((category) => (
             <Link
-              locale="en"
               href={`/categories-3d-model/${category.slug}`}
               key={category.id}
             >
