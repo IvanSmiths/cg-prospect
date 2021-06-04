@@ -33,12 +33,12 @@ function Subscribe() {
 
     // 5. Clear the input value and show a success message.
     inputEl.current.value = '';
-    setMessage(`Success! 🎉 You are now subscribed to the newsletter.`);
+    setMessage(`${t('common:mail-desc-success')}`);
   };
 
   return (
     <form className="form-newsletter" onSubmit={subscribe}>
-      <label htmlFor="email-input">{'Your Email  '}</label>
+      <label htmlFor="email-input">{`${t('common:mail-label')}`}</label>
       <input
         id="email-input"
         name="email"
@@ -49,13 +49,11 @@ function Subscribe() {
       />
       <div>
         <p className="small-font highlight">
-          {message
-            ? message
-            : `One email every friday, with the latest textures and news about the 3D world. No spam, no bulls**t.`}
+          {message ? message : `${t('common:mail-desc')}`}
         </p>
       </div>
       <button className="btn" type="submit">
-        Subscribe 💌
+        {t('common:mail-btn')}
       </button>
     </form>
   );

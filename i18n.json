@@ -2,6 +2,7 @@
   "locales": ["en", "it", "pt", "ru", "zh"],
   "defaultLocale": "en",
   "pages": {
+    "*": ["common"],
     "/": ["home"],
     "/free-textures/[slug]": ["single-texture"]
   }

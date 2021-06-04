@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { MenuItems2 } from './MenuItems';
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 function Dropdown() {
-  const [click, setClick] = useState(false);
+  let { t } = useTranslation();
 
+  const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
   return (
@@ -13,20 +14,33 @@ function Dropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
-        {MenuItems2.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link
-                locale="en"
-                className={item.cName}
-                href={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
+        <li>
+          <Link
+            className="dropdown-link"
+            href="/sponsor-texture"
+            onClick={() => setClick(false)}
+          >
+            {t('common:nav-support-assets')}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="dropdown-link"
+            href="/sponsor-home"
+            onClick={() => setClick(false)}
+          >
+            {t('common:nav-support-page')}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="dropdown-link"
+            href="/merchandise"
+            onClick={() => setClick(false)}
+          >
+            {t('common:nav-support-merch')}
+          </Link>
+        </li>
       </ul>
     </>
   );

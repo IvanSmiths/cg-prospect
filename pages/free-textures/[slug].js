@@ -64,7 +64,7 @@ export default function SingleTexture({ texture, textures }) {
           <div>
             <h3 className="small-font sponsor-texture">
               <strong className="small-font highlight">
-                Sponsored By: <br />
+                {t('single-texture:sponsor-title')} <br />
               </strong>
               <a
                 href={texture.sponsorLink}
@@ -89,10 +89,14 @@ export default function SingleTexture({ texture, textures }) {
               />
             </a>
             <h3 className="small-font sponsor-texture">
-              Want your name, logo, and link here? {''}
+              {t('single-texture:sponsor-desc')}
+              {''}
               <Link href="/sponsor-texture">
                 <a>
-                  <span className="highlight underline">See how you can.</span>
+                  <span className="highlight underline">
+                    {' '}
+                    {t('single-texture:sponsor-desc2')}
+                  </span>
                 </a>
               </Link>
             </h3>
@@ -101,8 +105,7 @@ export default function SingleTexture({ texture, textures }) {
         <div className="container-texture-details" key={texture.id}>
           <h1 className="big-font title-texture">{texture.title}</h1>
           <p className="small-font p-slug">
-            {texture.title} {t('single-texture:title')}, free to download, up to
-            native 8K Pbr Texture.{' '}
+            {texture.title} {t('single-texture:title')}
             <a
               href="https://www.patreon.com"
               className="italic"
@@ -110,7 +113,7 @@ export default function SingleTexture({ texture, textures }) {
               target="_blank"
             >
               <strong className="highlight-patreon underline">
-                Consider joining the Cahoot for exclusive content!{' '}
+                {t('single-texture:title2')}
               </strong>
             </a>
           </p>
@@ -126,7 +129,10 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Categories: </span>
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-texture:categories')}{' '}
+                  </span>
                   {texture.category.map((category) => (
                     <Link
                       locale="en"
@@ -146,7 +152,10 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Method:</span>{' '}
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-texture:method')}
+                  </span>{' '}
                   <Link
                     locale="en"
                     key={texture.method[0].id}
@@ -164,7 +173,10 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Scale:</span>{' '}
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-texture:scale')}
+                  </span>{' '}
                   {texture.scale} meters.
                 </li>
                 <li className="small-font">
@@ -176,7 +188,10 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Location: </span>{' '}
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-texture:location')}{' '}
+                  </span>{' '}
                   {texture.location}.
                 </li>
                 <li className="small-font">
@@ -188,53 +203,68 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Published: </span>
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-texture:published')}{' '}
+                  </span>
                 </li>
               </ul>
             </div>
           </div>
-          <h2 className="btn-font highlight">Gear that i currently use:</h2>
+          <h2 className="btn-font highlight">
+            {t('single-texture:gear-title')}
+          </h2>
           <div className="first-details">
             <div className="container-gear">
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  Camera <a className="underline small-font">Canon 60D.</a>
+                  {t('single-texture:gear-camera')}{' '}
+                  <a className="underline small-font">Canon 60D.</a>
                 </li>
                 <li className="small-font-sub">
-                  Lens: <a className="underline small-font">Canon 55mm.</a>
+                  {t('single-texture:gear-lens')}{' '}
+                  <a className="underline small-font">Canon 55mm.</a>
                 </li>
                 <li className="small-font-sub">
-                  Tripod: <a className="underline small-font">Manfrotto</a>
+                  {t('single-texture:gear-tripod')}{' '}
+                  <a className="underline small-font">Manfrotto</a>
                 </li>
                 <li className="small-font-sub">
-                  Polarizer: <a className="underline small-font">Honda</a>
+                  {t('single-texture:gear-polarizer')}{' '}
+                  <a className="underline small-font">Honda</a>
                 </li>
                 <li className="small-font-sub">
-                  Lights: <a className="underline small-font">Pro Studio</a>
+                  {t('single-texture:gear-lights')}{' '}
+                  <a className="underline small-font">Pro Studio</a>
                 </li>
               </ul>
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  White Balance <a className="underline small-font">Pro</a>
+                  {t('single-texture:gear-checker')}{' '}
+                  <a className="underline small-font">AMD</a>
                 </li>
                 <li className="small-font-sub">
-                  Green Screen: <a className="underline small-font">Green</a>
+                  {t('single-texture:gear-laptop')}{' '}
+                  <a className="underline small-font">Pro</a>
                 </li>
                 <li className="small-font-sub">
-                  GPU: <a className="underline small-font">Nvidia GTX 1080.</a>
+                  {t('single-texture:gear-gpu')}{' '}
+                  <a className="underline small-font">Green</a>
                 </li>
                 <li className="small-font-sub">
-                  CPU: <a className="underline small-font">AMD Ryzen 3030.</a>
+                  {t('single-texture:gear-cpu')}{' '}
+                  <a className="underline small-font">Nvidia GTX 1080.</a>
                 </li>
                 <li className="small-font-sub">
-                  Motherboard: <a className="underline small-font">AMD</a>
+                  {t('single-texture:gear-mobo')}{' '}
+                  <a className="underline small-font">AMD Ryzen 3030.</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="donate-btn">
             <h2 className="btn-font highlight">
-              Donate if you want, or grab it free.
+              {t('single-texture:donate-title')}
             </h2>
             <div className="donate-buttons">
               <form
@@ -267,7 +297,9 @@ export default function SingleTexture({ texture, textures }) {
               </div>
             </div>
           </div>
-          <h2 className="btn-font highlight">Resolution & Format:</h2>
+          <h2 className="btn-font highlight">
+            {t('single-texture:download-title')}
+          </h2>
           <div className="container-links">
             <ul>
               <li className="small-font">
@@ -339,7 +371,9 @@ export default function SingleTexture({ texture, textures }) {
           </div>
         </div>
       </main>
-      <h2 className="medium-font h2-suggest">See also:</h2>
+      <h2 className="medium-font h2-suggest">
+        {t('single-texture:see-also-title')}
+      </h2>
       <section className="texture-suggest">
         {textures.map((texture) => (
           <Link locale="en" key={texture.id} href={`/textures/${texture.slug}`}>

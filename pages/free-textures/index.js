@@ -6,7 +6,7 @@ export default function Home({ textures, categories }) {
   return (
     <>
       <Head>
-        <title>CG Prospect | All free 8k textures.</title>
+        <title>CG Prospect | Free 8k textures.</title>
         <meta
           name="description"
           content=" is one of multiple categories of free to download, up to native 8K Pbr
@@ -22,7 +22,7 @@ export default function Home({ textures, categories }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://postgres.pages.dev/free-textures/`}
+          content={`https://www.cgprospect.com/free-textures/`}
         />
         <meta property="og:image" content={textures[0].mainImage} />
       </Head>
@@ -42,6 +42,20 @@ export default function Home({ textures, categories }) {
           </ul>
         </aside>
         <section className="cnt-texture-list">
+          <div className="texture-list-up-cnt">
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                iusto.
+              </p>
+            </div>
+          </div>
           <div className="texture-list">
             {textures.map((texture) => (
               <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
@@ -57,16 +71,16 @@ export default function Home({ textures, categories }) {
                 </a>
               </Link>
             ))}
+            <div className="page-btn">
+              <button
+                className="btn-line"
+                onClick={() => router.push(`/free-textures/page/2`)}
+              >
+                Next
+              </button>
+            </div>
           </div>
         </section>
-        <div className="page-btn">
-          <button
-            className="btn-line"
-            onClick={() => router.push(`/free-textures/page/2`)}
-          >
-            Next
-          </button>
-        </div>
       </main>
     </>
   );

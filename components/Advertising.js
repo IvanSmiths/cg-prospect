@@ -1,17 +1,15 @@
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 const Advertising = () => {
+  let { t } = useTranslation();
   return (
     <section className="advertising">
       <hr className="line" />
-      <h2 className=" big-font">Want Your Logo on CG Prospect?</h2>
-      <p className="small-font">
-        CG Prospect offers various types of direct advertising. For more
-        informations about the traffic of the website and other, feel free to
-        get in touch!
-      </p>
+      <h2 className=" big-font">{t('common:ad-title')}</h2>
+      <p className="small-font">{t('common:ad-desc')}</p>
       <Link href="/sponsor-home">
-        <a className="btn">Get a boost</a>
+        <a className="btn">{t('common:ad-btn')}</a>
       </Link>
       <hr className="line" />
     </section>

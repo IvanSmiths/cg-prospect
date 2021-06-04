@@ -5,8 +5,10 @@ import Dropdown2 from './Dropdown2';
 import Dropdown3 from './Dropdown3';
 import Dropdown4 from './Dropdown4';
 import Dropdown5 from './Dropdown5';
+import useTranslation from 'next-translate/useTranslation';
 
 function Navbar() {
+  let { t } = useTranslation();
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
@@ -131,7 +133,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Assets</a>
+              <a>{t('common:nav-assets')}</a>
             </Link>
             {dropdown && <Dropdown />}
           </li>
@@ -154,7 +156,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Categories</a>
+              <a>{t('common:nav-categories')}</a>
             </Link>
             {dropdown3 && <Dropdown3 />}
           </li>
@@ -177,7 +179,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Methods</a>
+              <a>{t('common:nav-methods')}</a>
             </Link>
             {dropdown4 && <Dropdown4 />}
           </li>
@@ -200,7 +202,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Support</a>
+              <a>{t('common:nav-support')}</a>
             </Link>
             {dropdown2 && <Dropdown2 />}
           </li>
@@ -223,7 +225,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <a>Info</a>
+              <a>{t('common:nav-info')}</a>
             </Link>
             {dropdown5 && <Dropdown5 />}
           </li>

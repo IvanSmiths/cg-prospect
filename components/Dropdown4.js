@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { MenuItems4 } from './MenuItems';
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 function Dropdown() {
-  const [click, setClick] = useState(false);
+  let { t } = useTranslation();
 
+  const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
   return (
@@ -13,20 +14,24 @@ function Dropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
-        {MenuItems4.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link
-                locale="en"
-                className={item.cName}
-                href={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
+        <li>
+          <Link
+            className="dropdown-link"
+            href="/methods"
+            onClick={() => setClick(false)}
+          >
+            {t('common:nav-methods-tex')}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="dropdown-link"
+            href="/methods-3d-model"
+            onClick={() => setClick(false)}
+          >
+            {t('common:nav-methods-mod')}
+          </Link>
+        </li>
       </ul>
     </>
   );

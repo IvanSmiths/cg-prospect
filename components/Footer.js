@@ -1,52 +1,64 @@
 import Link from 'next/link';
 import Subscribe from './Subscribe';
+import useTranslation from 'next-translate/useTranslation';
 
 const Footer = () => {
+  let { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-first-cnt">
         <div className="footer-links">
           <ul>
-            <li className="small-font highlight-2 footer-label">Assets</li>
+            <li className="small-font highlight-2 footer-label">
+              {' '}
+              {t('common:nav-assets')}
+            </li>
             <li className="tiny-font">
               <Link locale="en" href="/free-textures">
-                <a>Textures</a>
+                <a> {t('common:nav-assets-textures')}</a>
               </Link>
             </li>
             <li className="tiny-font">
               <Link locale="en" href="/free-3d-models">
-                <a>3D Models</a>
+                <a>{t('common:nav-assets-3d')}</a>
               </Link>
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">Categories</li>
+            <li className="small-font highlight-2 footer-label">
+              {' '}
+              {t('common:nav-categories')}
+            </li>
             <li className="tiny-font">
               <Link locale="en" href="/categories">
-                <a>All textures categories</a>
+                <a>{t('common:nav-categories-tex')}</a>
               </Link>
             </li>
             <li>
               <Link locale="en" href="/categories-3d-model">
-                <a>All 3d model categories</a>
+                <a>{t('common:nav-categories-mod')}</a>
               </Link>
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">Methods</li>
+            <li className="small-font highlight-2 footer-label">
+              {t('common:nav-methods')}
+            </li>
             <li className="tiny-font">
               <Link locale="en" href="/methods">
-                <a>All texture methods</a>
+                <a>{t('common:nav-methods-tex')}</a>
               </Link>
             </li>
             <li className="tiny-font">
               <Link locale="en" href="/methods-3d-model">
-                <a>All 3d model methods</a>
+                <a>{t('common:nav-methods-mod')}</a>
               </Link>
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">Info</li>
+            <li className="small-font highlight-2 footer-label">
+              {t('common:nav-support')}
+            </li>
             <li className="tiny-font ">
               <a
                 className="patreon-clr btn btn2"
@@ -59,30 +71,32 @@ const Footer = () => {
             </li>
             <li>
               <Link locale="en" href="/sponsor-home">
-                <a className="tiny-font">Sponsor on every pages</a>
+                <a className="tiny-font">{t('common:nav-support-assets')}</a>
               </Link>
             </li>
             <li>
               <Link locale="en" href="/sponsor-texture">
-                <a className="tiny-font">Sponsor on assets pages</a>
+                <a className="tiny-font">{t('common:nav-support-page')}</a>
               </Link>
             </li>
           </ul>
           <ul>
-            <li className="small-font highlight-2 footer-label">Info</li>
+            <li className="small-font highlight-2 footer-label">
+              {t('common:nav-info')}
+            </li>
             <li>
               <Link locale="en" href="/contact">
-                <a className="tiny-font">Contact</a>
+                <a className="tiny-font">{t('common:nav-contact')}</a>
               </Link>
             </li>
             <li>
               <Link locale="en" href="/feedback">
-                <a className="tiny-font">Feedback</a>
+                <a className="tiny-font">{t('common:nav-feedback')}</a>
               </Link>
             </li>
             <li>
               <Link locale="en" href="/terms">
-                <a className="tiny-font">Terms & Privacy</a>
+                <a className="tiny-font">{t('common:nav-terms')}</a>
               </Link>
             </li>
           </ul>

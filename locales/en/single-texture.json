@@ -1,4 +1,26 @@
 {
-  "title": "is a free to download, up to native 8K Pbr texture",
-  "title2": "Consider joining the Cahoot for exclusive content!8"
+  "title": "is a free to download, up to native 8K Pbr texture. ",
+  "title2": "Consider joining the Cahoot for exclusive content!",
+  "categories": "Categories",
+  "method": "Method",
+  "scale": "Scale",
+  "location": "Location",
+  "published": "Published",
+  "gear-title": "Gear used:",
+  "gear-camera": "Camera",
+  "gear-lens": "Lens",
+  "gear-tripod": "Tripod",
+  "gear-polarizer": "Polarizer",
+  "gear-laptop": "Laptop",
+  "gear-cpu": "CPU",
+  "gear-gpu": "GPU",
+  "gear-mobo": "Motherboard",
+  "gear-lights": "Lights",
+  "gear-checker": "White balance",
+  "donate-title": "Donate, or grab it free!",
+  "download-title": "Resolution & formats:",
+  "see-also-title": "See also:",
+  "sponsor-title": "Sponsored by:",
+  "sponsor-desc": "Want your name, logo and link here?",
+  "sponsor-desc2": "See how you can."
 }
