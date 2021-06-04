@@ -44,11 +44,7 @@ export default function Home({ textures, categories }) {
         <section className="cnt-texture-list">
           <div className="texture-list">
             {textures.map((texture) => (
-              <Link
-                key={texture.id}
-                locale="en"
-                href={`/free-textures/${texture.slug}`}
-              >
+              <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
                 <a className="small-font">
                   <img
                     loading="lazy"

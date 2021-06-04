@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 
 function Header() {
-  let router = useRouter();
-  const [isOpened, setIsOpened] = useState(false);
-
   let { t } = useTranslation();
 
   return (
@@ -27,36 +22,12 @@ function Header() {
             </a>
           </p>
           <div className="header-bnt-cnt">
-            <Link locale="en" href="/free-3d-models">
+            <Link href="/free-3d-models">
               <a className="btn-line main-btn">{t('home:titlebtn2')}</a>
             </Link>
-            <Link locale="en" href="/free-textures">
+            <Link href="/free-textures">
               <a className="btn main-btn">{t('home:titlebtn')}</a>
             </Link>
-            <div className="lang-cnt-2">
-              <img
-                onClick={() => setIsOpened(!isOpened)}
-                src="/translate.svg"
-                height="39px"
-                width="39px"
-                alt="change languagge"
-              />
-              {isOpened && (
-                <div onMouseLeave={() => setIsOpened(false)}>
-                  <ol className="lang-cnt">
-                    {router.locales.map((locale) => (
-                      <Link key={locale} locale={locale} href={router.asPath}>
-                        <a>
-                          <li className="language small-font" key={locale}>
-                            {locale}
-                          </li>
-                        </a>
-                      </Link>
-                    ))}
-                  </ol>
-                </div>
-              )}
-            </div>
           </div>
         </div>
         <div>

@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import Advertising from '../components/Advertising';
 import CookieConsent from 'react-cookie-consent';
 import Link from 'next/link';
+import LanguageChange from '../components/LanguageChange';
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
@@ -29,6 +30,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image:type" content="image/jpeg" />
       </Head>
       <Nav />
+      <LanguageChange />
       <Component {...pageProps} />
       <Advertising />
       <CookieConsent
