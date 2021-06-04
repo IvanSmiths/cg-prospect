@@ -18,34 +18,32 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from 'react-share';
-import { useRouter } from 'next/router';
 
 export default function SingleTexture({ texture, textures }) {
-  let router = useRouter();
   let { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>{texture.title}, free 8K pbr textures.</title>
+        <title>CG Prospect | {texture.title}, free 8K texture.</title>
         <meta
           name="description"
           content={`${texture.title} is a seamless, free to download, up to native 8K Pbr
-        Texture. Consider joining the Cahoot for exclusive content!`}
+        Texture. Use it withBlende, Unreal Engine, or other 3d softwares!`}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="CgProspect" key="twhandle" />
+        <meta name="twitter:creator" content="CGProspect" key="twhandle" />
         <meta
           property="og:title"
-          content={`CgProspect | ${texture.title}, 8K Free Texture`}
+          content={`CGProspect | ${texture.title}, 8K Free Texture`}
         />
         <meta
           property="og:description"
-          content={`${texture.title} is one of the multiple free textures of CgProspect.`}
+          content={`${texture.title} is a free texture of CGProspect.`}
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://postgres.pages.dev/textures/${texture.slug}`}
+          content={`https://www.cgprospect.com/free-textures/${texture.slug}`}
         />
         <meta property="og:image" content={texture.mainImage} />
       </Head>

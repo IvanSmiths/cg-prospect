@@ -9,23 +9,23 @@ const SingleMethod = ({ method }) => {
         <title>{method.title}, free 8K pbr textures.</title>
         <meta
           name="description"
-          content={`${method.title} is one of multiple categories of free to download, up to native 8K Pbr
-          Texture. Consider joining the Cahoot for exclusive content!`}
+          content={`${method.title} is one of the methods of free to download, up to native 8K Pbr
+          Texture. Use them in Blender, or other 3d softwares!`}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CgProspect" key="twhandle" />
         <meta
           property="og:title"
-          content={`CgProspect | ${method.title}, 8K Free Texture`}
+          content={`CGProspect | ${method.title}, 8K Free Texture`}
         />
         <meta
           property="og:description"
-          content={`${method.title} is one of the multiple categories of CgProspect.`}
+          content={`${method.title} is one of the multiple categories of CGProspect.`}
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://postgres.pages.dev/methods/${method.slug}`}
+          content={`https://cgprospect.com/methods/${method.slug}`}
         />
         <meta property="og:image" content={method.mainImage} />
       </Head>

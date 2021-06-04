@@ -22,21 +22,20 @@ export default function SingleTexture({ model, models }) {
   return (
     <>
       <Head>
-        <title>{model.title}, free 8K pbr models.</title>
+        <title>CG Prospect | {model.title}, free 3d model.</title>
         <meta
           name="description"
-          content={`${model.title} is a seamless, free to download, up to native 8K Pbr
-        Texture. Consider joining the Cahoot for exclusive content!`}
+          content={`${model.title} is a free to download 3d model. Use it in Blender, Unreal Engine, or other 3d software.`}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="CgProspect" key="twhandle" />
+        <meta name="twitter:creator" content="CGProspect" key="twhandle" />
         <meta
           property="og:title"
-          content={`CgProspect | ${model.title}, Free 3d model`}
+          content={`CGProspect | ${model.title}, Free 3d models`}
         />
         <meta
           property="og:description"
-          content={`${model.title} is one of the multiple free models of CgProspect.`}
+          content={`${model.title} is one of the multiple free 3d models of CGProspect.`}
         />
         <meta property="og:type" content="website" />
         <meta

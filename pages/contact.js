@@ -7,8 +7,8 @@ function Contact() {
           <p className="small-font">
             No messages are useless messages. Feel free to get in touch for
             whatever reason! Grab the e-mail{' '}
-            <a href="mailto:smithsmusic93@gmail.com" className="highlight-main">
-              smithsmusic93@gmail.com
+            <a href="mailto:info@cgprospect.com" className="highlight-main">
+              info@cgprospect.com
             </a>{' '}
             or complete the form below.
           </p>
