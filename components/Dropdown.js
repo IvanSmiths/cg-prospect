@@ -15,33 +15,37 @@ function Dropdown() {
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
         <li className="nav-icon-cnt">
-          <img
-            src="textures-icon-nav.svg"
-            height="30"
-            width="30"
-            alt="icon texture"
-          />
           <Link
             className="dropdown-link"
             href="/free-textures"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-assets-textures')}
+            <a>
+              <img
+                src="textures-icon-nav.svg"
+                height="35"
+                width="35"
+                alt="icon texture"
+              />
+              {t('common:nav-assets-textures')}
+            </a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
-          <img
-            src="3d-models-icon.svg"
-            height="30"
-            width="30"
-            alt="icon texture"
-          />
           <Link
             className="dropdown-link"
             href="/free-3d-models"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-assets-3d')}
+            <a>
+              <img
+                src="3d-models-icon.svg"
+                height="35"
+                width="35"
+                alt="icon texture"
+              />
+              {t('common:nav-assets-3d')}
+            </a>
           </Link>
         </li>
       </ul>

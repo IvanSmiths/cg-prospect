@@ -15,48 +15,54 @@ function Dropdown() {
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
         <li className="nav-icon-cnt">
-          <img
-            src="/sponsor-assets-icon.svg"
-            height="30"
-            width="30"
-            alt="icon sponsor assets"
-          />
           <Link
             className="dropdown-link"
             href="/sponsor-texture"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-support-assets')}
+            <a>
+              <img
+                src="/sponsor-assets-icon.svg"
+                height="35"
+                width="35"
+                alt="icon sponsor assets"
+              />
+              {t('common:nav-support-assets')}
+            </a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
-          <img
-            src="/sponsor-logo-icon.svg"
-            height="30"
-            width="30"
-            alt="icon sponsor logo"
-          />
           <Link
             className="dropdown-link"
             href="/sponsor-home"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-support-page')}
+            <a>
+              <img
+                src="/sponsor-logo-icon.svg"
+                height="35"
+                width="35"
+                alt="icon sponsor logo"
+              />
+              {t('common:nav-support-page')}
+            </a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
-          <img
-            src="/merchandise-3d.svg"
-            height="30"
-            width="30"
-            alt="icon merchandise"
-          />
           <Link
             className="dropdown-link"
             href="/merchandise"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-merch')}
+            <a>
+              <img
+                src="/merchandise-3d.svg"
+                height="35"
+                width="35"
+                alt="icon merchandise"
+              />
+              {t('common:nav-merch')}
+            </a>
           </Link>
         </li>
       </ul>

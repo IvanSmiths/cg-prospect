@@ -30,8 +30,8 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image:type" content="image/jpeg" />
       </Head>
       <Nav />
-      <LanguageChange />
       <Component {...pageProps} />
+      <LanguageChange />
       <Advertising />
       <CookieConsent
         buttonClasses="btn-cookie"

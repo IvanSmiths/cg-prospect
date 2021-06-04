@@ -2,7 +2,7 @@
   "nav-lang": "Languages",
   "nav-assets": "Assets",
   "nav-assets-textures": "Textures",
-  "nav-assets-3d": "3d Models",
+  "nav-assets-3d": "3D Models",
   "nav-categories": "Categories",
   "nav-categories-tex": "Textures categories",
   "nav-categories-mod": "3D model categories",
@@ -18,10 +18,10 @@
   "nav-terms": "Terms & Privacy",
   "nav-feedback": "Feedback",
   "ad-title": "Want Your Logo on CG Prospect?",
-  "ad-desc": "CG Prospect offers various types of direct advertising. For more informations about the traffic of the website and other, feel free to get in touch!",
+  "ad-desc": "CG Prospect offers various types of direct advertising. For more informations about the traffic of the website and other, click in the button below and complete the form!",
   "ad-btn": "Get a boost",
   "mail-label": "Your Email",
-  "mail-desc": "One email every friday, with the latest textures and news about the 3D world. No spam, no bulls**t.",
+  "mail-desc": "One email every friday, with the latest textures, 3d models, and news about the 3D world. No spam, no bulls**t.",
   "mail-desc-success": "Success! 🎉 You are now subscribed to the newsletter.",
   "mail-btn": "Subscribe 💌"
 }

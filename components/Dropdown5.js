@@ -15,43 +15,54 @@ function Dropdown() {
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
         <li className="nav-icon-cnt">
-          <img
-            src="contact-icon.svg"
-            height="30"
-            width="30"
-            alt="icon contact"
-          />
           <Link
             className="dropdown-link"
             href="/contact"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-contact')}
+            <a>
+              <img
+                src="contact-icon.svg"
+                height="35"
+                width="35"
+                alt="icon contact"
+              />
+              {t('common:nav-contact')}
+            </a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
-          <img src="terms-icon.svg" height="30" width="30" alt="icon terms" />
           <Link
             className="dropdown-link"
             href="/terms"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-terms')}
+            <a>
+              <img
+                src="terms-icon.svg"
+                height="35"
+                width="35"
+                alt="icon terms"
+              />
+              {t('common:nav-terms')}
+            </a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
-          <img
-            src="feedback-icon.svg"
-            height="30"
-            width="30"
-            alt="icon feedback"
-          />
           <Link
             className="dropdown-link"
             href="/feedback"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-feedback')}
+            <a>
+              <img
+                src="feedback-icon.svg"
+                height="35"
+                width="35"
+                alt="icon feedback"
+              />
+              {t('common:nav-feedback')}
+            </a>
           </Link>
         </li>
       </ul>

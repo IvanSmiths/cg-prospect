@@ -15,33 +15,37 @@ function Dropdown() {
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
         <li className="nav-icon-cnt">
-          <img
-            src="methods-nav.svg"
-            height="30"
-            width="30"
-            alt="icon methods textures"
-          />
           <Link
             className="dropdown-link"
             href="/methods"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-methods-tex')}
+            <a>
+              <img
+                src="methods-nav.svg"
+                height="35"
+                width="35"
+                alt="icon methods textures"
+              />
+              {t('common:nav-methods-tex')}
+            </a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
-          <img
-            src="methods-nav.svg"
-            height="30"
-            width="30"
-            alt="icon methods 3d model"
-          />
           <Link
             className="dropdown-link"
             href="/methods-3d-model"
             onClick={() => setClick(false)}
           >
-            {t('common:nav-methods-mod')}
+            <a>
+              <img
+                src="method-nav-2.svg"
+                height="35"
+                width="35"
+                alt="icon methods 3d model"
+              />
+              {t('common:nav-methods-mod')}
+            </a>
           </Link>
         </li>
       </ul>

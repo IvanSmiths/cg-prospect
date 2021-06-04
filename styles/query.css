@@ -85,6 +85,24 @@
     line-height: 1.5rem;
   }
 
+  .hp-3d-model-cnt p {
+    padding: 0 2rem;
+  }
+
+  .model-3d-example-cnt > *:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 2rem;
+  }
+
+  .model-3d-example-cnt-2 > *:nth-child(2) {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 2rem;
+  }
   .flex-50 {
     flex-direction: column;
   }

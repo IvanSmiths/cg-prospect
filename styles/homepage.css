@@ -58,7 +58,7 @@
 .lang-cnt-2 {
   position: fixed;
   top: 90vh;
-  left: 2rem;
+  left: 1rem;
   display: flex;
   flex-direction: row;
   z-index: 99;
