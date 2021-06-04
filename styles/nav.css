@@ -264,3 +264,12 @@
 .form-news-cnt p {
   text-align: left;
 }
+
+.nav-icon-cnt {
+  align-items: center;
+  display: flex;
+}
+
+.nav-icon-cnt img {
+  margin-right: 1rem;
+}

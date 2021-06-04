@@ -14,7 +14,13 @@ function Dropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
-        <li>
+        <li className="nav-icon-cnt">
+          <img
+            src="textures-icon.svg"
+            height="30"
+            width="30"
+            alt="icon texture"
+          />
           <Link
             className="dropdown-link"
             href="/free-textures"
