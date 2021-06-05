@@ -8,14 +8,14 @@ const LanguageChange = () => {
   return (
     <div className="lang-cnt-2">
       <img
-        onClick={() => setIsOpened(!isOpened)}
+        onMouseEnter={() => setIsOpened(!isOpened)}
         src="/translate.svg"
         height="39px"
         width="39px"
         alt="change languagge"
       />
       {isOpened && (
-        <div onMouseLeave={() => setIsOpened(false)}>
+        <div className="dropdown-menu2" onMouseLeave={() => setIsOpened(false)}>
           <ol className="lang-cnt">
             {router.locales.map((locale) => (
               <Link key={locale} locale={locale} href={router.asPath}>

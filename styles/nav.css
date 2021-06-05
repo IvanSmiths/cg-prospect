@@ -4,10 +4,12 @@
   position: fixed;
   height: fit-content;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
   color: #fff;
+  gap: 1rem;
   padding: 0 8rem;
   z-index: 9;
 }
@@ -79,6 +81,15 @@
   text-align: start;
 }
 
+.dropdown-menu2 {
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
 .dropdown-menu li {
   background: var(--subBackground);
   padding: 0.5rem;
@@ -124,6 +135,15 @@
 
   .arrow-navbar {
     display: none;
+  }
+
+  .lang-cnt {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--subBackground);
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.9rem;
+    gap: 1rem;
   }
 
   .nav-menu {

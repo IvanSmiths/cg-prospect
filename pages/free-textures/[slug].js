@@ -36,12 +36,12 @@ export default function SingleTexture({ texture, textures }) {
         <meta
           property="og:title"
           content={`CGProspect | ${texture.title}, ${t(
-            'single-texture:og-title'
+            'single-texture:head-og-title'
           )}`}
         />
         <meta
           property="og:description"
-          content={`${texture.title} ${t('single-texture:og-desc')}.`}
+          content={`${texture.title} ${t('single-texture:head-og-desc')}.`}
         />
         <meta property="og:type" content="website" />
         <meta

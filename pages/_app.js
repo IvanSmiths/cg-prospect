@@ -8,7 +8,6 @@ import Footer from '../components/Footer';
 import Advertising from '../components/Advertising';
 import CookieConsent from 'react-cookie-consent';
 import Link from 'next/link';
-import LanguageChange from '../components/LanguageChange';
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
@@ -31,7 +30,6 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Nav />
       <Component {...pageProps} />
-      <LanguageChange />
       <Advertising />
       <CookieConsent
         buttonClasses="btn-cookie"

@@ -36,12 +36,12 @@ export default function SingleTexture({ model, models }) {
         <meta
           property="og:title"
           content={`CG Prospect | ${model.title}, ${t(
-            'single-model:og-title'
+            'single-model:head-og-title'
           )}`}
         />
         <meta
           property="og:description"
-          content={`${model.title} ${t('single-model:og-desc')}.`}
+          content={`${model.title} ${t('single-model:head-og-desc')}.`}
         />
         <meta property="og:type" content="website" />
         <meta

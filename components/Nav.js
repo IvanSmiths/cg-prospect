@@ -6,6 +6,7 @@ import Dropdown3 from './Dropdown3';
 import Dropdown4 from './Dropdown4';
 import Dropdown5 from './Dropdown5';
 import useTranslation from 'next-translate/useTranslation';
+import LanguageChange from './LanguageChange';
 
 function Navbar() {
   let { t } = useTranslation();
@@ -112,6 +113,7 @@ function Navbar() {
           </a>
         </Link>
       </div>
+      <LanguageChange />
       <div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li
