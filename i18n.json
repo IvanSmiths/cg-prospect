@@ -4,6 +4,7 @@
   "pages": {
     "*": ["common"],
     "/": ["home"],
-    "/free-textures/[slug]": ["single-texture"]
+    "/free-textures/[slug]": ["single-texture"],
+    "/free-3d-models/[slug]": ["single-model"]
   }
 }

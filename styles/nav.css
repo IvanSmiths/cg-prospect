@@ -265,7 +265,7 @@
   text-align: left;
 }
 
-.nav-icon-cnt {
+.nav-icon-cnt a {
   align-items: center;
   display: flex;
 }

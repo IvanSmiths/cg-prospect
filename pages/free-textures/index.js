@@ -44,13 +44,15 @@ export default function Home({ textures, categories }) {
         <section className="cnt-texture-list">
           <div className="texture-list-up-cnt">
             <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p className="small-font">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
             </div>
             <div>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p className="small-font">Lorem ipsum dolor sit amet.</p>
             </div>
             <div>
-              <p>
+              <p className="small-font">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
                 iusto.
               </p>

@@ -1,6 +1,7 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
 import {
   FacebookIcon,
   PinterestIcon,
@@ -19,23 +20,28 @@ import {
 } from 'react-share';
 
 export default function SingleTexture({ model, models }) {
+  let { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>CG Prospect | {model.title}, free 3d model.</title>
+        <title>
+          CG Prospect | {model.title}, {t('single-model:head-title')}.
+        </title>
         <meta
           name="description"
-          content={`${model.title} is a free to download 3d model. Use it in Blender, Unreal Engine, or other 3d software.`}
+          content={`${model.title} ${t('single-model:head-desc')}`}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CGProspect" key="twhandle" />
         <meta
           property="og:title"
-          content={`CGProspect | ${model.title}, Free 3d models`}
+          content={`CG Prospect | ${model.title}, ${t(
+            'single-model:og-title'
+          )}`}
         />
         <meta
           property="og:description"
-          content={`${model.title} is one of the multiple free 3d models of CGProspect.`}
+          content={`${model.title} ${t('single-model:og-desc')}.`}
         />
         <meta property="og:type" content="website" />
         <meta
@@ -59,7 +65,7 @@ export default function SingleTexture({ model, models }) {
           <div>
             <h3 className="small-font sponsor-texture">
               <strong className="small-font highlight">
-                Sponsored By: <br />
+                {t('single-model:sponsor-title')} <br />
               </strong>
               <a
                 href={model.sponsorLink}
@@ -84,10 +90,12 @@ export default function SingleTexture({ model, models }) {
               />
             </a>
             <h3 className="small-font sponsor-texture">
-              Want your name, logo, and link here? {''}
+              {t('single-model:sponsor-desc')} {''}
               <Link href="/sponsor-texture">
                 <a>
-                  <span className="highlight underline">See how you can.</span>
+                  <span className="highlight underline">
+                    {t('single-model:sponsor-desc2')}
+                  </span>
                 </a>
               </Link>
             </h3>
@@ -96,11 +104,10 @@ export default function SingleTexture({ model, models }) {
         <div className="container-texture-details" key={model.id}>
           <h1 className="big-font title-texture">{model.title}</h1>
           <p className="small-font p-slug">
-            {model.title} is a free to download 3d model, available at lowpoly,
-            midpoly and highpoly resolutions.{' '}
+            {model.title} {t('single-model:title')}{' '}
             <a href="https://www.patreon.com" rel="noopener" target="_blank">
               <strong className="highlight-patreon underline">
-                Consider joining the Cahoot for exclusive content!{' '}
+                {t('single-model:title2')}{' '}
               </strong>
             </a>
           </p>
@@ -116,7 +123,10 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Categories: </span>
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-model:categories')}{' '}
+                  </span>
                   {model.modelCategory.map((category) => (
                     <Link
                       key={category.id}
@@ -135,7 +145,10 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Method:</span>{' '}
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-model:method')}
+                  </span>{' '}
                   <Link
                     key={model.modelMethod[0].id}
                     href={`/methods-3d-model/${model.modelMethod[0].slug}`}
@@ -154,8 +167,11 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Scale:</span> {model.scale}{' '}
-                  meters.
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-model:scale')}
+                  </span>{' '}
+                  {model.scale} meters.
                 </li>
                 <li className="small-font">
                   <img
@@ -166,7 +182,10 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Location: </span>{' '}
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-model:location')}{' '}
+                  </span>{' '}
                   {model.location}.
                 </li>
                 <li className="small-font">
@@ -178,53 +197,66 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub"> Published: </span>
+                  <span className="small-font-sub">
+                    {' '}
+                    {t('single-model:published')}{' '}
+                  </span>
                 </li>
               </ul>
             </div>
           </div>
-          <h2 className="btn-font highlight">Gear that i currently use:</h2>
+          <h2 className="btn-font highlight">{t('single-model:gear-title')}</h2>
           <div className="first-details">
             <div className="container-gear">
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  Camera <a className="underline small-font">Canon 60D.</a>
+                  {t('single-model:gear-1')}{' '}
+                  <a className="underline small-font">Canon 60D.</a>
                 </li>
                 <li className="small-font-sub">
-                  Lens: <a className="underline small-font">Canon 55mm.</a>
+                  {t('single-model:gear-2')}{' '}
+                  <a className="underline small-font">Canon 55mm.</a>
                 </li>
                 <li className="small-font-sub">
-                  Tripod: <a className="underline small-font">Manfrotto</a>
+                  {t('single-model:gear-3')}{' '}
+                  <a className="underline small-font">Manfrotto</a>
                 </li>
                 <li className="small-font-sub">
-                  Polarizer: <a className="underline small-font">Honda</a>
+                  {t('single-model:gear-4')}{' '}
+                  <a className="underline small-font">Honda</a>
                 </li>
                 <li className="small-font-sub">
-                  Lights: <a className="underline small-font">Pro Studio</a>
+                  {t('single-model:gear-5')}{' '}
+                  <a className="underline small-font">Pro Studio</a>
                 </li>
               </ul>
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  White Balance <a className="underline small-font">Pro</a>
+                  {t('single-model:gear-6')}{' '}
+                  <a className="underline small-font">Pro</a>
                 </li>
                 <li className="small-font-sub">
-                  Green Screen: <a className="underline small-font">Green</a>
+                  {t('single-model:gear-7')}{' '}
+                  <a className="underline small-font">Green</a>
                 </li>
                 <li className="small-font-sub">
-                  GPU: <a className="underline small-font">Nvidia GTX 1080.</a>
+                  {t('single-model:gear-8')}{' '}
+                  <a className="underline small-font">Nvidia GTX 1080.</a>
                 </li>
                 <li className="small-font-sub">
-                  CPU: <a className="underline small-font">AMD Ryzen 3030.</a>
+                  {t('single-model:gear-9')}{' '}
+                  <a className="underline small-font">AMD Ryzen 3030.</a>
                 </li>
                 <li className="small-font-sub">
-                  Motherboard: <a className="underline small-font">AMD</a>
+                  {t('single-model:gear-10')}{' '}
+                  <a className="underline small-font">AMD</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="donate-btn">
             <h2 className="btn-font highlight">
-              Donate if you want, or grab it free.
+              {t('single-model:donate-title')}
             </h2>
             <div className="donate-buttons">
               <form
@@ -257,7 +289,10 @@ export default function SingleTexture({ model, models }) {
               </div>
             </div>
           </div>
-          <h2 className="btn-font highlight">Resolution & Format:</h2>
+          <h2 className="btn-font highlight">
+            {' '}
+            {t('single-model:download-title')}
+          </h2>
           <div className="container-links">
             <ul>
               <li className="small-font">
@@ -314,7 +349,10 @@ export default function SingleTexture({ model, models }) {
           </div>
         </div>
       </main>
-      <h2 className="medium-font h2-suggest">See also:</h2>
+      <h2 className="medium-font h2-suggest">
+        {' '}
+        {t('single-model:see-also-title')}
+      </h2>
       <section className="texture-suggest">
         {models.map((model) => (
           <Link key={model.id} href={`/free-3d-models/${model.slug}`}>
@@ -359,15 +397,17 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
   const models = await prisma.model3d.findMany();
+  const paths = [];
 
+  locales.forEach((locale, i) => {
+    models.forEach((model, i) => {
+      paths.push({ params: { slug: model.slug }, locale });
+    });
+  });
   return {
-    paths: models.map((model) => ({
-      params: {
-        slug: model.slug.toString(),
-      },
-    })),
+    paths,
     fallback: false,
   };
 }

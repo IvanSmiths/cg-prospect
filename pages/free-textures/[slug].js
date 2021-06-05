@@ -24,21 +24,24 @@ export default function SingleTexture({ texture, textures }) {
   return (
     <>
       <Head>
-        <title>CG Prospect | {texture.title}, free 8K texture.</title>
+        <title>
+          CG Prospect | {texture.title}, {t('single-texture:head-title')}
+        </title>
         <meta
           name="description"
-          content={`${texture.title} is a seamless, free to download, up to native 8K Pbr
-        Texture. Use it withBlende, Unreal Engine, or other 3d softwares!`}
+          content={`${texture.title} ${t('single-texture:head-desc')}`}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CGProspect" key="twhandle" />
         <meta
           property="og:title"
-          content={`CGProspect | ${texture.title}, 8K Free Texture`}
+          content={`CGProspect | ${texture.title}, ${t(
+            'single-texture:og-title'
+          )}`}
         />
         <meta
           property="og:description"
-          content={`${texture.title} is a free texture of CGProspect.`}
+          content={`${texture.title} ${t('single-texture:og-desc')}.`}
         />
         <meta property="og:type" content="website" />
         <meta
@@ -214,45 +217,45 @@ export default function SingleTexture({ texture, textures }) {
             <div className="container-gear">
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  {t('single-texture:gear-camera')}{' '}
+                  {t('single-texture:gear-1')}{' '}
                   <a className="underline small-font">Canon 60D.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-lens')}{' '}
+                  {t('single-texture:gear-2')}{' '}
                   <a className="underline small-font">Canon 55mm.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-tripod')}{' '}
+                  {t('single-texture:gear-3')}{' '}
                   <a className="underline small-font">Manfrotto</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-polarizer')}{' '}
+                  {t('single-texture:gear-4')}{' '}
                   <a className="underline small-font">Honda</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-lights')}{' '}
+                  {t('single-texture:gear-5')}{' '}
                   <a className="underline small-font">Pro Studio</a>
                 </li>
               </ul>
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  {t('single-texture:gear-checker')}{' '}
+                  {t('single-texture:gear-6')}{' '}
                   <a className="underline small-font">AMD</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-laptop')}{' '}
+                  {t('single-texture:gear-7')}{' '}
                   <a className="underline small-font">Pro</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-gpu')}{' '}
+                  {t('single-texture:gear-8')}{' '}
                   <a className="underline small-font">Green</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-cpu')}{' '}
+                  {t('single-texture:gear-9')}{' '}
                   <a className="underline small-font">Nvidia GTX 1080.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-mobo')}{' '}
+                  {t('single-texture:gear-10')}{' '}
                   <a className="underline small-font">AMD Ryzen 3030.</a>
                 </li>
               </ul>
