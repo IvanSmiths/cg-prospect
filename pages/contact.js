@@ -1,6 +1,15 @@
+import Head from 'next/head';
+
 function Contact() {
   return (
     <>
+      <Head>
+        <title>CG Prospect | Send a message!</title>
+        <meta
+          name="description"
+          content="Feel free to send a message, if you have any kind of questions."
+        />
+      </Head>
       <main className="contact-cnt">
         <div className="form-cnt">
           <h1 className="big-font">Don't worry, send a message!</h1>

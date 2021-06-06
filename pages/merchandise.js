@@ -1,8 +1,16 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 function Merchandise() {
   return (
     <>
+      <Head>
+        <title>CG Prospect | Clothes and merch about 3d</title>
+        <meta
+          name="description"
+          content="CG Prospect offifial merchandise like 3d t-shirt, 3d hoodies and more stuff"
+        />
+      </Head>
       <header className="merch-head-cnt flex-50">
         <div className="merch-head-cnt-1">
           <h1 className="big-font">DO 3D, WEAR 3D</h1>ù

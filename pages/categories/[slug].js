@@ -13,14 +13,14 @@ export default function Single({ category }) {
           Textures!`}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="CgProspect" key="twhandle" />
+        <meta name="twitter:creator" content="CGProspect" key="twhandle" />
         <meta
           property="og:title"
-          content={`CgProspect | ${category.title}, 8K Free Texture`}
+          content={`CG Prospect | ${category.title}, 8K Free Texture`}
         />
         <meta
           property="og:description"
-          content={`${category.title} is one of the multiple categories of CgProspect.`}
+          content={`${category.title} is one of the multiple categories of CG Prospect.`}
         />
         <meta property="og:type" content="website" />
         <meta
