@@ -51,9 +51,11 @@ const Homepage3dModel = () => {
         <div>
           <h4 className="medium-font">Optimized mesh</h4>
           <p className="small-font">
-            3d models free to download? Got you covered! You can find 3d models
-            of food, rocks and various objects in both low poly and high poly,
-            all free to use in your commercial projects.
+            All the 3d models from CG Prospect are shipped with an all quads
+            geometry, without nasty polygons, flipped normals, or ngons. The 3d
+            models are already uv-unwrapped and fully textured with
+            displacement, normal, height, ambient occlusion and albedo or
+            diffuse maps.
           </p>
           <Link href="/freee-3d-models">
             <a className="btn-line">Browse 3d models</a>
