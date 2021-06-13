@@ -42,7 +42,7 @@ export default function Home({ textures, categories }) {
           </ul>
         </aside>
         <section className="cnt-texture-list">
-          <div className="texture-list-up-cnt">
+          {/* <div className="texture-list-up-cnt">
             <div>
               <p className="small-font">
                 Lorem ipsum dolor sit amet consectetur adipisicing.
@@ -57,7 +57,7 @@ export default function Home({ textures, categories }) {
                 iusto.
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="texture-list">
             {textures.map((texture) => (
               <Link key={texture.id} href={`/free-textures/${texture.slug}`}>

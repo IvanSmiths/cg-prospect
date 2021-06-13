@@ -48,11 +48,22 @@
   "showcase-desc3": "Procedural",
   "showcase-desc3-2": "Создание процедурного текстурирования по-прежнему является одним из самых творческих и профессиональных способов создания бесшовных текстур PBR. Они изначально экспортируются в формате 8K, предоставляя потрясающие подробные карты для добавления в ваши 3D-модели и рендеры!",
   "showcase-btn3": "Процедурные текстуры",
+  "showcase-model-cnt-title": "3D Models like they were real",
+  "showcase-model-cnt-desc": "Photogrammetry based 3d models, get the best for your renders. CG Prospect is the answer to: Where i can find free to download 3D models?",
+  "showcase-model-btn": "Browse 3d models",
+  "showcase-model-title1": "Photorealism",
+  "showcase-model-desc1": "Using the photogrammetry method, the 3d models from CG Prospect are made in a photographic studio environmet, using professional lights and equipment, granting production ready 3d assets. You can find 3d models of food, rocks, furnitures and more, in both low poly and high poly, so you can put them in your renders or games!",
+  "showcase-model-title2": "Optimized mesh",
+  "showcase-model-desc2": "All the 3d models from CG Prospect are shipped with an all quads geometry, without nasty polygons, flipped normals, or ngons. The 3d models are already uv-unwrapped and fully textured with displacement, normal, height, ambient occlusion and albedo or diffuse maps.",
   "carousel-desc": "Если вы используете текстуры или 3d модели CG Prospect, используйте хэштег #cgprospect в Instagram! Получите шанс разместить здесь свой рендер.",
+  "carousel-btn": "Поставьте лайк!",
   "cc0-title": "CC0 Текстуры",
   "cc0-desc": "Думаете где скачать бесплатные текстуры? Это места! Бесплатные текстуры от CG Prospect также находятся под лицензией CC0. В основном означает, что вы можете использовать эти текстуры в своих коммерческих 3D-моделях, рендерах, играх, фильмах и т. Д.",
   "cc0-desc2": "При использовании в коммерческих целях указывать CG Prospect не обязательно, но мы будем очень признательны! Если вы хотите использовать брендинг CG Prospect ",
   "cc0-desc3": "см. страницу брендинга.",
   "myself-title": "Иван Смит здесь.",
-  "myself-desc": "Я построил CG Prospect самостоятельно, от создания ресурсов до кодирования веб-сайта. 3D-художник, специализирующийся на фотограмметрии и веб-разработчике, я создал этот проект для того, чтобы погрузиться в игру и поделиться своими материалами и знаниями с другими увлеченными людьми."
+  "myself-desc": "Я построил CG Prospect самостоятельно, от создания ресурсов до кодирования веб-сайта. 3D-художник, специализирующийся на фотограмметрии и веб-разработчике, я создал этот проект для того, чтобы погрузиться в игру и поделиться своими материалами и знаниями с другими увлеченными людьми.",
+  "myself-translate": "",
+  "myself-translate-by": "",
+  "myself-translate-link": ""
 }

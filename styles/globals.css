@@ -177,6 +177,10 @@ nav li > a {
   margin: 2rem;
 }
 
+.advertising p {
+  padding: 0rem 14rem;
+}
+
 #nprogress .bar {
   background: #fee648;
 

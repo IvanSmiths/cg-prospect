@@ -62,7 +62,7 @@ export default function SingleTexture({ model, models }) {
               alt={`The main preview of the model ${model.title}`}
             />
           </div>
-          <div>
+          <div className="sponsor-cnt">
             <h3 className="small-font sponsor-texture">
               <strong className="small-font highlight">
                 {t('single-model:sponsor-title')} <br />
@@ -123,10 +123,10 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub">
+                  <strong className="small-font-sub">
                     {' '}
                     {t('single-model:categories')}{' '}
-                  </span>
+                  </strong>
                   {model.modelCategory.map((category) => (
                     <Link
                       key={category.id}
@@ -145,10 +145,10 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub">
+                  <strong className="small-font-sub">
                     {' '}
                     {t('single-model:method')}
-                  </span>{' '}
+                  </strong>{' '}
                   <Link
                     key={model.modelMethod[0].id}
                     href={`/methods-3d-model/${model.modelMethod[0].slug}`}
@@ -167,11 +167,11 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub">
+                  <strong className="small-font-sub">
                     {' '}
                     {t('single-model:scale')}
-                  </span>{' '}
-                  {model.scale} meters.
+                  </strong>{' '}
+                  {model.scale} {t('single-model:meters')}.
                 </li>
                 <li className="small-font">
                   <img
@@ -182,10 +182,10 @@ export default function SingleTexture({ model, models }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub">
+                  <strong className="small-font-sub">
                     {' '}
                     {t('single-model:location')}{' '}
-                  </span>{' '}
+                  </strong>{' '}
                   {model.location}.
                 </li>
                 <li className="small-font">
@@ -201,6 +201,7 @@ export default function SingleTexture({ model, models }) {
                     {' '}
                     {t('single-model:published')}{' '}
                   </span>
+                  {model.published}
                 </li>
               </ul>
             </div>
@@ -295,21 +296,24 @@ export default function SingleTexture({ model, models }) {
           </h2>
           <div className="container-links">
             <ul>
-              <li className="small-font">
-                <a href={model.lowlopy} rel="noopener">
-                  Lowpoly (approx. 80mb)
+              <li className="small-font underline">
+                <a href={model.lowpoly} rel="noopener">
+                  Lowpoly, {model.lowpolycount} {t('single-model:polycount')} (
+                  {model.lowpolysize})
                 </a>
               </li>
-              <li className="small-font">
-                <a href={model.midlopy} rel="noopener">
-                  Midpoly (approx. 300mb)
+              <li className="small-font underline">
+                <a href={model.midpoly} rel="noopener">
+                  Midpoly, {model.midpolycount} {t('single-model:polycount')} (
+                  {model.midpolysize})
                 </a>
               </li>
             </ul>
             <ul>
-              <li className="small-font">
-                <a href={model.highlopy} rel="noopener">
-                  Highpoly (approx. 500mb)
+              <li className="small-font underline">
+                <a href={model.highpoly} rel="noopener">
+                  Highpoly, {model.highpolycount} {t('single-model:polycount')}{' '}
+                  ({model.highpolysize})
                 </a>
               </li>
             </ul>

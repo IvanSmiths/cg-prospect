@@ -1,31 +1,25 @@
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 const Homepage3dModel = () => {
+  let { t } = useTranslation();
   return (
     <section>
       <div className="hp-3d-model-cnt">
-        <h3 className="big-font">3D Models like they were real</h3>
+        <h3 className="big-font">{t('home:showcase-model-cnt-title')}</h3>
         <p className="small-font highlight">
-          Photogrammetry based 3d models, get the best for your renders. CG
-          Prospect is the answer to: Where i can find free to download 3D
-          models?
+          {t('home:showcase-model-cnt-desc')}
         </p>
         <Link href="/freee-3d-models">
-          <a className="btn-line">Go to realism</a>
+          <a className="btn-line">{t('home:showcase-model-btn')}</a>
         </Link>
       </div>
       <div className="flex-50 model-3d-example-cnt">
         <div>
-          <h4 className="medium-font">Photorealism</h4>
-          <p className="small-font">
-            Using the photogrammetry method, the 3d models from CG Prospect are
-            made in a photographic studio environmet, using professional lights
-            and equipment, granting production ready 3d assets. You can find 3d
-            models of food, rocks, furnitures and more, in both low poly and
-            high poly, so you can put them in your renders or games!
-          </p>
+          <h4 className="medium-font">{t('home:showcase-model-title1')}</h4>
+          <p className="small-font">{t('home:showcase-model-desc1')}</p>
           <Link href="/freee-3d-models">
-            <a className="btn-line">Browse 3d models</a>
+            <a className="btn-line">{t('home:showcase-model-btn')}</a>
           </Link>
         </div>
         <div className="model-3d-example">
@@ -49,16 +43,10 @@ const Homepage3dModel = () => {
           />
         </div>
         <div>
-          <h4 className="medium-font">Optimized mesh</h4>
-          <p className="small-font">
-            All the 3d models from CG Prospect are shipped with an all quads
-            geometry, without nasty polygons, flipped normals, or ngons. The 3d
-            models are already uv-unwrapped and fully textured with
-            displacement, normal, height, ambient occlusion and albedo or
-            diffuse maps.
-          </p>
+          <h4 className="medium-font">{t('home:showcase-model-title2')}</h4>
+          <p className="small-font">{t('home:showcase-model-desc2')}</p>
           <Link href="/freee-3d-models">
-            <a className="btn-line">Browse 3d models</a>
+            <a className="btn-line">{t('home:showcase-model-btn')}</a>
           </Link>
         </div>
       </div>

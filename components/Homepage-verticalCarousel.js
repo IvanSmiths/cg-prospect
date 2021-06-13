@@ -141,7 +141,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
             rel="noopener"
             href={data[activeIndex].link}
           >
-            Give it a like!
+            {t('home:carousel-btn')}
           </a>
         </div>
       </div>

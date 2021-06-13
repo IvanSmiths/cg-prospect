@@ -19,11 +19,18 @@ model Texture {
   scale String
   location String
   png2k String
+  png2ksize String?
   png4k String
+  png4ksize String?
   png8k String
+  png8ksize String?
   jpg2k String
+  jpg2ksize String?
   jpg4k String
+  jpg4ksize String?
   jpg8k String
+  jpg8ksize String?
+  published String?
   sponsorImage String
   sponsorName String
   sponsorLink String
@@ -40,9 +47,16 @@ model Model3d {
   mainImage String
   scale String
   location String
+  published String?
   lowpoly String
+  lowpolysize String?
+  lowpolycount String?
   midpoly String
+  midpolysize String?
+  midpolycount String?
   highpoly String
+  highpolysize String?
+  highpolycount String?
   sponsorImage String
   sponsorName String
   sponsorLink String

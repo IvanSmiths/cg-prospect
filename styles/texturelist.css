@@ -52,20 +52,17 @@
 /*--------------------  TEXTURE BEGIN  ------- */
 
 .container-single-texture {
-  display: grid;
-  grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
-  grid-template-rows: 6rem min-content min-content;
-  gap: 1rem;
+  display: flex;
 }
 
 .container-single-texture > *:nth-child(1) {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  flex: 1 1 50%;
+  margin-top: 8rem;
 }
 
 .container-single-texture > *:nth-child(2) {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  flex: 1 1 50%;
+  margin-top: 8rem;
 }
 
 .container-texture-image:nth-child(1) {
@@ -74,11 +71,19 @@
   gap: 3rem;
 }
 
+.sponsor-cnt {
+  margin-top: 3rem;
+}
+
 .cnt-first-col {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.donate-btn h2 {
+  padding-bottom: 1rem;
 }
 
 .first-details {

@@ -62,7 +62,7 @@ export default function SingleTexture({ texture, textures }) {
               alt={`The main preview of the Texture ${texture.title}`}
             />
           </div>
-          <div>
+          <div className="sponsor-cnt">
             <h3 className="small-font sponsor-texture">
               <strong className="small-font highlight">
                 {t('single-texture:sponsor-title')} <br />
@@ -94,10 +94,10 @@ export default function SingleTexture({ texture, textures }) {
               {''}
               <Link href="/sponsor-texture">
                 <a>
-                  <span className="highlight underline">
+                  <strong className="highlight underline">
                     {' '}
                     {t('single-texture:sponsor-desc2')}
-                  </span>
+                  </strong>
                 </a>
               </Link>
             </h3>
@@ -130,10 +130,10 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub">
+                  <strong className="small-font-sub">
                     {' '}
                     {t('single-texture:categories')}{' '}
-                  </span>
+                  </strong>
                   {texture.category.map((category) => (
                     <Link
                       key={category.id}
@@ -152,10 +152,10 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub">
+                  <strong className="small-font-sub">
                     {' '}
                     {t('single-texture:method')}
-                  </span>{' '}
+                  </strong>{' '}
                   <Link
                     key={texture.method[0].id}
                     href={`/methods/${texture.method[0].slug}`}
@@ -172,11 +172,11 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub">
+                  <strong className="small-font-sub">
                     {' '}
                     {t('single-texture:scale')}
-                  </span>{' '}
-                  {texture.scale} meters.
+                  </strong>{' '}
+                  {texture.scale} {t('single-texture:meters')}.
                 </li>
                 <li className="small-font">
                   <img
@@ -187,10 +187,10 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub">
+                  <strong className="small-font-sub">
                     {' '}
                     {t('single-texture:location')}{' '}
-                  </span>{' '}
+                  </strong>{' '}
                   {texture.location}.
                 </li>
                 <li className="small-font">
@@ -202,10 +202,11 @@ export default function SingleTexture({ texture, textures }) {
                     height="23"
                     width="23"
                   />
-                  <span className="small-font-sub">
+                  <strong className="small-font-sub">
                     {' '}
                     {t('single-texture:published')}{' '}
-                  </span>
+                  </strong>
+                  {texture.published}
                 </li>
               </ul>
             </div>
@@ -301,36 +302,36 @@ export default function SingleTexture({ texture, textures }) {
           </h2>
           <div className="container-links">
             <ul>
-              <li className="small-font">
+              <li className="small-font underline">
                 <a href={texture.png2k} rel="noopener">
-                  PNG 2K (approx. 200mb)
+                  PNG 2K ({texture.png2ksize})
                 </a>
               </li>
-              <li className="small-font">
+              <li className="small-font underline">
                 <a href={texture.png4k} rel="noopener">
-                  PNG 4K (approx. 800mb)
+                  PNG 4K ({texture.png4ksize})
                 </a>
               </li>
-              <li className="small-font">
+              <li className="small-font underline">
                 <a href={texture.png8k} rel="noopener">
-                  PNG 8K (approx. 1.2gb)
+                  PNG 8K ({texture.png8ksize})
                 </a>
               </li>
             </ul>
             <ul>
-              <li className="small-font">
+              <li className="small-font underline">
                 <a href={texture.jpg2k} rel="noopener">
-                  Jpg 2K (approx. 30mb)
+                  Jpg 2K ({texture.jpg2ksize})
                 </a>
               </li>
-              <li className="small-font">
+              <li className="small-font underline">
                 <a rel="noopener" href={texture.jpg4k}>
-                  Jpg 4K (approx. 100mb)
+                  Jpg 4K ({texture.jpg4ksize})
                 </a>
               </li>
-              <li className="small-font">
+              <li className="small-font underline">
                 <a href={texture.jpg8k} rel="noopener">
-                  Jpg 8K (approx. 500mb)
+                  Jpg 8K ({texture.jpg8ksize})
                 </a>
               </li>
             </ul>
