@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import Advertising from '../components/Advertising';
 import CookieConsent from 'react-cookie-consent';
 import Link from 'next/link';
+import WorkInProgress from '../components/WorkInProgress';
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="msapplication-navbutton-color" content="#fee648" />
         <meta property="og:image:type" content="image/jpeg" />
       </Head>
+      <WorkInProgress />
       <Nav />
       <Component {...pageProps} />
       <Advertising />
