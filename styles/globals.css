@@ -307,4 +307,8 @@ li {
   width: 90vw;
 }
 
+.under-development p {
+  padding-top: 4rem;
+}
+
 @import './query.css';

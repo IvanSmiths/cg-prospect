@@ -6,7 +6,7 @@ const WorkInProgress = () => {
       <p className="big-font">
         THIS WEBSITE IS IN DEVELOPMENT <br />{' '}
         <span className="small-font">
-          is about 3D, textures and cool stuff!
+          Is about free 3D models and textures.
         </span>
       </p>
     </div>
