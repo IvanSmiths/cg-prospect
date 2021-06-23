@@ -213,8 +213,13 @@
 .social-share-cnt {
   margin-top: 2rem;
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.social-share-cnt button {
+  width: fit-content;
 }
 
 .p-slug {
@@ -243,9 +248,27 @@ input[type='text'] {
   margin-top: 10px;
 }
 
+input[type='number'] {
+  margin-top: 1rem;
+}
+
+fieldset {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+fieldset legend {
+  background-color: none;
+  padding-top: 1rem;
+}
+
 input[type='range'] {
   margin: 5px 0;
   width: 100%;
+}
+.stripe-icon {
+  margin-bottom: -0.7rem;
+  margin-left: 0.6rem;
 }
 
 button {
@@ -272,17 +295,14 @@ button:disabled {
   border: 1px solid #6772e5;
 }
 .elements-style-background {
-  background: #6772e5;
+  background: #635bff;
   transition: box-shadow 2s;
-}
-.card.elements-style-background:hover {
-  box-shadow: 20px 20px 60px #464e9c, -20px -20px 60px #8896ff;
 }
 
 /* Test card number */
 .test-card-notice {
   display: block;
-  margin-block-start: 1em;
+  margin-block-start: -1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
@@ -290,7 +310,6 @@ button:disabled {
 .card-number {
   display: inline;
   white-space: nowrap;
-  font-family: Menlo, Consolas, monospace;
   color: #3c4257;
   font-weight: 500;
 }

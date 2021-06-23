@@ -13,17 +13,17 @@ const CARD_OPTIONS = {
   iconStyle: 'solid' as const,
   style: {
     base: {
-      iconColor: '#6772e5',
-      color: '#6772e5',
+      iconColor: '#635bff',
+      color: '#635bff',
       fontWeight: '500',
       fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
       fontSize: '16px',
       fontSmoothing: 'antialiased',
       ':-webkit-autofill': {
-        color: '#fce883',
+        color: '#fee648',
       },
       '::placeholder': {
-        color: '#6772e5',
+        color: '#635bff',
       },
     },
     invalid: {
@@ -132,7 +132,7 @@ const ElementsForm = () => {
         />
         <StripeTestCards />
         <fieldset className="elements-style">
-          <legend>Your payment details:</legend>
+          <legend>Your donation details:</legend>
           <input
             placeholder="Cardholder name"
             className="elements-style"

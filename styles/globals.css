@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --mainBackground: #1a1a1a;
+  --subBackground: #272727;
+  --mainBackgroundNav: #1a1a1ade;
+  --mainInverseBackground: #e9e9e9;
+  --mainColor: #fee648;
+  --mainFontColor: #e6e6e6;
+  --subFontColor: #bbbbbb;
+  --mainInverseFontColor: #1f1f1f;
+  --patreonColor: #ff424e;
+  --patreonColorWhite: #aa0707;
+
+  --largeFont: clamp(3rem, 5vw, 16rem);
+  --bigFont: clamp(2rem, 4vw, 5rem);
+  --mediumFont: clamp(1.8rem, 1.8vw, 3rem);
+  --btnFont: clamp(1rem, 1.4vw, 2.2rem);
+  --smallFont: clamp(0.9rem, 1.2vw, 2rem);
+  --tinyFont: clamp(0.7rem, 1.2vw, 2rem);
+}
+
 html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, Tahoma, Geneva, Verdana,
@@ -22,6 +42,10 @@ p {
   color: var(--mainFontColor);
 }
 
+.white {
+  color: var(--mainFontColor);
+}
+
 .large-font {
   font-size: var(--largeFont);
 }
@@ -35,7 +59,6 @@ p {
 }
 
 .small-font {
-  color: white;
   line-height: 1.5rem;
   font-size: var(--smallFont);
   font-weight: 400;
@@ -103,7 +126,7 @@ p {
 
 .btn2 {
   padding: 0.6rem 1.4rem;
-  color: black;
+  color: #1a1a1a;
 }
 
 .btn-cookie {
@@ -197,7 +220,6 @@ nav li > a {
   display: none;
 }
 
-@import './variables.css';
 @import './nav.css';
 @import './homepage.css';
 @import './texturelist.css';
@@ -301,6 +323,10 @@ li {
 
 .black {
   color: rgb(0, 0, 0) !important;
+}
+
+.stripe {
+  color: #6772e5;
 }
 
 .feedback {

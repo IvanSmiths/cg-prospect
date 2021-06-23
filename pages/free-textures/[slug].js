@@ -222,46 +222,46 @@ export default function SingleTexture({ texture, textures }) {
             <div className="container-gear">
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  {t('single-texture:gear-1')}{' '}
-                  <a className="underline small-font">Canon 60D.</a>
+                  {t('single-texture:gear-1')}:{' '}
+                  <a className="underline white small-font white">Canon 60D.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-2')}{' '}
-                  <a className="underline small-font">Canon 55mm.</a>
+                  {t('single-texture:gear-2')}:{' '}
+                  <a className="underline white small-font">Canon 55mm.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-3')}{' '}
-                  <a className="underline small-font">Manfrotto</a>
+                  {t('single-texture:gear-3')}:{' '}
+                  <a className="underline white small-font">Manfrotto</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-4')}{' '}
-                  <a className="underline small-font">Honda</a>
+                  {t('single-texture:gear-4')}:{' '}
+                  <a className="underline white small-font">Honda</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-5')}{' '}
-                  <a className="underline small-font">Pro Studio</a>
+                  {t('single-texture:gear-5')}:{' '}
+                  <a className="underline white small-font">Pro Studio</a>
                 </li>
               </ul>
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  {t('single-texture:gear-6')}{' '}
-                  <a className="underline small-font">AMD</a>
+                  {t('single-texture:gear-6')}:{' '}
+                  <a className="underline white small-font">AMD</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-7')}{' '}
-                  <a className="underline small-font">Pro</a>
+                  {t('single-texture:gear-7')}:{' '}
+                  <a className="underline white small-font">Pro</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-8')}{' '}
-                  <a className="underline small-font">Green</a>
+                  {t('single-texture:gear-8')}:{' '}
+                  <a className="underline white small-font">Green</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-9')}{' '}
-                  <a className="underline small-font">Nvidia GTX 1080.</a>
+                  {t('single-texture:gear-9')}:{' '}
+                  <a className="underline white small-font">Nvidia GTX 1080.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-10')}{' '}
-                  <a className="underline small-font">AMD Ryzen 3030.</a>
+                  {t('single-texture:gear-10')}:{' '}
+                  <a className="underline white small-font">AMD Ryzen 3030.</a>
                 </li>
               </ul>
             </div>
