@@ -22,7 +22,7 @@ function Dropdown() {
           >
             <a>
               <img
-                src="methods-nav.svg"
+                src="/methods-nav.svg"
                 height="35"
                 width="35"
                 alt="icon methods textures"
@@ -39,7 +39,7 @@ function Dropdown() {
           >
             <a>
               <img
-                src="method-nav-2.svg"
+                src="/method-nav-2.svg"
                 height="35"
                 width="35"
                 alt="icon methods 3d model"

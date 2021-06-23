@@ -22,7 +22,7 @@ function Dropdown() {
           >
             <a>
               <img
-                src="contact-icon.svg"
+                src="/contact-icon.svg"
                 height="35"
                 width="35"
                 alt="icon contact"
@@ -39,7 +39,7 @@ function Dropdown() {
           >
             <a>
               <img
-                src="terms-icon.svg"
+                src="/terms-icon.svg"
                 height="35"
                 width="35"
                 alt="icon terms"
@@ -56,7 +56,7 @@ function Dropdown() {
           >
             <a>
               <img
-                src="feedback-icon.svg"
+                src="/feedback-icon.svg"
                 height="35"
                 width="35"
                 alt="icon feedback"

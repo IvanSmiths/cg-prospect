@@ -22,7 +22,7 @@ function Dropdown() {
           >
             <a>
               <img
-                src="categories-nav-icon.svg"
+                src="/categories-nav-icon.svg"
                 height="35"
                 width="35"
                 alt="icon category textures"
@@ -39,7 +39,7 @@ function Dropdown() {
           >
             <a>
               <img
-                src="category-nav-2.svg"
+                src="/category-nav-2.svg"
                 height="35"
                 width="35"
                 alt="icon category 3d model"
