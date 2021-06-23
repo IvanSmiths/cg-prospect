@@ -18,6 +18,7 @@ export default function Home() {
       <Head>
         <title>{t('home:head-title')}</title>
         <meta name="description" content={`${t('home:head-desc')}`} />
+        <meta name="yandex-verification" content="ede26dd5b6d6e4e8" />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CG Prospect" key="twhandle" />
         <meta property="og:title" content={`${t('home:head-og-title')}`} />

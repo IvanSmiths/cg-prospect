@@ -1,7 +1,11 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import { Elements } from '@stripe/react-stripe-js';
+import getStripe from '../../utils/get-stripejs';
+import ElementsForm from '../../components/ElementsForm';
 import useTranslation from 'next-translate/useTranslation';
+
 import {
   FacebookIcon,
   PinterestIcon,
@@ -120,8 +124,8 @@ export default function SingleTexture({ model, models }) {
                     className="ico-list-single"
                     src="/category-texture.svg"
                     alt="categories of the 3d model"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <strong className="small-font-sub">
                     {' '}
@@ -142,8 +146,8 @@ export default function SingleTexture({ model, models }) {
                     className="ico-list-single"
                     src="/method-texture.svg"
                     alt="methods of the 3d model"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <strong className="small-font-sub">
                     {' '}
@@ -164,8 +168,8 @@ export default function SingleTexture({ model, models }) {
                     className="ico-list-single"
                     src="/resolution-texture.svg"
                     alt="scale of the 3d model"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <strong className="small-font-sub">
                     {' '}
@@ -179,8 +183,8 @@ export default function SingleTexture({ model, models }) {
                     className="ico-list-single"
                     src="/location-texture.svg"
                     alt="location of the 3d model"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <strong className="small-font-sub">
                     {' '}
@@ -194,8 +198,8 @@ export default function SingleTexture({ model, models }) {
                     className="ico-list-single"
                     src="/date-texture.svg"
                     alt="Icon of the date"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <span className="small-font-sub">
                     {' '}
@@ -211,46 +215,46 @@ export default function SingleTexture({ model, models }) {
             <div className="container-gear">
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  {t('single-model:gear-1')}{' '}
-                  <a className="underline small-font">Canon 60D.</a>
+                  {t('single-model:gear-1')}:{' '}
+                  <a className="underline white small-font">Canon 60D.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-model:gear-2')}{' '}
-                  <a className="underline small-font">Canon 55mm.</a>
+                  {t('single-model:gear-2')}:{' '}
+                  <a className="underline white small-font">Canon 55mm.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-model:gear-3')}{' '}
-                  <a className="underline small-font">Manfrotto</a>
+                  {t('single-model:gear-3')}:{' '}
+                  <a className="underline white small-font">Manfrotto</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-model:gear-4')}{' '}
-                  <a className="underline small-font">Honda</a>
+                  {t('single-model:gear-4')}:{' '}
+                  <a className="underline white small-font">Honda</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-model:gear-5')}{' '}
-                  <a className="underline small-font">Pro Studio</a>
+                  {t('single-model:gear-5')}:{' '}
+                  <a className="underline white small-font">Pro Studio</a>
                 </li>
               </ul>
               <ul className="gear-list">
                 <li className="small-font-sub">
-                  {t('single-model:gear-6')}{' '}
-                  <a className="underline small-font">Pro</a>
+                  {t('single-model:gear-6')}:{' '}
+                  <a className="underline white small-font">Pro</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-model:gear-7')}{' '}
-                  <a className="underline small-font">Green</a>
+                  {t('single-model:gear-7')}:{' '}
+                  <a className="underline white small-font">Green</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-model:gear-8')}{' '}
-                  <a className="underline small-font">Nvidia GTX 1080.</a>
+                  {t('single-model:gear-8')}:{' '}
+                  <a className="underline white small-font">Nvidia GTX 1080.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-model:gear-9')}{' '}
-                  <a className="underline small-font">AMD Ryzen 3030.</a>
+                  {t('single-model:gear-9')}:{' '}
+                  <a className="underline white small-font">AMD Ryzen 3030.</a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-model:gear-10')}{' '}
-                  <a className="underline small-font">AMD</a>
+                  {t('single-model:gear-10')}:{' '}
+                  <a className="underline white small-font">AMD</a>
                 </li>
               </ul>
             </div>
@@ -260,32 +264,21 @@ export default function SingleTexture({ model, models }) {
               {t('single-model:donate-title')}
             </h2>
             <div className="donate-buttons">
-              <form
-                action="https://www.paypal.com/donate"
-                method="post"
-                target="_top"
-              >
-                <input
-                  type="hidden"
-                  name="hosted_button_id"
-                  value="BKVAF83PZ7GB2"
-                />
-                <input
-                  type="image"
-                  src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                  border="0"
-                  name="submit"
-                  title="PayPal - The safer, easier way to pay online!"
-                  alt="Donate with PayPal button"
-                />
-              </form>
-              <div>
-                <a
-                  className="donate-with-crypto crypto"
-                  href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
-                >
-                  Donate with Crypto
+              <Elements stripe={getStripe()}>
+                <ElementsForm />
+              </Elements>
+              <div className="paypal-crypto-cnt">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=MZQH8LFX27JH6">
+                  <btn className="btn btn-paypal">Donate with PayPal</btn>
                 </a>
+                <div>
+                  <a
+                    className="donate-with-crypto crypto"
+                    href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
+                  >
+                    Donate with Crypto
+                  </a>
+                </div>
                 <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
               </div>
             </div>

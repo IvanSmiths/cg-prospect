@@ -1,7 +1,11 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import { Elements } from '@stripe/react-stripe-js';
+import getStripe from '../../utils/get-stripejs';
+import ElementsForm from '../../components/ElementsForm';
 import useTranslation from 'next-translate/useTranslation';
+
 import {
   FacebookIcon,
   PinterestIcon,
@@ -18,10 +22,6 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from 'react-share';
-import { Elements } from '@stripe/react-stripe-js';
-import getStripe from '../../utils/get-stripejs';
-
-import ElementsForm from '../../components/ElementsForm';
 
 export default function SingleTexture({ texture, textures }) {
   let { t } = useTranslation();
@@ -131,8 +131,8 @@ export default function SingleTexture({ texture, textures }) {
                     className="ico-list-single"
                     src="/category-texture.svg"
                     alt="Icon of the category"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <strong className="small-font-sub">
                     {' '}
@@ -153,8 +153,8 @@ export default function SingleTexture({ texture, textures }) {
                     className="ico-list-single"
                     src="/method-texture.svg"
                     alt="Icon of the method"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <strong className="small-font-sub">
                     {' '}
@@ -173,8 +173,8 @@ export default function SingleTexture({ texture, textures }) {
                     className="ico-list-single"
                     src="/resolution-texture.svg"
                     alt="Icon of the scale"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <strong className="small-font-sub">
                     {' '}
@@ -188,8 +188,8 @@ export default function SingleTexture({ texture, textures }) {
                     className="ico-list-single"
                     src="/location-texture.svg"
                     alt="Icon of the location"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <strong className="small-font-sub">
                     {' '}
@@ -203,8 +203,8 @@ export default function SingleTexture({ texture, textures }) {
                     className="ico-list-single"
                     src="/date-texture.svg"
                     alt="Icon of the date"
-                    height="23"
-                    width="23"
+                    height="32"
+                    width="32"
                   />
                   <strong className="small-font-sub">
                     {' '}
@@ -223,7 +223,7 @@ export default function SingleTexture({ texture, textures }) {
               <ul className="gear-list">
                 <li className="small-font-sub">
                   {t('single-texture:gear-1')}:{' '}
-                  <a className="underline white small-font white">Canon 60D.</a>
+                  <a className="underline white small-font">Canon 60D.</a>
                 </li>
                 <li className="small-font-sub">
                   {t('single-texture:gear-2')}:{' '}

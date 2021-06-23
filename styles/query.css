@@ -385,6 +385,13 @@
     padding-right: 0rem;
   }
 
+  .donate-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
   /*------------------ SINGLE CATEGORY BEGIN  ------- */
   /*------------------ SINGLE CATEGORY BEGIN  ------- */
   /*------------------ SINGLE CATEGORY BEGIN  ------- */
