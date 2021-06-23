@@ -18,6 +18,10 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from 'react-share';
+import { Elements } from '@stripe/react-stripe-js';
+import getStripe from '../../utils/get-stripejs';
+
+import ElementsForm from '../../components/ElementsForm';
 
 export default function SingleTexture({ texture, textures }) {
   let { t } = useTranslation();
@@ -267,6 +271,9 @@ export default function SingleTexture({ texture, textures }) {
               {t('single-texture:donate-title')}
             </h2>
             <div className="donate-buttons">
+              <Elements stripe={getStripe()}>
+                <ElementsForm />
+              </Elements>
               <form
                 action="https://www.paypal.com/donate"
                 method="post"
