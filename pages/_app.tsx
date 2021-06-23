@@ -5,6 +5,7 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import '../styles/globals.css';
 import Nav from '../components/Nav';
+import Wip from '../components/WorkInProgress';
 import Footer from '../components/Footer';
 import Advertising from '../components/Advertising';
 import CookieConsent from 'react-cookie-consent';
@@ -29,6 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-navbutton-color" content="#fee648" />
         <meta property="og:image:type" content="image/jpeg" />
       </Head>
+      <Wip />
       <Nav />
       <Component {...pageProps} />
       <Advertising />
