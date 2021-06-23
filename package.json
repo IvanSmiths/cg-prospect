@@ -26,6 +26,7 @@
     "stripe": "^8.156.0"
   },
   "devDependencies": {
+    "@types/nprogress": "^0.2.0",
     "@types/react": "^17.0.11",
     "typescript": "^4.3.4"
   }
