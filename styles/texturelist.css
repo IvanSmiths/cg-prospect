@@ -226,6 +226,15 @@
   padding-right: 12rem;
 }
 
+.paypal-crypto-cnt {
+  margin-top: 3rem;
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(240, 240, 240);
+}
+
 .page-container {
   padding-bottom: 60px;
   max-width: 600px;

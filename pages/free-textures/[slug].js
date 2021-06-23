@@ -274,32 +274,18 @@ export default function SingleTexture({ texture, textures }) {
               <Elements stripe={getStripe()}>
                 <ElementsForm />
               </Elements>
-              <form
-                action="https://www.paypal.com/donate"
-                method="post"
-                target="_top"
-              >
-                <input
-                  type="hidden"
-                  name="hosted_button_id"
-                  value="BKVAF83PZ7GB2"
-                />
-                <input
-                  type="image"
-                  src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                  border="0"
-                  name="submit"
-                  title="PayPal - The safer, easier way to pay online!"
-                  alt="Donate with PayPal button"
-                />
-              </form>
-              <div>
-                <a
-                  className="donate-with-crypto crypto"
-                  href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
-                >
-                  Donate with Crypto
+              <div className="paypal-crypto-cnt">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=MZQH8LFX27JH6">
+                  <btn className="btn btn-paypal">Donate with PayPal</btn>
                 </a>
+                <div>
+                  <a
+                    className="donate-with-crypto crypto"
+                    href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
+                  >
+                    Donate with Crypto
+                  </a>
+                </div>
                 <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
               </div>
             </div>
