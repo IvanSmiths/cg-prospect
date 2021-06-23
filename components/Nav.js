@@ -227,6 +227,11 @@ function Navbar() {
             {dropdown5 && <Dropdown5 />}
           </li>
           <li onClick={closeMobileMenu} className="nav-item small-font">
+            <Link href="/merchandise">
+              <a className="btn-line btn-merch">Merchandise</a>
+            </Link>
+          </li>
+          <li onClick={closeMobileMenu} className="nav-item small-font">
             <a
               target="_blank"
               rel="noopener"

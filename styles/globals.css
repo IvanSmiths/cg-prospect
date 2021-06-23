@@ -176,6 +176,10 @@ p {
   font-weight: 600;
 }
 
+.btn-merch {
+  padding: 0.6rem 1.1rem;
+}
+
 .btn-line:hover {
   background-color: white;
   color: black;

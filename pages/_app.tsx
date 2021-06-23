@@ -30,6 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-navbutton-color" content="#fee648" />
         <meta property="og:image:type" content="image/jpeg" />
       </Head>
+      <Wip />
       <Nav />
       <Component {...pageProps} />
       <Advertising />
