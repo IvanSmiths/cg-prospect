@@ -26,6 +26,9 @@
     "stripe": "^8.156.0"
   },
   "devDependencies": {
+    "@types/micro": "^7.3.5",
+    "@types/micro-cors": "^0.1.1",
+    "@types/node": "^14.14.37",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^17.0.11",
     "typescript": "^4.3.4"
