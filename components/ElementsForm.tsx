@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import CustomDonationInput from '../components/CustomDonationInput';
-import StripeTestCards from '../components/StripeTestCards';
 
 import { fetchPostJSON } from '../utils/api-helpers';
 import { formatAmountForDisplay } from '../utils/stripe-helpers';
@@ -54,7 +53,7 @@ const ElementsForm = () => {
         return <h2>Authenticating...</h2>;
 
       case 'succeeded':
-        return <h2>Payment Succeeded 🥳</h2>;
+        return <h2>Thanks for donating!🥳</h2>;
 
       case 'error':
         return (
@@ -130,7 +129,6 @@ const ElementsForm = () => {
           currency={config.CURRENCY}
           onChange={handleInputChange}
         />
-        <StripeTestCards />
         <fieldset className="elements-style">
           <legend>Your donation details:</legend>
           <input

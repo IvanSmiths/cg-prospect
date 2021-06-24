@@ -69,13 +69,18 @@ const Footer = () => {
                 Cahoot
               </a>
             </li>
+            <li className="tiny-font black">
+              <Link href="/merchandise">
+                <a className="btn-line btn-merch btn-line-2">Merchandise</a>
+              </Link>
+            </li>
             <li>
-              <Link locale="en" href="/sponsor-home">
+              <Link href="/sponsor-home">
                 <a className="tiny-font">{t('common:nav-support-assets')}</a>
               </Link>
             </li>
             <li>
-              <Link locale="en" href="/sponsor-texture">
+              <Link href="/sponsor-texture">
                 <a className="tiny-font">{t('common:nav-support-page')}</a>
               </Link>
             </li>

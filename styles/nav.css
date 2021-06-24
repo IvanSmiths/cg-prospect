@@ -300,6 +300,10 @@
   display: flex;
 }
 
+.form-newsletter input {
+  margin-left: 0.5rem;
+}
+
 .nav-icon-cnt img {
   margin-right: 1rem;
 }

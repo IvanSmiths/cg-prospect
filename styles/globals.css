@@ -176,6 +176,11 @@ p {
   font-weight: 600;
 }
 
+.btn-line-2 {
+  color: var(--mainBackground);
+  border: 1px solid var(--mainBackground);
+}
+
 .btn-merch {
   padding: 0.6rem 1.1rem;
 }
@@ -183,10 +188,6 @@ p {
 .btn-line:hover {
   background-color: white;
   color: black;
-}
-
-.btn-line:focus {
-  transform: scale(1.05);
 }
 
 button:focus {

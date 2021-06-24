@@ -82,6 +82,14 @@
   .advertising p {
     padding: 0rem 2rem !important;
   }
+
+  .cnt-first-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 4rem;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -91,6 +99,13 @@
 
   .hp-3d-model-cnt p {
     padding: 0 2rem;
+  }
+
+  .footer-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .lang-cnt {
@@ -331,6 +346,18 @@
   .container-single-texture > *:nth-child(2) {
     flex: 1 1 50%;
     margin-top: 1rem;
+  }
+
+  .cnt-first-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sponsor-cnt {
+    margin-top: 3rem;
+    text-align: center;
   }
 
   .texture-list {

@@ -79,7 +79,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 6rem;
 }
 
 .donate-btn h2 {
@@ -174,7 +175,7 @@
 
 .donate-btn {
   display: flex;
-  justify-content: center;
+  margin-top: 5rem;
   align-items: flex-start;
   flex-direction: column;
   margin-bottom: 3rem;
@@ -227,7 +228,7 @@
 }
 
 .paypal-crypto-cnt {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: flex;
   gap: 3.5rem;
   align-items: center;
@@ -257,6 +258,10 @@ input[type='text'] {
   margin-top: 10px;
 }
 
+fieldset {
+  margin-top: -20px;
+}
+
 input[type='number'] {
   margin-top: 1rem;
 }
@@ -268,13 +273,14 @@ fieldset {
 
 fieldset legend {
   background-color: none;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 input[type='range'] {
   margin: 5px 0;
   width: 100%;
 }
+
 .stripe-icon {
   margin-bottom: -0.7rem;
   margin-left: 0.6rem;
@@ -308,25 +314,6 @@ button:disabled {
   transition: box-shadow 2s;
 }
 
-/* Test card number */
-.test-card-notice {
-  display: block;
-  margin-block-start: -1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-.card-number {
-  display: inline;
-  white-space: nowrap;
-  color: #3c4257;
-  font-weight: 500;
-}
-.card-number span {
-  display: inline-block;
-  width: 4px;
-}
-
 @media only screen and (max-width: 980px) {
   .container {
     flex-direction: column;
@@ -358,29 +345,7 @@ button:disabled {
     flex-direction: column;
   }
 
-  .card {
-    display: block;
-    border-radius: 8px;
-    flex: 1 0 100%;
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 0 20px 0;
-    box-shadow: none;
-  }
-
   .card-list {
     padding-top: 0;
-  }
-
-  code,
-  pre,
-  h3 {
-    display: none;
-  }
-
-  .banner {
-    box-shadow: none;
-    bottom: 0;
   }
 }

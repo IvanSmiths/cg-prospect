@@ -52,7 +52,7 @@ function Subscribe() {
           {message ? message : `${t('common:mail-desc')}`}
         </p>
       </div>
-      <button className="btn" type="submit">
+      <button className="btn black" type="submit">
         {t('common:mail-btn')}
       </button>
     </form>
