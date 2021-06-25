@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
+import FacebookPixel from '../components/FacebookPixel';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import '../styles/globals.css';
@@ -31,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router.events]);
 
   return (
-    <>
+    <FacebookPixel>
       <Head>
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
@@ -63,7 +64,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Link>
       </CookieConsent>
       <Footer />
-    </>
+    </FacebookPixel>
   );
 }
 

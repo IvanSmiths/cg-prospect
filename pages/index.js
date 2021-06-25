@@ -19,6 +19,10 @@ export default function Home() {
         <title>{t('home:head-title')}</title>
         <meta name="description" content={`${t('home:head-desc')}`} />
         <meta name="msvalidate.01" content="BDB55CCC263678714F8D543BAAFF6FAC" />
+        <meta
+          name="facebook-domain-verification"
+          content="a2q750leq99b25u1f9zkjqrszu8t5t"
+        />
         <meta name="yandex-verification" content="ede26dd5b6d6e4e8" />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CG Prospect" key="twhandle" />
