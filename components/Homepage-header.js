@@ -1,17 +1,8 @@
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
-import * as fbq from '../lib/fpixel';
 
 function Header() {
   let { t } = useTranslation();
-
-  const HeroButtonTexture = () => {
-    fbq.event('HeroButtonTexture', { HeroButtonText });
-  };
-
-  const HeroButtonModel = () => {
-    fbq.event('HeroButtonModel', { HeroButtonMod });
-  };
 
   return (
     <>
@@ -32,14 +23,10 @@ function Header() {
           </p>
           <div className="header-bnt-cnt">
             <Link href="/free-3d-models">
-              <a onClick={HeroButtonModel} className="btn-line main-btn">
-                {t('home:titlebtn2')}
-              </a>
+              <a className="btn-line main-btn">{t('home:titlebtn2')}</a>
             </Link>
             <Link href="/free-textures">
-              <a onClick={HeroButtonTexture} className="btn main-btn">
-                {t('home:titlebtn')}
-              </a>
+              <a className="btn main-btn">{t('home:titlebtn')}</a>
             </Link>
           </div>
         </div>
