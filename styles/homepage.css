@@ -98,7 +98,7 @@
 }
 
 .container-ico > a:hover {
-  transform: rotateZ(360deg) scale(1.5);
+  transform: rotateZ(360deg) scale(1.4);
 }
 
 /* ---------------------- STATS BEGIN ---------- */
