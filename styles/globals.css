@@ -9,7 +9,7 @@
   --subBackground: #272727;
   --mainBackgroundNav: #1a1a1ade;
   --mainInverseBackground: #e9e9e9;
-  --mainColor: #fee648;
+  --mainColor: #ffe423;
   --mainFontColor: #e6e6e6;
   --subFontColor: #bbbbbb;
   --mainInverseFontColor: #1f1f1f;
@@ -345,6 +345,26 @@ li {
 
 .under-development p {
   padding-top: 4rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--subBackground);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--mainFontColor);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mainColor);
 }
 
 @import './query.css';

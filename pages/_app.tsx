@@ -45,25 +45,27 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-navbutton-color" content="#fee648" />
         <meta property="og:image:type" content="image/jpeg" />
       </Head>
-      <Nav />
-      <Component {...pageProps} />
-      <Advertising />
-      <CookieConsent
-        buttonClasses="btn-cookie"
-        style={{
-          background: '#08070cbc',
-          display: 'flex',
-          justifyContent: 'center',
-        }}
-        buttonText="Accept"
-      >
-        By continuing to browse CG Prospect, you agree to the use of cookies for
-        advertising and audience measurement purposes. See more in the{' '}
-        <Link href="/terms">
-          <a className="italic">privacy policy.</a>
-        </Link>
-      </CookieConsent>
-      <Footer />
+      <Wip>
+        <Nav />
+        <Component {...pageProps} />
+        <Advertising />
+        <CookieConsent
+          buttonClasses="btn-cookie"
+          style={{
+            background: '#08070cbc',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+          buttonText="Accept"
+        >
+          By continuing to browse CG Prospect, you agree to the use of cookies
+          for advertising and audience measurement purposes. See more in the{' '}
+          <Link href="/terms">
+            <a className="italic">privacy policy.</a>
+          </Link>
+        </CookieConsent>
+        <Footer />
+      </Wip>
     </FacebookPixel>
   );
 }

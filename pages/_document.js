@@ -5,7 +5,7 @@ import { FB_PIXEL_ID } from '../lib/fpixel';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html>
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
