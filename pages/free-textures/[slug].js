@@ -116,7 +116,7 @@ export default function SingleTexture({ texture, textures }) {
               </Elements>
               <div className="paypal-crypto-cnt">
                 <a href="https://www.paypal.com/donate/?hosted_button_id=MZQH8LFX27JH6">
-                  <btn className="btn btn-paypal">Donate with PayPal</btn>
+                  <button className="btn btn-paypal">Donate with PayPal</button>
                 </a>
                 <div>
                   <a
