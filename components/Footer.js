@@ -111,15 +111,6 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-ico">
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener">
-          <img
-            loading="lazy"
-            src="/logo-youtube.svg"
-            width="26"
-            height="26"
-            alt="An icon of YouTube"
-          />
-        </a>
         <a href="https://www.instagram.com/" target="_blank" rel="noopener">
           <img
             loading="lazy"
@@ -154,6 +145,15 @@ const Footer = () => {
             width="26"
             height="26"
             alt="An icon of Patreon"
+          />
+        </a>
+        <a href="https://www.teespring.com/" target="_blank" rel="noopener">
+          <img
+            loading="lazy"
+            src="/icon-teespring.svg"
+            width="26"
+            height="26"
+            alt="An icon of Teespring"
           />
         </a>
       </div>

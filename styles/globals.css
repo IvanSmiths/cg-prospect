@@ -9,12 +9,15 @@
   --subBackground: #272727;
   --mainBackgroundNav: #1a1a1ade;
   --mainInverseBackground: #e9e9e9;
-  --mainColor: #ffe423;
+  --mainColor: #ffe923;
   --mainFontColor: #e6e6e6;
   --subFontColor: #bbbbbb;
   --mainInverseFontColor: #1f1f1f;
+  --teeSpringColor: #ee2761;
   --patreonColor: #ff424e;
   --patreonColorWhite: #aa0707;
+
+  --marginLayout: 8rem;
 
   --largeFont: clamp(3rem, 5vw, 16rem);
   --bigFont: clamp(2rem, 4vw, 5rem);
@@ -111,6 +114,11 @@ p {
   font-weight: 700;
 }
 
+.highlight-teespring {
+  color: var(--teeSpringColor);
+  font-weight: 700;
+}
+
 .btn {
   display: block;
   width: fit-content;
@@ -125,7 +133,7 @@ p {
 }
 
 .btn2 {
-  padding: 0.6rem 1.4rem;
+  padding: 0.6rem 0.9rem;
   color: #1a1a1a;
 }
 
@@ -174,6 +182,10 @@ p {
   font-size: var(--smallFont);
   transition: 0.3s ease-in-out;
   font-weight: 600;
+}
+
+.btn3 {
+  padding: 0.6rem 0.9rem;
 }
 
 .btn-line-2 {
@@ -234,13 +246,10 @@ nav li > a {
 @import './texturelist.css';
 @import './categorylist.css';
 @import './category.css';
-@import './methodlist.css';
 @import './method.css';
 @import './terms.css';
-@import './progressbar.css';
 @import './contact.css';
 @import './merchandise.css';
-@import './carousel.css';
 
 a {
   color: inherit;

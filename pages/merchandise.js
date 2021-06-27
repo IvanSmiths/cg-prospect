@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Subscribe from '../components/Subscribe';
 
 function Merchandise() {
   return (
@@ -8,48 +9,55 @@ function Merchandise() {
         <title>CG Prospect | Clothes and merch about 3d</title>
         <meta
           name="description"
-          content="CG Prospect offifial merchandise like 3d t-shirt, 3d hoodies and more stuff"
+          content="CG Prospect official merchandise like 3d t-shirt, 3d hoodies and more stuff"
         />
       </Head>
-      <header className="merch-head-cnt flex-50">
-        <div className="merch-head-cnt-1">
-          <h1 className="big-font">DO 3D, WEAR 3D</h1>ù
-          <p className="small-font">
-            Visit theofficial shop on RedBubble for getting hoodies, tshirts and
-            phone cover in a 3d mood
-          </p>
-          <a
-            target="_blank"
-            rel="noopener"
-            className="btn"
-            href="https://www.redbubble.com"
-          >
-            See all the merchandise
-          </a>
-          <img
-            loading="lazy"
-            className="merch-img"
-            src="/3d-product.png"
-            width="500"
-            height="500"
-            alt="a hoodie"
-          />
-        </div>
-        <div className="merch-head-cnt-2">
-          <h2 className="large-font">OFFICIAL MERCH</h2>
-          <h2 className="large-font">CG PROSPECT</h2>
-          <div className="merch-link-home">
-            <h3 className="small-font highlight black">
-              Free textures & 3d models
-            </h3>
-            <p className="small-font black">
-              CG Prospect provides free textures and 3d models to put in even
-              your commercial projects. If you want to see the assets, click the
-              button below!
+      <header className="merch-cnt">
+        <div className="merch-first-col">
+          <div>
+            <h1 className="big-font">
+              DO 3D <br /> Get 3D <br /> Wear 3D.
+            </h1>
+            <p className="small-font">
+              CG Prospect provides free content, support it by buying the
+              official merchandise. {''}
+              <strong className="highlight-teespring">
+                Shop securely now on TeeSpring.
+              </strong>
             </p>
-            <Link href="/free-textures">
-              <a className="btn-line">See assets</a>
-            </Link>
+            <div className="merch-btn-cnt">
+              <a
+                className="btn black"
+                target="_blank"
+                rel="noopener"
+                href="https://www.teespring.com"
+              >
+                Go to the shop
+              </a>
+              <Link href="/free-textures">
+                <a className="btn-line">More info</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="merch-sec-col">
+          <img src="/3d-product.png" width="300" height="300" alt="a hoodie" />
+        </div>
+        <div className="merch-third-col">
+          <div>
+            <h2 className="small-font highlight">New here?</h2>
+            <p>
+              You're in the merchandise page of CG Prospect, wich provides free
+              textures and 3d models.
+            </p>
+            <div className="merch-btn-cnt">
+              <Link href="/free-textures">
+                <a className="btn-line btn3">Free textures</a>
+              </Link>
+              <Link href="/free-textures">
+                <a className="btn-line btn3">Free 3d models</a>
+              </Link>
+            </div>
           </div>
         </div>
       </header>

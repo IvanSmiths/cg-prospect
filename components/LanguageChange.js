@@ -6,7 +6,7 @@ const LanguageChange = () => {
   const [isOpened, setIsOpened] = useState(false);
   let router = useRouter();
   return (
-    <div className="lang-cnt-2">
+    <div onClick={() => setIsOpened(!isOpened)} className="lang-cnt-2">
       <div className="arrow-cnt">
         <img
           className="arrow-navbar2"

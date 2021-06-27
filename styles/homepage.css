@@ -101,6 +101,157 @@
   transform: rotateZ(360deg) scale(1.4);
 }
 
+/* ---------------------- CAROUSEL BEGIN ---------- */
+/* ---------------------- CAROUSEL BEGIN ---------- */
+/* ---------------------- CAROUSEL BEGIN ---------- */
+
+.slider-renders-cnt {
+  text-align: center;
+  padding-top: 5rem;
+  min-height: fit-content;
+  min-height: 600px;
+}
+
+.slider-renders-cnt p {
+  text-align: center;
+  padding: 2rem 20rem 6rem 20rem;
+}
+
+.slider {
+  position: relative;
+  min-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 2.5rem;
+  color: var(--mainColor);
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right-arrow {
+  right: 87px;
+}
+
+.left-arrow {
+  left: 87px;
+}
+
+.render-instagram {
+  margin-bottom: 1.5rem;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.image {
+  height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .image {
+    width: 90vw;
+  }
+
+  .slider-renders-cnt p {
+    padding: 2rem 4vw 5rem 4vw;
+  }
+
+  .arrow,
+  .arrow-progress {
+    font-size: 2rem;
+  }
+
+  .right-arrow {
+    right: 57px;
+  }
+
+  .left-arrow {
+    left: 57px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .arrow,
+  .arrow-progress {
+    font-size: 1.5rem;
+  }
+
+  .right-arrow {
+    right: 27px;
+  }
+
+  .left-arrow {
+    left: 27px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .arrow,
+  .arrow-progress {
+    font-size: 1rem;
+  }
+}
+
+/* ---------------------- PROGRESBAR BEGIN ---------- */
+/* ---------------------- PROGRESBAR BEGIN ---------- */
+/* ---------------------- PROGRESBAR BEGIN ---------- */
+
+.cnt-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cnt-progress h3 {
+  align-self: flex-end;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.arrow-progress {
+  font-size: 2.5rem;
+  color: var(--mainColor);
+}
+
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  position: relative;
+  height: clamp(3rem, 4vw, 6rem);
+  width: 80vw;
+}
+
+.progress-done {
+  background: linear-gradient(to left, var(--patreonColor), #f576a0);
+  -webkit-box-shadow: 0px 0px 28px 5px rgba(0, 0, 0, 0.76);
+  box-shadow: 0px 0px 25px 7px rgba(207, 24, 24, 0.767);
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  transition: 10s ease 0.3s;
+}
+
 /* ---------------------- STATS BEGIN ---------- */
 /* ---------------------- STATS BEGIN ---------- */
 /* ---------------------- STATS BEGIN ---------- */

@@ -42,15 +42,6 @@ function Header() {
         </div>
       </header>
       <div className="container-ico">
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener">
-          <img
-            loading="lazy"
-            src="/ico_youtube.svg"
-            width="22"
-            height="22"
-            alt="Icon of YouTube"
-          />
-        </a>
         <a href="https://www.instagram.com/" target="_blank" rel="noopener">
           <img
             loading="lazy"
@@ -85,6 +76,15 @@ function Header() {
             width="22"
             height="22"
             alt="Icon of Patreon"
+          />
+        </a>
+        <a href="https://www.teespring.com/" target="_blank" rel="noopener">
+          <img
+            loading="lazy"
+            src="/icon-teespring.svg"
+            width="22"
+            height="22"
+            alt="Icon of Teespring"
           />
         </a>
       </div>
