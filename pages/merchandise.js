@@ -72,7 +72,7 @@ function Merchandise() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem recusandae reprehenderit odit non, tenetur harum dolor
               architecto eum qui nulla tempora nostrum officiis error nisi
-              voluptates optio! Doloribus, mollitia non.
+              voluptates optiod! Doloribus, mollitia non.
             </p>
 
             <ul className="merch-ico-cnt">
