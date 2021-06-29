@@ -352,10 +352,6 @@ li {
   width: 90vw;
 }
 
-.under-development p {
-  padding-top: 4rem;
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 9px;
@@ -377,3 +373,16 @@ li {
 }
 
 @import './query.css';
+
+.under-development div {
+  padding-top: 10rem;
+  background-color: var(--mainBackground);
+}
+
+.under-development {
+  background-color: var(--mainBackground);
+}
+
+.under-development h1 {
+  padding-bottom: 2rem;
+}

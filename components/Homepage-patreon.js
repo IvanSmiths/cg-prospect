@@ -21,7 +21,7 @@ function Patreon() {
       </div>
       <a
         className="btn patreon-clr"
-        href="https://www.patreon.com/"
+        href="https://www.patreon.com/cgprospect"
         target="_blank"
         rel="noopener"
       >

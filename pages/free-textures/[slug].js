@@ -136,7 +136,7 @@ export default function SingleTexture({ texture, textures }) {
           <p className="small-font p-slug">
             {texture.title} {t('single-texture:title')}
             <a
-              href="https://www.patreon.com"
+              href="https://www.patreon.com/cgprospect"
               className="italic"
               rel="noopener"
               target="_blank"

@@ -109,7 +109,11 @@ export default function SingleTexture({ model, models }) {
           <h1 className="big-font title-texture">{model.title}</h1>
           <p className="small-font p-slug">
             {model.title} {t('single-model:title')}{' '}
-            <a href="https://www.patreon.com" rel="noopener" target="_blank">
+            <a
+              href="https://www.patreon.com/cgprospect"
+              rel="noopener"
+              target="_blank"
+            >
               <strong className="highlight-patreon underline">
                 {t('single-model:title2')}{' '}
               </strong>

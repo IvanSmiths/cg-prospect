@@ -72,15 +72,17 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
   const categories = await prisma.category.findMany();
+  const paths = [];
 
+  locales.forEach((locale, i) => {
+    categories.forEach((category, i) => {
+      paths.push({ params: { slug: category.slug }, locale });
+    });
+  });
   return {
-    paths: categories.map((category) => ({
-      params: {
-        slug: category.slug.toString(),
-      },
-    })),
+    paths,
     fallback: false,
   };
 }

@@ -62,7 +62,7 @@ const Footer = () => {
             <li className="tiny-font ">
               <a
                 className="patreon-clr btn btn2"
-                href="https://www.patreon.com/"
+                href="https://www.patreon.com/cgprospect"
                 target="_blank"
                 rel="noopener"
               >
@@ -70,9 +70,14 @@ const Footer = () => {
               </a>
             </li>
             <li className="tiny-font black">
-              <Link href="/merchandise">
-                <a className="btn-line btn-merch btn-line-2">Merchandise</a>
-              </Link>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://cg-prospect.creator-spring.com"
+                className="btn-line btn-merch btn-line-2"
+              >
+                Merchandise
+              </a>
             </li>
             <li>
               <Link href="/sponsor-home">
@@ -111,7 +116,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-ico">
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <a
+          href="https://www.instagram.com/cgprospect/"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
             src="/logo-instagram.svg"
@@ -120,7 +129,24 @@ const Footer = () => {
             alt="An icon of Instagram"
           />
         </a>
-        <a href="https://www.artstation.com/" target="_blank" rel="noopener">
+        <a
+          href="https://www.facebook.com/CG-Prospect-106271838337510"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            loading="lazy"
+            src="/logo-facebook.svg"
+            width="26"
+            height="26"
+            alt="An icon of Facebook"
+          />
+        </a>
+        <a
+          href="https://www.artstation.com/cgprospect"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
             src="/logo-artstation.svg"
@@ -129,7 +155,11 @@ const Footer = () => {
             alt="An icon of ArtStation"
           />
         </a>
-        <a href="https://www.pinterest.com/" target="_blank" rel="noopener">
+        <a
+          href="https://www.pinterest.it/cgprospect"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
             src="/logo-pinterest.svg"
@@ -138,16 +168,24 @@ const Footer = () => {
             alt="An icon of Pinterest"
           />
         </a>
-        <a href="https://www.patreon.com/" target="_blank" rel="noopener">
+        <a
+          href="https://www.patreon.com/cgprospect"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
-            src="/ico_patreon.svg"
+            src="/icon-patreon.svg"
             width="26"
             height="26"
             alt="An icon of Patreon"
           />
         </a>
-        <a href="https://www.teespring.com/" target="_blank" rel="noopener">
+        <a
+          href="https://cg-prospect.creator-spring.com"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
             src="/icon-teespring.svg"

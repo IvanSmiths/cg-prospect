@@ -105,7 +105,7 @@ function Navbar() {
         <Link href="/">
           <a>
             <img
-              src="/logo-white.svg"
+              src="/logo-navbar.svg"
               height="30px"
               width="160px"
               alt="main logo"
@@ -227,15 +227,18 @@ function Navbar() {
             {dropdown5 && <Dropdown5 />}
           </li>
           <li onClick={closeMobileMenu} className="nav-item small-font">
-            <Link href="/merchandise">
-              <a className="btn-line btn-merch">Merchandise</a>
-            </Link>
+            <a
+              href="https://cg-prospect.creator-spring.com"
+              className="btn-line btn-merch"
+            >
+              Merchandise
+            </a>
           </li>
           <li onClick={closeMobileMenu} className="nav-item small-font">
             <a
               target="_blank"
               rel="noopener"
-              href="https://www.patreon.com"
+              href="https://www.patreon.com/cgprospect"
               className="nav-links patreon-clr btn btn2"
             >
               Cahoot

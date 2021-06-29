@@ -32,7 +32,7 @@ function Stats() {
             rel="noopener"
             className="btn-line"
             style={{ color: 'black', border: 'black 2px solid' }}
-            href="https://www.patreon.com"
+            href="https://www.patreon.com/cgprospect"
           >
             {t('home:stats-card-btn')}
           </a>

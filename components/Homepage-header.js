@@ -15,7 +15,11 @@ function Header() {
           </h1>
           <p className="small-font">
             {t('home:titledesc')}
-            <a href="https://www.patreon.com/" target="_blank" rel="noopener">
+            <a
+              href="https://www.patreon.com/cgprospect"
+              target="_blank"
+              rel="noopener"
+            >
               <strong className="highlight-patreon underline">
                 {t('home:titledesc2')}
               </strong>
@@ -42,49 +46,82 @@ function Header() {
         </div>
       </header>
       <div className="container-ico">
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <a
+          href="https://www.instagram.com/cgprospect/"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
-            src="/ico_instagram.svg"
-            width="22"
-            height="22"
-            alt="Icon of Instagram"
+            src="/icon-instagram.svg"
+            width="24"
+            height="24"
+            alt="Link to the Instagram page"
           />
         </a>
-        <a href="https://www.artstation.com/" target="_blank" rel="noopener">
+        <a
+          href="https://www.facebook.com/CG-Prospect-106271838337510"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
-            src="/ico_artstation.svg"
-            width="22"
-            height="22"
-            alt="Icon of ArtStation"
+            src="/icon-facebook.svg"
+            width="24"
+            height="24"
+            alt="Link to the Facebook page"
           />
         </a>
-        <a href="https://www.pinterest.com/" target="_blank" rel="noopener">
+        <a
+          href="https://www.artstation.com/cgprospect"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
-            src="/ico_pinterest.svg"
-            width="22"
-            height="22"
-            alt="Icon of Pinterest"
+            src="/icon-artstation.svg"
+            width="24"
+            height="24"
+            alt="Link to the ArtStation page"
           />
         </a>
-        <a href="https://www.patreon.com/" target="_blank" rel="noopener">
+        <a
+          href="https://www.pinterest.it/cgprospect"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
-            src="/ico_patreon.svg"
-            width="22"
-            height="22"
-            alt="Icon of Patreon"
+            src="/icon-pinterest.svg"
+            width="24"
+            height="24"
+            alt="Link to the Pinterest page"
           />
         </a>
-        <a href="https://www.teespring.com/" target="_blank" rel="noopener">
+        <a
+          href="https://www.patreon.com/cgprospect"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            loading="lazy"
+            src="/icon-patreon.svg"
+            width="24"
+            height="24"
+            alt="Link to the Patreon page"
+          />
+        </a>
+        <a
+          href="https://cg-prospect.creator-spring.com"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             loading="lazy"
             src="/icon-teespring.svg"
-            width="22"
-            height="22"
-            alt="Icon of Teespring"
+            width="24"
+            height="24"
+            alt="Link to the CG Prospect merchandise page"
           />
         </a>
       </div>
