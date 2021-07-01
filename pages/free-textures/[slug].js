@@ -5,7 +5,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import getStripe from '../../utils/get-stripejs';
 import ElementsForm from '../../components/ElementsForm';
 import useTranslation from 'next-translate/useTranslation';
-import * as fbq from '../lib/fpixel';
+import * as fbq from '../../lib/fpixel';
 
 import {
   FacebookIcon,
