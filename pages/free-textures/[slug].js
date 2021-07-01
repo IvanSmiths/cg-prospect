@@ -5,6 +5,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import getStripe from '../../utils/get-stripejs';
 import ElementsForm from '../../components/ElementsForm';
 import useTranslation from 'next-translate/useTranslation';
+import * as fbq from '../lib/fpixel';
 
 import {
   FacebookIcon,
@@ -25,6 +26,9 @@ import {
 
 export default function SingleTexture({ texture, textures }) {
   let { t } = useTranslation();
+  const handleClick = () => {
+    fbq.event('Click', { currency: 'USD', value: 1 });
+  };
   return (
     <>
       <Head>
@@ -58,6 +62,7 @@ export default function SingleTexture({ texture, textures }) {
         <div className="cnt-first-col">
           <div className="container-texture-image">
             <img
+              onClick={handleClick}
               loading="lazy"
               height="500"
               width="500"
