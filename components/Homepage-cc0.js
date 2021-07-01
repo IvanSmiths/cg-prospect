@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 function CC0() {
   let { t } = useTranslation();
   return (
-    <section className="cnt-cc0">
+    <section className="cnt-cc0 margin-section">
       <div className="cc0-texture">
         <h3 className="big-font">{t('home:cc0-title')}</h3>
         <p className="small-font">

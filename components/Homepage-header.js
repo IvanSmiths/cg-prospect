@@ -86,7 +86,7 @@ function Header() {
           />
         </a>
         <a
-          href="https://www.pinterest.it/cgprospect"
+          href="https://www.pinterest.com/cgprospect"
           target="_blank"
           rel="noopener"
         >

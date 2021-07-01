@@ -97,8 +97,21 @@
     line-height: 1.5rem;
   }
 
+  .margin-section {
+    margin-bottom: 6rem !important;
+  }
+
   .hp-3d-model-cnt p {
     padding: 0 2rem;
+  }
+
+  .merch-first-col div:nth-child(1) {
+    margin-left: 0;
+    padding: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer-links ul {

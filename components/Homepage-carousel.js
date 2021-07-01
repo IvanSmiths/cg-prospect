@@ -34,44 +34,31 @@ const ImageSlider = () => {
   }
 
   return (
-    <section className="slider-renders-cnt">
-      <h3 className="big-font italic highlight-main">#CGPROSPECT</h3>
-      <p className="small-font">
-        If you are using CG Prospect's textures, use the hashtag #cgprospect on
-        Instagram! Get the chance of having your render here for a month.
-      </p>
-      <div className="slider">
-        <FaArrowAltCircleLeft
-          className="left-arrow arrow"
-          onClick={prevSlide}
-        />
-        <FaArrowAltCircleRight
-          className="right-arrow arrow"
-          onClick={nextSlide}
-        />
-        {SliderData.map((slide, index) => {
-          return (
-            <a key={index} href={slide.link} target="_blank" rel="noopener">
-              {index === current && (
-                <div className={index === current ? 'slide active' : 'slide'}>
-                  <h3 className="small-font highlight render-instagram">
-                    Render by: {slide.author}
-                  </h3>
-                  <img
-                    loading="lazy"
-                    height="400"
-                    width="800"
-                    src={slide.image}
-                    alt={slide.alt}
-                    className="image"
-                  />
-                </div>
-              )}
-            </a>
-          );
-        })}
-      </div>
-    </section>
+    <div className="slider">
+      <FaArrowAltCircleLeft className="left-arrow arrow" onClick={prevSlide} />
+      <FaArrowAltCircleRight
+        className="right-arrow arrow"
+        onClick={nextSlide}
+      />
+      {SliderData.map((slide, index) => {
+        return (
+          <a key={index} href={slide.link} target="_blank" rel="noopener">
+            {index === current && (
+              <div className={index === current ? 'slide active' : 'slide'}>
+                <img
+                  loading="lazy"
+                  height="400"
+                  width="400"
+                  src={slide.image}
+                  alt={slide.alt}
+                  className="image-merch"
+                />
+              </div>
+            )}
+          </a>
+        );
+      })}
+    </div>
   );
 };
 

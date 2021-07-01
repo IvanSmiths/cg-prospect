@@ -107,113 +107,6 @@
   transform: scale(1.2);
 }
 
-/* ---------------------- CAROUSEL BEGIN ---------- */
-/* ---------------------- CAROUSEL BEGIN ---------- */
-/* ---------------------- CAROUSEL BEGIN ---------- */
-
-.slider-renders-cnt {
-  text-align: center;
-  padding-top: 5rem;
-  min-height: fit-content;
-  min-height: 600px;
-}
-
-.slider-renders-cnt p {
-  text-align: center;
-  padding: 2rem 20rem 6rem 20rem;
-}
-
-.slider {
-  position: relative;
-  min-height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.arrow {
-  font-size: 2.5rem;
-  color: var(--mainColor);
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-.right-arrow {
-  right: 87px;
-}
-
-.left-arrow {
-  left: 87px;
-}
-
-.render-instagram {
-  margin-bottom: 1.5rem;
-}
-
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
-}
-
-.slide.active {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
-}
-
-.image {
-  height: auto;
-}
-
-@media only screen and (max-width: 900px) {
-  .image {
-    width: 90vw;
-  }
-
-  .slider-renders-cnt p {
-    padding: 2rem 4vw 5rem 4vw;
-  }
-
-  .arrow,
-  .arrow-progress {
-    font-size: 2rem;
-  }
-
-  .right-arrow {
-    right: 57px;
-  }
-
-  .left-arrow {
-    left: 57px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .arrow,
-  .arrow-progress {
-    font-size: 1.5rem;
-  }
-
-  .right-arrow {
-    right: 27px;
-  }
-
-  .left-arrow {
-    left: 27px;
-  }
-}
-
-@media only screen and (max-width: 200px) {
-  .arrow,
-  .arrow-progress {
-    font-size: 1rem;
-  }
-}
-
 /* ---------------------- PROGRESBAR BEGIN ---------- */
 /* ---------------------- PROGRESBAR BEGIN ---------- */
 /* ---------------------- PROGRESBAR BEGIN ---------- */
@@ -529,14 +422,110 @@
   padding: 11rem 38rem 9rem 5rem;
 }
 
-/* -------------------- MYSELF BEGIN ---------- */
-/* -------------------- MYSELF BEGIN ---------- */
-/* -------------------- MYSELF BEGIN ---------- */
+/* -------------------- MERCHANDISE BEGIN ---------- */
+/* -------------------- MERCHANDISE BEGIN ---------- */
+/* -------------------- MERCHANDISE BEGIN ---------- */
 
-.myself {
-  margin-top: 8rem;
-  padding-bottom: 5rem;
+.merch-cnt {
+  display: flex;
+  flex-direction: row;
 }
+
+.merch-first-col div:nth-child(1) {
+  margin-left: var(--marginLayout);
+  padding-right: 5rem;
+}
+
+.merch-first-col p {
+  margin: 2rem 0;
+}
+
+.slider {
+  position: relative;
+  min-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 2.5rem;
+  color: var(--mainColor);
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right-arrow {
+  right: 87px;
+}
+
+.left-arrow {
+  left: 87px;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+@media only screen and (max-width: 900px) {
+  .slider-renders-cnt p {
+    padding: 2rem 4vw 5rem 4vw;
+  }
+
+  .arrow,
+  .arrow-progress {
+    font-size: 2rem;
+  }
+
+  .right-arrow {
+    right: 57px;
+  }
+
+  .left-arrow {
+    left: 57px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .arrow,
+  .arrow-progress {
+    font-size: 1.5rem;
+  }
+
+  .right-arrow {
+    right: 27px;
+  }
+
+  .left-arrow {
+    left: 27px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .arrow,
+  .arrow-progress {
+    font-size: 1rem;
+  }
+}
+
+.image-merch {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* -------------------- MYSELF BEGIN ---------- */
+/* -------------------- MYSELF BEGIN ---------- */
+/* -------------------- MYSELF BEGIN ---------- */
 
 .myself > *:nth-child(1) {
   text-align: center;
@@ -550,10 +539,6 @@
 /* -------------------- CAROUSEL BEGIN ---------- */
 /* -------------------- CAROUSEL BEGIN ---------- */
 /* -------------------- CAROUSEL BEGIN ---------- */
-
-.carousel-cnt {
-  padding: 5rem 0rem;
-}
 
 .carousel-heading-cnt {
   text-align: center;
@@ -607,12 +592,8 @@
 
 .carousel-button {
   cursor: pointer;
-  border: 0;
-  display: flex;
-  align-self: center;
-  padding: 10px;
   background-color: var(--mainBackground);
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .carousel-button:hover {

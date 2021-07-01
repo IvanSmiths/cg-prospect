@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 function Myself() {
   let { t } = useTranslation();
   return (
-    <section className="myself flex-50">
+    <section className="myself flex-50 margin-section">
       <div>
         <img
           className="image-myself"

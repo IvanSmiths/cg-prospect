@@ -10,6 +10,7 @@ import Head from 'next/head';
 import Video from '../components/Homepage-video';
 import VerticalCarousel from '../components/Homepage-verticalCarousel';
 import useTranslation from 'next-translate/useTranslation';
+import Merch from '../components/Homepage-merch';
 
 export default function Home() {
   let { t } = useTranslation();
@@ -44,6 +45,7 @@ export default function Home() {
       <Models />
       <CC0 />
       <VerticalCarousel data={data.slides} leadingText={data.leadingText} />
+      <Merch />
       <Myself />
     </>
   );

@@ -161,6 +161,10 @@ p {
   background-color: var(--patreonColor);
 }
 
+.teespring-clr {
+  background-color: var(--teeSpringColor);
+}
+
 .btn:hover {
   transform: scale(1.04);
 }
@@ -225,6 +229,10 @@ nav li > a {
   padding: 0rem 14rem;
 }
 
+.margin-section {
+  margin-bottom: 15rem;
+}
+
 #nprogress .bar {
   background: #fee648;
 
@@ -249,7 +257,6 @@ nav li > a {
 @import './method.css';
 @import './terms.css';
 @import './contact.css';
-@import './merchandise.css';
 
 a {
   color: inherit;

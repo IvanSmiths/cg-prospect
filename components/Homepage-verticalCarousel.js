@@ -52,7 +52,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
   };
 
   return (
-    <section className="carousel-cnt">
+    <section className="carousel-cnt margin-section">
       <div className="carousel-heading-cnt">
         <a
           href="https://www.instagram.com/cgprospect/"
@@ -65,20 +65,17 @@ const VerticalCarousel = ({ data, leadingText }) => {
       </div>
       <div className="outer-container">
         <div className="carousel-wrapper">
-          <button
-            type="button"
-            className="carousel-button prev"
-            onClick={() => handleClick('prev')}
-          >
+          <div className="arrow-cnt">
             <img
+              className="carousel-button prev"
+              onClick={() => handleClick('prev')}
               loading="lazy"
               src="/up-arrow.svg"
-              height="32px"
-              width="32px"
+              height="42px"
+              width="42px"
               alt="arrow up"
             />
-          </button>
-
+          </div>
           <div className="carousel">
             <div className="leading-text">
               <h4 className="medium-font">{leadingText}</h4>
@@ -114,20 +111,17 @@ const VerticalCarousel = ({ data, leadingText }) => {
               </div>
             </div>
           </div>
-
-          <button
-            type="button"
-            className="carousel-button next"
-            onClick={() => handleClick('next')}
-          >
+          <div className="arrow-cnt">
             <img
+              className="carousel-button next"
+              onClick={() => handleClick('next')}
               loading="lazy"
               src="/down-arrow.svg"
-              height="32px"
-              width="32px"
-              alt="arrow down"
+              height="42px"
+              width="42px"
+              alt="arrow up"
             />
-          </button>
+          </div>
         </div>
         <div className="content">
           <img
