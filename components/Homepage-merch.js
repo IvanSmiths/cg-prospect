@@ -11,7 +11,7 @@ const HomepageMerch = () => {
           <p className="small-font">
             CG Prospect provides free content, support it by buying the official
             merchandise. {''}
-            <strong className="highlight-teespring">
+            <strong className="highlight">
               Shop securely now on TeeSpring.
             </strong>
           </p>

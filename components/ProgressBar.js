@@ -16,7 +16,7 @@ const Progress = ({ done }) => {
   return (
     <div className="cnt-progress">
       <h3 className="small-font highlight">
-        {t('home:patreon-progress')}{' '}
+        {t('home:patreon-progress')}20$ (5 {t('home:patreon-progress2')}){' '}
         <img
           loading="lazy"
           src="/down-arrow.svg"

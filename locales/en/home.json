@@ -31,7 +31,8 @@
   "patreon-desc2": "exclusive contents, ",
   "patreon-desc3": "like unique textures, 3d models, tutorials, and a beautiful community to talk with or ask for help.",
   "patreon-btn": "Get unique content",
-  "patreon-progress": "Next Goal: 20$ (5 weekly assets)",
+  "patreon-progress": "Next Goal: ",
+  "patreon-progress2": "weekly assets",
   "video-title": "8K Resolution of ",
   "video-title2": "POWER",
   "video-desc": "Browse between the most photorealistic free texures of wood, rock, terrain or metal that you can find.",
@@ -65,5 +66,5 @@
   "myself-desc": "I've built CG Prospect on my own, from the creation of the assets, to the coding of the web site. 3D artist specialized in Photogrammetry and web developer, i've built this project for putting myself in game, and for sharing my stuff and knowledge with other passionated people.",
   "myself-translate": "Translated in english by: ",
   "myself-translate-by": "Me!",
-  "myself-translate-link": "https://www.instagram.com/ivan_smiths"
+  "myself-translate-link": "https://www.instagram.com/ivan_smiths/"
 }

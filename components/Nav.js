@@ -228,6 +228,8 @@ function Navbar() {
           </li>
           <li onClick={closeMobileMenu} className="nav-item small-font">
             <a
+              target="_blank"
+              rel="noopener"
               href="https://cg-prospect.creator-spring.com"
               className="btn-line btn-merch"
             >
