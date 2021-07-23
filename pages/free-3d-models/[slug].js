@@ -153,6 +153,30 @@ export default function SingleTexture({ model, models }) {
               </Link>
             </h3>
           </div>
+          <div className="donate-btn">
+            <h2 className="btn-font highlight">
+              {t('single-model:donate-title')}
+            </h2>
+            <div className="donate-buttons">
+              <Elements stripe={getStripe()}>
+                <ElementsForm />
+              </Elements>
+              <div className="paypal-crypto-cnt">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=MZQH8LFX27JH6">
+                  <btn className="btn btn-paypal">Donate with PayPal</btn>
+                </a>
+                <div>
+                  <a
+                    className="donate-with-crypto crypto"
+                    href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
+                  >
+                    Donate with Crypto
+                  </a>
+                </div>
+                <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="container-texture-details" key={model.id}>
           <h1 className="big-font title-texture">{model.title}</h1>
@@ -312,30 +336,7 @@ export default function SingleTexture({ model, models }) {
               </ul>
             </div>
           </div>
-          <div className="donate-btn">
-            <h2 className="btn-font highlight">
-              {t('single-model:donate-title')}
-            </h2>
-            <div className="donate-buttons">
-              <Elements stripe={getStripe()}>
-                <ElementsForm />
-              </Elements>
-              <div className="paypal-crypto-cnt">
-                <a href="https://www.paypal.com/donate/?hosted_button_id=MZQH8LFX27JH6">
-                  <btn className="btn btn-paypal">Donate with PayPal</btn>
-                </a>
-                <div>
-                  <a
-                    className="donate-with-crypto crypto"
-                    href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
-                  >
-                    Donate with Crypto
-                  </a>
-                </div>
-                <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
-              </div>
-            </div>
-          </div>
+
           <h2 className="btn-font highlight">
             {' '}
             {t('single-model:download-title')}

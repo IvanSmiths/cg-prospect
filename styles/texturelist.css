@@ -56,13 +56,13 @@
 }
 
 .container-single-texture > *:nth-child(1) {
-  flex: 1 1 50%;
-  margin-top: 8rem;
+  flex: 1 1 60%;
+  margin-top: 9rem;
 }
 
 .container-single-texture > *:nth-child(2) {
   flex: 1 1 50%;
-  margin-top: 8rem;
+  margin-top: 9rem;
 }
 
 .container-texture-image:nth-child(1) {
@@ -72,7 +72,7 @@
 }
 
 .sponsor-cnt {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .cnt-first-col {
@@ -95,11 +95,11 @@
 }
 
 .container-texture-details h2 {
-  margin: 3rem 0rem -1rem 0rem;
+  margin: 7rem 0rem -1rem 0rem;
 }
 
 .title-texture {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .first-details h3 {
@@ -155,7 +155,7 @@
 }
 
 .gear-list {
-  padding: 0rem 1rem;
+  padding: 0rem 2rem;
 }
 
 .gear-list li {
@@ -190,6 +190,10 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+}
+
+.btn-paypal {
+  margin: 0;
 }
 
 .sponsor-texture {
@@ -231,6 +235,8 @@
   margin-top: 1.5rem;
   display: flex;
   gap: 3.5rem;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   color: rgb(240, 240, 240);
