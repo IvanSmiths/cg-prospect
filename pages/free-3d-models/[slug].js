@@ -1,11 +1,12 @@
 import prisma from '../../lib/prisma';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import { Elements } from '@stripe/react-stripe-js';
 import getStripe from '../../utils/get-stripejs';
 import ElementsForm from '../../components/ElementsForm';
 import useTranslation from 'next-translate/useTranslation';
-
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import {
   FacebookIcon,
   PinterestIcon,
@@ -25,6 +26,32 @@ import {
 
 export default function SingleTexture({ model, models }) {
   let { t } = useTranslation();
+
+  const SliderData = [
+    {
+      image: `${model.mainImage}`,
+      alt: 'The main preview of ',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80',
+      alt: 'The secondary preview of ',
+    },
+  ];
+  const [current, setCurrent] = useState(0);
+  const length = SliderData.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(SliderData) || SliderData.length <= 0) {
+    return null;
+  }
   return (
     <>
       <Head>
@@ -57,14 +84,36 @@ export default function SingleTexture({ model, models }) {
       <main className="container-single-texture">
         <div className="cnt-first-col">
           <div className="container-texture-image">
-            <img
-              loading="lazy"
-              height="500"
-              width="500"
-              className="single-main-image"
-              src={model.mainImage}
-              alt={`The main preview of the model ${model.title}`}
-            />
+            <div className="slider">
+              <FaArrowAltCircleLeft
+                className="left-arrow arrow"
+                onClick={prevSlide}
+              />
+              <FaArrowAltCircleRight
+                className="right-arrow arrow"
+                onClick={nextSlide}
+              />
+              {SliderData.map((slide, index) => {
+                return (
+                  <div key={index}>
+                    {index === current && (
+                      <div
+                        className={index === current ? 'slide active' : 'slide'}
+                      >
+                        <img
+                          loading="lazy"
+                          height="500"
+                          width="500"
+                          className="single-main-image"
+                          src={slide.image}
+                          alt={`${slide.alt}the ${model.title} 3d model`}
+                        />
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div className="sponsor-cnt">
             <h3 className="small-font sponsor-texture">
