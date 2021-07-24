@@ -16,6 +16,7 @@ model Texture {
   title String @unique
   slug String
   mainImage String
+  secImage String?
   scale String
   location String
   png2k String
@@ -45,6 +46,7 @@ model Model3d {
   title String @unique
   slug String
   mainImage String
+  secImage String?
   scale String
   location String
   published String?
