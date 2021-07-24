@@ -26,7 +26,6 @@ import {
 } from 'react-share';
 
 export default function SingleTexture({ texture, textures }) {
-  console.log(texture);
   let { t } = useTranslation();
   const handleClick = () => {
     fbq.event('Click', { currency: 'USD', value: 1 });
