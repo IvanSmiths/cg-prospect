@@ -35,6 +35,7 @@ model Texture {
   sponsorImage String
   sponsorName String
   sponsorDesc String?
+  sponsorCta String?
   sponsorLink String
   category Category[]
   method     Method[]
@@ -63,6 +64,7 @@ model Model3d {
   sponsorImage String
   sponsorName String
   sponsorDesc String?
+  sponsorCta String?
   sponsorLink String
   modelCategory ModelCategory[]
   modelMethod     ModelMethod[]

@@ -73,6 +73,17 @@
 
 .sponsor-cnt {
   margin-top: 5rem;
+  width: 75%;
+}
+
+.sponsor-cnt h4 {
+  border-top: 0.1rem solid rgb(202, 202, 202);
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.sponsor-cnt p {
+  margin: 1.1rem 0rem;
 }
 
 .cnt-first-col {

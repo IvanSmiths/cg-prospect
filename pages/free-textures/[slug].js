@@ -148,7 +148,15 @@ export default function SingleTexture({ texture, textures }) {
               />
             </a>
             <p className="small-font">{texture.sponsorDesc}</p>
-            <h3 className="small-font sponsor-texture">
+            <a
+              className="btn"
+              href={texture.sponsorLink}
+              target="_blank"
+              rel="noopener"
+            >
+              {texture.sponsorCta}
+            </a>
+            <h4 className="small-font sponsor-texture">
               {t('single-texture:sponsor-desc')}
               {''}
               <Link href="/sponsor-texture">
@@ -159,7 +167,7 @@ export default function SingleTexture({ texture, textures }) {
                   </strong>
                 </a>
               </Link>
-            </h3>
+            </h4>
           </div>
           <div className="donate-btn">
             <h2 className="btn-font highlight">
