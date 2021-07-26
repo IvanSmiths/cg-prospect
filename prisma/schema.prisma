@@ -34,6 +34,7 @@ model Texture {
   published String
   sponsorImage String
   sponsorName String
+  sponsorDesc String?
   sponsorLink String
   category Category[]
   method     Method[]
@@ -61,6 +62,7 @@ model Model3d {
   highpolycount String
   sponsorImage String
   sponsorName String
+  sponsorDesc String?
   sponsorLink String
   modelCategory ModelCategory[]
   modelMethod     ModelMethod[]

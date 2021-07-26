@@ -147,6 +147,7 @@ export default function SingleTexture({ texture, textures }) {
                 alt={`A sponsor image of ${texture.sponsorName}`}
               />
             </a>
+            <p className="small-font">{texture.sponsorDesc}</p>
             <h3 className="small-font sponsor-texture">
               {t('single-texture:sponsor-desc')}
               {''}
