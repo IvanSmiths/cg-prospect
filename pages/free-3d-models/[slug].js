@@ -130,12 +130,7 @@ export default function SingleTexture({ model, models }) {
               </a>{' '}
             </h3>
             <br />
-            <a
-              className="btn"
-              href={model.sponsorLink}
-              target="_blank"
-              rel="noopener"
-            >
+            <a href={model.sponsorLink} target="_blank" rel="noopener">
               <img
                 loading="lazy"
                 className="sponsor-img"
@@ -147,7 +142,12 @@ export default function SingleTexture({ model, models }) {
               />
             </a>
             <p className="small-font">{model.sponsorDesc}</p>
-            <a href={model.sponsorLink} target="_blank" rel="noopener">
+            <a
+              className="btn"
+              href={model.sponsorLink}
+              target="_blank"
+              rel="noopener"
+            >
               {model.sponsorCta}
             </a>
             <h3 className="small-font sponsor-texture">
