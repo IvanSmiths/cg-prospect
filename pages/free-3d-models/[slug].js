@@ -146,9 +146,9 @@ export default function SingleTexture({ model, models }) {
                 alt={`A sponsor image of ${model.sponsorName}`}
               />
             </a>
-            <p className="small-font">{texture.sponsorDesc}</p>
-            <a href={texture.sponsorLink} target="_blank" rel="noopener">
-              {texture.sponsorCta}
+            <p className="small-font">{model.sponsorDesc}</p>
+            <a href={model.sponsorLink} target="_blank" rel="noopener">
+              {model.sponsorCta}
             </a>
             <h3 className="small-font sponsor-texture">
               {t('single-model:sponsor-desc')} {''}
