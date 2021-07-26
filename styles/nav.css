@@ -143,6 +143,10 @@
     position: relative;
   }
 
+  .navbar-logo-cnt {
+    margin-left: 4vw;
+  }
+
   .arrow-navbar {
     display: none;
   }

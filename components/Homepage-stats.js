@@ -61,32 +61,34 @@ function Stats() {
       <h3 className="font-color-inverse stats-title big-font">
         {t('home:stats-title')}
       </h3>
-      <div className="container-numbers">
-        <div className="numbers">
-          <h4 className="medium-font font-color-inverse">
-            {t('home:stats-num1')}
-            <br />
-            {t('home:stats-num1-desc')}
-          </h4>
-        </div>
-        <div className="numbers">
-          <h4 className="medium-font font-color-inverse">
-            {t('home:stats-num2')} <br />
-            {t('home:stats-num2-desc')}
-          </h4>
-        </div>
-        <div className="numbers">
-          <h4 className="medium-font font-color-inverse">
-            {t('home:stats-num3')} <br />
-            {t('home:stats-num3-desc')}
-          </h4>
-        </div>
-        <div className="numbers">
-          <h4 className="medium-font font-color-inverse">
-            {t('home:stats-num4')} <br />
-            {t('home:stats-num4-desc')}
-          </h4>
-        </div>
+      <div>
+        <ul className="container-numbers">
+          <li className="numbers">
+            <h4 className="medium-font font-color-inverse">
+              {t('home:stats-num1')}
+              <br />
+              {t('home:stats-num1-desc')}
+            </h4>
+          </li>
+          <li className="numbers">
+            <h4 className="medium-font font-color-inverse">
+              {t('home:stats-num2')} <br />
+              {t('home:stats-num2-desc')}
+            </h4>
+          </li>
+          <li className="numbers">
+            <h4 className="medium-font font-color-inverse">
+              {t('home:stats-num3')} <br />
+              {t('home:stats-num3-desc')}
+            </h4>
+          </li>
+          <li className="numbers">
+            <h4 className="medium-font font-color-inverse">
+              {t('home:stats-num4')} <br />
+              {t('home:stats-num4-desc')}
+            </h4>
+          </li>
+        </ul>
       </div>
     </section>
   );

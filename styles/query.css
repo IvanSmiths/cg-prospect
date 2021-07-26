@@ -25,6 +25,12 @@
   }
 }
 
+@media only screen and (max-width: 980px) {
+  .card {
+    margin: 0 0 0 0;
+    box-shadow: none;
+  }
+}
 @media screen and (max-width: 950px) {
   p {
     line-height: 1.3rem;
@@ -139,6 +145,10 @@
     justify-content: center;
     flex-direction: column;
     padding: 8rem 2rem;
+  }
+
+  .container-numbers {
+    flex-direction: column;
   }
 
   .model-3d-example-cnt-2 > *:nth-child(2) {
@@ -373,6 +383,10 @@
   }
 
   .sponsor-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 3rem;
     text-align: center;
   }

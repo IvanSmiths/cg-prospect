@@ -310,45 +310,114 @@ export default function SingleTexture({ texture, textures }) {
               <ul className="gear-list">
                 <li className="small-font-sub">
                   {t('single-texture:gear-1')}:{' '}
-                  <a className="underline white small-font">Canon 60D.</a>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    href="https://www.amazon.com/Sony-Mirrorless-Digital-Camera-28-70mm/dp/B00PX8CNCM/ref=sr_1_1?dchild=1&keywords=sony+a7ii&qid=1627326537&sr=8-1"
+                    className="underline white small-font"
+                  >
+                    Sony A7II
+                  </a>
                 </li>
                 <li className="small-font-sub">
                   {t('single-texture:gear-2')}:{' '}
-                  <a className="underline white small-font">Canon 55mm.</a>
+                  <a
+                    href="https://www.amazon.com/Sony-28-70mm-F3-5-5-6-Interchangeable-Standard/dp/B00GTXHQ8Q/ref=sr_1_1?dchild=1&keywords=Sony+Alpha+lens+28-70&qid=1627326793&sr=8-1"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    Sony 28-70mm
+                  </a>
                 </li>
                 <li className="small-font-sub">
                   {t('single-texture:gear-3')}:{' '}
-                  <a className="underline white small-font">Manfrotto</a>
+                  <a
+                    href="https://www.amazon.com/Concept-SA254M1-Camera-Tripod-Magnesium/dp/B091YCYS28"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    K&F Concept
+                  </a>
                 </li>
                 <li className="small-font-sub">
                   {t('single-texture:gear-4')}:{' '}
-                  <a className="underline white small-font">Honda</a>
+                  <a
+                    href="https://www.amazon.com/Circular-Polarizers-Filter-Concept-Polarizer/dp/B07NYV29M4/ref=sr_1_1_sspa?dchild=1&keywords=polarizer%2B70mm&qid=1627326999&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzNlJONUNDT0I4Q0RHJmVuY3J5cHRlZElkPUEwMjc1MDM4MlNFNllQMzZCRkNCTSZlbmNyeXB0ZWRBZElkPUEwNzU0NTQyMlROVEhHR1FZTzNLTyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    K&F Polarizer
+                  </a>
                 </li>
                 <li className="small-font-sub">
-                  {t('single-texture:gear-5')}:{' '}
-                  <a className="underline white small-font">Pro Studio</a>
+                  {t('single-texture:gear-10')}:{' '}
+                  <a
+                    href="https://www.amazon.com/ColorChecker-Passport-Photo-2-MSCCPP-B/dp/B07PNCPZ8G/ref=sr_1_3?dchild=1&keywords=color+checker&qid=1627327592&sr=8-3"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    X-Rite ColorChecker
+                  </a>
                 </li>
               </ul>
               <ul className="gear-list">
                 <li className="small-font-sub">
+                  {t('single-texture:gear-5')}:{' '}
+                  <a
+                    href="https://www.amazon.com/Acer-AN515-55-53E5-i5-10300H-GeForce-Keyboard/dp/B092YHJGMN/ref=sr_1_1?dchild=1&keywords=acer%2Bnitro%2B5%2Brtx&qid=1627327394&sr=8-1&th=1"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    Acer Nitro 5 RTX 3060
+                  </a>
+                </li>
+                <li className="small-font-sub">
                   {t('single-texture:gear-6')}:{' '}
-                  <a className="underline white small-font">AMD</a>
+                  <a
+                    href="https://www.amazon.com/AMD-Ryzen-5900X-24-Thread-Processor/dp/B08164VTWH/ref=sr_1_6?dchild=1&keywords=amd+ryzen&qid=1627327859&sr=8-6"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    AMD Ryzen 9 5900X
+                  </a>
                 </li>
                 <li className="small-font-sub">
                   {t('single-texture:gear-7')}:{' '}
-                  <a className="underline white small-font">Pro</a>
+                  <a
+                    href="https://www.amazon.com/ZOTAC-GeForce-192-bit-Graphics-ZT-T16600K-10M/dp/B07XV7FNR2/ref=sr_1_3?crid=16QF0EKBQYG1X&dchild=1&keywords=nvidia+1660&qid=1627327999&sprefix=nvidia+166%2Caps%2C301&sr=8-3"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    ZOTAC Nvidia GeForce GTX 1660
+                  </a>
                 </li>
                 <li className="small-font-sub">
                   {t('single-texture:gear-8')}:{' '}
-                  <a className="underline white small-font">Green</a>
+                  <a
+                    href="https://www.amazon.com/ASUS-TUF-X570-Plus-Motherboard-Lighting/dp/B07SXF8GY3/ref=sr_1_10?crid=3KKOUEG7YH91B&dchild=1&keywords=motherboard&qid=1627328093&sprefix=moth%2Caps%2C316&sr=8-10"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    ASUS AM4 TUF Gaming X570
+                  </a>
                 </li>
                 <li className="small-font-sub">
                   {t('single-texture:gear-9')}:{' '}
-                  <a className="underline white small-font">Nvidia GTX 1080.</a>
-                </li>
-                <li className="small-font-sub">
-                  {t('single-texture:gear-10')}:{' '}
-                  <a className="underline white small-font">AMD Ryzen 3030.</a>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    Nvidia GTX 1080.
+                  </a>
                 </li>
               </ul>
             </div>
