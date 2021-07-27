@@ -20,7 +20,7 @@ const HomepageMerch = () => {
             className="btn black teespring-clr"
             target="_blank"
             rel="noopener"
-            href="https://www.teespring.com"
+            href="https://cg-prospect.creator-spring.com"
           >
             Go to the shop
           </a>

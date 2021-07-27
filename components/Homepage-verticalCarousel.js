@@ -83,8 +83,8 @@ const VerticalCarousel = ({ data, leadingText }) => {
             <div className="slides">
               <div className="carousel-inner">
                 {data.map((item, i) => (
-                  <div key={item.id} className="artists-cnt">
-                    <h5
+                  <ul key={item.id} className="artists-cnt">
+                    <li
                       onClick={() => setActiveIndex(i)}
                       className={cn('carousel-item medium-font', {
                         active: activeIndex === i,
@@ -105,8 +105,8 @@ const VerticalCarousel = ({ data, leadingText }) => {
                         src={item.icon}
                         alt={`${item.introline}, an artist`}
                       />
-                    </h5>
-                  </div>
+                    </li>
+                  </ul>
                 ))}
               </div>
             </div>

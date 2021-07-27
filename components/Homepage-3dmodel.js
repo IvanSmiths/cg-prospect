@@ -16,7 +16,7 @@ const Homepage3dModel = () => {
       </div>
       <div className="flex-50 model-3d-example-cnt">
         <div>
-          <h4 className="medium-font">{t('home:showcase-model-title1')}</h4>
+          <h4 className="big-font">{t('home:showcase-model-title1')}</h4>
           <p className="small-font">{t('home:showcase-model-desc1')}</p>
           <Link href="/freee-3d-models">
             <a className="btn-line">{t('home:showcase-model-btn')}</a>
@@ -43,7 +43,7 @@ const Homepage3dModel = () => {
           />
         </div>
         <div>
-          <h4 className="medium-font">{t('home:showcase-model-title2')}</h4>
+          <h4 className="big-font">{t('home:showcase-model-title2')}</h4>
           <p className="small-font">{t('home:showcase-model-desc2')}</p>
           <Link href="/freee-3d-models">
             <a className="btn-line">{t('home:showcase-model-btn')}</a>

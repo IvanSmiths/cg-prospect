@@ -4,17 +4,15 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 const ImageSlider = () => {
   const SliderData = [
     {
-      link: 'https://www.google.com',
-      image:
-        'https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      alt: 'A render with Cg Prospect textures',
+      link: 'https://cg-prospect.creator-spring.com/listing/cgp-t-shirt?product=1429',
+      image: '/3d-merch.jpg',
+      alt: 'Shirt of CG Prospect',
       author: 'Ivan Smiths',
     },
     {
-      link: 'https://www.amazon.com',
-      image:
-        'https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80',
-      alt: 'A render with Cg Prospect textures',
+      link: 'https://cg-prospect.creator-spring.com/listing/cgp-t-shirt?product=1430',
+      image: '/3d-merch-2.jpg',
+      alt: 'Shirt of CG Prospect',
       author: ' Cg Prospect',
     },
   ];
@@ -47,8 +45,8 @@ const ImageSlider = () => {
               <div className={index === current ? 'slide active' : 'slide'}>
                 <img
                   loading="lazy"
-                  height="400"
-                  width="400"
+                  height="550"
+                  width="550"
                   src={slide.image}
                   alt={slide.alt}
                   className="image-merch"
