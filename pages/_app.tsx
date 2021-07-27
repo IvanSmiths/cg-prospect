@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
+import useTranslation from 'next-translate/useTranslation';
 import FacebookPixel from '../components/FacebookPixel';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
@@ -20,6 +21,7 @@ Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }: AppProps) {
+  let { t } = useTranslation();
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url: any) => {
@@ -103,16 +105,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       <CookieConsent
         buttonClasses="btn-cookie"
         style={{
-          background: '#08070cbc',
-          display: 'flex',
-          justifyContent: 'center',
+          background: '#08070cd1',
         }}
-        buttonText="Accept"
+        buttonText={`${t('common:cookie-btn')}`}
       >
-        By continuing to browse CG Prospect, you agree to the use of cookies for
-        advertising and audience measurement purposes. See more in the{' '}
+        {t('common:cookie')}
         <Link href="/terms">
-          <a className="italic">privacy policy.</a>
+          <a className="italic underline">privacy policy</a>
         </Link>
       </CookieConsent>
       <Footer />

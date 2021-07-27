@@ -23,5 +23,7 @@
   "mail-label": "Your Email",
   "mail-desc": "One email every friday, with the latest textures, 3d models, and news about the 3D world. No spam, no bulls**t.",
   "mail-desc-success": "Success! 🎉 You are now subscribed to the newsletter.",
-  "mail-btn": "Subscribe 💌"
+  "mail-btn": "Subscribe 💌",
+  "cookie": "By continuing to browse CG Prospect, you agree to the use of cookies for advertising and audience measurement purposes. See more in the page ",
+  "cookie-btn": "Accept"
 }

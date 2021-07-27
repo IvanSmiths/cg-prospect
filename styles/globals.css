@@ -393,3 +393,14 @@ li {
 .under-development h1 {
   padding-bottom: 2rem;
 }
+
+.CookieConsent {
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.CookieConsent div {
+  margin-right: 2rem;
+}

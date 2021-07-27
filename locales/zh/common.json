@@ -23,5 +23,7 @@
   "mail-label": "你的邮件",
   "mail-desc": "每周五一封电子邮件，其中包含有关 3D 世界的最新纹理和新闻。 No spam, no bulls**t.",
   "mail-desc-success": "成功！ 🎉您现在订阅了时事通讯.",
-  "mail-btn": "订阅💌"
+  "mail-btn": "订阅💌",
+  "cookie": "继续浏览 CG Prospect，即表示您同意将 cookie 用于广告和受众测量目的。在页面中查看更多 ",
+  "cookie-btn": "接受"
 }
