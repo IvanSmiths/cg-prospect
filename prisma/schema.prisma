@@ -106,6 +106,7 @@ model ModelCategory {
 
 model User {
   id        Int      @id @default(autoincrement())
+  slug      String?
   name      String  
   img      String  
   role      String  
