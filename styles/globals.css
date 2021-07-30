@@ -257,6 +257,7 @@ nav li > a {
 @import './method.css';
 @import './terms.css';
 @import './contact.css';
+@import './authors.css';
 
 a {
   color: inherit;

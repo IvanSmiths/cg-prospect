@@ -1,0 +1,43 @@
+.authors-title-cnt {
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.authors-cnt {
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.author-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.authors-social-cnt {
+  margin-bottom: 2rem;
+}
+.authors-cnt h3 {
+  margin: 1rem 0;
+}
+
+.authors-img {
+  border-radius: 50%;
+}
+
+.authors-artstation {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
