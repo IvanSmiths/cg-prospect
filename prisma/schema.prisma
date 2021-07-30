@@ -106,7 +106,14 @@ model ModelCategory {
 
 model User {
   id        Int      @id @default(autoincrement())
-  name      String?  
+  name      String  
+  img      String  
+  role      String  
+  desc      String  
+  instagram      String?  
+  artstation      String?  
+  email      String?  
+  web      String?  
   textures Texture[]
   model3d Model3d[]
 }
