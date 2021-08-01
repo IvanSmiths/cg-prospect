@@ -51,6 +51,9 @@ export default function SingleTexture({ model, models }) {
   if (!Array.isArray(SliderData) || SliderData.length <= 0) {
     return null;
   }
+
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <>
       <Head>
@@ -116,9 +119,9 @@ export default function SingleTexture({ model, models }) {
           </div>
           <div className="sponsor-cnt">
             <h3 className="small-font sponsor-texture">
-              <strong className="small-font highlight">
+              <b className="small-font highlight">
                 {t('single-model:sponsor-title')} <br />
-              </strong>
+              </b>
               <a
                 href={model.sponsorLink}
                 className="medium-font underline highlight-main"
@@ -135,8 +138,8 @@ export default function SingleTexture({ model, models }) {
                 loading="lazy"
                 className="sponsor-img"
                 loading="lazy"
-                width="550"
-                height="250"
+                height="500"
+                width="500"
                 src={model.sponsorImage}
                 alt={`A sponsor image of ${model.sponsorName}`}
               />
@@ -150,7 +153,7 @@ export default function SingleTexture({ model, models }) {
             >
               {model.sponsorCta}
             </a>
-            <h3 className="small-font sponsor-texture">
+            <h4 className="small-font sponsor-texture">
               {t('single-model:sponsor-desc')} {''}
               <Link href="/sponsor-texture">
                 <a>
@@ -159,7 +162,7 @@ export default function SingleTexture({ model, models }) {
                   </span>
                 </a>
               </Link>
-            </h3>
+            </h4>
           </div>
           <div className="donate-btn">
             <h2 className="btn-font highlight">
@@ -195,9 +198,9 @@ export default function SingleTexture({ model, models }) {
               rel="noopener"
               target="_blank"
             >
-              <strong className="highlight-patreon underline">
+              <b className="highlight-patreon underline">
                 {t('single-model:title2')}{' '}
-              </strong>
+              </b>
             </a>
           </p>
           <div className="first-details container-background">
@@ -212,16 +215,18 @@ export default function SingleTexture({ model, models }) {
                     height="32"
                     width="32"
                   />
-                  <strong className="small-font-sub">
+                  <b className="small-font-sub">
                     {' '}
                     {t('single-model:categories')}{' '}
-                  </strong>
+                  </b>
                   {model.modelCategory.map((category) => (
                     <Link
                       key={category.id}
                       href={`/categories-3d-model/${category.slug}`}
                     >
-                      <a className="highlight-bck">{category.title} </a>
+                      <a className="highlight-bck underline">
+                        {category.title}{' '}
+                      </a>
                     </Link>
                   ))}
                 </li>
@@ -234,15 +239,12 @@ export default function SingleTexture({ model, models }) {
                     height="32"
                     width="32"
                   />
-                  <strong className="small-font-sub">
-                    {' '}
-                    {t('single-model:method')}
-                  </strong>{' '}
+                  <b className="small-font-sub"> {t('single-model:method')}</b>{' '}
                   <Link
                     key={model.modelMethod[0].id}
                     href={`/methods-3d-model/${model.modelMethod[0].slug}`}
                   >
-                    <a className="highlight-bck">
+                    <a className="highlight-bck underline">
                       {model.modelMethod[0].title}{' '}
                     </a>
                   </Link>
@@ -256,11 +258,8 @@ export default function SingleTexture({ model, models }) {
                     height="32"
                     width="32"
                   />
-                  <strong className="small-font-sub">
-                    {' '}
-                    {t('single-model:scale')}
-                  </strong>{' '}
-                  {model.scale} {t('single-model:meters')}.
+                  <b className="small-font-sub"> {t('single-model:scale')}</b>{' '}
+                  {model.scale} {t('single-model:meters')}
                 </li>
                 <li className="small-font">
                   <img
@@ -271,11 +270,11 @@ export default function SingleTexture({ model, models }) {
                     height="32"
                     width="32"
                   />
-                  <strong className="small-font-sub">
+                  <b className="small-font-sub">
                     {' '}
                     {t('single-model:location')}{' '}
-                  </strong>{' '}
-                  {model.location}.
+                  </b>{' '}
+                  {model.location}
                 </li>
                 <li className="small-font">
                   <img
@@ -406,6 +405,37 @@ export default function SingleTexture({ model, models }) {
               <RedditIcon size={42} round="true" />
             </RedditShareButton>
           </div>
+          <section className="texture-accordion-cnt">
+            <div
+              className="texture-accordion-title"
+              onClick={() => setIsActive(!isActive)}
+            >
+              <h3 className="small-font highlight">More Info</h3>
+              <span className="texture-accordion-open">
+                {isActive ? '-' : '+'}
+              </span>
+            </div>
+            <div>
+              {isActive && (
+                <div className="accordion-content">
+                  <p className="small-font">
+                    <strong>
+                      {model.title} is a free 3d model {''}
+                    </strong>
+                    available both in lowpoly and highpoly. This 3d model has
+                    beeen took in {model.location} with the Sony A7II, a full
+                    frame camera with the best conditions possible, using low
+                    ISO with the help of a tripod, granting sharp and clear 3d
+                    model and maps. The real world dimensions of this 3d model
+                    is {model.scale} and can be used with any render engine,
+                    from <strong>Blender, Maya, Cinema 4D</strong> {''}
+                    to
+                    <strong> Unreal Engine or Unity</strong>.
+                  </p>
+                </div>
+              )}
+            </div>
+          </section>
         </div>
       </main>
       <h2 className="medium-font h2-suggest">

@@ -124,9 +124,9 @@ export default function SingleTexture({ texture, textures }) {
           </div>
           <div className="sponsor-cnt">
             <h3 className="small-font sponsor-texture">
-              <strong className="small-font highlight">
+              <b className="small-font highlight">
                 {t('single-texture:sponsor-title')} <br />
-              </strong>
+              </b>
               <a
                 href={texture.sponsorLink}
                 className="medium-font underline highlight-main"
@@ -144,7 +144,7 @@ export default function SingleTexture({ texture, textures }) {
                 className="sponsor-img"
                 loading="lazy"
                 width="550"
-                height="250"
+                height="400"
                 src={texture.sponsorImage}
                 alt={`A sponsor image of ${texture.sponsorName}`}
               />
@@ -206,9 +206,9 @@ export default function SingleTexture({ texture, textures }) {
               rel="noopener"
               target="_blank"
             >
-              <strong className="highlight-patreon underline">
+              <b className="highlight-patreon underline">
                 {t('single-texture:title2')}
-              </strong>
+              </b>
             </a>
           </p>
           <div className="first-details container-background">
@@ -223,16 +223,18 @@ export default function SingleTexture({ texture, textures }) {
                     height="32"
                     width="32"
                   />
-                  <strong className="small-font-sub">
+                  <b className="small-font-sub">
                     {' '}
                     {t('single-texture:categories')}{' '}
-                  </strong>
+                  </b>
                   {texture.category.map((category) => (
                     <Link
                       key={category.id}
                       href={`/categories/${category.slug}`}
                     >
-                      <a className="highlight-bck">{category.title} </a>
+                      <a className="highlight-bck underline">
+                        {category.title}{' '}
+                      </a>
                     </Link>
                   ))}
                 </li>
@@ -245,15 +247,17 @@ export default function SingleTexture({ texture, textures }) {
                     height="32"
                     width="32"
                   />
-                  <strong className="small-font-sub">
+                  <b className="small-font-sub">
                     {' '}
                     {t('single-texture:method')}
-                  </strong>{' '}
+                  </b>{' '}
                   <Link
                     key={texture.method[0].id}
                     href={`/methods/${texture.method[0].slug}`}
                   >
-                    <a className="highlight-bck">{texture.method[0].title} </a>
+                    <a className="highlight-bck underline">
+                      {texture.method[0].title}{' '}
+                    </a>
                   </Link>
                 </li>
                 <li className="small-font">
@@ -265,11 +269,8 @@ export default function SingleTexture({ texture, textures }) {
                     height="32"
                     width="32"
                   />
-                  <strong className="small-font-sub">
-                    {' '}
-                    {t('single-texture:scale')}
-                  </strong>{' '}
-                  {texture.scale} {t('single-texture:meters')}.
+                  <b className="small-font-sub"> {t('single-texture:scale')}</b>{' '}
+                  {texture.scale} {t('single-texture:meters')}
                 </li>
                 <li className="small-font">
                   <img
@@ -280,11 +281,11 @@ export default function SingleTexture({ texture, textures }) {
                     height="32"
                     width="32"
                   />
-                  <strong className="small-font-sub">
+                  <b className="small-font-sub">
                     {' '}
                     {t('single-texture:location')}{' '}
-                  </strong>{' '}
-                  {texture.location}.
+                  </b>{' '}
+                  {texture.location}
                 </li>
                 <li className="small-font">
                   <img
@@ -295,10 +296,10 @@ export default function SingleTexture({ texture, textures }) {
                     height="32"
                     width="32"
                   />
-                  <strong className="small-font-sub">
+                  <b className="small-font-sub">
                     {' '}
                     {t('single-texture:published')}{' '}
-                  </strong>
+                  </b>
                   {texture.published}
                 </li>
               </ul>
@@ -513,19 +514,18 @@ export default function SingleTexture({ texture, textures }) {
                 <div className="accordion-content">
                   <p className="small-font">
                     <strong>
-                      {texture.title} is a free to download texture {''}
-                    </strong>
-                    with a maximum resolution of 8K. This texture has beeen took
-                    in {texture.location} with the Sony A7II full frame camera
-                    with the best conditions possible, using lowest ISO with the
+                      {texture.title} is a free texture {''}
+                    </strong>{' '}
+                    from the {texture.category[0].title} category, with a
+                    maximum resolution of 8K. This texture has beeen took in{' '}
+                    {texture.location} with the Sony A7II, a full frame camera
+                    with the best conditions possible, using low ISO with the
                     help of a tripod, granting sharp and clear maps. The real
                     world dimensions of this textures are {texture.scale} and
                     can be used with any render engine, from{' '}
-                    <strong>Blender </strong>
-                    with Cycles, <strong>Maya</strong> {''}
-                    with Arnold to
-                    <strong> Unreal Engine</strong> {''}
-                    or <strong>Unity</strong>.
+                    <strong>Blender, Maya, Cinema 4D</strong> {''}
+                    to
+                    <strong> Unreal Engine or Unity</strong>.
                   </p>
                 </div>
               )}
