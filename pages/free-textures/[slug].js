@@ -509,26 +509,26 @@ export default function SingleTexture({ texture, textures }) {
                 {isActive ? '-' : '+'}
               </span>
             </div>
-            <div>
-              {isActive && (
-                <div className="accordion-content">
-                  <p className="small-font">
-                    <strong>
-                      {texture.title} is a free texture {''}
-                    </strong>{' '}
-                    from the {texture.category[0].title} category, with a
-                    maximum resolution of 8K. This texture has beeen took in{' '}
-                    {texture.location} with the Sony A7II, a full frame camera
-                    with the best conditions possible, using low ISO with the
-                    help of a tripod, granting sharp and clear maps. The real
-                    world dimensions of this textures are {texture.scale} and
-                    can be used with any render engine, from{' '}
-                    <strong>Blender, Maya, Cinema 4D</strong> {''}
-                    to
-                    <strong> Unreal Engine or Unity</strong>.
-                  </p>
-                </div>
-              )}
+            <div
+              className={
+                isActive ? 'open accordion-content' : 'close accordion-content'
+              }
+            >
+              <p className="small-font">
+                <strong>
+                  {texture.title} is a free texture {''}
+                </strong>{' '}
+                from the {texture.category[0].title} category, with a maximum
+                resolution of 8K. This texture has beeen took in{' '}
+                {texture.location} with the Sony A7II, a full frame camera with
+                the best conditions possible, using low ISO with the help of a
+                tripod, granting sharp and clear maps. The real world dimensions
+                of this textures are {texture.scale} and can be used with any
+                render engine, from <strong>Blender, Maya, Cinema 4D</strong>{' '}
+                {''}
+                to
+                <strong> Unreal Engine or Unity</strong>.
+              </p>
             </div>
           </section>
         </div>

@@ -341,10 +341,10 @@ button:disabled {
 
 .texture-accordion-cnt {
   width: 90%;
-  background-color: var(--subBackground);
 }
 
 .texture-accordion-title {
+  background-color: var(--subBackground);
   margin-top: 3rem;
   display: flex;
   align-items: center;
@@ -353,7 +353,7 @@ button:disabled {
 }
 
 .texture-accordion-title {
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 .texture-accordion-open {
@@ -364,6 +364,16 @@ button:disabled {
 
 .accordion-content p {
   padding: 1rem;
+}
+
+.open {
+  opacity: 1;
+  background-color: var(--subBackground);
+}
+
+.close {
+  opacity: 0;
+  background-color: var(--mainBackground);
 }
 
 @media only screen and (max-width: 980px) {
