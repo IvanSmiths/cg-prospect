@@ -6,7 +6,7 @@ export default function Home({ models, categories }) {
   return (
     <>
       <Head>
-        <title>CG Prospect | All free 3d models.</title>
+        <title>CG Prospect | All categories of free 3d models.</title>
         <meta
           name="description"
           content=" is one of multiple categories of free to download, up to native 8K Pbr
@@ -40,6 +40,16 @@ export default function Home({ models, categories }) {
           </ul>
         </aside>
         <section className="cnt-texture-list">
+          <div className="texture-list-up-cnt">
+            <p className="small-font">
+              You are browsing all the free 3d models. If you want to browse
+              free textures,{' '}
+              <a className="underlinee highlight">
+                <Link href="/free-textures">go here</Link>
+              </a>
+              .
+            </p>
+          </div>{' '}
           <div className="texture-list">
             {models.map((model) => (
               <Link key={model.id} href={`/free-3d-models/${model.slug}`}>
@@ -56,15 +66,15 @@ export default function Home({ models, categories }) {
               </Link>
             ))}
           </div>
+          <div className="page-btn">
+            <button
+              className="btn-line"
+              onClick={() => router.push(`/free-models/page/2`)}
+            >
+              Next
+            </button>
+          </div>
         </section>
-        <div className="page-btn">
-          <button
-            className="btn-line"
-            onClick={() => router.push(`/free-models/page/2`)}
-          >
-            Next
-          </button>
-        </div>
       </main>
     </>
   );

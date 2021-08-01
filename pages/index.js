@@ -30,12 +30,11 @@ export default function Home() {
         <meta property="og:title" content={`${t('home:head-og-title')}`} />
         <meta property="og:description" content={`${t('home:head-og-desc')}`} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cgprospect.vercel.app/" />
+        <meta property="og:url" content="https://cgprospect.com/" />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/deino2cjx/image/upload/v1617272982/nextjs_media/untitled_xq9mjb.jpg"
+          content="https://res.cloudinary.com/deino2cjx/image/upload/v1627848204/nextjs_media/apple-icon-152x152_gbwieu.png"
         />
-        <meta property="og:image:type" content="image/jpeg" />
       </Head>
       <Header />
       <Stats />

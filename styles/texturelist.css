@@ -3,13 +3,13 @@
 }
 
 .container-list-texture > *:nth-child(1) {
-  flex: 1 1 20%;
-  margin-top: 7rem;
+  flex: 1 1 15%;
+  margin-top: 9rem;
 }
 
 .container-list-texture > *:nth-child(2) {
-  margin-top: 7rem;
-  flex: 1 1 80%;
+  margin-top: 9rem;
+  flex: 1 1 85%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -37,14 +37,8 @@
   gap: 2rem;
 }
 
-.texture-list-up-cnt > *:nth-child(1) {
-  flex: 1 1 33%;
-}
-.texture-list-up-cnt > *:nth-child(2) {
-  flex: 1 1 33%;
-}
-.texture-list-up-cnt > *:nth-child(3) {
-  flex: 1 1 33%;
+.texture-list-up-cnt p {
+  padding-right: 6rem;
 }
 
 /*--------------------  TEXTURE BEGIN  ------- */

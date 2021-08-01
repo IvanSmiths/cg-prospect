@@ -6,11 +6,10 @@ export default function Categories({ categories }) {
   return (
     <>
       <Head>
-        <title>Categories, of free 8K pbr textures.</title>
+        <title>CG Prospect | All categories of free 8K pbr textures.</title>
         <meta
           name="description"
-          content=" is one of multiple categories of free to download, up to native 8K Pbr
-          Texture. Consider joining the Cahoot for exclusive content!"
+          content=" From wood textures, to metal textures, on CG Prospect you can find textures for Blender, Unreal Engine, and more."
         />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CgProspect" key="twhandle" />
@@ -32,7 +31,7 @@ export default function Categories({ categories }) {
           You're currently browsing all the categories. If you would like to
           filter the textures by the creation method, go to the {''}
           <Link href="/methods">
-            <a className="italic">methods page.</a>
+            <a className="highlight underline">methods page.</a>
           </Link>
         </p>
         <section className="container-category">
