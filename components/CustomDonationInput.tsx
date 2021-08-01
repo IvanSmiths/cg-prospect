@@ -22,12 +22,16 @@ const CustomDonationInput = ({
 }: Props) => (
   <>
     <label className="small-font">
-      Donate securely with <span className="stripe">Stripe</span>
+      CG Prospect doesn't collect any of your card information. The donation
+      process is handled securely by{' '}
+      <a target="_blank" rel="noopener" href="https://stripe.com/">
+        <span className="stripe underline">Stripe.</span>
+      </a>
       <img
         src="/icon-stripe.svg"
         className="stripe-icon"
-        height="42"
-        width="42"
+        height="32"
+        width="32"
         loading="lazy"
         alt="icon of stripe"
       />

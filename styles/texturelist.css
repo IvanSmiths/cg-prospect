@@ -326,9 +326,37 @@ button:disabled {
   color: #6772e5;
   border: 1px solid #6772e5;
 }
+
 .elements-style-background {
   background: #635bff;
   transition: box-shadow 2s;
+}
+
+.texture-accordion-cnt {
+  width: 90%;
+  background-color: var(--subBackground);
+}
+
+.texture-accordion-title {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.texture-accordion-title {
+  margin-left: 1rem;
+}
+
+.texture-accordion-open {
+  margin-right: 1rem;
+  color: white;
+  font-size: 30px;
+}
+
+.accordion-content p {
+  padding: 1rem;
 }
 
 @media only screen and (max-width: 980px) {

@@ -56,6 +56,8 @@ export default function SingleTexture({ texture, textures }) {
     return null;
   }
 
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <>
       <Head>
@@ -462,6 +464,7 @@ export default function SingleTexture({ texture, textures }) {
               </li>
             </ul>
           </div>
+          <h2 className="btn-font highlight">Share it</h2>
           <div className="social-share-cnt">
             <FacebookShareButton
               url={`https://www.textures.vercel.app/textures/${texture.slug}`}
@@ -495,6 +498,39 @@ export default function SingleTexture({ texture, textures }) {
               <RedditIcon size={42} round="true" />
             </RedditShareButton>
           </div>
+          <section className="texture-accordion-cnt">
+            <div
+              className="texture-accordion-title"
+              onClick={() => setIsActive(!isActive)}
+            >
+              <h3 className="small-font highlight">More Info</h3>
+              <span className="texture-accordion-open">
+                {isActive ? '-' : '+'}
+              </span>
+            </div>
+            <div>
+              {isActive && (
+                <div className="accordion-content">
+                  <p className="small-font">
+                    <strong>
+                      {texture.title} is a free to download texture {''}
+                    </strong>
+                    with a maximum resolution of 8K. This texture has beeen took
+                    in {texture.location} with the Sony A7II full frame camera
+                    with the best conditions possible, using lowest ISO with the
+                    help of a tripod, granting sharp and clear maps. The real
+                    world dimensions of this textures are {texture.scale} and
+                    can be used with any render engine, from{' '}
+                    <strong>Blender </strong>
+                    with Cycles, <strong>Maya</strong> {''}
+                    with Arnold to
+                    <strong> Unreal Engine</strong> {''}
+                    or <strong>Unity</strong>.
+                  </p>
+                </div>
+              )}
+            </div>
+          </section>
         </div>
       </main>
       <h2 className="medium-font h2-suggest">
