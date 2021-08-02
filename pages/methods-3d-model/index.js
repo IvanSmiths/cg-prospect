@@ -1,23 +1,21 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
 
 const Methods = ({ methods }) => {
+  let { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>Methods, of free 8K pbr textures.</title>
-        <meta
-          name="description"
-          content=" is one of multiple categories of free to download, up to native 8K Pbr
-          Texture. Consider joining the Cahoot for exclusive content!"
-        />
+        <title>{t('methods-model:head-title')}</title>
+        <meta name="description" content={t('methods-model:head-desc')} />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CgProspect" key="twhandle" />
-        <meta property="og:title" content={`CgProspect | 8K Free Texture`} />
+        <meta property="og:title" content={t('methods-model:head-og-title')} />
         <meta
           property="og:description"
-          content="On CgProspect you can find countess of free to download textures."
+          content={t('methods-model:head-og-desc')}
         />
         <meta property="og:type" content="website" />
         <meta
@@ -26,8 +24,14 @@ const Methods = ({ methods }) => {
         />
         <meta property="og:image" content={methods[0].mainImage} />
       </Head>
-      <main className="methods-page">
-        <h1 className="big-font">Browse: All Methods</h1>
+      <main className="categories-page">
+        <h1 className="big-font">{t('methods-model:title')}</h1>
+        <p className="small-font">
+          {t('methods-model:desc')}
+          <Link href="/methods">
+            <a className="highlight underline">{t('methods-model:desc-2')}</a>
+          </Link>
+        </p>
         <section className="container-methods">
           {methods.map((method) => (
             <Link href={`/methods-3d-model/${method.slug}`} key={method.id}>

@@ -4,6 +4,10 @@
   "pages": {
     "*": ["common"],
     "/": ["home"],
+    "/categories": ["categories-texture"],
+    "/categories-3d-model": ["categories-model"],
+    "/methods": ["methods-texture"],
+    "/methods-3d-model": ["methods-model"],
     "/free-textures/[slug]": ["single-texture"],
     "/free-3d-models/[slug]": ["single-model"]
   }

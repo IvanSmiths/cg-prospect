@@ -1,22 +1,24 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Categories({ categories }) {
+  let { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>CG Prospect | All categories of free 8K pbr textures.</title>
-        <meta
-          name="description"
-          content=" From wood textures, to metal textures, on CG Prospect you can find textures for Blender, Unreal Engine, and more."
-        />
+        <title>{t('categories-texture:head-title')}</title>
+        <meta name="description" content={t('categories-texture:head-desc')} />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CgProspect" key="twhandle" />
-        <meta property="og:title" content={`CgProspect | 8K Free Texture`} />
+        <meta
+          property="og:title"
+          content={t('categories-texture:head-og-title')}
+        />
         <meta
           property="og:description"
-          content="On CgProspect you can find countess of free to download textures."
+          content={t('categories-texture:head-og-desc')}
         />
         <meta property="og:type" content="website" />
         <meta
@@ -26,12 +28,13 @@ export default function Categories({ categories }) {
         <meta property="og:image" content={categories[0].mainImage} />
       </Head>
       <main className="categories-page">
-        <h1 className="big-font">Browse: All categories</h1>
+        <h1 className="big-font">{t('categories-texture:title')}</h1>
         <p className="small-font">
-          You're currently browsing all the categories. If you would like to
-          filter the textures by the creation method, go to the {''}
-          <Link href="/methods">
-            <a className="highlight underline">methods page.</a>
+          {t('categories-texture:desc')}
+          <Link href="/categories-3d-model">
+            <a className="highlight underline">
+              {t('categories-texture:desc-2')}
+            </a>
           </Link>
         </p>
         <section className="container-category">
