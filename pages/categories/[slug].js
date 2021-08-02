@@ -1,26 +1,36 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Single({ category }) {
+  let { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>{category.title}, free 8K pbr textures.</title>
+        <title>
+          CG Prospect | {category.title}
+          {t('single-category-texture:head-title')}
+        </title>
         <meta
           name="description"
-          content={`${category.title} is one of multiple categories of free to download, 8K seamless Pbr
-          Textures!`}
+          content={`${category.title} ${t(
+            'single-category-texture:head-desc'
+          )}`}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CGProspect" key="twhandle" />
         <meta
           property="og:title"
-          content={`CG Prospect | ${category.title}, 8K Free Texture`}
+          content={`CG Prospect | ${category.title} ${t(
+            'single-category-texture:head-og-title'
+          )}`}
         />
         <meta
           property="og:description"
-          content={`${category.title} is one of the multiple categories of CG Prospect.`}
+          content={`${category.title} ${t(
+            'single-category-texture:head-og-desc'
+          )}`}
         />
         <meta property="og:type" content="website" />
         <meta
@@ -30,12 +40,17 @@ export default function Single({ category }) {
         <meta property="og:image" content={category.mainImage} />
       </Head>
       <main className="category-page-single">
-        <h1 className="big-font">Browse: {category.title} textures</h1>
+        <h1 className="big-font">
+          {t('single-category-texture:title')} {category.title}{' '}
+          {t('single-category-texture:title-2')}
+        </h1>
         <p className="small-font">
-          You're currently browsing {category.title} textures. If you would like
-          to filter the textures by the creation method, go to the {''}
+          {t('single-category-texture:desc')} {category.title}{' '}
+          {t('single-category-texture:desc-2')} {''}
           <Link href="/methods">
-            <a className="italic">methods page.</a>
+            <a className="underline highlight">
+              {t('single-category-texture:desc-3')}
+            </a>
           </Link>
         </p>
         <section className="container-category" key={category.id}>

@@ -31,8 +31,11 @@ export default function CategoriesModel({ categories }) {
         <h1 className="big-font">{t('categories-model:title')}</h1>
         <p className="small-font">
           {t('categories-model:desc')}
-          <Link href="/methods">
-            <a className="italic"> {t('categories-model:desc-2')}</a>
+          <Link href="/categories">
+            <a className="underline highlight">
+              {' '}
+              {t('categories-model:desc-2')}
+            </a>
           </Link>
         </p>
         <section className="container-category">

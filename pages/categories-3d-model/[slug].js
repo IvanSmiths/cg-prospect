@@ -1,26 +1,33 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Single({ category }) {
+  let { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>CG Prospect | {category.title}, free 3d models.</title>
+        <title>
+          CG Prospect | {category.title} {t('single-category-model:head-title')}
+        </title>
         <meta
           name="description"
-          content={`${category.title} is one of multiple categories of free to download, 8K seamless Pbr
-          Textures!`}
+          content={`${category.title} ${t('single-category-model:head-desc')}`}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CgProspect" key="twhandle" />
         <meta
           property="og:title"
-          content={`CG Prospect | ${category.title}, 8K Free Texture`}
+          content={`CG Prospect | ${category.title} ${t(
+            'single-category-model:head-og-title'
+          )}`}
         />
         <meta
           property="og:description"
-          content={`${category.title} is one of the multiple categories of CgProspect.`}
+          content={`${category.title} ${t(
+            'single-category-model:head-og-desc'
+          )}`}
         />
         <meta property="og:type" content="website" />
         <meta
@@ -30,12 +37,15 @@ export default function Single({ category }) {
         <meta property="og:image" content={category.mainImage} />
       </Head>
       <main className="category-page-single">
-        <h1 className="big-font">Browse: {category.title} 3d models</h1>
+        <h1 className="big-font">
+          {t('single-category-model:title')} {category.title}{' '}
+          {t('single-category-model:title-2')}
+        </h1>
         <p className="small-font">
-          You're currently browsing {category.title} 3d models. If you would
-          like to filter the 3d models by the creation method, go to the {''}
+          {t('single-category-model:desc')} {category.title}{' '}
+          {t('single-category-model:desc-2')} {''}
           <Link href="/methods">
-            <a className="italic">methods page.</a>
+            <a className="italic">{t('single-category-model:desc-3')}</a>
           </Link>
         </p>
         <section className="container-category" key={category.id}>
