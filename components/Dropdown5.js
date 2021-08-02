@@ -65,6 +65,23 @@ function Dropdown() {
             </a>
           </Link>
         </li>
+        <li className="nav-icon-cnt">
+          <Link
+            className="dropdown-link"
+            href="/brand"
+            onClick={() => setClick(false)}
+          >
+            <a>
+              <img
+                src="/feedback-icon.svg"
+                height="35"
+                width="35"
+                alt="icon feedback"
+              />
+              {t('common:nav-brand')}
+            </a>
+          </Link>
+        </li>
       </ul>
     </>
   );
