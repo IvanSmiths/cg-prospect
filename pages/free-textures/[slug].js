@@ -398,7 +398,7 @@ export default function SingleTexture({ texture, textures }) {
                     rel="noopener"
                     className="underline white small-font"
                   >
-                    ZOTAC Nvidia GeForce GTX 1660
+                    Nvidia GeForce RTX 2060
                   </a>
                 </li>
                 <li className="small-font-sub">
@@ -410,16 +410,6 @@ export default function SingleTexture({ texture, textures }) {
                     className="underline white small-font"
                   >
                     ASUS AM4 TUF Gaming X570
-                  </a>
-                </li>
-                <li className="small-font-sub">
-                  {t('single-texture:gear-9')}:{' '}
-                  <a
-                    target="_blank"
-                    rel="noopener"
-                    className="underline white small-font"
-                  >
-                    Nvidia GTX 1080.
                   </a>
                 </li>
               </ul>
