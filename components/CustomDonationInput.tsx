@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 type Props = {
   name: string;
@@ -22,19 +23,15 @@ const CustomDonationInput = ({
 }: Props) => (
   <>
     <label className="small-font">
-      CG Prospect doesn't collect any of your card information. The donation
-      process is handled securely by{' '}
+      CG Prospect doesn't collect any of your card information. The donation is
+      securely handled by{' '}
       <a target="_blank" rel="noopener" href="https://stripe.com/">
         <span className="stripe underline">Stripe.</span>
-      </a>
-      <img
-        src="/icon-stripe.svg"
-        className="stripe-icon"
-        height="32"
-        width="32"
-        loading="lazy"
-        alt="icon of stripe"
-      />
+      </a>{' '}
+      {''}
+      <Link href="/terms">
+        <a className="underline highlight">See more in the terms page.</a>
+      </Link>
       <input
         className={className}
         type="number"

@@ -2,6 +2,11 @@
   padding-top: 5rem;
 }
 
+.terms-privacy h3 {
+  padding-top: 3rem;
+  padding-bottom: 0.3rem;
+}
+
 .terms-privacy h1 {
   text-align: center;
   margin: 3rem 0rem 3rem 0rem;
