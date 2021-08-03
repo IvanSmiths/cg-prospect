@@ -11,7 +11,7 @@ const Methods = ({ methods }) => {
         <title>{t('methods-texture:head-title')}</title>
         <meta name="description" content={t('methods-texture:head-desc')} />
         <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="CgProspect" key="twhandle" />
+        <meta name="twitter:creator" content="CGProspect" key="twhandle" />
         <meta
           property="og:title"
           content={t('methods-texture:head-og-title')}
