@@ -36,8 +36,7 @@ const SingleMethod = ({ method }) => {
       </Head>
       <main className="category-page-single">
         <h1 className="big-font">
-          {t('single-method-model:title')} {method.title}{' '}
-          {t('single-method-model:title-2')}
+          {t('single-method-model:title')} {method.title}.
         </h1>
         <p className="small-font">
           {t('single-method-model:desc')} {method.title}{' '}

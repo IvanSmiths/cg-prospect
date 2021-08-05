@@ -41,8 +41,7 @@ export default function Single({ category }) {
       </Head>
       <main className="category-page-single">
         <h1 className="big-font">
-          {t('single-category-texture:title')} {category.title}{' '}
-          {t('single-category-texture:title-2')}
+          {t('single-category-texture:title')} {category.title}.
         </h1>
         <p className="small-font">
           {t('single-category-texture:desc')} {category.title}{' '}

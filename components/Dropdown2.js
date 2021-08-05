@@ -49,21 +49,21 @@ function Dropdown() {
           </Link>
         </li>
         <li className="nav-icon-cnt">
-          <Link
+          <a
+            target="_blank"
+            rel="noopener"
             className="dropdown-link"
-            href="/merchandise"
+            href="https://cg-prospect.creator-spring.com/"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/merchandise-3d.svg"
-                height="35"
-                width="35"
-                alt="icon merchandise"
-              />
-              {t('common:nav-merch')}
-            </a>
-          </Link>
+            <img
+              src="/merchandise-3d.svg"
+              height="35"
+              width="35"
+              alt="icon merchandise"
+            />
+            {t('common:nav-merch')}
+          </a>
         </li>
       </ul>
     </>

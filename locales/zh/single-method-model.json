@@ -1,11 +1,10 @@
 {
-  "head-title": " free 3d models.",
-  "head-desc": " is one of the multiple methods of free 3d models!",
-  "head-og-title": "Free 3D models",
-  "head-og-desc": "is one of the multiple methods of free 3d models on CG Prospect.",
-  "title": "Browsing:",
-  "title-2": "method",
-  "desc": " You're currently browsing",
-  "desc-2": "3d models. If you would like to browse textures by the creation method, go to the",
-  "desc-3": "textures methods page."
+  "head-title": " 免费的 3d 模型。",
+  "head-desc": " 是免费 3d 模型的多种方法之一！",
+  "head-og-title": "免费 3D 模型",
+  "head-og-desc": "是 CG Prospect 上免费 3d 模型的多种方法之一。",
+  "title": "您正在浏览使用以下方式创建的 3d 模型：",
+  "desc": " 您当前正在浏览",
+  "desc-2": "3d 模型。如果您想通过创建方法浏览纹理，请转到",
+  "desc-3": "纹理方法页面。"
 }

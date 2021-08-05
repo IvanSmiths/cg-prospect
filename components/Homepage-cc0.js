@@ -1,4 +1,5 @@
 import useTranslation from 'next-translate/useTranslation';
+import Link from 'next/link';
 
 function CC0() {
   let { t } = useTranslation();
@@ -9,7 +10,11 @@ function CC0() {
         <p className="small-font">
           {t('home:cc0-desc')}
           {t('home:cc0-desc2')}
-          <strong className="highlight underline">{t('home:cc0-desc3')}</strong>
+          <Link href="/brand">
+            <a>
+              <b className="highlight underline">{t('home:cc0-desc3')}</b>
+            </a>
+          </Link>
         </p>
       </div>
     </section>

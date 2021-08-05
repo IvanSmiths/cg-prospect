@@ -506,7 +506,7 @@ export default function SingleTexture({ texture, textures }) {
             >
               <p className="small-font">
                 <strong>
-                  {texture.title} is a free texture {''}
+                  {texture.title} is a free pbr texture {''}
                 </strong>{' '}
                 from the {texture.category[0].title} category, with a maximum
                 resolution of 8K. This texture has beeen took in{' '}
