@@ -17,7 +17,7 @@ function Patreon() {
         </p>
       </div>
       <div>
-        <ProgressBar done="16" />
+        <ProgressBar done="0" />
       </div>
       <a
         className="btn patreon-clr"

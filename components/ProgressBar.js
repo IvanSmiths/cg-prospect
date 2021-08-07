@@ -15,16 +15,22 @@ const Progress = ({ done }) => {
 
   return (
     <div className="cnt-progress">
-      <h3 className="small-font highlight">
-        {t('home:patreon-progress')}20$ (5 {t('home:patreon-progress2')}){' '}
-        <img
-          loading="lazy"
-          src="/down-arrow.svg"
-          height="32px"
-          width="32px"
-          alt="arrow down"
-        />
-      </h3>
+      <ul className="cnt-progress-text">
+        <li className="small-font highlight">{t('home:patreon-sub')} 0</li>
+        <li className="small-font highlight">
+          {t('home:patreon-progress1')}0$
+        </li>
+        <li className="small-font highlight">
+          {t('home:patreon-progress')}20$ (2 {t('home:patreon-progress2')}){' '}
+          <img
+            loading="lazy"
+            src="/down-arrow.svg"
+            height="32px"
+            width="32px"
+            alt="arrow down"
+          />
+        </li>
+      </ul>
       <div className="progress">
         <div className="progress-done" style={style}>
           <h4 className="btn-font">{done}%</h4>
