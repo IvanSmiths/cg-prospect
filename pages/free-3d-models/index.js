@@ -44,9 +44,9 @@ export default function Home({ models, categories }) {
             <p className="small-font">
               You are browsing all the free 3d models. If you want to browse
               free textures,{' '}
-              <a className="underlinee highlight">
-                <Link href="/free-textures">go here</Link>
-              </a>
+              <Link href="/free-textures">
+                <a className="underlinee highlight">go here</a>
+              </Link>
               .
             </p>
           </div>{' '}

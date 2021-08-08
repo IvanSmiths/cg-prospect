@@ -143,8 +143,8 @@ export default function SingleTexture({ texture, textures }) {
                 loading="lazy"
                 className="sponsor-img"
                 loading="lazy"
-                width="550"
-                height="400"
+                width="500"
+                height="300"
                 src={texture.sponsorImage}
                 alt={`A sponsor image of ${texture.sponsorName}`}
               />

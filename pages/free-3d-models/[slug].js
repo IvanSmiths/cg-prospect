@@ -138,8 +138,8 @@ export default function SingleTexture({ model, models }) {
                 loading="lazy"
                 className="sponsor-img"
                 loading="lazy"
-                height="500"
                 width="500"
+                height="300"
                 src={model.sponsorImage}
                 alt={`A sponsor image of ${model.sponsorName}`}
               />
