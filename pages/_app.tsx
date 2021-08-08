@@ -98,7 +98,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="msapplication-navbutton-color" content="#fee648" />
       </Head>
-      <Wip />
+  
       <Nav />
       <Component {...pageProps} />
       <Advertising />
