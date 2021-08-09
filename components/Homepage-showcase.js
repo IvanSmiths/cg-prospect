@@ -51,7 +51,7 @@ function Showcase() {
           />
         </div>
       </div>
-      <div className="texture-example-3 flex-50">
+      {/* <div className="texture-example-3 flex-50">
         <div>
           <img
             loading="lazy"
@@ -73,7 +73,7 @@ function Showcase() {
             </a>
           </Link>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }

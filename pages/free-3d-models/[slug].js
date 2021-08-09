@@ -431,6 +431,7 @@ export default function SingleTexture({ model, models }) {
               </li>
             </ul>
           </div>
+          <h2 className="btn-font highlight">{t('single-model:share')}</h2>
           <div className="social-share-cnt">
             <FacebookShareButton
               url={`https://www.cgprospect.com/free-3d-models/${model.slug}`}
@@ -489,9 +490,11 @@ export default function SingleTexture({ model, models }) {
                 of a tripod, granting sharp and clear 3d model and maps. The
                 real world dimensions of this 3d model is {model.scale} and can
                 be used with any render engine, from{' '}
-                <strong>Blender, Maya, Cinema 4D</strong> {''}
-                to
-                <strong> Unreal Engine or Unity</strong>.
+                <strong>Blender, Maya, Cinema 4D</strong>, {''}
+                to to games engines like
+                <strong> Unreal Engine or Unity</strong> and so on. You can
+                freely use this CC0 3d model in your renders, game or movies
+                without worrying about having a commercial license.
               </p>
             </div>
           </section>

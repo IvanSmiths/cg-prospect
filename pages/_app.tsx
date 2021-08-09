@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="application-name" content="CG Prospect" />
-        <meta content="#fee648" name="theme-color" />
+        <meta content="#ffda38" name="theme-color" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta name="apple-mobile-web-app-title" content="CG Prospect" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -94,9 +94,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="/favicon-16x16.png"
         />
         <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-        <meta name="msapplication-TileColor" content="#fee648" />
+        <meta name="msapplication-TileColor" content="#ffda38" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-        <meta name="msapplication-navbutton-color" content="#fee648" />
+        <meta name="msapplication-navbutton-color" content="#ffda38" />
       </Head>
       <Wip />
       <Nav />

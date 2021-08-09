@@ -455,7 +455,7 @@ export default function SingleTexture({ texture, textures }) {
               </li>
             </ul>
           </div>
-          <h2 className="btn-font highlight">Share it</h2>
+          <h2 className="btn-font highlight">{t('single-texture:share')}</h2>
           <div className="social-share-cnt">
             <FacebookShareButton
               url={`https://www.textures.vercel.app/textures/${texture.slug}`}
@@ -494,7 +494,9 @@ export default function SingleTexture({ texture, textures }) {
               className="texture-accordion-title"
               onClick={() => setIsActive(!isActive)}
             >
-              <h3 className="small-font highlight">More Info</h3>
+              <h3 className="small-font highlight">
+                {t('single-texture:text-title')}
+              </h3>
               <span className="texture-accordion-open">
                 {isActive ? '-' : '+'}
               </span>
@@ -506,18 +508,16 @@ export default function SingleTexture({ texture, textures }) {
             >
               <p className="small-font">
                 <strong>
-                  {texture.title} is a free pbr texture {''}
+                  {texture.title} {t('single-texture:text')} {''}
                 </strong>{' '}
-                from the {texture.category[0].title} category, with a maximum
-                resolution of 8K. This texture has beeen took in{' '}
-                {texture.location} with the Sony A7II, a full frame camera with
-                the best conditions possible, using low ISO with the help of a
-                tripod, granting sharp and clear maps. The real world dimensions
-                of this textures are {texture.scale} and can be used with any
-                render engine, from <strong>Blender, Maya, Cinema 4D</strong>{' '}
-                {''}
-                to
-                <strong> Unreal Engine or Unity</strong>.
+                {t('single-texture:text-2')} {texture.category[0].title}
+                {t('single-texture:text-3')} {texture.location}{' '}
+                {t('single-texture:text-4')} {texture.scale}{' '}
+                {t('single-texture:text-5')}{' '}
+                <strong>Blender, Maya, Cinema 4D</strong>, {''}
+                {t('single-texture:text-6')}
+                <strong> Unreal Engine or Unity</strong>{' '}
+                {t('single-texture:text-7')}
               </p>
             </div>
           </section>
