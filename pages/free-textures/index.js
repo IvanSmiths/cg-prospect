@@ -42,7 +42,7 @@ export default function Home({ textures, categories }) {
           </ul>
         </aside>
         <section className="cnt-texture-list">
-          <div className="texture-list-up-cnt">
+          {/* <div className="texture-list-up-cnt">
             <p className="small-font">
               You are browsing all the free textures. If you want to browse free
               3d models,{' '}
@@ -51,7 +51,7 @@ export default function Home({ textures, categories }) {
               </Link>
               .
             </p>
-          </div>{' '}
+          </div>{' '} */}
           <div className="texture-list">
             {textures.map((texture) => (
               <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
@@ -67,14 +67,14 @@ export default function Home({ textures, categories }) {
                 </a>
               </Link>
             ))}
-            <div className="page-btn">
+            {/* <div className="page-btn">
               <button
                 className="btn-line"
                 onClick={() => router.push(`/free-textures/page/2`)}
               >
                 Next
               </button>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>

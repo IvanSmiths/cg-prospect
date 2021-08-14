@@ -10,7 +10,6 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import '../styles/globals.css';
 import Nav from '../components/Nav';
-import Wip from '../components/WorkInProgress';
 import Footer from '../components/Footer';
 import Advertising from '../components/Advertising';
 import CookieConsent from 'react-cookie-consent';
@@ -98,7 +97,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="msapplication-navbutton-color" content="#ffda38" />
       </Head>
-      <Wip />
       <Nav />
       <Component {...pageProps} />
       <Advertising />

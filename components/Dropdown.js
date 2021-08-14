@@ -31,7 +31,7 @@ function Dropdown() {
             </a>
           </Link>
         </li>
-        <li className="nav-icon-cnt">
+        {/* <li className="nav-icon-cnt">
           <Link
             className="dropdown-link"
             href="/free-3d-models"
@@ -47,7 +47,7 @@ function Dropdown() {
               {t('common:nav-assets-3d')}
             </a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </>
   );

@@ -26,9 +26,9 @@ function Header() {
             </a>
           </p>
           <div className="header-bnt-cnt">
-            <Link href="/free-3d-models">
+            {/* <Link href="/free-3d-models">
               <a className="btn-line main-btn">{t('home:titlebtn2')}</a>
-            </Link>
+            </Link> */}
             <Link href="/free-textures">
               <a className="btn main-btn">{t('home:titlebtn')}</a>
             </Link>
@@ -38,7 +38,7 @@ function Header() {
           <img
             loading="lazy"
             className="main-image"
-            src="/main-image.png"
+            src="/main-texture.jpg"
             height="512"
             width="512"
             alt="An image of a texture"
