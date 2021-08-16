@@ -37,12 +37,15 @@ const SponsorTexture = () => {
               donating.
             </li>
             <li className="small-font">
-              Once you're in, contact CG Prospect directly on patreon, send your
-              name that you want to be displayed, the link (can be a link to
-              your Instagram, ArtStation, website or others) and the logo/render
-              that you want. They will be put in the textur/3d model that have
-              more traffic at the moment. If you desire to have your sponsor in
-              a specific asset, just tell wich in the moment you're sending all
+              Once you're in, you'll be contacted directly on patreon (if you
+              doesn't receive a message in a day, feel free to send one), for
+              having your name, a short paragraph, the link (can be a link to
+              your Instagram, ArtStation, website or others), the image (can be
+              a logo/render/draw/photo and more) and if you want, a call to
+              action on the button (if not specified, will be just "Support
+              it!"). They will be put in the textur/3d model that have more
+              traffic at the moment. If you desire to have your sponsor in a
+              specific asset, just tell wich in the moment you're sending all
               the info.
             </li>
             <li className="small-font">
