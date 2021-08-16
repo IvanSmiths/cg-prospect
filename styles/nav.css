@@ -126,7 +126,7 @@
   padding: 16px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1100px) {
   .navbar {
     height: fit-content;
     display: flex;
@@ -135,16 +135,17 @@
 
   .navbar-logo-cnt {
     padding: 1rem 0;
+    width: 43%;
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1100px) {
   .NavbarItems {
     position: relative;
   }
 
-  .navbar-logo-cnt {
-    margin-left: 4vw;
+  .navbar {
+    justify-content: flex-start;
   }
 
   .arrow-navbar {
@@ -157,7 +158,6 @@
     background-color: var(--subBackground);
     border-radius: 0.3rem;
     padding: 0.5rem 0.9rem;
-    gap: 1rem;
   }
 
   .nav-menu {
@@ -172,8 +172,8 @@
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
-    background: #24222298;
-    z-index: 5;
+    background: #1a1a1af6;
+    z-index: 25;
   }
 
   .test {
@@ -182,7 +182,7 @@
   }
 
   .nav-menu.active {
-    left: -40%;
+    left: -20%;
     transition: all 0.5s ease;
     z-index: 1;
   }

@@ -2,6 +2,14 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { GA_TRACKING_ID } from '../lib/gtag';
 import { FB_PIXEL_ID } from '../lib/fpixel';
 
+const schemaData = {
+  '@context': 'http://schema.org',
+  '@type': 'Product',
+  name: 'CG Prospect',
+  image: 'https://www.cgprospect.com/logo-navbar.svg',
+  description: '8K PBR Textures &amp; 3D Models<BR/>Grab them FREE!',
+};
+
 class MyDocument extends Document {
   render() {
     return (
@@ -51,7 +59,14 @@ class MyDocument extends Document {
           </noscript>
         </Head>
         <body>
-          <Main />
+          <Main>
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(schemaData),
+              }}
+            />{' '}
+          </Main>
           <NextScript />
         </body>
       </Html>

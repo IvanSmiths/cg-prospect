@@ -282,7 +282,7 @@ function Navbar() {
             <Link href="/">
               <a>
                 <img
-                  src="/logo-navbar.svg"
+                  src="/logo-icon-white.svg"
                   height="30px"
                   width="160px"
                   alt="main logo"
@@ -298,36 +298,32 @@ function Navbar() {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/free-textures"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  <a>{t('common:nav-assets')}</a>
+                  <a>{t('common:nav-assets-textures')}</a>
                 </Link>
-                {dropdown && <Dropdown />}
+              </li>
+              <li
+                className="nav-item small-font"
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+              >
+                <Link
+                  href="/free-textures"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  <a>{t('common:nav-assets-3d')}</a>
+                </Link>
               </li>
               <li
                 onMouseEnter={onMouseEnter3}
                 onMouseLeave={onMouseLeave3}
                 className="nav-item small-font"
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/categories"
                   className="nav-links"
@@ -335,21 +331,12 @@ function Navbar() {
                 >
                   <a>{t('common:nav-categories')}</a>
                 </Link>
-                {dropdown3 && <Dropdown3 />}
               </li>
               <li
                 onMouseEnter={onMouseEnter4}
                 onMouseLeave={onMouseLeave4}
                 className="nav-item small-font"
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/methods"
                   className="nav-links"
@@ -357,21 +344,12 @@ function Navbar() {
                 >
                   <a>{t('common:nav-methods')}</a>
                 </Link>
-                {dropdown4 && <Dropdown4 />}
               </li>
               <li
                 className="nav-item small-font"
                 onMouseEnter={onMouseEnter2}
                 onMouseLeave={onMouseLeave2}
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/sponsor-home"
                   className="nav-links"
@@ -379,21 +357,12 @@ function Navbar() {
                 >
                   <a>{t('common:nav-support')}</a>
                 </Link>
-                {dropdown2 && <Dropdown2 />}
               </li>
               <li
                 onMouseEnter={onMouseEnter5}
                 onMouseLeave={onMouseLeave5}
                 className="nav-item small-font"
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/contact"
                   className="nav-links"
@@ -401,7 +370,6 @@ function Navbar() {
                 >
                   <a>{t('common:nav-info')}</a>
                 </Link>
-                {dropdown5 && <Dropdown5 />}
               </li>
               <li onClick={closeMobileMenu} className="nav-item small-font">
                 <a
@@ -426,9 +394,17 @@ function Navbar() {
             </ul>
           </div>
           <div className="menu-icon" onClick={handleClick}>
-            <span className="test" onClick={closeMobileMenu}>
-              X
-            </span>
+            <svg
+              className="test"
+              onClick={closeMobileMenu}
+              viewBox="0 0 10 80"
+              width="40"
+              height="20"
+            >
+              <rect fill="white" width="100" height="10"></rect>
+              <rect fill="white" y="30" width="100" height="10"></rect>
+              <rect fill="white" y="60" width="100" height="10"></rect>
+            </svg>
           </div>
         </nav>
       )}
