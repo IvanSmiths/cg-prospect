@@ -4,16 +4,16 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 const ImageSlider = () => {
   const SliderData = [
     {
-      link: 'https://cg-prospect.creator-spring.com/listing/cgp-t-shirt?product=1429',
-      image: '/3d-merch.jpg',
-      alt: 'Shirt of CG Prospect',
-      author: 'Ivan Smiths',
-    },
-    {
       link: 'https://cg-prospect.creator-spring.com/listing/cgp-t-shirt?product=1430',
-      image: '/3d-merch-2.jpg',
+      image: '/3d-merch-2.png',
       alt: 'Shirt of CG Prospect',
       author: ' Cg Prospect',
+    },
+    {
+      link: 'https://cg-prospect.creator-spring.com/listing/cgp-t-shirt?product=1429',
+      image: '/3d-merch.png',
+      alt: 'Shirt of CG Prospect',
+      author: 'Ivan Smiths',
     },
   ];
   const [current, setCurrent] = useState(0);

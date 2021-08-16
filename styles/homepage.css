@@ -540,9 +540,16 @@
   text-align: center;
 }
 
+.myself-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .myself-text p {
   margin: 3rem 0rem 2rem 0rem;
-  padding: 0rem 23rem 0rem 0rem;
+  padding: 0rem 16rem 0rem 0rem;
 }
 
 /* -------------------- CAROUSEL BEGIN ---------- */
@@ -713,4 +720,8 @@
     align-items: center;
     flex: 1 1 60%;
   }
+}
+
+.image-myself {
+  transform: scaleX(-1);
 }

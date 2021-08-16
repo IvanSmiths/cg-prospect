@@ -8,9 +8,9 @@ function Myself() {
         <img
           className="image-myself"
           loading="lazy"
-          src="/myself.jpg"
-          height="350"
-          width="380"
+          src="/myself-3.png"
+          height="846"
+          width="476"
           alt="An image of myself"
         />
       </div>
