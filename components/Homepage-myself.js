@@ -8,7 +8,7 @@ function Myself() {
         <img
           className="image-myself"
           loading="lazy"
-          src="/myself-3.png"
+          src="/myself-4.png"
           height="846"
           width="476"
           alt="An image of myself"

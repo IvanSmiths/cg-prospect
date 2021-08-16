@@ -6,7 +6,7 @@ const schemaData = {
   '@context': 'http://schema.org',
   '@type': 'Product',
   name: 'CG Prospect',
-  image: 'https://www.cgprospect.com/logo-navbar.svg',
+  image: 'https://www.cgprospect.com/logo-icon-white.svg',
   description: '8K PBR Textures &amp; 3D Models<BR/>Grab them FREE!',
 };
 
