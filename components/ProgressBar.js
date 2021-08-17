@@ -33,7 +33,7 @@ const Progress = ({ done }) => {
       </ul>
       <div className="progress">
         <div className="progress-done" style={style}>
-          <h4 className="btn-font">{done}%</h4>
+          <span className="btn-font">{done}%</span>
         </div>
       </div>
     </div>

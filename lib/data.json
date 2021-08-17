@@ -3,7 +3,7 @@
   "slides": [
     {
       "introline": "Ivan Smiths",
-      "icon": "/myself.jpg",
+      "icon": "https://res.cloudinary.com/deino2cjx/image/upload/v1627623264/nextjs_media/myself-draw_oclftw.png",
       "link": "https://www.instagram.com/ivan_smiths/",
       "id": "ivan",
       "content": {

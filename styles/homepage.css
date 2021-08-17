@@ -548,8 +548,14 @@
 }
 
 .myself-text p {
-  margin: 3rem 0rem 2rem 0rem;
+  margin: 2rem 0rem 2rem 0rem;
   padding: 0rem 16rem 0rem 0rem;
+}
+
+.myself-icon-cnt {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 /* -------------------- CAROUSEL BEGIN ---------- */
