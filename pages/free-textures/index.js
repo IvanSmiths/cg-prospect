@@ -87,7 +87,7 @@ export async function getStaticProps() {
     orderBy: {
       id: 'desc',
     },
-    take: 2,
+    take: 20,
   });
   const categories = await prisma.category.findMany({
     include: {
