@@ -458,33 +458,33 @@ export default function SingleTexture({ texture, textures }) {
           <h2 className="btn-font highlight">{t('single-texture:share')}</h2>
           <div className="social-share-cnt">
             <FacebookShareButton
-              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+              url={`https://www.cgprospect.com/free-textures/${texture.slug}`}
             >
               <FacebookIcon size={42} round="true" />
             </FacebookShareButton>
             <TwitterShareButton
-              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+              url={`https://www.cgprospect.com/free-textures/${texture.slug}`}
             >
               <TwitterIcon size={42} round="true" />
             </TwitterShareButton>
             <PinterestShareButton
               media={texture.mainImage}
-              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+              url={`https://www.cgprospect.com/free-textures/${texture.slug}`}
             >
               <PinterestIcon size={42} round="true" />
             </PinterestShareButton>
             <WhatsappShareButton
-              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+              url={`https://www.cgprospect.com/free-textures/${texture.slug}`}
             >
               <WhatsappIcon size={42} round="true" />
             </WhatsappShareButton>
             <TelegramShareButton
-              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+              url={`https://www.cgprospect.com/free-textures/${texture.slug}`}
             >
               <TelegramIcon size={42} round="true" />
             </TelegramShareButton>
             <RedditShareButton
-              url={`https://www.textures.vercel.app/textures/${texture.slug}`}
+              url={`https://www.cgprospect.com/free-textures/${texture.slug}`}
             >
               <RedditIcon size={42} round="true" />
             </RedditShareButton>

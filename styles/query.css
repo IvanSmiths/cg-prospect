@@ -294,6 +294,18 @@
     justify-content: center;
   }
 
+  .cnt-progress-text {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 14vw;
+  }
+
+  .cnt-progress-text img {
+    display: none;
+  }
+
   .form-newsletter p {
     text-align: center;
     width: 81vw;
