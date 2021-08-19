@@ -363,7 +363,7 @@ export default function SingleTexture({ model, models }) {
                     rel="noopener"
                     className="underline white small-font"
                   >
-                    Acer Nitro 5 RTX 3060
+                    Acer Nitro 5 RTX
                   </a>
                 </li>
                 <li className="small-font-sub">
@@ -537,7 +537,7 @@ export async function getStaticProps({ params }) {
     orderBy: {
       id: 'desc',
     },
-    take: 4,
+    take: 6,
   });
 
   return {

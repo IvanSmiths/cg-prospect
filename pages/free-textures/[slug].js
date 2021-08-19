@@ -528,7 +528,7 @@ export default function SingleTexture({ texture, textures }) {
       </h2>
       <section className="texture-suggest">
         {textures.map((texture) => (
-          <Link key={texture.id} href={`/textures/${texture.slug}`}>
+          <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
             <a>
               <img
                 loading="lazy"
@@ -559,7 +559,7 @@ export async function getStaticProps({ params }) {
     orderBy: {
       id: 'desc',
     },
-    take: 4,
+    take: 6,
   });
 
   return {

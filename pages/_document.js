@@ -57,15 +57,16 @@ class MyDocument extends Document {
               src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
             />
           </noscript>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schemaData),
-            }}
-          />{' '}
         </Head>
         <body>
-          <Main />
+          <Main>
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(schemaData),
+              }}
+            />{' '}
+          </Main>
           <NextScript />
         </body>
       </Html>
