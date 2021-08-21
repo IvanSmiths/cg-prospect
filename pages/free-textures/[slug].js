@@ -559,7 +559,7 @@ export async function getStaticProps({ params }) {
     orderBy: {
       id: 'desc',
     },
-    take: 6,
+    take: 10,
   });
 
   return {
