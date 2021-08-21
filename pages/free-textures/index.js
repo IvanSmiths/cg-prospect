@@ -58,8 +58,8 @@ export default function Home({ textures, categories }) {
                 <a className="small-font">
                   <img
                     loading="lazy"
-                    width="330"
-                    height="330"
+                    width="400"
+                    height="400"
                     className="textures-list"
                     src={texture.mainImage}
                     alt={`A preview of the texture ${texture.title}`}
