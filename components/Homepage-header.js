@@ -39,8 +39,8 @@ function Header() {
             loading="lazy"
             className="main-image"
             src="/main-texture.jpg"
-            height="512"
-            width="512"
+            height="600"
+            width="600"
             alt="An image of a texture"
           />
         </div>

@@ -109,8 +109,8 @@ export default function SingleTexture({ texture, textures }) {
                         <img
                           onClick={handleClick}
                           loading="lazy"
-                          height="500"
-                          width="500"
+                          height="600"
+                          width="600"
                           className="single-main-image"
                           src={slide.image}
                           alt={`${slide.alt}the ${texture.title} texture`}
