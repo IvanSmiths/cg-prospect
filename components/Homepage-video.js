@@ -4,18 +4,18 @@ import useTranslation from 'next-translate/useTranslation';
 
 function Video() {
   let { t } = useTranslation();
-  const videoRef = useRef();
+  // const videoRef = useRef();
 
-  useEffect(() => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 1);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     videoRef.current.play();
+  //   }, 1);
+  // }, []);
   return (
     <section className="cnt-video">
-      <video ref={videoRef} className="video" loop muted>
+      {/* <video ref={videoRef} className="video" loop muted>
         <source src="/pbr-texture.mp4" type="video/mp4" />
-      </video>
+      </video> */}
       <div className="text-video">
         <h2 className="big-font">
           {t('home:video-title')}{' '}

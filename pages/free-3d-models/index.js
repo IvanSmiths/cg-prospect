@@ -66,14 +66,14 @@ export default function Home({ models, categories }) {
               </Link>
             ))}
           </div>
-          <div className="page-btn">
+          {/* <div className="page-btn">
             <button
               className="btn-line"
               onClick={() => router.push(`/free-models/page/2`)}
             >
               Next
             </button>
-          </div>
+          </div> */}
         </section>
       </main>
     </>

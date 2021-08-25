@@ -31,7 +31,7 @@ function Dropdown() {
             </a>
           </Link>
         </li>
-        {/* <li className="nav-icon-cnt">
+        <li className="nav-icon-cnt">
           <Link
             className="dropdown-link"
             href="/methods-3d-model"
@@ -47,7 +47,7 @@ function Dropdown() {
               {t('common:nav-methods-mod')}
             </a>
           </Link>
-        </li> */}
+        </li>
       </ul>
     </>
   );
