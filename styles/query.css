@@ -453,7 +453,13 @@
   .list-detail {
     padding-right: 0rem;
   }
-
+  .container-methods img {
+    width: 80vw;
+  }
+  .category-page-single p {
+    text-align: center;
+    padding: 2rem 3rem;
+  }
   .donate-buttons {
     display: flex;
     flex-direction: column;
@@ -535,6 +541,18 @@
   .card {
     padding: 2rem 1rem;
     width: 90vw;
+  }
+
+  .texture-list-up-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texture-list-up-cnt p {
+    padding: 0 3rem;
   }
 
   .texture-list {

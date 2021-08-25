@@ -733,5 +733,7 @@
 }
 
 .cnt-video {
-  background-color: var(--patreonColor);
+  background: center no-repeat url('/texture-example-4.jpg');
+  background-size: cover;
+  object-fit: cover;
 }
