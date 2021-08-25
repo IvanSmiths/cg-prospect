@@ -568,6 +568,10 @@
   padding-bottom: 2rem;
 }
 
+.artist-image {
+  object-fit: cover;
+}
+
 .outer-container {
   height: 100vh;
   display: flex;

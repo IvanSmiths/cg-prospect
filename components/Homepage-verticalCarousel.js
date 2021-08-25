@@ -100,8 +100,8 @@ const VerticalCarousel = ({ data, leadingText }) => {
                       <img
                         loading="lazy"
                         className="artist-image"
-                        height="40px"
-                        width="40px"
+                        height="42px"
+                        width="42px"
                         src={item.icon}
                         alt={`${item.introline}, an artist`}
                       />
