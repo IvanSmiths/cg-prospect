@@ -98,6 +98,9 @@ export async function getStaticProps() {
         },
       },
     },
+    orderBy: {
+      title: 'asc',
+    },
   });
   return {
     props: {
