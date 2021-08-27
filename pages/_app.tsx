@@ -108,7 +108,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <img
             height="50px"
             width="50px"
-            src="/icon-instagram-mobile.svg"
+            src="https://res.cloudinary.com/deino2cjx/image/upload/v1630077959/nextjs_media/icon-instagram-mobile_sgkrd9.svg"
             alt="icon of instagram"
           />
         </a>
