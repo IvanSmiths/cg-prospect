@@ -1,14 +1,3 @@
-.under-development {
-  z-index: 8888888888;
-  position: absolute;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 200vh;
-}
-
 .lang-button {
   position: absolute;
 }
@@ -82,13 +71,14 @@
 }
 
 .container-ico {
-  position: absolute;
+  z-index: 99;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   top: 11rem;
-  left: 3rem;
-  gap: 1.2rem;
+  left: 2.4rem;
+  gap: 1.7rem;
 }
 
 .container-ico > a {
