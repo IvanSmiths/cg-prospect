@@ -99,6 +99,20 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Nav />
       <Component {...pageProps} />
+      <div className="social-mobile-cnt">
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://www.instagram.com/cgprospect/"
+        >
+          <img
+            height="50px"
+            width="50px"
+            src="/icon-instagram-mobile.svg"
+            alt="icon of instagram"
+          />
+        </a>
+      </div>
       <Advertising />
       <CookieConsent
         buttonClasses="btn-cookie"
