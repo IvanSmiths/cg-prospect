@@ -422,34 +422,64 @@ export default function SingleTexture({ texture, textures }) {
           <div className="container-links">
             <ul>
               <li className="small-font underline">
-                <a href={texture.png2k} rel="noopener">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href={texture.png2k}
+                  rel="noopener"
+                >
                   PNG 2K ({texture.png2ksize})
                 </a>
               </li>
               <li className="small-font underline">
-                <a href={texture.png4k} rel="noopener">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href={texture.png4k}
+                  rel="noopener"
+                >
                   PNG 4K ({texture.png4ksize})
                 </a>
               </li>
               <li className="small-font underline">
-                <a href={texture.png8k} rel="noopener">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href={texture.png8k}
+                  rel="noopener"
+                >
                   PNG 8K ({texture.png8ksize})
                 </a>
               </li>
             </ul>
             <ul>
               <li className="small-font underline">
-                <a href={texture.jpg2k} rel="noopener">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href={texture.jpg2k}
+                  rel="noopener"
+                >
                   Jpg 2K ({texture.jpg2ksize})
                 </a>
               </li>
               <li className="small-font underline">
-                <a rel="noopener" href={texture.jpg4k}>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  rel="noopener"
+                  href={texture.jpg4k}
+                >
                   Jpg 4K ({texture.jpg4ksize})
                 </a>
               </li>
               <li className="small-font underline">
-                <a href={texture.jpg8k} rel="noopener">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href={texture.jpg8k}
+                  rel="noopener"
+                >
                   Jpg 8K ({texture.jpg8ksize})
                 </a>
               </li>
