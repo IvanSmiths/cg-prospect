@@ -97,6 +97,39 @@
   transform: scale(1.2);
 }
 
+/* ----------------------ASSETS BEGIN ---------- */
+/* ----------------------ASSETS BEGIN ---------- */
+/* ----------------------ASSETS BEGIN ---------- */
+.hp-assets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 19rem;
+  text-align: center;
+}
+
+.hp-assets-cnt {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.assets-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.assets-card a {
+  margin-top: 2rem;
+}
+
 /* ---------------------- PROGRESBAR BEGIN ---------- */
 /* ---------------------- PROGRESBAR BEGIN ---------- */
 /* ---------------------- PROGRESBAR BEGIN ---------- */

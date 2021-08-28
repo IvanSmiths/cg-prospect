@@ -63,12 +63,12 @@ function Stats() {
       </h3>
       <div>
         <ul className="container-numbers">
-          <li className="numbers medium-font font-color-inverse">
-            10
+          <li className="numbers medium-font highlight font-color-inverse">
+            14
             <br />
             {t('home:stats-num1-desc')}
           </li>
-          <li className="numbers medium-font font-color-inverse">
+          <li className="numbers medium-font highlight font-color-inverse">
             1 <br />
             {t('home:stats-num2-desc')}
           </li>
@@ -78,8 +78,8 @@ function Stats() {
               {t('home:stats-num3-desc')}
             </h4>
           </li> */}
-          <li className="numbers medium-font font-color-inverse">
-            5.9Gb <br />
+          <li className="numbers medium-font highlight font-color-inverse">
+            12.3Gb <br />
             {t('home:stats-num4-desc')}
           </li>
         </ul>

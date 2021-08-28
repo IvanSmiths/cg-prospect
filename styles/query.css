@@ -124,11 +124,28 @@
     align-items: center;
   }
 
+  .carousel-img {
+    width: 80vw;
+  }
+
+  .merch-cnt {
+    padding-top: 10rem;
+  }
+
   .footer-links ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .assets-card img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .hp-assets {
+    padding-bottom: 6rem;
   }
 
   .lang-cnt {
@@ -541,6 +558,10 @@
   .card {
     padding: 2rem 1rem;
     width: 90vw;
+  }
+
+  .merch-cnt {
+    padding-top: 2rem;
   }
 
   .texture-list-up-cnt {
