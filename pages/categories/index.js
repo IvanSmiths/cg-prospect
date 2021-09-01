@@ -60,6 +60,9 @@ export default function Categories({ categories }) {
 export async function getStaticProps() {
   const categories = await prisma.category.findMany({
     include: { textures: true },
+    orderBy: {
+      title: 'asc',
+    },
   });
   const user = await prisma.user.findMany({});
   console.log(user);
