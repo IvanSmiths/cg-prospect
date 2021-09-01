@@ -34,22 +34,22 @@ const HomepageAssets = () => {
               />
             </a>
           </Link>
-          <Link href="/free-textures/pebbles-big">
+          <Link href="/free-textures/terrain-02">
             <a className="btn">{t('home:assets-2')}</a>
           </Link>
         </div>
         <div className="assets-card">
-          <Link href="/free-textures/sand-with-rocks-01">
+          <Link href="/free-textures/terrain-03">
             <a>
               <img
-                src="https://res.cloudinary.com/deino2cjx/image/upload/v1629993236/nextjs_media/untitled_zprpde.jpg"
+                src="https://res.cloudinary.com/deino2cjx/image/upload/v1630477116/nextjs_media/untitled_iwflsk.jpg"
                 alt="free rock texture"
                 height="400px"
                 width="400px"
               />
             </a>
           </Link>
-          <Link href="/free-textures/pebbles-big">
+          <Link href="/free-textures/terrain-03">
             <a className="btn">{t('home:assets-2')}</a>
           </Link>
         </div>
