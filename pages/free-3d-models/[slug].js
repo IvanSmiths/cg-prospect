@@ -303,7 +303,7 @@ export default function SingleTexture({ model, models }) {
                   <a
                     target="_blank"
                     rel="noopener"
-                    href="https://www.amazon.com/Sony-Mirrorless-Digital-Camera-28-70mm/dp/B00PX8CNCM/ref=sr_1_1?dchild=1&keywords=sony+a7ii&qid=1627326537&sr=8-1"
+                    href="https://www.amazon.com/gp/product/B00PX8CNCM/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00PX8CNCM&linkCode=as2&tag=cgprospect-20&linkId=574b7e4b3dc47b6a21ec8a5f31189313"
                     className="underline white small-font"
                   >
                     Sony A7II
@@ -312,7 +312,7 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font-sub">
                   {t('single-model:gear-2')}:{' '}
                   <a
-                    href="https://www.amazon.com/Sony-28-70mm-F3-5-5-6-Interchangeable-Standard/dp/B00GTXHQ8Q/ref=sr_1_1?dchild=1&keywords=Sony+Alpha+lens+28-70&qid=1627326793&sr=8-1"
+                    href="https://www.amazon.com/gp/product/B00GTXHQ8Q/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00GTXHQ8Q&linkCode=as2&tag=cgprospect-20&linkId=15c90ac305346e3ae564bd8ac06010a8"
                     target="_blank"
                     rel="noopener"
                     className="underline white small-font"
@@ -323,29 +323,40 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font-sub">
                   {t('single-model:gear-3')}:{' '}
                   <a
-                    href="https://www.amazon.com/Concept-SA254M1-Camera-Tripod-Magnesium/dp/B091YCYS28"
+                    href="https://www.amazon.com/gp/product/B07VRPVQS3/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07VRPVQS3&linkCode=as2&tag=cgprospect-20&linkId=467886b639adc7bb01e3ea21e7b739d0"
                     target="_blank"
                     rel="noopener"
                     className="underline white small-font"
                   >
-                    K&F Concept
+                    K&F Concept S210
+                  </a>
+                </li>
+                <li className="small-font-sub">
+                  {t('single-model:gear-12')}:{' '}
+                  <a
+                    href="https://www.amazon.com/gp/product/B01MSAEZN8/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01MSAEZN8&linkCode=as2&tag=cgprospect-20&linkId=eb9e366c73d38c8d6d94abef03de09fb"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    Neewer tripod
                   </a>
                 </li>
                 <li className="small-font-sub">
                   {t('single-model:gear-4')}:{' '}
                   <a
-                    href="https://www.amazon.com/Circular-Polarizers-Filter-Concept-Polarizer/dp/B07NYV29M4/ref=sr_1_1_sspa?dchild=1&keywords=polarizer%2B70mm&qid=1627326999&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzNlJONUNDT0I4Q0RHJmVuY3J5cHRlZElkPUEwMjc1MDM4MlNFNllQMzZCRkNCTSZlbmNyeXB0ZWRBZElkPUEwNzU0NTQyMlROVEhHR1FZTzNLTyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1"
+                    href="https://www.amazon.com/gp/product/B000KL7J3A/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000KL7J3A&linkCode=as2&tag=cgprospect-20&linkId=6eb8c1714343d7e2f7c3786ed7fb6ce0"
                     target="_blank"
                     rel="noopener"
                     className="underline white small-font"
                   >
-                    K&F Polarizer
+                    HOYA Pro 1
                   </a>
                 </li>
                 <li className="small-font-sub">
                   {t('single-model:gear-10')}:{' '}
                   <a
-                    href="https://www.amazon.com/ColorChecker-Passport-Photo-2-MSCCPP-B/dp/B07PNCPZ8G/ref=sr_1_3?dchild=1&keywords=color+checker&qid=1627327592&sr=8-3"
+                    href="https://www.amazon.com/gp/product/B07TXR2146/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07TXR2146&linkCode=as2&tag=cgprospect-20&linkId=58b4cd20b5d4080decb512952760be02"
                     target="_blank"
                     rel="noopener"
                     className="underline white small-font"
@@ -358,7 +369,7 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font-sub">
                   {t('single-model:gear-5')}:{' '}
                   <a
-                    href="https://www.amazon.com/Acer-AN515-55-53E5-i5-10300H-GeForce-Keyboard/dp/B092YHJGMN/ref=sr_1_1?dchild=1&keywords=acer%2Bnitro%2B5%2Brtx&qid=1627327394&sr=8-1&th=1"
+                    href="https://www.amazon.com/gp/product/B093JCZWWF/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B093JCZWWF&linkCode=as2&tag=cgprospect-20&linkId=bdffad1dddf05032e221861c6b36ee94"
                     target="_blank"
                     rel="noopener"
                     className="underline white small-font"
@@ -369,7 +380,7 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font-sub">
                   {t('single-model:gear-6')}:{' '}
                   <a
-                    href="https://www.amazon.com/AMD-Ryzen-5900X-24-Thread-Processor/dp/B08164VTWH/ref=sr_1_6?dchild=1&keywords=amd+ryzen&qid=1627327859&sr=8-6"
+                    href="https://www.amazon.com/gp/product/B095SCMW1L/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B095SCMW1L&linkCode=as2&tag=cgprospect-20&linkId=048a602f145b976b9d4b1c37bb6e5b39"
                     target="_blank"
                     rel="noopener"
                     className="underline white small-font"
@@ -380,7 +391,7 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font-sub">
                   {t('single-model:gear-7')}:{' '}
                   <a
-                    href="https://www.amazon.com/ZOTAC-GeForce-192-bit-Graphics-ZT-T16600K-10M/dp/B07XV7FNR2/ref=sr_1_3?crid=16QF0EKBQYG1X&dchild=1&keywords=nvidia+1660&qid=1627327999&sprefix=nvidia+166%2Caps%2C301&sr=8-3"
+                    href="https://www.amazon.com/gp/product/B07MC23VS4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07MC23VS4&linkCode=as2&tag=cgprospect-20&linkId=bd8611ce6da15ad7ca0b0e7660f7cc82"
                     target="_blank"
                     rel="noopener"
                     className="underline white small-font"
@@ -391,12 +402,23 @@ export default function SingleTexture({ model, models }) {
                 <li className="small-font-sub">
                   {t('single-model:gear-8')}:{' '}
                   <a
-                    href="https://www.amazon.com/ASUS-TUF-X570-Plus-Motherboard-Lighting/dp/B07SXF8GY3/ref=sr_1_10?crid=3KKOUEG7YH91B&dchild=1&keywords=motherboard&qid=1627328093&sprefix=moth%2Caps%2C316&sr=8-10"
+                    href="https://www.amazon.com/gp/product/B07SXF8GY3/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07SXF8GY3&linkCode=as2&tag=cgprospect-20&linkId=0925d258e74cf7f6ae5e3caab7d4b8a9"
                     target="_blank"
                     rel="noopener"
                     className="underline white small-font"
                   >
                     ASUS AM4 TUF Gaming X570
+                  </a>
+                </li>
+                <li className="small-font-sub">
+                  {t('single-model:gear-11')}:{' '}
+                  <a
+                    href="https://www.amazon.com/gp/product/B07DPC98DT/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07DPC98DT&linkCode=as2&tag=cgprospect-20&linkId=fdc4c2fd0f41215141c5062c844e3cb7"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline white small-font"
+                  >
+                    HUION H610
                   </a>
                 </li>
               </ul>
