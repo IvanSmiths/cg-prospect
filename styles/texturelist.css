@@ -32,6 +32,33 @@
   gap: 3rem;
 }
 
+.texture-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 9rem 0;
+}
+
+.single-texture-card {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-btn {
+  margin-bottom: 3rem;
+}
+
+.single-texture-card a {
+  color: var(--mainFontColor);
+}
+
+.single-texture-card .btn {
+  color: var(--mainBackground);
+}
+
 .texture-list-up-cnt {
   display: flex;
   margin-bottom: 2rem;

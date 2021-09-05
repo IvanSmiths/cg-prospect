@@ -15,8 +15,8 @@ module.exports = {
 
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.stripe.com *.facebook.com *.googletagmanager.com *.coinbase.com *.facebook.net;
-  child-src *.stripe.com *.facebook.com *.googletagmanager.com *.coinbase.com;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google.com *.google.it *.googleadservices.com *.doubleclick.net *.googlesyndication.com *.googletagservices.com *.stripe.com *.facebook.com *.googletagmanager.com *.coinbase.com *.facebook.net;
+  child-src *.google.com *.doubleclick.net *.google.it *.googleadservices.com *.stripe.com *.facebook.com *.googletagmanager.com *.googletagservices.com *.coinbase.com *.googlesyndication.com ;
   style-src 'self' 'unsafe-inline' *.stripe.com;
   img-src * blob: data:;
   media-src 'self';

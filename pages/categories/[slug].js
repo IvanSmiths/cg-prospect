@@ -54,16 +54,21 @@ export default function Single({ category }) {
         </p>
         <section className="container-category" key={category.id}>
           {category.textures.map((texture) => (
-            <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
-              <a>
-                <img
-                  height="350"
-                  width="350"
-                  src={texture.mainImage}
-                  alt={`A preview of the texture ${texture.title}`}
-                />
-              </a>
-            </Link>
+            <div className="single-texture-card" key={texture.id}>
+              <Link href={`/free-textures/${texture.slug}`}>
+                <a className="small-font highlight">{texture.title}</a>
+              </Link>
+              <Link href={`/free-textures/${texture.slug}`}>
+                <a>
+                  <img
+                    height="350"
+                    width="350"
+                    src={texture.mainImage}
+                    alt={`A preview of the texture ${texture.title}`}
+                  />
+                </a>
+              </Link>
+            </div>
           ))}
         </section>
       </main>
@@ -74,6 +79,9 @@ export default function Single({ category }) {
 export async function getStaticProps({ params }) {
   const category = await prisma.category.findFirst({
     include: { textures: true },
+    orderBy: {
+      title: 'asc',
+    },
     where: {
       slug: String(params.slug),
     },

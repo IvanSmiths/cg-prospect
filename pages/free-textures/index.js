@@ -54,18 +54,32 @@ export default function Home({ textures, categories }) {
           </div>{' '}
           <div className="texture-list">
             {textures.map((texture) => (
-              <Link key={texture.id} href={`/free-textures/${texture.slug}`}>
-                <a className="small-font">
-                  <img
-                    loading="lazy"
-                    width="400"
-                    height="400"
-                    className="textures-list"
-                    src={texture.mainImage}
-                    alt={`A preview of the texture ${texture.title}`}
-                  />
-                </a>
-              </Link>
+              <div className="single-texture-card" key={texture.id}>
+                <Link href={`/free-textures/${texture.slug}`}>
+                  <a className="small-font highlight">{texture.title}</a>
+                </Link>
+                <Link href={`/free-textures/${texture.slug}`}>
+                  <a className="small-font">
+                    <img
+                      loading="lazy"
+                      width="400"
+                      height="400"
+                      className="textures-list"
+                      src={texture.mainImage}
+                      alt={`A preview of the texture ${texture.title}`}
+                    />
+                  </a>
+                </Link>
+                {/* <Link href={`/free-textures/${texture.slug}`}>
+                  <a className="btn first-btn">See it</a>
+                </Link>
+                <a
+                  className="btn-line"
+                  href={`https://texture.cgprospect.com/file/textures3d/${texture.slug}-4k-png.rar`}
+                >
+                  Quick download (4K PNG)
+                </a> */}
+              </div>
             ))}
             {/* <div className="page-btn">
               <button
@@ -87,7 +101,7 @@ export async function getStaticProps() {
     orderBy: {
       id: 'desc',
     },
-    take: 30,
+    take: 40,
   });
   const categories = await prisma.category.findMany({
     include: {
