@@ -92,6 +92,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        <meta
+          name="p:domain_verify"
+          content="fbf05c0e98334a043794496750861ac3"
+        />
         <meta content="IE=edge" http-equiv="X-UA-Compatible" />
         <meta name="msapplication-TileColor" content="#ffda38" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
