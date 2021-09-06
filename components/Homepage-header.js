@@ -11,7 +11,7 @@ function Header() {
           <h1 className="large-font">
             {t('home:title1')}
             <br />
-            {t('home:title2')}
+            <strong className="highlight-main">{t('home:title2')}</strong>
           </h1>
           <p className="small-font">
             {t('home:titledesc')}
@@ -20,9 +20,9 @@ function Header() {
               target="_blank"
               rel="noopener"
             >
-              <strong className="highlight-patreon underline">
+              <b className="highlight-patreon underline">
                 {t('home:titledesc2')}
-              </strong>
+              </b>
             </a>
           </p>
           <div className="header-bnt-cnt">

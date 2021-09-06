@@ -9,10 +9,7 @@ function Patreon() {
         <h2 className="big-font patreon-h2">{t('home:patreon-title')}</h2>
         <p className="small-font">
           {t('home:patreon-desc1')}
-          <strong className="highlight-patreon">
-            {' '}
-            {t('home:patreon-desc2')}
-          </strong>{' '}
+          <b className="highlight-patreon"> {t('home:patreon-desc2')}</b>{' '}
           {t('home:patreon-desc3')}
         </p>
       </div>

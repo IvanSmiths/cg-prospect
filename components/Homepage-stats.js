@@ -30,8 +30,7 @@ function Stats() {
           <a
             target="_blank"
             rel="noopener"
-            className="btn-line"
-            style={{ color: 'black', border: 'black 2px solid' }}
+            className="btn patreon-clr"
             href="https://www.patreon.com/cgprospect"
           >
             {t('home:stats-card-btn')}

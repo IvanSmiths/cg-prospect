@@ -6,14 +6,14 @@ const HomepageMerch = () => {
       <div className="merch-first-col">
         <div>
           <h3 className="big-font">
-            DO 3D <br /> Get 3D <br /> Wear 3D.
+            DO 3D <br /> Download 3D <br /> Wear 3D.
           </h3>
           <p className="small-font">
-            CG Prospect provides free content, support it by buying the official
-            merchandise. {''}
-            <strong className="highlight">
-              Shop securely now on TeeSpring.
-            </strong>
+            CG Prospect provides{' '}
+            <strong>free to download 3d models and pbr textures </strong>
+            without any kind of limit. You can support the work of CG Prospect
+            by buying the official merchandise. {''}
+            <b className="highlight-main">Shop securely now on TeeSpring.</b>
           </p>
 
           <a
