@@ -389,11 +389,13 @@ button:disabled {
 }
 
 .open {
+  margin-bottom: 0;
   opacity: 1;
   background-color: var(--subBackground);
 }
 
 .close {
+  margin-bottom: -13rem;
   opacity: 0;
   background-color: var(--mainBackground);
 }
