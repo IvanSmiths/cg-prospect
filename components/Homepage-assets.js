@@ -24,11 +24,11 @@ const HomepageAssets = () => {
           </Link>
         </div>
         <div className="assets-card">
-          <Link href="/free-textures/terrain-02">
+          <Link href="/free-3d-models/lava-stone-rock-01">
             <a>
               <img
-                src="https://res.cloudinary.com/deino2cjx/image/upload/v1629531539/nextjs_media/untitled_vvpfmw.jpg"
-                alt="free pebble texture"
+                src="https://res.cloudinary.com/deino2cjx/image/upload/v1631307123/nextjs_media/untitled_vosejr.jpg"
+                alt="free rock 3d model"
                 height="400px"
                 width="400px"
               />

@@ -43,6 +43,7 @@ export default function Home() {
       <Patreon />
       <Video />
       <Showcase />
+      <Models />
       <CC0 />
       <VerticalCarousel data={data.slides} leadingText={data.leadingText} />
       <Merch />

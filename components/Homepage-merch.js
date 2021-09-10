@@ -27,7 +27,20 @@ const HomepageMerch = () => {
         </div>
       </div>
       <div className="merch-sec-col">
-        <Carousel />
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://cg-prospect.creator-spring.com"
+        >
+          <img
+            loading="lazy"
+            height="550"
+            width="550"
+            src="/3d-merch-2.png"
+            alt="image of a shirt"
+            className="image-merch"
+          />
+        </a>
       </div>
     </section>
   );
