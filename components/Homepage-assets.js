@@ -12,8 +12,8 @@ const HomepageAssets = () => {
           <Link href="/free-textures/pebbles-big">
             <a>
               <img
-                src="https://res.cloudinary.com/deino2cjx/image/upload/v1630072775/nextjs_media/untitled_horsar.jpg"
-                alt="free rock texture"
+                src="https://res.cloudinary.com/deino2cjx/image/upload/v1631351842/nextjs_media/untitled_horsar_h27qek.jpg"
+                alt="free pebbles texture"
                 height="400px"
                 width="400px"
               />
@@ -27,7 +27,7 @@ const HomepageAssets = () => {
           <Link href="/free-3d-models/lava-stone-rock-01">
             <a>
               <img
-                src="https://res.cloudinary.com/deino2cjx/image/upload/v1631307123/nextjs_media/untitled_vosejr.jpg"
+                src="https://res.cloudinary.com/deino2cjx/image/upload/v1631351842/nextjs_media/untitled_vosejr_fimvan.jpg"
                 alt="free rock 3d model"
                 height="400px"
                 width="400px"
@@ -42,7 +42,7 @@ const HomepageAssets = () => {
           <Link href="/free-textures/terrain-03">
             <a>
               <img
-                src="https://res.cloudinary.com/deino2cjx/image/upload/v1630477116/nextjs_media/untitled_iwflsk.jpg"
+                src="https://res.cloudinary.com/deino2cjx/image/upload/v1631351842/nextjs_media/untitled_iwflsk_dmkg1g.jpg"
                 alt="free rock texture"
                 height="400px"
                 width="400px"
