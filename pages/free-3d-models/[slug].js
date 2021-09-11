@@ -492,7 +492,9 @@ export default function SingleTexture({ model, models }) {
               className="texture-accordion-title"
               onClick={() => setIsActive(!isActive)}
             >
-              <h3 className="small-font highlight">More Info</h3>
+              <h3 className="small-font highlight">
+                {t('single-model:text-title')}
+              </h3>
               <span className="texture-accordion-open">
                 {isActive ? '-' : '+'}
               </span>
@@ -504,19 +506,16 @@ export default function SingleTexture({ model, models }) {
             >
               <p className="small-font">
                 <strong>
-                  {model.title} is a free 3d model {''}
+                  {model.title} {t('single-model:text')} {''}
                 </strong>
-                available both in lowpoly and highpoly. This 3d model has beeen
-                took in {model.location} with the Sony A7II, a full frame camera
-                with the best conditions possible, using low ISO with the help
-                of a tripod, granting sharp and clear 3d model and maps. The
-                real world dimensions of this 3d model is {model.scale} and can
-                be used with any render engine, from{' '}
-                <strong>Blender, Maya, Cinema 4D</strong>, {''}
-                to to games engines like
-                <strong> Unreal Engine or Unity</strong> and so on. You can
-                freely use this CC0 3d model in your renders, game or movies
-                without worrying about having a commercial license.
+                {t('single-model:text-2')} {model.modelCategory[0].title}
+                {t('single-model:text-3')} {model.location}{' '}
+                {t('single-model:text-4')}
+                {model.scale} {t('single-model:text-5')}
+                <strong> Blender, Maya, Cinema 4D</strong>, {''}
+                {t('single-model:text-6')}
+                <strong> Unreal Engine or Unity</strong>{' '}
+                {t('single-model:text-7')}
               </p>
             </div>
           </section>
