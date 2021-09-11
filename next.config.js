@@ -18,6 +18,8 @@ const ContentSecurityPolicy = `
   script-src 'self' 'unsafe-eval' 'unsafe-inline' *.amazon-adsystem.com *.google.com *.google.it *.googleadservices.com *.doubleclick.net *.googlesyndication.com *.googletagservices.com *.stripe.com *.facebook.com *.googletagmanager.com *.coinbase.com *.facebook.net;
   child-src *.amazon-adsystem.com *.google.com *.doubleclick.net *.google.it *.googleadservices.com *.stripe.com *.facebook.com *.googletagmanager.com *.googletagservices.com *.coinbase.com *.googlesyndication.com ;
   style-src 'self' 'unsafe-inline' *.stripe.com;
+  object-src 'none';
+  base-uri 'none';
   img-src * blob: data:;
   media-src 'self';
   connect-src *;
