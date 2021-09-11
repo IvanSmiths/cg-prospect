@@ -1,19 +1,19 @@
-import Carousel from './Homepage-carousel';
+import useTranslation from 'next-translate/useTranslation';
 
 const HomepageMerch = () => {
+  let { t } = useTranslation();
   return (
     <section className="merch-cnt margin-section flex-50">
       <div className="merch-first-col">
         <div>
-          <h3 className="big-font">
-            DO 3D <br /> Download 3D <br /> Wear 3D.
+          <h3 className="big-font italic">
+            {t('home:merch-title')}
+            <br /> {t('home:merch-title-2')} <br /> {t('home:merch-title-3')}
           </h3>
           <p className="small-font">
-            CG Prospect provides{' '}
-            <strong>free to download 3d models and pbr textures </strong>
-            without any kind of limit. You can support the work of CG Prospect
-            by buying the official merchandise. {''}
-            <b className="highlight-main">Shop securely now on TeeSpring.</b>
+            {t('home:merch-desc')} <strong> {t('home:merch-desc-2')}</strong>
+            {t('home:merch-desc-3')} {''}
+            <b className="highlight-main"> {t('home:merch-desc-4')}</b>
           </p>
 
           <a
@@ -22,7 +22,7 @@ const HomepageMerch = () => {
             rel="noopener"
             href="https://cg-prospect.creator-spring.com"
           >
-            Go to the shop
+            {t('home:merch-btn')}
           </a>
         </div>
       </div>

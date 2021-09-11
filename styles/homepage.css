@@ -188,12 +188,12 @@
 /* ---------------------- STATS BEGIN ---------- */
 
 .stats {
-  padding-bottom: 0.2rem;
+  padding-bottom: 5.2rem;
   background-color: var(--mainInverseBackground);
 }
 
 .stats h3 {
-  margin-top: -3rem;
+  margin-top: 3rem;
 }
 
 .patreon-p {
@@ -451,7 +451,7 @@
 }
 
 .cc0-texture {
-  padding: 11rem 38rem 9rem 5rem;
+  padding: 15rem 38rem 15rem 5rem;
 }
 
 /* -------------------- MERCHANDISE BEGIN ---------- */

@@ -18,8 +18,11 @@ function Showcase() {
         <div>
           <h3 className="big-font">{t('home:showcase-title1')}</h3>
           <p className="small-font">
-            <strong className="highlight">{t('home:showcase-desc1')}</strong>{' '}
-            {t('home:showcase-desc1-2')}
+            {t('home:showcase-desc1')}
+            <strong className="highlight">
+              {t('home:showcase-desc1-2')}
+            </strong>{' '}
+            {t('home:showcase-desc1-3')}
           </p>
           <Link href="/methods/photogrammetry">
             <a className="btn-line btn-texture-example">
@@ -32,8 +35,10 @@ function Showcase() {
         <div>
           <h3 className="big-font">{t('home:showcase-title2')}</h3>
           <p className="small-font">
-            <strong className="highlight">{t('home:showcase-desc2')}</strong>{' '}
-            {t('home:showcase-desc2-2')}
+            {t('home:showcase-desc2')}
+            <strong className="highlight">
+              {t('home:showcase-desc2-2')}
+            </strong>{' '}
           </p>
           <Link href="/methods/ai-to-material">
             <a className="btn-line btn-texture-example">

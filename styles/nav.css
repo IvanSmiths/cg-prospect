@@ -231,6 +231,7 @@
 /* ---------------------- FOOTER BEGIN ---------- */
 
 .footer {
+  z-index: 3;
   padding: 4rem 0rem;
   background-color: var(--mainInverseBackground);
 }

@@ -233,6 +233,10 @@ nav li > a {
   margin-bottom: 15rem;
 }
 
+.italic {
+  font-style: italic;
+}
+
 #nprogress .bar {
   background: #fee648;
 
