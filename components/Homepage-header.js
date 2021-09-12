@@ -26,9 +26,9 @@ function Header() {
             </a>
           </p>
           <div className="header-bnt-cnt">
-            {/* <Link href="/free-3d-models">
+            <Link href="/free-3d-models">
               <a className="btn-line main-btn">{t('home:titlebtn2')}</a>
-            </Link> */}
+            </Link>
             <Link href="/free-textures">
               <a className="btn main-btn">{t('home:titlebtn')}</a>
             </Link>
