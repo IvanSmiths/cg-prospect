@@ -12,7 +12,7 @@ const HomepageAssets = () => {
           <Link href="/free-textures/pebbles-big">
             <a>
               <img
-                src="https://res.cloudinary.com/deino2cjx/image/upload/v1631351842/nextjs_media/untitled_horsar_h27qek.jpg"
+                src="https://res.cloudinary.com/deino2cjx/image/upload/v1630072775/nextjs_media/untitled_horsar.jpg"
                 alt="free pebbles texture"
                 height="400px"
                 width="400px"
