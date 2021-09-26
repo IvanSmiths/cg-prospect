@@ -61,8 +61,13 @@
 
 .texture-list-up-cnt {
   display: flex;
-  margin-bottom: 2rem;
+  flex-direction: column;
+  margin-bottom: 6rem;
   gap: 2rem;
+}
+
+.model-list-up {
+  margin-bottom: -1px;
 }
 
 .texture-list-up-cnt p {
@@ -75,10 +80,11 @@
 
 .container-single-texture {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .container-single-texture > *:nth-child(1) {
-  flex: 1 1 60%;
+  flex: 1 1 40%;
   margin-top: 9rem;
 }
 
@@ -361,10 +367,6 @@ button:disabled {
   transition: box-shadow 2s;
 }
 
-.texture-accordion-cnt {
-  width: 90%;
-}
-
 .texture-accordion-title {
   background-color: var(--subBackground);
   margin-top: 3rem;
@@ -426,9 +428,39 @@ button:disabled {
   }
 }
 
+.texture-accordion-title-list {
+  background-color: var(--subBackground);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+}
+
+.accordion-list {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  gap: 3rem;
+}
+
+.accordion-list-3d-model {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 3rem;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
+  }
+  .accordion-list-3d-model {
+    flex-wrap: wrap;
+  }
+  .accordion-list {
+    flex-wrap: wrap;
   }
 
   .card-list {

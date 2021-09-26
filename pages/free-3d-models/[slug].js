@@ -58,7 +58,7 @@ export default function SingleTexture({ model, models }) {
     <>
       <Head>
         <title>
-          CG Prospect | {model.title}, {t('single-model:head-title')}.
+          {model.title} {t('single-model:head-title')}.
         </title>
         <meta
           name="description"
@@ -84,123 +84,28 @@ export default function SingleTexture({ model, models }) {
         <meta property="og:image" content={model.mainImage} />
       </Head>
       <main className="container-single-texture">
-        <div className="cnt-first-col">
-          <div className="container-texture-image">
-            <div className="slider">
-              <FaArrowAltCircleLeft
-                className="left-arrow arrow"
-                onClick={prevSlide}
-              />
-              <FaArrowAltCircleRight
-                className="right-arrow arrow"
-                onClick={nextSlide}
-              />
-              {SliderData.map((slide, index) => {
-                return (
-                  <div key={index}>
-                    {index === current && (
-                      <div
-                        className={index === current ? 'slide active' : 'slide'}
-                      >
-                        <img
-                          loading="lazy"
-                          height="500"
-                          width="500"
-                          className="single-main-image"
-                          src={slide.image}
-                          alt={`${slide.alt}the ${model.title} 3d model`}
-                        />
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div className="sponsor-cnt">
-            <h3 className="small-font sponsor-texture">
-              <b className="small-font highlight">
-                {t('single-model:sponsor-title')} <br />
-              </b>
-              <a
-                href={model.sponsorLink}
-                className="medium-font underline highlight-main"
-                target="_blank"
-                rel="noopener"
-              >
-                {' '}
-                {model.sponsorName}{' '}
-              </a>{' '}
-            </h3>
-            <br />
-            <a href={model.sponsorLink} target="_blank" rel="noopener">
-              <img
-                loading="lazy"
-                className="sponsor-img"
-                loading="lazy"
-                width="500"
-                height="300"
-                src={model.sponsorImage}
-                alt={`A sponsor image of ${model.sponsorName}`}
-              />
-            </a>
-            <p className="small-font">{model.sponsorDesc}</p>
-            <a
-              className="btn"
-              href={model.sponsorLink}
-              target="_blank"
-              rel="noopener"
-            >
-              {model.sponsorCta}
-            </a>
-            <h4 className="small-font sponsor-texture">
-              {t('single-model:sponsor-desc')} {''}
-              <Link href="/sponsor-texture">
-                <a>
-                  <span className="highlight underline">
-                    {t('single-model:sponsor-desc2')}
-                  </span>
-                </a>
-              </Link>
-            </h4>
-          </div>
-          <div className="donate-btn">
-            <h2 className="btn-font highlight">
-              {t('single-model:donate-title')}
-            </h2>
-            <div className="donate-buttons">
-              <Elements stripe={getStripe()}>
-                <ElementsForm />
-              </Elements>
-              <div className="paypal-crypto-cnt">
-                <a href="https://www.paypal.com/donate/?hosted_button_id=MZQH8LFX27JH6">
-                  <button className="btn btn-paypal">Donate with PayPal</button>
-                </a>
-                <div>
-                  <a
-                    className="donate-with-crypto crypto"
-                    href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
-                  >
-                    Donate with Crypto
-                  </a>
-                </div>
-                <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="container-texture-details" key={model.id}>
-          <h1 className="big-font title-texture">{model.title}</h1>
+          <h1 className="big-font title-texture">
+            {t('single-model:pre-title')} {model.title}
+          </h1>
           <p className="small-font p-slug">
-            {model.title} {t('single-model:title')}{' '}
+            {model.title} {t('single-model:title')}
+            <a
+              href="https://www..com/cgprospect"
+              rel="noopener"
+              target="_blank"
+              className="highlight underline"
+            >
+              {t('single-model:title-2')}
+            </a>
+            {t('single-model:title-3')}
             <a
               href="https://www.patreon.com/cgprospect"
               rel="noopener"
               target="_blank"
+              className="highlight-patreon underline"
             >
-              <b className="highlight-patreon underline">
-                {t('single-model:title2')}{' '}
-              </b>
+              {t('single-model:title2')}{' '}
             </a>
           </p>
           <div className="first-details container-background">
@@ -514,11 +419,118 @@ export default function SingleTexture({ model, models }) {
                 {model.scale} {t('single-model:text-5')}
                 <strong> Blender, Maya, Cinema 4D</strong>, {''}
                 {t('single-model:text-6')}
-                <strong> Unreal Engine or Unity</strong>{' '}
-                {t('single-model:text-7')}
+                Unreal Engine or Unity {t('single-model:text-7')}
+                {model.title}
+                <strong>{t('single-model:text-8')}</strong>
+                {t('single-model:text-9')}
               </p>
             </div>
           </section>
+        </div>
+        <div className="cnt-first-col">
+          <div className="container-texture-image">
+            <div className="slider">
+              <FaArrowAltCircleLeft
+                className="left-arrow arrow"
+                onClick={prevSlide}
+              />
+              <FaArrowAltCircleRight
+                className="right-arrow arrow"
+                onClick={nextSlide}
+              />
+              {SliderData.map((slide, index) => {
+                return (
+                  <div key={index}>
+                    {index === current && (
+                      <div
+                        className={index === current ? 'slide active' : 'slide'}
+                      >
+                        <img
+                          loading="lazy"
+                          height="500"
+                          width="500"
+                          className="single-main-image"
+                          src={slide.image}
+                          alt={`${slide.alt}the ${model.title} 3d model`}
+                        />
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="sponsor-cnt">
+            <h3 className="small-font sponsor-texture">
+              <b className="small-font highlight">
+                {t('single-model:sponsor-title')} <br />
+              </b>
+              <a
+                href={model.sponsorLink}
+                className="medium-font underline highlight-main"
+                target="_blank"
+                rel="noopener"
+              >
+                {' '}
+                {model.sponsorName}{' '}
+              </a>{' '}
+            </h3>
+            <br />
+            <a href={model.sponsorLink} target="_blank" rel="noopener">
+              <img
+                loading="lazy"
+                className="sponsor-img"
+                loading="lazy"
+                width="500"
+                height="300"
+                src={model.sponsorImage}
+                alt={`A sponsor image of ${model.sponsorName}`}
+              />
+            </a>
+            <p className="small-font">{model.sponsorDesc}</p>
+            <a
+              className="btn"
+              href={model.sponsorLink}
+              target="_blank"
+              rel="noopener"
+            >
+              {model.sponsorCta}
+            </a>
+            <h4 className="small-font sponsor-texture">
+              {t('single-model:sponsor-desc')} {''}
+              <Link href="/sponsor-texture">
+                <a>
+                  <span className="highlight underline">
+                    {t('single-model:sponsor-desc2')}
+                  </span>
+                </a>
+              </Link>
+            </h4>
+          </div>
+          <div className="donate-btn">
+            <h2 className="btn-font highlight">
+              {t('single-model:donate-title')}
+            </h2>
+            <div className="donate-buttons">
+              <Elements stripe={getStripe()}>
+                <ElementsForm />
+              </Elements>
+              <div className="paypal-crypto-cnt">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=MZQH8LFX27JH6">
+                  <button className="btn btn-paypal">Donate with PayPal</button>
+                </a>
+                <div>
+                  <a
+                    className="donate-with-crypto crypto"
+                    href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
+                  >
+                    Donate with Crypto
+                  </a>
+                </div>
+                <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <h2 className="medium-font h2-suggest">

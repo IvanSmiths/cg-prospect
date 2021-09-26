@@ -1,23 +1,24 @@
 import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
+import React, { useState } from 'react';
 
 export default function Home({ textures, categories }) {
+  let { t } = useTranslation();
+  const [isActive, setIsActive] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
   return (
     <>
       <Head>
-        <title>CG Prospect | Free 8k textures.</title>
-        <meta
-          name="description"
-          content=" is one of multiple categories of free to download, up to native 8K Pbr
-        Texture. Consider joining the Cahoot for exclusive content!"
-        />
+        <title>{t('list-textures:head-title')}</title>
+        <meta name="description" content={`${t('list-textures:head-desc')}`} />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CG Prospect" key="twhandle" />
-        <meta property="og:title" content={`CG Prospect | 8K Free Texture`} />
+        <meta property="og:title" content={t('list-textures:head-title')} />
         <meta
           property="og:description"
-          content="On CG Prospect you can find countess of free to download textures."
+          content={t('list-textures:head-desc')}
         />
         <meta property="og:type" content="website" />
         <meta
@@ -43,15 +44,70 @@ export default function Home({ textures, categories }) {
         </aside>
         <section className="cnt-texture-list">
           <div className="texture-list-up-cnt">
-            <p className="small-font">
-              You are browsing all the free textures. If you want to browse free
-              3d models,{' '}
+            <h1 className="medium-font">
+              {t('list-textures:title')}{' '}
+              <strong> {t('list-textures:title-2')}</strong>
+            </h1>
+            <h2 className="small-font">
+              {t('list-textures:link')}{' '}
               <Link href="/free-3d-models">
-                <a className="underlinee highlight">go here</a>
+                <a className="underlinee highlight">
+                  {t('list-textures:link-2')}
+                </a>
               </Link>
               .
-            </p>
-          </div>{' '}
+            </h2>
+            <div className="accordion-list">
+              <div className="texture-accordion-cnt">
+                <div
+                  className="texture-accordion-title-list"
+                  onClick={() => setIsActive(!isActive)}
+                >
+                  <h3 className="small-font highlight">
+                    <strong>{t('list-textures:card-1-title')}</strong>{' '}
+                  </h3>
+                  <span className="texture-accordion-open">
+                    {isActive ? '-' : '+'}
+                  </span>
+                </div>
+                <div
+                  className={
+                    isActive
+                      ? 'open accordion-content'
+                      : 'close accordion-content'
+                  }
+                >
+                  <p className="small-font">
+                    {t('list-textures:card-1-desc')}
+                    <strong>{t('list-textures:card-1-desc-2')}</strong>
+                    {t('list-textures:card-1-desc-3')}
+                  </p>
+                </div>
+              </div>
+              <div className="texture-accordion-cnt">
+                <div
+                  className="texture-accordion-title-list"
+                  onClick={() => setIsActive2(!isActive2)}
+                >
+                  <h3 className="small-font highlight">
+                    <strong>{t('list-textures:card-2-title')}</strong>{' '}
+                  </h3>
+                  <span className="texture-accordion-open">
+                    {isActive2 ? '-' : '+'}
+                  </span>
+                </div>
+                <div
+                  className={
+                    isActive2
+                      ? 'open accordion-content'
+                      : 'close accordion-content'
+                  }
+                >
+                  <p className="small-font">{t('list-textures:card-2-desc')}</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="texture-list">
             {textures.map((texture) => (
               <div className="single-texture-card" key={texture.id}>

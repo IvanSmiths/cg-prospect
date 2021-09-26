@@ -9,9 +9,9 @@ function Header() {
       <header className="container-mainpage flex-50">
         <div>
           <h1 className="large-font">
-            {t('home:title1')}
+            <strong className="">{t('home:title1')}</strong>
             <br />
-            <strong className="highlight-main">{t('home:title2')}</strong>
+            {t('home:title2')}
           </h1>
           <p className="small-font">
             {t('home:titledesc')}

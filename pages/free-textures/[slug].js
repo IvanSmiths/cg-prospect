@@ -62,7 +62,7 @@ export default function SingleTexture({ texture, textures }) {
     <>
       <Head>
         <title>
-          CG Prospect | {texture.title}, {t('single-texture:head-title')}
+          {texture.title}, {t('single-texture:head-title')}
         </title>
         <meta
           name="description"
@@ -88,127 +88,29 @@ export default function SingleTexture({ texture, textures }) {
         <meta property="og:image" content={texture.mainImage} />
       </Head>
       <main className="container-single-texture">
-        <div className="cnt-first-col">
-          <div className="container-texture-image">
-            <div className="slider">
-              <FaArrowAltCircleLeft
-                className="left-arrow arrow"
-                onClick={prevSlide}
-              />
-              <FaArrowAltCircleRight
-                className="right-arrow arrow"
-                onClick={nextSlide}
-              />
-              {SliderData.map((slide, index) => {
-                return (
-                  <div key={index}>
-                    {index === current && (
-                      <div
-                        className={index === current ? 'slide active' : 'slide'}
-                      >
-                        <img
-                          onClick={handleClick}
-                          loading="lazy"
-                          height="600"
-                          width="600"
-                          className="single-main-image"
-                          src={slide.image}
-                          alt={`${slide.alt}the ${texture.title} texture`}
-                        />
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div className="sponsor-cnt">
-            <h3 className="small-font sponsor-texture">
-              <b className="small-font highlight">
-                {t('single-texture:sponsor-title')} <br />
-              </b>
-              <a
-                href={texture.sponsorLink}
-                className="medium-font underline highlight-main"
-                target="_blank"
-                rel="noopener"
-              >
-                {' '}
-                {texture.sponsorName}{' '}
-              </a>{' '}
-            </h3>
-            <br />
-            <a href={texture.sponsorLink} target="_blank" rel="noopener">
-              <img
-                loading="lazy"
-                className="sponsor-img"
-                loading="lazy"
-                width="500"
-                height="300"
-                src={texture.sponsorImage}
-                alt={`A sponsor image of ${texture.sponsorName}`}
-              />
-            </a>
-            <p className="small-font">{texture.sponsorDesc}</p>
-            <a
-              className="btn"
-              href={texture.sponsorLink}
-              target="_blank"
-              rel="noopener"
-            >
-              {texture.sponsorCta}
-            </a>
-            <h4 className="small-font sponsor-texture">
-              {t('single-texture:sponsor-desc')}
-              {''}
-              <Link href="/sponsor-texture">
-                <a>
-                  <strong className="highlight underline">
-                    {' '}
-                    {t('single-texture:sponsor-desc2')}
-                  </strong>
-                </a>
-              </Link>
-            </h4>
-          </div>
-          <div className="donate-btn">
-            <h2 className="btn-font highlight">
-              {t('single-texture:donate-title')}
-            </h2>
-            <div className="donate-buttons">
-              <Elements stripe={getStripe()}>
-                <ElementsForm />
-              </Elements>
-              <div className="paypal-crypto-cnt">
-                <a href="https://www.paypal.com/donate/?hosted_button_id=MZQH8LFX27JH6">
-                  <button className="btn btn-paypal">Donate with PayPal</button>
-                </a>
-                <div>
-                  <a
-                    className="donate-with-crypto crypto"
-                    href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
-                  >
-                    Donate with Crypto
-                  </a>
-                </div>
-                <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="container-texture-details" key={texture.id}>
-          <h1 className="big-font title-texture">{texture.title}</h1>
+          <h1 className="big-font title-texture">
+            {t('single-texture:pre-title')}
+            {texture.title}
+          </h1>
           <p className="small-font p-slug">
             {texture.title} {t('single-texture:title')}
             <a
+              href="https://www.instagram.com/cgprospect"
+              rel="noopener"
+              target="_blank"
+              className="highlight underline"
+            >
+              {t('single-texture:title-2')}
+            </a>
+            {t('single-texture:title-3')}
+            <a
               href="https://www.patreon.com/cgprospect"
-              className="italic"
+              className="highlight-patreon underline"
               rel="noopener"
               target="_blank"
             >
-              <b className="highlight-patreon underline">
-                {t('single-texture:title2')}
-              </b>
+              {t('single-texture:title2')}
             </a>
           </p>
           <div className="first-details container-background">
@@ -573,6 +475,114 @@ export default function SingleTexture({ texture, textures }) {
               </p>
             </div>
           </section>
+        </div>
+        <div className="cnt-first-col">
+          <div className="container-texture-image">
+            <div className="slider">
+              <FaArrowAltCircleLeft
+                className="left-arrow arrow"
+                onClick={prevSlide}
+              />
+              <FaArrowAltCircleRight
+                className="right-arrow arrow"
+                onClick={nextSlide}
+              />
+              {SliderData.map((slide, index) => {
+                return (
+                  <div key={index}>
+                    {index === current && (
+                      <div
+                        className={index === current ? 'slide active' : 'slide'}
+                      >
+                        <img
+                          onClick={handleClick}
+                          loading="lazy"
+                          height="600"
+                          width="600"
+                          className="single-main-image"
+                          src={slide.image}
+                          alt={`${slide.alt}the ${texture.title} texture`}
+                        />
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="sponsor-cnt">
+            <h3 className="small-font sponsor-texture">
+              <b className="small-font highlight">
+                {t('single-texture:sponsor-title')} <br />
+              </b>
+              <a
+                href={texture.sponsorLink}
+                className="medium-font underline highlight-main"
+                target="_blank"
+                rel="noopener"
+              >
+                {' '}
+                {texture.sponsorName}{' '}
+              </a>{' '}
+            </h3>
+            <br />
+            <a href={texture.sponsorLink} target="_blank" rel="noopener">
+              <img
+                loading="lazy"
+                className="sponsor-img"
+                loading="lazy"
+                width="500"
+                height="300"
+                src={texture.sponsorImage}
+                alt={`A sponsor image of ${texture.sponsorName}`}
+              />
+            </a>
+            <p className="small-font">{texture.sponsorDesc}</p>
+            <a
+              className="btn"
+              href={texture.sponsorLink}
+              target="_blank"
+              rel="noopener"
+            >
+              {texture.sponsorCta}
+            </a>
+            <h4 className="small-font sponsor-texture">
+              {t('single-texture:sponsor-desc')}
+              {''}
+              <Link href="/sponsor-texture">
+                <a>
+                  <strong className="highlight underline">
+                    {' '}
+                    {t('single-texture:sponsor-desc2')}
+                  </strong>
+                </a>
+              </Link>
+            </h4>
+          </div>
+          <div className="donate-btn">
+            <h2 className="btn-font highlight">
+              {t('single-texture:donate-title')}
+            </h2>
+            <div className="donate-buttons">
+              <Elements stripe={getStripe()}>
+                <ElementsForm />
+              </Elements>
+              <div className="paypal-crypto-cnt">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=MZQH8LFX27JH6">
+                  <button className="btn btn-paypal">Donate with PayPal</button>
+                </a>
+                <div>
+                  <a
+                    className="donate-with-crypto crypto"
+                    href="https://commerce.coinbase.com/checkout/a00d1c2c-6ee8-43d0-b814-d2d0c21e4ea2"
+                  >
+                    Donate with Crypto
+                  </a>
+                </div>
+                <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <h2 className="medium-font h2-suggest">

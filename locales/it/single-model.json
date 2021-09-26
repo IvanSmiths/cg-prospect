@@ -3,7 +3,10 @@
   "head-desc": " è un modello 3d gratis da scaricare, sia in high poly che in low poly. Usalo con Blender, Unreal Engine ed altri software 3D!",
   "head-og-title": " Modello 3d gratis",
   "head-og-desc": " è un modello 3d scaricabile gratuitamente da CG Prospect.",
-  "title": " è un modello 3d gratis da scaricare, sia high poly che low poly. ",
+  "pre-title": "Modello 3d gratuito: ",
+  "title": " è un modello 3d gratuito da scaricare, in highpoly, midpoly e lowpoly. Se stai usando questo modello 3D sul tuo rendering/gioco, usa l'hashtag #cgprospect o tagga ",
+  "title-2": "@cgprospect su instagram",
+  "title-3": "per vedere il tuo rendering sulla homepage.",
   "title2": " Considera di entrare nel Cahoot per del contenuto escusivo!",
   "categories": "Categorie",
   "method": "Metodo",
@@ -27,7 +30,7 @@
   "polycount": "poligoni",
   "donate-title": "Dona, o scaricalo gratis!",
   "download-title": "Risoluzioni e formati: ",
-  "see-also-title": "Ti potrebbe interessare:",
+  "see-also-title": "Altri modelli 3d gratuiti:",
   "sponsor-title": "Sponsorizzato da:",
   "sponsor-desc": "Vuoi il tuo nome, logo e link qui?",
   "sponsor-desc2": "Clicca qui per sapere come.",
@@ -38,6 +41,8 @@
   "text-3": ", disponibile sia in highpoly che lowpoly. Questo modello 3d è stato scannerizzato in",
   "text-4": "con una Sony A7II, una fotocamera full frame con le migliori condizioni possibili, utilizzando ISO bassi con l'aiuto di un treppiede, garantendo modelli 3D nitidi e chiari. Le dimensioni di questo modello 3d sono ",
   "text-5": "e può essere utilizzato con qualsiasi motore di rendering, da ",
-  "text-6": "ai motori di gioco come",
-  "text-7": "e così via. Puoi utilizzare liberamente questo modello 3d CC0 gratuito nei tuoi rendering, giochi o film senza preoccuparti di avere una licenza commerciale."
+  "text-6": "ai motori di gioco come ",
+  "text-7": "e così via. Puoi utilizzare liberamente questo modello 3d CC0 gratuito nei tuoi rendering, giochi o film senza preoccuparti di avere una licenza commerciale.",
+  "text-8": " è un modello 3d stampabile",
+  "text-9": ", scegli la versione midpoly per dei risultati ottimali. Il modello 3d è disponibile nel formato Obj, i file Stl sono in arrivo. Nel frattempo, puoi usare Blender o altri software 3D per convertire il file e prepararlo per la stampa."
 }

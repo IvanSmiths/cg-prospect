@@ -4,6 +4,8 @@
   "pages": {
     "*": ["common"],
     "/": ["home"],
+    "/free-3d-models": ["list-model"],
+    "/free-textures": ["list-textures"],
     "/categories": ["categories-texture"],
     "/categories/[slug]": ["single-category-texture"],
     "/categories-3d-model": ["categories-model"],
