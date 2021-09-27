@@ -36,7 +36,7 @@ const Homepage3dModel = () => {
         <div className="model-3d-example">
           <img
             loading="lazy"
-            src="/3d-model-showcase-3.png"
+            src="/3d-model-showcase-3.jpg"
             height="300"
             width="300"
             alt="3d model example"
