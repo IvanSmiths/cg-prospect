@@ -411,6 +411,7 @@ li {
 }
 
 .social-mobile-cnt {
+  z-index: 3;
   opacity: 1;
   position: fixed;
   right: 30px;

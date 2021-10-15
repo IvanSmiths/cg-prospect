@@ -91,12 +91,12 @@ export default function SingleTexture({ model, models }) {
           <p className="small-font p-slug">
             {model.title} {t('single-model:title')}
             <a
-              href="https://www..com/cgprospect"
+              href="https://www.instagram.com/cgprospect"
               rel="noopener"
               target="_blank"
               className="highlight underline"
             >
-              {t('single-model:title-2')}
+              {t('single-model:title-2')}{' '}
             </a>
             {t('single-model:title-3')}
             <a
@@ -338,22 +338,22 @@ export default function SingleTexture({ model, models }) {
             <ul>
               <li className="small-font underline">
                 <a href={model.lowpoly} rel="noopener">
-                  Lowpoly, {model.lowpolycount} {t('single-model:polycount')} (
-                  {model.lowpolysize})
+                  Lowpoly, 2K, {model.lowpolycount}{' '}
+                  {t('single-model:polycount')} ({model.lowpolysize})
                 </a>
               </li>
               <li className="small-font underline">
                 <a href={model.midpoly} rel="noopener">
-                  Midpoly, {model.midpolycount} {t('single-model:polycount')} (
-                  {model.midpolysize})
+                  Midpoly, 4K, {model.midpolycount}{' '}
+                  {t('single-model:polycount')} ({model.midpolysize})
                 </a>
               </li>
             </ul>
             <ul>
               <li className="small-font underline">
                 <a href={model.highpoly} rel="noopener">
-                  Highpoly, {model.highpolycount} {t('single-model:polycount')}{' '}
-                  ({model.highpolysize})
+                  Highpoly, 8K, {model.highpolycount}{' '}
+                  {t('single-model:polycount')} ({model.highpolysize})
                 </a>
               </li>
             </ul>
