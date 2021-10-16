@@ -338,7 +338,7 @@ export default function SingleTexture({ model, models }) {
             <ul>
               <li className="small-font underline">
                 <a href={model.lowpoly} rel="noopener">
-                  Lowpoly, 2K, {model.lowpolycount}{' '}
+                  Lowpoly, 1K, {model.lowpolycount}{' '}
                   {t('single-model:polycount')} ({model.lowpolysize})
                 </a>
               </li>
