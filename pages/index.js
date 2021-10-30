@@ -82,7 +82,6 @@ export default function Home() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
-        <link rel="canonical" href="https://www.cgprospect.com" />
         <meta name="yandex-verification" content="ede26dd5b6d6e4e8" />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CG Prospect" key="twhandle" />
