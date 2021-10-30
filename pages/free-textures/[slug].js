@@ -27,6 +27,21 @@ import {
 
 export default function SingleTexture({ texture, textures }) {
   let { t } = useTranslation();
+  const schemaData = {
+    '@context': 'http://schema.org',
+    '@type': 'Product',
+    name: `${texture.title}`,
+    image: `${texture.mainImage}`,
+    description: `${texture.title} is a free to download pbr texture, usable with Blender, Unreral Engine,and other 3d softwares.`,
+    brand: 'CG Prospect',
+    category: `${texture.category}`,
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'USD',
+    },
+  };
   const handleClick = () => {
     fbq.event('Click', { currency: 'USD', value: 1 });
   };
@@ -67,6 +82,10 @@ export default function SingleTexture({ texture, textures }) {
         <meta
           name="description"
           content={`${texture.title} ${t('single-texture:head-desc')}`}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CGProspect" key="twhandle" />

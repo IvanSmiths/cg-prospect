@@ -15,6 +15,59 @@ import HomepageAssets from '../components/Homepage-assets';
 
 export default function Home() {
   let { t } = useTranslation();
+  const schemaData = [
+    {
+      '@context': 'http://schema.org',
+      '@type': 'WebSite',
+      name: 'CG Prospect',
+      url: 'https://www.cgprospect.com',
+      image: 'https://www.cgprospect.com/main-texture.jpg',
+      description: `${t('home:head-desc')}`,
+      brand: {
+        '@type': 'Brand',
+        logo: 'https://www.cgprospect.com/logo-icon-white.svg',
+      },
+      sameAs: 'https://www.cgprospect.com',
+      about: {
+        '@type': 'Event',
+        sameAs: 'https://www.cgprospect.com',
+        url: 'https://www.cgprospect.com',
+        additionalType: 'Product',
+        name: "Apple's March 21 Announcements",
+        description: `${t('home:head-desc')}`,
+      },
+      author: {
+        '@type': 'Person',
+        name: 'Ivan',
+        familyName: 'Smiths',
+        url: 'https://www.ivansmiths.com',
+      },
+      inLanguage: 'en',
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          item: {
+            '@id': 'https://www.cgprospect.com/free-3d-models',
+            name: '3D Models',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          item: {
+            '@id': 'https://www.cgprospect.com/free-textures',
+            name: 'Textures',
+          },
+        },
+      ],
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -25,6 +78,11 @@ export default function Home() {
           name="facebook-domain-verification"
           content="a2q750leq99b25u1f9zkjqrszu8t5t"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+        <link rel="canonical" href="https://www.cgprospect.com" />
         <meta name="yandex-verification" content="ede26dd5b6d6e4e8" />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CG Prospect" key="twhandle" />

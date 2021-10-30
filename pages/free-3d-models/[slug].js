@@ -27,6 +27,22 @@ import {
 export default function SingleTexture({ model, models }) {
   let { t } = useTranslation();
 
+  const schemaData = {
+    '@context': 'http://schema.org',
+    '@type': 'Product',
+    name: `${model.title}`,
+    image: `${model.mainImage}`,
+    description: `${model.title} is a free to download 3d model, usable with Blender, Unreral Engine,and other 3d softwares.`,
+    brand: 'CG Prospect',
+    category: `${model.category}`,
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'USD',
+    },
+  };
+
   const SliderData = [
     {
       image: `${model.mainImage}`,
@@ -63,6 +79,10 @@ export default function SingleTexture({ model, models }) {
         <meta
           name="description"
           content={`${model.title} ${t('single-model:head-desc')}`}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="CGProspect" key="twhandle" />
