@@ -28,14 +28,6 @@ export default function Home() {
         logo: 'https://www.cgprospect.com/logo-icon-white.svg',
       },
       sameAs: 'https://www.cgprospect.com',
-      about: {
-        '@type': 'Event',
-        sameAs: 'https://www.cgprospect.com',
-        url: 'https://www.cgprospect.com',
-        additionalType: 'Product',
-        name: "Apple's March 21 Announcements",
-        description: `${t('home:head-desc')}`,
-      },
       author: {
         '@type': 'Person',
         name: 'Ivan',
