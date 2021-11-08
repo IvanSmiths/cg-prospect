@@ -384,8 +384,6 @@ li {
   background: var(--mainColor);
 }
 
-@import './query.css';
-
 .under-development div {
   padding-top: 10rem;
   background-color: var(--mainBackground);
@@ -416,17 +414,14 @@ li {
   position: fixed;
   right: 30px;
   bottom: 40px;
-  animation: crescendo 1.5s alternate infinite ease-in;
 }
 
-@keyframes crescendo {
-  0% {
-    transform: scale(1);
-  }
-  90% {
-    transform: scale(1.08);
-  }
-  100% {
-    transform: scale(1.06);
-  }
+.hashtag {
+  color: #e6e6e6;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #1a1a1a;
+  transform: skewX(-10deg) !important;
 }
+
+@import './query.css';

@@ -20,15 +20,7 @@ function Dropdown() {
             href="/free-textures"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/textures-icon-nav.svg"
-                height="35"
-                width="35"
-                alt="icon texture"
-              />
-              {t('common:nav-assets-textures')}
-            </a>
+            <a>{t('common:nav-assets-textures')}</a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
@@ -37,15 +29,7 @@ function Dropdown() {
             href="/free-3d-models"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/3d-models-icon.svg"
-                height="35"
-                width="35"
-                alt="icon texture"
-              />
-              {t('common:nav-assets-3d')}
-            </a>
+            <a>{t('common:nav-assets-3d')}</a>
           </Link>
         </li>
       </ul>

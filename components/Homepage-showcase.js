@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import SrcImage from './ScrImage';
 
 function Showcase() {
   let { t } = useTranslation();
@@ -7,8 +8,8 @@ function Showcase() {
     <main className="texture-example">
       <div className="texture-example-1 flex-50">
         <div>
-          <img
-            loading="lazy"
+          <SrcImage
+            webp="/texture-example.webp"
             src="/texture-example.jpg"
             height="200"
             width="200"
@@ -47,8 +48,8 @@ function Showcase() {
           </Link>
         </div>
         <div>
-          <img
-            loading="lazy"
+          <SrcImage
+            webp="/texture-example-2.webp"
             src="/texture-example-2.jpg"
             height="200"
             width="200"

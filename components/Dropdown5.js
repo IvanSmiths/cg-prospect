@@ -20,15 +20,7 @@ function Dropdown() {
             href="/contact"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/contact-icon.svg"
-                height="35"
-                width="35"
-                alt="icon contact"
-              />
-              {t('common:nav-contact')}
-            </a>
+            <a>{t('common:nav-contact')}</a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
@@ -37,15 +29,7 @@ function Dropdown() {
             href="/terms"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/terms-icon.svg"
-                height="35"
-                width="35"
-                alt="icon terms"
-              />
-              {t('common:nav-terms')}
-            </a>
+            <a>{t('common:nav-terms')}</a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
@@ -54,15 +38,7 @@ function Dropdown() {
             href="/feedback"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/feedback-icon.svg"
-                height="35"
-                width="35"
-                alt="icon feedback"
-              />
-              {t('common:nav-feedback')}
-            </a>
+            <a>{t('common:nav-feedback')}</a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
@@ -71,16 +47,7 @@ function Dropdown() {
             href="/brand"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/brand-icon.svg"
-                height="35"
-                width="35"
-                alt="icon brand"
-              />
-
-              {t('common:nav-brand')}
-            </a>
+            <a>{t('common:nav-brand')}</a>
           </Link>
         </li>
       </ul>

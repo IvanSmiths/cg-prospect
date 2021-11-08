@@ -20,15 +20,7 @@ function Dropdown() {
             href="/sponsor-texture"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/sponsor-assets-icon.svg"
-                height="35"
-                width="35"
-                alt="icon sponsor assets"
-              />
-              {t('common:nav-support-assets')}
-            </a>
+            <a>{t('common:nav-support-assets')}</a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
@@ -37,15 +29,7 @@ function Dropdown() {
             href="/sponsor-home"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/sponsor-logo-icon.svg"
-                height="35"
-                width="35"
-                alt="icon sponsor logo"
-              />
-              {t('common:nav-support-page')}
-            </a>
+            <a>{t('common:nav-support-page')}</a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
@@ -56,12 +40,6 @@ function Dropdown() {
             href="https://cg-prospect.creator-spring.com/"
             onClick={() => setClick(false)}
           >
-            <img
-              src="/merchandise-3d.svg"
-              height="35"
-              width="35"
-              alt="icon merchandise"
-            />
             {t('common:nav-merch')}
           </a>
         </li>

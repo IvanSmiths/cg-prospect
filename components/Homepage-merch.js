@@ -1,4 +1,5 @@
 import useTranslation from 'next-translate/useTranslation';
+import SrcImage from './ScrImage';
 
 const HomepageMerch = () => {
   let { t } = useTranslation();
@@ -36,8 +37,8 @@ const HomepageMerch = () => {
             loading="lazy"
             height="550"
             width="550"
-            src="/3d-merch-2.png"
-            alt="image of a shirt"
+            src="/3d-merch.png"
+            alt="image of the merchandise"
             className="image-merch"
           />
         </a>

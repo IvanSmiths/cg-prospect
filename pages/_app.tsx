@@ -108,12 +108,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="noopener"
           href="https://www.instagram.com/cgprospect/"
         >
-          <img
-            height="50px"
-            width="50px"
-            src="https://res.cloudinary.com/deino2cjx/image/upload/v1631171753/nextjs_media/instagram-link_hhvzah.svg"
-            alt="icon of instagram"
-          />
+          <span className="hashtag">#cgprospect</span>
         </a>
       </div>
       <Advertising />

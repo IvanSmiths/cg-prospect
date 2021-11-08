@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import SrcImage from './ScrImage';
 
 const Homepage3dModel = () => {
   let { t } = useTranslation();
@@ -23,22 +24,24 @@ const Homepage3dModel = () => {
           </Link>
         </div>
         <div className="model-3d-example">
-          <img
-            loading="lazy"
-            src="/3d-model-showcase-2.png"
+          <SrcImage
+            className="main-image"
+            webp="/3d-model-showcase-2.webp"
             height="300"
             width="300"
+            src="/3d-model-showcase-2.png"
             alt="3d model example"
           />
         </div>
       </div>
       <div className="flex-50 model-3d-example-cnt-2">
         <div className="model-3d-example">
-          <img
-            loading="lazy"
-            src="/3d-model-showcase-3.jpg"
+          <SrcImage
+            className="main-image"
+            webp="/3d-model-showcase-3.webp"
             height="300"
             width="300"
+            src="/3d-model-showcase-3.jpg"
             alt="3d model example"
           />
         </div>

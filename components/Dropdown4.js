@@ -20,15 +20,7 @@ function Dropdown() {
             href="/methods"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/methods-nav.svg"
-                height="35"
-                width="35"
-                alt="icon methods textures"
-              />
-              {t('common:nav-methods-tex')}
-            </a>
+            <a>{t('common:nav-methods-tex')}</a>
           </Link>
         </li>
         <li className="nav-icon-cnt">
@@ -37,15 +29,7 @@ function Dropdown() {
             href="/methods-3d-model"
             onClick={() => setClick(false)}
           >
-            <a>
-              <img
-                src="/method-nav-2.svg"
-                height="35"
-                width="35"
-                alt="icon methods 3d model"
-              />
-              {t('common:nav-methods-mod')}
-            </a>
+            <a>{t('common:nav-methods-mod')}</a>
           </Link>
         </li>
       </ul>

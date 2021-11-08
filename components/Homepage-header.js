@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import SrcImage from './ScrImage';
 
 function Header() {
   let { t } = useTranslation();
@@ -35,14 +36,15 @@ function Header() {
           </div>
         </div>
         <div>
-          <img
-            loading="lazy"
+          <SrcImage
             className="main-image"
             src="/main-texture.jpg"
+            webp="/main-texture.webp"
             height="600"
             width="600"
             alt="An image of a texture"
           />
+          <img loading="lazy" />
         </div>
       </header>
       <div className="container-ico">
