@@ -11,7 +11,6 @@ import Video from '../components/Homepage-video';
 import VerticalCarousel from '../components/Homepage-verticalCarousel';
 import useTranslation from 'next-translate/useTranslation';
 import Merch from '../components/Homepage-merch';
-import HomepageAssets from '../components/Homepage-assets';
 
 export default function Home() {
   let { t } = useTranslation();
@@ -87,7 +86,6 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <HomepageAssets />
       <Stats />
       <Patreon />
       <Video />

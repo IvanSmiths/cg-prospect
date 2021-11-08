@@ -44,7 +44,6 @@ function Header() {
             width="600"
             alt="An image of a texture"
           />
-          <img loading="lazy" />
         </div>
       </header>
       <div className="container-ico">
