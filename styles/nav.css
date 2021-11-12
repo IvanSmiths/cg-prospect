@@ -312,3 +312,11 @@
 .nav-icon-cnt img {
   margin-right: 1rem;
 }
+
+@media screen and (max-width: 400px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+}

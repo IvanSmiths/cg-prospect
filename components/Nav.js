@@ -297,12 +297,9 @@ function Navbar() {
                 className="nav-item small-font"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
+                onClick={closeMobileMenu}
               >
-                <Link
-                  href="/free-textures"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                >
+                <Link href="/free-textures" className="nav-links">
                   <a>{t('common:nav-assets-textures')}</a>
                 </Link>
               </li>
@@ -310,12 +307,9 @@ function Navbar() {
                 className="nav-item small-font"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
+                onClick={closeMobileMenu}
               >
-                <Link
-                  href="/free-textures"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                >
+                <Link href="/free-3d-models" className="nav-links">
                   <a>{t('common:nav-assets-3d')}</a>
                 </Link>
               </li>
@@ -323,12 +317,9 @@ function Navbar() {
                 onMouseEnter={onMouseEnter3}
                 onMouseLeave={onMouseLeave3}
                 className="nav-item small-font"
+                onClick={closeMobileMenu}
               >
-                <Link
-                  href="/categories"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                >
+                <Link href="/categories" className="nav-links">
                   <a>{t('common:nav-categories')}</a>
                 </Link>
               </li>
@@ -336,12 +327,9 @@ function Navbar() {
                 onMouseEnter={onMouseEnter4}
                 onMouseLeave={onMouseLeave4}
                 className="nav-item small-font"
+                onClick={closeMobileMenu}
               >
-                <Link
-                  href="/methods"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                >
+                <Link href="/methods" className="nav-links">
                   <a>{t('common:nav-methods')}</a>
                 </Link>
               </li>
@@ -349,12 +337,9 @@ function Navbar() {
                 className="nav-item small-font"
                 onMouseEnter={onMouseEnter2}
                 onMouseLeave={onMouseLeave2}
+                onClick={closeMobileMenu}
               >
-                <Link
-                  href="/sponsor-home"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                >
+                <Link href="/sponsor-home" className="nav-links">
                   <a>{t('common:nav-support')}</a>
                 </Link>
               </li>
@@ -362,12 +347,9 @@ function Navbar() {
                 onMouseEnter={onMouseEnter5}
                 onMouseLeave={onMouseLeave5}
                 className="nav-item small-font"
+                onClick={closeMobileMenu}
               >
-                <Link
-                  href="/contact"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                >
+                <Link href="/contact" className="nav-links">
                   <a>{t('common:nav-info')}</a>
                 </Link>
               </li>

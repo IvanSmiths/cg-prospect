@@ -573,7 +573,7 @@
   }
 
   .texture-list-up-cnt p {
-    padding: 0 3rem;
+    padding: 0 0;
   }
 
   .texture-list {
@@ -581,6 +581,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 2.5rem;
   }
 
   .texture-list img {
