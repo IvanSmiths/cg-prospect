@@ -34,10 +34,17 @@ export default function SingleTexture({ texture, textures }) {
     image: `${texture.mainImage}`,
     description: `${texture.title} is a free to download pbr texture, usable with Blender, Unreral Engine,and other 3d softwares.`,
     brand: 'CG Prospect',
-    category: `${texture.category}`,
+    sku: `${texture.id}`,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4',
+      reviewCount: '3',
+    },
+    category: `${texture.textureCategory[0]}`,
     offers: {
       '@type': 'Offer',
       price: '0',
+      url: `https://www.cgpospect.com/free-textures/${texture.slug}`,
       availability: 'https://schema.org/InStock',
       priceCurrency: 'USD',
     },

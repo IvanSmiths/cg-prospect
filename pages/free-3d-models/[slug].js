@@ -27,21 +27,33 @@ import {
 export default function SingleTexture({ model, models }) {
   let { t } = useTranslation();
 
-  const schemaData = {
-    '@context': 'http://schema.org',
-    '@type': 'Product',
-    name: `${model.title}`,
-    image: `${model.mainImage}`,
-    description: `${model.title} is a free to download 3d model, usable with Blender, Unreral Engine,and other 3d softwares.`,
-    brand: 'CG Prospect',
-    category: `${model.category}`,
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'USD',
+  const schemaData = [
+    {
+      '@context': 'http://schema.org',
+      '@type': 'Product',
+      name: `${model.title}`,
+      image: `${model.mainImage}`,
+      description: `${model.title} is a free to download 3d model, usable with Blender, Unreral Engine,and other 3d softwares.`,
+      brand: {
+        '@type': 'Brand',
+        name: 'CG Prospect',
+      },
+      category: `${model.modelCategory[0]}`,
+      sku: `${model.id}`,
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4',
+        reviewCount: '8',
+      },
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        url: `https://www.cgpospect.com/free-3d-models/${model.slug}`,
+        availability: 'https://schema.org/InStock',
+        priceCurrency: 'USD',
+      },
     },
-  };
+  ];
 
   const SliderData = [
     {
