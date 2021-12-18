@@ -2,6 +2,7 @@ import prisma from '../../lib/prisma';
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { Elements } from '@stripe/react-stripe-js';
 import getStripe from '../../utils/get-stripejs';
 import ElementsForm from '../../components/ElementsForm';
@@ -26,31 +27,77 @@ import {
 
 export default function SingleTexture({ model, models }) {
   let { t } = useTranslation();
+  let router = useRouter();
 
   const schemaData = [
     {
       '@context': 'http://schema.org',
-      '@type': 'Product',
-      name: `${model.title}`,
-      image: `${model.mainImage}`,
-      description: `${model.title} is a free to download 3d model, usable with Blender, Unreral Engine,and other 3d softwares.`,
+      '@type': 'WebSite',
+      name: 'CG Prospect',
+      url: `https://www.cgprospect.com/free-3d-models/${model.slug}`,
+      image: 'https://www.cgprospect.com/main-texture.jpg',
+      description: `${model.title}${''}${t('single-model:head-desc')}`,
       brand: {
         '@type': 'Brand',
-        name: 'CG Prospect',
+        logo: 'https://www.cgprospect.com/logo-icon-white.svg',
       },
-      category: `${model.modelCategory[0]}`,
+      sameAs: 'https://www.cgprospect.com',
+      author: {
+        '@type': 'Person',
+        name: 'Ivan',
+        familyName: 'Smiths',
+        url: 'https://www.ivansmiths.com',
+      },
+      identifier: `${model.id}`,
+      inLanguage: `${router.locale}`,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          item: {
+            '@id': 'https://www.cgprospect.com',
+            name: 'Homepage',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          item: {
+            '@id': 'https://www.cgprospect.com/free-3d-models',
+            name: `${t('single-model:pre-title2')}`,
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          item: {
+            '@id': `https://www.cgprospect.com/free-3d-models/${model.slug}`,
+            name: `${t('single-model:pre-title')}${model.title}`,
+          },
+        },
+      ],
+    },
+    {
+      '@context': 'http://schema.org',
+      '@type': 'Product',
+      name: `${model.title}`,
+      image: [`${model.mainImage}`, `${model.secImage}`],
+      description: `${model.title} ${t('single-model:head-title')}`,
+      brand: 'CG Prospect',
+      category: `${model.modelCategory[0].title}`,
       sku: `${model.id}`,
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4',
-        reviewCount: '8',
-      },
+      mpn: `${model.id}`,
       offers: {
         '@type': 'Offer',
-        price: '0',
-        url: `https://www.cgpospect.com/free-3d-models/${model.slug}`,
-        availability: 'https://schema.org/InStock',
+        url: `https://www.cgprospect.com/free-3d-models/${model.slug}`,
         priceCurrency: 'USD',
+        priceValidUntil: '2022-11-20',
+        price: '0',
+        availability: 'https://schema.org/InStock',
       },
     },
   ];

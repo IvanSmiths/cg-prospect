@@ -11,53 +11,31 @@ import Video from '../components/Homepage-video';
 import VerticalCarousel from '../components/Homepage-verticalCarousel';
 import useTranslation from 'next-translate/useTranslation';
 import Merch from '../components/Homepage-merch';
+import { useRouter } from 'next/router';
 
 export default function Home() {
   let { t } = useTranslation();
-  const schemaData = [
-    {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
-      name: 'CG Prospect',
-      url: 'https://www.cgprospect.com',
-      image: 'https://www.cgprospect.com/main-texture.jpg',
-      description: `${t('home:head-desc')}`,
-      brand: {
-        '@type': 'Brand',
-        logo: 'https://www.cgprospect.com/logo-icon-white.svg',
-      },
-      sameAs: 'https://www.cgprospect.com',
-      author: {
-        '@type': 'Person',
-        name: 'Ivan',
-        familyName: 'Smiths',
-        url: 'https://www.ivansmiths.com',
-      },
-      inLanguage: 'en',
+  let router = useRouter();
+  const schemaData = {
+    '@context': 'http://schema.org',
+    '@type': 'WebSite',
+    name: 'CG Prospect',
+    url: 'https://www.cgprospect.com',
+    image: 'https://www.cgprospect.com/main-texture.jpg',
+    description: `${t('home:head-desc')}`,
+    brand: {
+      '@type': 'Brand',
+      logo: 'https://www.cgprospect.com/logo-icon-white.svg',
     },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          item: {
-            '@id': 'https://www.cgprospect.com/free-3d-models',
-            name: '3D Models',
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          item: {
-            '@id': 'https://www.cgprospect.com/free-textures',
-            name: 'Textures',
-          },
-        },
-      ],
+    sameAs: 'https://www.cgprospect.com',
+    author: {
+      '@type': 'Person',
+      name: 'Ivan',
+      familyName: 'Smiths',
+      url: 'https://www.ivansmiths.com',
     },
-  ];
+    inLanguage: `${router.locale}`,
+  };
 
   return (
     <>

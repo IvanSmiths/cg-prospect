@@ -3,11 +3,57 @@ import Link from 'next/link';
 import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Home({ textures, categories }) {
   let { t } = useTranslation();
+  let router = useRouter();
   const [isActive, setIsActive] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
+  const schema = [
+    {
+      '@context': 'http://schema.org',
+      '@type': 'WebSite',
+      name: 'CG Prospect',
+      url: 'https://www.cgprospect.com/free-textures',
+      image: 'https://www.cgprospect.com/main-texture.jpg',
+      description: `${t('home:head-desc')}`,
+      brand: {
+        '@type': 'Brand',
+        logo: 'https://www.cgprospect.com/logo-icon-white.svg',
+      },
+      sameAs: 'https://www.cgprospect.com',
+      author: {
+        '@type': 'Person',
+        name: 'Ivan',
+        familyName: 'Smiths',
+        url: 'https://www.ivansmiths.com',
+      },
+      inLanguage: `${router.locale}`,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          item: {
+            '@id': 'https://www.cgprospect.com',
+            name: 'Homepage',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          item: {
+            '@id': 'https://www.cgprospect.com/free-textures',
+            name: 'Free Textures',
+          },
+        },
+      ],
+    },
+  ];
   return (
     <>
       <Head>
@@ -24,6 +70,10 @@ export default function Home({ textures, categories }) {
         <meta
           property="og:url"
           content={`https://www.cgprospect.com/free-textures/`}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
         <meta property="og:image" content={textures[0].mainImage} />
       </Head>

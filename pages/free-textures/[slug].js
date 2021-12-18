@@ -2,10 +2,10 @@ import prisma from '../../lib/prisma';
 import Link from 'next/link';
 import Head from 'next/head';
 import { Elements } from '@stripe/react-stripe-js';
+import { useRouter } from 'next/router';
 import getStripe from '../../utils/get-stripejs';
 import ElementsForm from '../../components/ElementsForm';
 import useTranslation from 'next-translate/useTranslation';
-import * as fbq from '../../lib/fpixel';
 import React, { useState } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import {
@@ -26,32 +26,80 @@ import {
 } from 'react-share';
 
 export default function SingleTexture({ texture, textures }) {
+  let router = useRouter();
   let { t } = useTranslation();
-  const schemaData = {
-    '@context': 'http://schema.org',
-    '@type': 'Product',
-    name: `${texture.title}`,
-    image: `${texture.mainImage}`,
-    description: `${texture.title} is a free to download pbr texture, usable with Blender, Unreral Engine,and other 3d softwares.`,
-    brand: 'CG Prospect',
-    sku: `${texture.id}`,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4',
-      reviewCount: '3',
+  const schemaData = [
+    {
+      '@context': 'http://schema.org',
+      '@type': 'WebSite',
+      name: 'CG Prospect',
+      url: `https://www.cgprospect.com/free-textures/${texture.slug}`,
+      image: 'https://www.cgprospect.com/main-texture.jpg',
+      description: `${texture.title}${''}${t('single-texture:head-desc')}`,
+      brand: {
+        '@type': 'Brand',
+        logo: 'https://www.cgprospect.com/logo-icon-white.svg',
+      },
+      sameAs: 'https://www.cgprospect.com',
+      author: {
+        '@type': 'Person',
+        name: 'Ivan',
+        familyName: 'Smiths',
+        url: 'https://www.ivansmiths.com',
+      },
+      identifier: `${texture.id}`,
+      inLanguage: `${router.locale}`,
     },
-    category: `${texture.textureCategory[0]}`,
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      url: `https://www.cgpospect.com/free-textures/${texture.slug}`,
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'USD',
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          item: {
+            '@id': 'https://www.cgprospect.com',
+            name: 'Homepage',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          item: {
+            '@id': 'https://www.cgprospect.com/free-textures',
+            name: `${t('single-texture:pre-title2')}`,
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          item: {
+            '@id': `https://www.cgprospect.com/free-textures/${texture.slug}`,
+            name: `${t('single-texture:pre-title')}${texture.title}`,
+          },
+        },
+      ],
     },
-  };
-  const handleClick = () => {
-    fbq.event('Click', { currency: 'USD', value: 1 });
-  };
+    {
+      '@context': 'http://schema.org',
+      '@type': 'Product',
+      name: `${texture.title}`,
+      image: [`${texture.mainImage}`, `${texture.secImage}`],
+      description: `${texture.title} ${t('single-texture:head-desc')}`,
+      brand: 'CG Prospect',
+      sku: `${texture.id}`,
+      mpn: `${texture.id}`,
+      category: `${texture.category[0].title}`,
+      offers: {
+        '@type': 'Offer',
+        url: `https://www.cgprospect.com/free-textures/${texture.slug}`,
+        priceCurrency: 'USD',
+        priceValidUntil: '2022-11-20',
+        price: '0',
+        availability: 'https://schema.org/InStock',
+      },
+    },
+  ];
 
   const SliderData = [
     {
@@ -521,7 +569,6 @@ export default function SingleTexture({ texture, textures }) {
                         className={index === current ? 'slide active' : 'slide'}
                       >
                         <img
-                          onClick={handleClick}
                           loading="lazy"
                           height="600"
                           width="600"
