@@ -5,7 +5,7 @@ export default function Custom404() {
   return (
     <>
       <Head>
-        <title>CG Prospect | Default cubes section.</title>
+        <title>CG Prospect | Default cube section.</title>
         <meta
           name="description"
           content="Yo! This page is now in the default cube's bin."
