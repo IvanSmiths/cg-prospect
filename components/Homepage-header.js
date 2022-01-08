@@ -36,14 +36,21 @@ function Header() {
           </div>
         </div>
         <div>
-          <SrcImage
-            className="main-image"
-            src="/main-texture.jpg"
-            webp="/main-texture.webp"
-            height="600"
-            width="600"
-            alt="An image of a texture"
-          />
+          <picture className="main-image">
+            <source
+              alt="An image of a texture"
+              height="600"
+              width="600"
+              srcSet="/main-texture.webp"
+              type="image/webp"
+            />
+            <img
+              alt="An image of a texture"
+              src="/main-texture.jpg"
+              height="600"
+              width="600"
+            />
+          </picture>
         </div>
       </header>
       <div className="container-ico">
