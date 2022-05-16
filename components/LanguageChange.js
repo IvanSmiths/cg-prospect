@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+import React, { useState } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const LanguageChange = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -8,14 +8,6 @@ const LanguageChange = () => {
   return (
     <div onClick={() => setIsOpened(!isOpened)} className="lang-cnt-2">
       <div className="arrow-cnt">
-        <img
-          className="arrow-navbar2"
-          loading="lazy"
-          src="/down-arrow-white.svg"
-          height="13px"
-          width="13px"
-          alt="arrow down"
-        />
         <img
           onMouseEnter={() => setIsOpened(!isOpened)}
           src="/translate.svg"

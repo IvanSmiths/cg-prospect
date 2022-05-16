@@ -1,5 +1,4 @@
 .navbar {
-  background: var(--mainBackgroundNav);
   width: 100%;
   position: fixed;
   height: fit-content;
@@ -28,6 +27,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.arrow-cnt {
+  padding-bottom: 1rem;
 }
 
 .navbar-logo {

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Dropdown from './Dropdown';
-import Dropdown2 from './Dropdown2';
-import Dropdown3 from './Dropdown3';
-import Dropdown4 from './Dropdown4';
-import Dropdown5 from './Dropdown5';
-import useTranslation from 'next-translate/useTranslation';
-import LanguageChange from './LanguageChange';
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import Dropdown from "./Dropdown";
+import Dropdown2 from "./Dropdown2";
+import Dropdown3 from "./Dropdown3";
+import Dropdown4 from "./Dropdown4";
+import Dropdown5 from "./Dropdown5";
+import useTranslation from "next-translate/useTranslation";
+import LanguageChange from "./LanguageChange";
 
 function Navbar() {
   const [isDesktop, setDesktop] = useState(false);
@@ -25,8 +25,8 @@ function Navbar() {
         setDesktop(false);
       }
     };
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
   }, []);
 
   let { t } = useTranslation();
@@ -137,26 +137,18 @@ function Navbar() {
           </div>
           <LanguageChange />
           <div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li
                 className="nav-item small-font"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/free-textures"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  <a>{t('common:nav-assets')}</a>
+                  <a>{t("common:nav-assets")}</a>
                 </Link>
                 {dropdown && <Dropdown />}
               </li>
@@ -165,20 +157,12 @@ function Navbar() {
                 onMouseLeave={onMouseLeave3}
                 className="nav-item small-font"
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/categories"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  <a>{t('common:nav-categories')}</a>
+                  <a>{t("common:nav-categories")}</a>
                 </Link>
                 {dropdown3 && <Dropdown3 />}
               </li>
@@ -187,20 +171,12 @@ function Navbar() {
                 onMouseLeave={onMouseLeave4}
                 className="nav-item small-font"
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/methods"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  <a>{t('common:nav-methods')}</a>
+                  <a>{t("common:nav-methods")}</a>
                 </Link>
                 {dropdown4 && <Dropdown4 />}
               </li>
@@ -209,20 +185,12 @@ function Navbar() {
                 onMouseEnter={onMouseEnter2}
                 onMouseLeave={onMouseLeave2}
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/sponsor-home"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  <a>{t('common:nav-support')}</a>
+                  <a>{t("common:nav-support")}</a>
                 </Link>
                 {dropdown2 && <Dropdown2 />}
               </li>
@@ -231,32 +199,24 @@ function Navbar() {
                 onMouseLeave={onMouseLeave5}
                 className="nav-item small-font"
               >
-                <img
-                  className="arrow-navbar"
-                  loading="lazy"
-                  src="/down-arrow-white.svg"
-                  height="13px"
-                  width="13px"
-                  alt="arrow down"
-                />
                 <Link
                   href="/contact"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  <a>{t('common:nav-info')}</a>
+                  <a>{t("common:nav-info")}</a>
                 </Link>
                 {dropdown5 && <Dropdown5 />}
               </li>
               <li onClick={closeMobileMenu} className="nav-item small-font">
-                <a
+                {/* <a
                   target="_blank"
                   rel="noopener"
                   href="https://cg-prospect.creator-spring.com"
                   className="btn-line btn-merch"
                 >
                   Merchandise
-                </a>
+                </a> */}
               </li>
               <li onClick={closeMobileMenu} className="nav-item small-font">
                 <a
@@ -292,7 +252,7 @@ function Navbar() {
           </div>
           <LanguageChange />
           <div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li
                 className="nav-item small-font"
                 onMouseEnter={onMouseEnter}
@@ -300,7 +260,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 <Link href="/free-textures" className="nav-links">
-                  <a>{t('common:nav-assets-textures')}</a>
+                  <a>{t("common:nav-assets-textures")}</a>
                 </Link>
               </li>
               <li
@@ -310,7 +270,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 <Link href="/free-3d-models" className="nav-links">
-                  <a>{t('common:nav-assets-3d')}</a>
+                  <a>{t("common:nav-assets-3d")}</a>
                 </Link>
               </li>
               <li
@@ -320,7 +280,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 <Link href="/categories" className="nav-links">
-                  <a>{t('common:nav-categories')}</a>
+                  <a>{t("common:nav-categories")}</a>
                 </Link>
               </li>
               <li
@@ -330,7 +290,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 <Link href="/methods" className="nav-links">
-                  <a>{t('common:nav-methods')}</a>
+                  <a>{t("common:nav-methods")}</a>
                 </Link>
               </li>
               <li
@@ -340,7 +300,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 <Link href="/sponsor-home" className="nav-links">
-                  <a>{t('common:nav-support')}</a>
+                  <a>{t("common:nav-support")}</a>
                 </Link>
               </li>
               <li
@@ -350,7 +310,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 <Link href="/contact" className="nav-links">
-                  <a>{t('common:nav-info')}</a>
+                  <a>{t("common:nav-info")}</a>
                 </Link>
               </li>
               <li onClick={closeMobileMenu} className="nav-item small-font">
