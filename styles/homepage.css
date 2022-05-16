@@ -201,6 +201,9 @@
 }
 
 .stats-title {
+  background-color: var(--mainBackground);
+  color: var(--mainFontColor) !important;
+  padding: 3rem 0;
   text-align: center;
 }
 
@@ -406,7 +409,7 @@
 
 .hp-3d-model-cnt p {
   margin: 1.5rem 0;
-  padding: 0 25rem;
+  padding: 0 25vw;
 }
 
 .model-3d-example img {
@@ -668,7 +671,7 @@
 
 .carousel-inner::before,
 .carousel-inner::after {
-  content: '';
+  content: "";
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -760,7 +763,7 @@
 }
 
 .cnt-video {
-  background: center no-repeat url('/texture-example-4.jpg');
+  background: center no-repeat url("/texture-example-4.jpg");
   background-size: cover;
   object-fit: cover;
 }

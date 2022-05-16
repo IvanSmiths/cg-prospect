@@ -22,15 +22,16 @@
   --largeFont: clamp(3rem, 5vw, 16rem);
   --bigFont: clamp(2rem, 4vw, 5rem);
   --mediumFont: clamp(1.8rem, 1.8vw, 3rem);
-  --btnFont: clamp(1rem, 1.4vw, 2.2rem);
-  --smallFont: clamp(1rem, 1.2vw, 2rem);
+  --btnFont: clamp(1.4rem, 1.4vw, 2.2rem);
+  --smallFont: clamp(1rem, 1.2vw, 1.3rem);
+  --smallFontHeight: clamp(1.4rem, 2vw, 1.8rem);
   --tinyFont: clamp(0.7rem, 1.2vw, 2rem);
 }
 
 html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, Tahoma, Geneva, Verdana,
-    sans-serif, 'Segoe UI';
+    sans-serif, "Segoe UI";
   background-color: var(--mainBackground);
 }
 
@@ -62,7 +63,7 @@ p {
 }
 
 .small-font {
-  line-height: 1.5rem;
+  line-height: var(--smallFontHeight);
   font-size: var(--smallFont);
   font-weight: 400;
 }
@@ -253,15 +254,15 @@ nav li > a {
   display: none;
 }
 
-@import './nav.css';
-@import './homepage.css';
-@import './texturelist.css';
-@import './categorylist.css';
-@import './category.css';
-@import './method.css';
-@import './terms.css';
-@import './contact.css';
-@import './authors.css';
+@import "./nav.css";
+@import "./homepage.css";
+@import "./texturelist.css";
+@import "./categorylist.css";
+@import "./category.css";
+@import "./method.css";
+@import "./terms.css";
+@import "./contact.css";
+@import "./authors.css";
 
 a {
   color: inherit;
@@ -424,4 +425,4 @@ li {
   transform: skewX(-10deg) !important;
 }
 
-@import './query.css';
+@import "./query.css";

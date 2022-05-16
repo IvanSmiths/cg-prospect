@@ -35,7 +35,32 @@
   p {
     line-height: 1.3rem;
   }
+  .flex-50 {
+    flex-direction: column;
+  }
 
+  .container-mainpage > *:nth-child(1) {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 10rem;
+  }
+
+  .container-mainpage p {
+    margin: 2rem 0rem;
+    padding-right: 0;
+  }
+
+  .flex-50 > *:nth-child(1) {
+    flex: 1 1 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-image {
+    display: none;
+  }
   .p-slug {
     padding-right: 6rem;
   }
