@@ -141,7 +141,7 @@
 }
 
 .container-texture-details h2 {
-  margin: 7rem 0rem -1rem 0rem;
+  margin: 17rem 0rem -1rem 0rem;
 }
 
 .title-texture {
@@ -221,7 +221,7 @@
 
 .donate-btn {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 15rem;
   align-items: flex-start;
   flex-direction: column;
   margin-bottom: 3rem;
@@ -245,7 +245,7 @@
 
 .sponsor-texture {
   line-height: 2.5rem;
-  margin-top: 1rem;
+  margin-top: 12rem;
 }
 
 .h2-suggest {
@@ -300,8 +300,8 @@
 
 .FormRow,
 fieldset,
-input[type='number'],
-input[type='text'] {
+input[type="number"],
+input[type="text"] {
   border-radius: 6px;
   padding: 5px 12px;
   width: 100%;
@@ -315,7 +315,7 @@ fieldset {
   margin-top: -20px;
 }
 
-input[type='number'] {
+input[type="number"] {
   margin-top: 1rem;
 }
 
@@ -329,7 +329,7 @@ fieldset legend {
   padding-top: 3rem;
 }
 
-input[type='range'] {
+input[type="range"] {
   margin: 5px 0;
   width: 100%;
 }
